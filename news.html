@@ -1,4 +1,11 @@
 <html lang="zh-TW"><head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJTCF662');</script>
+<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>最新消息 - 同齊咖吡 TOGETHER COFFEE PROJECT</title>
@@ -304,6 +311,24 @@
         .card-visual {
             padding: 2rem 1.8rem 0;
             font-size: 2.6rem; line-height: 1;
+        }
+
+        .card-img-placeholder {
+            width: 100%; height: 180px;
+            background: #edeae5;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            gap: 0.5rem;
+            color: #aaa;
+            border-bottom: 1px solid rgba(34,56,67,0.07);
+        }
+        .card-img-placeholder svg {
+            width: 36px; height: 36px;
+            opacity: 0.45;
+        }
+        .card-img-placeholder span {
+            font-size: 0.75rem; letter-spacing: 0.12em;
+            color: #bbb; font-weight: 500;
         }
 
         .card-body {
@@ -765,8 +790,118 @@
     position: relative;
     outline: none;
   }
+</style><style id="kgp-selected-style">
+  [data-kgp-selected]::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 4px;
+    outline: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 10px rgba(255, 107, 53, 0.4) !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+  [data-kgp-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-kgp-selected],
+  img[data-kgp-hover-selected],
+  [data-kgp-hover-selected],
+  [item-kgp-click-selected],
+  [item-kgp-selected] {
+    border: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 15px rgba(255, 107, 53, 0.5) !important;
+    border-radius: 4px;
+  }
+
+  [data-kgp-hover-selected]::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 2px;
+    border-radius: 4px;
+    outline: 2px solid #FFA366 !important;
+    box-shadow: 0 0 0 1px rgba(255, 163, 102, 0.3), 0 0 8px rgba(255, 163, 102, 0.4) !important;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  [data-kgp-hover-selected] {
+    position: relative;
+    outline: none;
+  }
+</style><style id="kgp-selected-style">
+  [data-kgp-selected]::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 4px;
+    outline: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 10px rgba(255, 107, 53, 0.4) !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+  [data-kgp-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-kgp-selected],
+  img[data-kgp-hover-selected],
+  [data-kgp-hover-selected],
+  [item-kgp-click-selected],
+  [item-kgp-selected] {
+    border: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 15px rgba(255, 107, 53, 0.5) !important;
+    border-radius: 4px;
+  }
+
+  [data-kgp-hover-selected]::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 2px;
+    border-radius: 4px;
+    outline: 2px solid #FFA366 !important;
+    box-shadow: 0 0 0 1px rgba(255, 163, 102, 0.3), 0 0 8px rgba(255, 163, 102, 0.4) !important;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  [data-kgp-hover-selected] {
+    position: relative;
+    outline: none;
+  }
 </style></head>
 <body style="">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJTCF662"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div id="custom-cursor"></div>
 
     <!-- ── Navbar (unchanged) ── -->
@@ -830,7 +965,7 @@
 
         <!-- Featured Card -->
         <article class="featured-card visible" id="news-1" style="">
-            <div class="featured-visual" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9693921/access/eb7fe983a5f9921cc107d3ca09f8e0e527fdf7a0f95bfe65d1f41742afdc64aa&quot;); background-size: cover; outline: none; background-position: 50% 100%;">
+            <div class="featured-visual" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9693921/access/eb7fe983a5f9921cc107d3ca09f8e0e527fdf7a0f95bfe65d1f41742afdc64aa&quot;); background-size: cover; background-position: 50% 100%;">
                 <div class="featured-visual-tag">精選活動</div>
                 
             </div>
@@ -851,7 +986,7 @@
 
             <article class="story-card visible" id="news-2">
                 <div class="card-accent"></div>
-                
+                <img src="https://api.kuse.ai/api/file/public-assets/9707795/access/8b9b8fcb956d1af7820eef88ca7b210c8d6d47d9d5febad5ce39390b84c8fc55" alt="聖誕包場專案" style="width: 100%; height: 377.671px; object-fit: cover; display: block; outline: none;">
                 <div class="card-body" style="">
                     <div class="card-date">2025 · 12 · 25<br><br></div>
                     <h2 class="card-title">聖誕包場專案｜在同齊咖啡感受溫暖</h2>
@@ -863,9 +998,9 @@
             <article class="story-card visible" id="news-3">
                 <div class="card-accent"></div>
                 
-                <div class="card-body" style="">
-                    <div class="card-date">2025 · 01 · 05<br><br></div>
-                    <h2 class="card-title">剝皮辣椒燻雞佛卡夏｜獨享時光，也要好好對自己辣一下</h2>
+                <img src="https://api.kuse.ai/api/file/public-assets/9707793/access/50952f461c26b684852d8ee575918c3f11c31a4786dd95379a9b175070f50437" alt="剝皮辣椒燻雞佛卡夏" style="width: 100%; height: 376.783px; object-fit: cover; display: block;"><div class="card-body" style="">
+                    <div class="card-date" style="">2025 · 01 · 05<br><br></div>
+                    <h2 class="card-title" style="">剝皮辣椒燻雞佛卡夏｜獨享時光，也要好好對自己辣一下</h2>
                     <p class="card-desc" style="">義式麵包＋中式靈魂辣椒，碰撞新火花。坐下來，喝杯咖啡，讓剝皮辣椒的辣，幫你整理今天的疲憊。</p>
                     <a href="menu.html" class="card-link">DETAILS ↗</a>
                 </div>
@@ -873,11 +1008,11 @@
 
             <article class="story-card visible" id="news-4">
                 <div class="card-accent muted"></div>
-                
-                <div class="card-body" style="outline: none;">
+                <img src="https://api.kuse.ai/api/file/public-assets/9707794/access/5b2229c338112a7fc3c076eacbeaab47bfd16ac62d25625145ba6e9627840afd" alt="里民愛儲值" style="width: 100%; height: 374.895px; object-fit: cover; display: block;">
+                <div class="card-body" style="">
                     <div class="card-date" style="">2025 · 05 · 12<br><br></div>
                     <h2 class="card-title" style="">里民愛儲值｜瘋狂加碼送<br></h2>
-                    <p class="card-desc" style=""></p><p style="outline: none;"><span style="color: rgb(102, 102, 102); font-size: 14.08px; outline: none;"></span></p><div style=""><span style="font-size: 14.08px;">$2800 大滿足 ｜ 頂級全餐享受，剝皮辣椒系列全面免加價！</span></div><div style=""><span style="font-size: 14.08px;">$1800 人氣首選 ｜ 聚會最推！豪華炸物拼盤搭配雙倍飲品。</span></div><div><span style="font-size: 14.08px;">$800 小小幸福 ｜ 個人限定療癒，給自己的小額午茶首選。</span></div><p></p>
+                    <p class="card-desc" style=""></p><p style=""><span style="color: rgb(102, 102, 102); font-size: 14.08px;"></span></p><div style=""><span style="font-size: 14.08px;">$2800 大滿足 ｜ 頂級全餐享受，剝皮辣椒系列全面免加價！</span></div><div style=""><span style="font-size: 14.08px;">$1800 人氣首選 ｜ 聚會最推！豪華炸物拼盤搭配雙倍飲品。</span></div><div><span style="font-size: 14.08px;">$800 小小幸福 ｜ 個人限定療癒，給自己的小額午茶首選。</span></div><p></p>
 
 
 
@@ -991,5 +1126,7 @@
     </script>
 
     <script src="https://cdn.kuse.ai/sdk.prd.js"></script>
+
+
 
 </body></html>
