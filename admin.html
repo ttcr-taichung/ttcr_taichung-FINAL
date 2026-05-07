@@ -1384,14 +1384,31 @@ async function connectGA4(){
 }
 
 
-// ─── 透過 GAS 代理抓取真實 GA4 數據 ───
+// ─── JSONP 呼叫（繞過 CORS）───
+function jsonp(url, timeout){
+  return new Promise(function(resolve, reject){
+    const cbName = '_gas_cb_' + Date.now();
+    const script = document.createElement('script');
+    const timer = setTimeout(function(){
+      cleanup(); reject(new Error('JSONP timeout'));
+    }, timeout || 15000);
+    function cleanup(){ 
+      delete window[cbName]; 
+      if(script.parentNode) script.parentNode.removeChild(script);
+      clearTimeout(timer);
+    }
+    window[cbName] = function(data){ cleanup(); resolve(data); };
+    script.onerror = function(){ cleanup(); reject(new Error('JSONP script error')); };
+    script.src = url + (url.indexOf('?')>=0?'&':'?') + 'callback=' + cbName;
+    document.head.appendChild(script);
+  });
+}
+
+// ─── 透過 GAS 代理抓取真實 GA4 數據（JSONP 版）───
 async function fetchAllGA4(){
   const url = GAS_URL + '?days=' + days;
-  console.log('[fetchAllGA4] 呼叫 GAS:', url);
-  const res = await fetch(url);
-  console.log('[fetchAllGA4] HTTP status:', res.status);
-  if(!res.ok) throw new Error('GAS 回應錯誤 ' + res.status);
-  const d = await res.json();
+  console.log('[fetchAllGA4] JSONP 呼叫 GAS:', url);
+  const d = await jsonp(url);
   console.log('[fetchAllGA4] 收到數據:', JSON.stringify(d.metrics));
   if(d.error) throw new Error(d.error);
 
@@ -1484,7 +1501,7 @@ async function loadRealGA4(){
 const AUTH_KEY='ttcr_admin_auth';
 const CLIENT_ID='217180060065-hvsp719dn9re739npi1k07hm5v67ieo0.apps.googleusercontent.com';
 const GA4_PROPERTY_ID='534430481';
-const GAS_URL='https://script.google.com/macros/s/AKfycby6TrFxHtasE5eEEZAsJEELwThj2tbnFQ6A45ANTgDD9tHyYK8ek9OiOeMhRJXyVlEP2g/exec';
+const GAS_URL='https://script.google.com/macros/s/AKfycbxFbvVPWxGNpl9V10AjLKDC4ey78-gR6DFiIDA796tYHNPekDOx8zL6GzaEQVHzMopIGQ/exec';
 let gaAccessToken=null;
 let gaPropertyId=null;
 
