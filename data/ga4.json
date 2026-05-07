@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-07T09:25:03.151Z",
+  "updated": "2026-05-07T10:25:03.194Z",
   "d7": {
     "metrics": {
       "users": 15,
       "sessions": 30,
-      "pv": 288,
+      "pv": 295,
       "bounce": 60,
-      "dur": 1225.5297165666668,
+      "dur": 1225.9518507333335,
       "newU": 6
     },
     "trend": {
@@ -33,9 +33,9 @@
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 194,
+        "pv": 198,
         "u": 3,
-        "avgT": 1049.7812107619047,
+        "avgT": 1050.3842595714286,
         "bounce": 52.38095238095239,
         "scrollD": 95
       },
@@ -85,20 +85,38 @@
         "scrollD": 95
       },
       {
+        "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
+        "name": "特色餐食 同齊咖吡 TOGETHER COFFEE - Kuse AI",
+        "pv": 6,
+        "u": 1,
+        "avgT": 56.9907035,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
+        "path": "/pages/空間租賃-同齊咖吡/fLdJhgpyT55vCprfytZ6u7",
+        "name": "空間租賃 同齊咖吡 - Kuse AI",
+        "pv": 6,
+        "u": 1,
+        "avgT": 46.960035,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
+        "path": "/pages/STORY-同齊咖吡-TOGETHER-COFFEE-PROJECT/hVAgA7m2gX5iaXoVtN73YG",
+        "name": "STORY 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
+        "pv": 5,
+        "u": 1,
+        "avgT": 8.7280695,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
         "path": "/pages/加盟計畫-同齊咖吡/kuoJt3goMLcRvRpsj9hzbn",
         "name": "加盟計畫 同齊咖吡 - Kuse AI",
         "pv": 5,
         "u": 1,
         "avgT": 47.3755675,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
-        "name": "特色餐食 同齊咖吡 TOGETHER COFFEE - Kuse AI",
-        "pv": 5,
-        "u": 1,
-        "avgT": 56.9907035,
         "bounce": 100,
         "scrollD": 95
       },
@@ -112,29 +130,11 @@
         "scrollD": 95
       },
       {
-        "path": "/pages/空間租賃-同齊咖吡/fLdJhgpyT55vCprfytZ6u7",
-        "name": "空間租賃 同齊咖吡 - Kuse AI",
-        "pv": 5,
-        "u": 1,
-        "avgT": 46.960035,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
         "path": "/pages/菜單-同齊咖吡-TOGETHER-COFFEE-PROJECT/agerckEFqHfdFqrRHL7geX",
         "name": "菜單 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
         "pv": 5,
         "u": 1,
         "avgT": 48.0784875,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/pages/STORY-同齊咖吡-TOGETHER-COFFEE-PROJECT/hVAgA7m2gX5iaXoVtN73YG",
-        "name": "STORY 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
-        "pv": 4,
-        "u": 1,
-        "avgT": 8.7280695,
         "bounce": 100,
         "scrollD": 95
       },
@@ -205,7 +205,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 50,
+        "pct": 51,
         "color": "#223843"
       },
       {
@@ -220,7 +220,7 @@
       },
       {
         "name": "自然搜尋",
-        "pct": 6,
+        "pct": 5,
         "color": "#7b4fcf"
       }
     ],
@@ -256,9 +256,9 @@
     "metrics": {
       "users": 20,
       "sessions": 45,
-      "pv": 392,
+      "pv": 399,
       "bounce": 40,
-      "dur": 986.2304318888889,
+      "dur": 986.5118546666666,
       "newU": 9
     },
     "trend": {
@@ -294,9 +294,9 @@
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 264,
+        "pv": 268,
         "u": 4,
-        "avgT": 764.4636556470588,
+        "avgT": 764.8361269705882,
         "bounce": 32.35294117647059,
         "scrollD": 75
       },
@@ -355,20 +355,38 @@
         "scrollD": 95
       },
       {
+        "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
+        "name": "特色餐食 同齊咖吡 TOGETHER COFFEE - Kuse AI",
+        "pv": 6,
+        "u": 1,
+        "avgT": 56.9907035,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
+        "path": "/pages/空間租賃-同齊咖吡/fLdJhgpyT55vCprfytZ6u7",
+        "name": "空間租賃 同齊咖吡 - Kuse AI",
+        "pv": 6,
+        "u": 1,
+        "avgT": 46.960035,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
+        "path": "/pages/STORY-同齊咖吡-TOGETHER-COFFEE-PROJECT/hVAgA7m2gX5iaXoVtN73YG",
+        "name": "STORY 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
+        "pv": 5,
+        "u": 1,
+        "avgT": 8.7280695,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
         "path": "/pages/加盟計畫-同齊咖吡/kuoJt3goMLcRvRpsj9hzbn",
         "name": "加盟計畫 同齊咖吡 - Kuse AI",
         "pv": 5,
         "u": 1,
         "avgT": 47.3755675,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
-        "name": "特色餐食 同齊咖吡 TOGETHER COFFEE - Kuse AI",
-        "pv": 5,
-        "u": 1,
-        "avgT": 56.9907035,
         "bounce": 100,
         "scrollD": 95
       },
@@ -382,29 +400,11 @@
         "scrollD": 95
       },
       {
-        "path": "/pages/空間租賃-同齊咖吡/fLdJhgpyT55vCprfytZ6u7",
-        "name": "空間租賃 同齊咖吡 - Kuse AI",
-        "pv": 5,
-        "u": 1,
-        "avgT": 46.960035,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
         "path": "/pages/菜單-同齊咖吡-TOGETHER-COFFEE-PROJECT/agerckEFqHfdFqrRHL7geX",
         "name": "菜單 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
         "pv": 5,
         "u": 1,
         "avgT": 48.0784875,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/pages/STORY-同齊咖吡-TOGETHER-COFFEE-PROJECT/hVAgA7m2gX5iaXoVtN73YG",
-        "name": "STORY 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
-        "pv": 4,
-        "u": 1,
-        "avgT": 8.7280695,
         "bounce": 100,
         "scrollD": 95
       },
@@ -480,12 +480,12 @@
       },
       {
         "name": "社群媒體",
-        "pct": 16,
+        "pct": 15,
         "color": "#1e8a4a"
       },
       {
         "name": "其他",
-        "pct": 16,
+        "pct": 15,
         "color": "#3a7ca5"
       },
       {
@@ -531,9 +531,9 @@
     "metrics": {
       "users": 20,
       "sessions": 45,
-      "pv": 392,
+      "pv": 399,
       "bounce": 40,
-      "dur": 986.2304318888889,
+      "dur": 986.5118546666666,
       "newU": 9
     },
     "trend": {
@@ -569,9 +569,9 @@
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 264,
+        "pv": 268,
         "u": 4,
-        "avgT": 764.4636556470588,
+        "avgT": 764.8361269705882,
         "bounce": 32.35294117647059,
         "scrollD": 75
       },
@@ -630,20 +630,38 @@
         "scrollD": 95
       },
       {
+        "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
+        "name": "特色餐食 同齊咖吡 TOGETHER COFFEE - Kuse AI",
+        "pv": 6,
+        "u": 1,
+        "avgT": 56.9907035,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
+        "path": "/pages/空間租賃-同齊咖吡/fLdJhgpyT55vCprfytZ6u7",
+        "name": "空間租賃 同齊咖吡 - Kuse AI",
+        "pv": 6,
+        "u": 1,
+        "avgT": 46.960035,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
+        "path": "/pages/STORY-同齊咖吡-TOGETHER-COFFEE-PROJECT/hVAgA7m2gX5iaXoVtN73YG",
+        "name": "STORY 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
+        "pv": 5,
+        "u": 1,
+        "avgT": 8.7280695,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
         "path": "/pages/加盟計畫-同齊咖吡/kuoJt3goMLcRvRpsj9hzbn",
         "name": "加盟計畫 同齊咖吡 - Kuse AI",
         "pv": 5,
         "u": 1,
         "avgT": 47.3755675,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
-        "name": "特色餐食 同齊咖吡 TOGETHER COFFEE - Kuse AI",
-        "pv": 5,
-        "u": 1,
-        "avgT": 56.9907035,
         "bounce": 100,
         "scrollD": 95
       },
@@ -657,29 +675,11 @@
         "scrollD": 95
       },
       {
-        "path": "/pages/空間租賃-同齊咖吡/fLdJhgpyT55vCprfytZ6u7",
-        "name": "空間租賃 同齊咖吡 - Kuse AI",
-        "pv": 5,
-        "u": 1,
-        "avgT": 46.960035,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
         "path": "/pages/菜單-同齊咖吡-TOGETHER-COFFEE-PROJECT/agerckEFqHfdFqrRHL7geX",
         "name": "菜單 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
         "pv": 5,
         "u": 1,
         "avgT": 48.0784875,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/pages/STORY-同齊咖吡-TOGETHER-COFFEE-PROJECT/hVAgA7m2gX5iaXoVtN73YG",
-        "name": "STORY 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
-        "pv": 4,
-        "u": 1,
-        "avgT": 8.7280695,
         "bounce": 100,
         "scrollD": 95
       },
@@ -755,12 +755,12 @@
       },
       {
         "name": "社群媒體",
-        "pct": 16,
+        "pct": 15,
         "color": "#1e8a4a"
       },
       {
         "name": "其他",
-        "pct": 16,
+        "pct": 15,
         "color": "#3a7ca5"
       },
       {
