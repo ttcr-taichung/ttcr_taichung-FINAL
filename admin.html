@@ -10,7 +10,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://accounts.google.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://static.cloudflareinsights.com https://apis.google.com; connect-src 'self' https://script.google.com https://accounts.google.com https://oauth2.googleapis.com https://analyticsdata.googleapis.com https://www.google-analytics.com https://region1.google-analytics.com; frame-src https://datastudio.google.com https://lookerstudio.google.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.googleapis.com https://fonts.gstatic.com;">
 <title>同齊咖吡 · 訪客分析後台 v2</title>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1RH1Z5918"></script>
 <script>
@@ -1384,33 +1383,16 @@ async function connectGA4(){
 }
 
 
-// ─── JSONP 呼叫（繞過 CORS）───
-function jsonp(url, timeout){
-  return new Promise(function(resolve, reject){
-    const cbName = '_gas_cb_' + Date.now();
-    const script = document.createElement('script');
-    const timer = setTimeout(function(){
-      cleanup(); reject(new Error('JSONP timeout'));
-    }, timeout || 15000);
-    function cleanup(){ 
-      delete window[cbName]; 
-      if(script.parentNode) script.parentNode.removeChild(script);
-      clearTimeout(timer);
-    }
-    window[cbName] = function(data){ cleanup(); resolve(data); };
-    script.onerror = function(){ cleanup(); reject(new Error('JSONP script error')); };
-    script.src = url + (url.indexOf('?')>=0?'&':'?') + 'callback=' + cbName;
-    document.head.appendChild(script);
-  });
-}
-
-// ─── 透過 GAS 代理抓取真實 GA4 數據（JSONP 版）───
+// ─── 讀取 GitHub 上的靜態 GA4 JSON ───
 async function fetchAllGA4(){
-  const url = GAS_URL + '?days=' + days;
-  console.log('[fetchAllGA4] JSONP 呼叫 GAS:', url);
-  const d = await jsonp(url);
-  console.log('[fetchAllGA4] 收到數據:', JSON.stringify(d.metrics));
-  if(d.error) throw new Error(d.error);
+  const res = await fetch('/data/ga4.json?_=' + Date.now());
+  if(!res.ok) throw new Error('ga4.json 尚未產生，請先執行 GAS');
+  const all = await res.json();
+  // 依 days 選對應的數據區間
+  const key = days <= 7 ? 'd7' : days <= 30 ? 'd30' : 'd90';
+  const d = all[key] || all.d30;
+  console.log('[fetchAllGA4] 讀取 ga4.json 成功，updated:', all.updated);
+  if(!d) throw new Error('ga4.json 格式錯誤');
 
   const fb = genData(days); // fallback 結構補完
 
@@ -1501,7 +1483,7 @@ async function loadRealGA4(){
 const AUTH_KEY='ttcr_admin_auth';
 const CLIENT_ID='217180060065-hvsp719dn9re739npi1k07hm5v67ieo0.apps.googleusercontent.com';
 const GA4_PROPERTY_ID='534430481';
-const GAS_URL='https://script.google.com/macros/s/AKfycbxFbvVPWxGNpl9V10AjLKDC4ey78-gR6DFiIDA796tYHNPekDOx8zL6GzaEQVHzMopIGQ/exec';
+// GA4 數據由 GAS 定時寫入 /data/ga4.json，admin.html 直接讀取同域 JSON
 let gaAccessToken=null;
 let gaPropertyId=null;
 
