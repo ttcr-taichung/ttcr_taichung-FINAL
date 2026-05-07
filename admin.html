@@ -24,7 +24,7 @@
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
-<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://accounts.google.com/gsi/client"></script>
 <style>
 :root {
   --bg:         #eef3f5;
@@ -1558,18 +1558,34 @@ function signOut(){
   location.reload();
 }
 
-window.addEventListener('DOMContentLoaded',()=>{
-  console.log('[DOMContentLoaded] 檢查 session...');
+function initApp(){
+  console.log('[initApp] 檢查 session...');
   const sessionValid = isValidSession();
-  console.log('[DOMContentLoaded] session valid:', sessionValid);
+  console.log('[initApp] session valid:', sessionValid);
   if(sessionValid){
     const d=JSON.parse(localStorage.getItem(AUTH_KEY));
-    console.log('[DOMContentLoaded] 自動登入:', d.name||d.email);
+    console.log('[initApp] 自動登入:', d.name||d.email);
     enterApp(d.name||d.email);
     return;
   }
-  console.log('[DOMContentLoaded] 顯示登入頁');
+  console.log('[initApp] 顯示登入頁');
   showLoginPage();
+}
+
+// 等 GSI 載入完成後才初始化
+window.addEventListener('load', ()=>{
+  if(typeof google !== 'undefined' && google.accounts){
+    initApp();
+  } else {
+    // GSI 尚未就緒，等 100ms 重試
+    const wait = setInterval(()=>{
+      if(typeof google !== 'undefined' && google.accounts){
+        clearInterval(wait);
+        initApp();
+      }
+    }, 100);
+    setTimeout(()=>{ clearInterval(wait); initApp(); }, 5000); // 最多等 5 秒
+  }
 });
 
 function showLoginPage(){
