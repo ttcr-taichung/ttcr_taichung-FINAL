@@ -76,110 +76,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             align-items: center;
         }
 
-        .logo-link {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo {
-            height: 70px;
-            width: auto;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2.5rem;
-            align-items: center;
-        }
-
-        .nav-link {
-            font-family: var(--font-sans);
-            font-size: 1rem;
-            font-weight: 500;
-            color: var(--brand-blue);
-            text-decoration: none;
-            position: relative;
+        .logo { display: block; height: 90px; text-decoration: none; }
+        .logo img { height: 100%; width: auto; object-fit: contain; }
+        .nav-links { display: flex; gap: 3rem; list-style: none; }
+        .nav-links a {
+            text-decoration: none; color: #2c2c2c; font-weight: 700;
+            font-size: 0.95rem; letter-spacing: 1px;
             transition: color 0.3s ease;
         }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--brand-blue);
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
-
-        .nav-link.active {
-            font-weight: 600;
-        }
-
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            z-index: 1001;
-        }
-
-        .hamburger span {
-            width: 25px;
-            height: 3px;
-            background-color: var(--brand-blue);
-            transition: all 0.3s ease;
-        }
-
-        .hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(8px, 8px);
-        }
-
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -7px);
-        }
-
-        .mobile-nav {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background-color: var(--bg-cream);
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            z-index: 999;
-        }
-
-        .mobile-nav.active {
-            display: flex;
-        }
-
-        .mobile-nav-link {
-            font-family: var(--font-sans);
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: var(--brand-blue);
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-
-        .mobile-nav-link:hover {
-            transform: scale(1.1);
-        }
+        .nav-links a:hover, .nav-links a.active { color: var(--brand-blue); }
+        .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+        .hamburger span { width: 25px; height: 2px; background-color: var(--brand-blue); transition: all 0.3s ease; }
 
         .hero {
             height: 70vh;
@@ -601,12 +508,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         @media (max-width: 768px) {
             .nav-links {
-                display: none;
+                position: fixed; top: 90px; left: -100%; width: 100%;
+                height: calc(100vh - 90px); background-color: #faf8f5;
+                flex-direction: column; align-items: center; justify-content: center;
+                gap: 2rem; transition: left 0.3s ease;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             }
-
-            .hamburger {
-                display: flex;
-            }
+            .nav-links.active { left: 0; }
+            .hamburger { display: flex; }
+            .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+            .hamburger.active span:nth-child(2) { opacity: 0; }
+            .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(7px,-7px); }
 
             .hero-title {
                 font-size: 2.5rem;
@@ -656,35 +568,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo-link">
-                <img src="https://api.kuse.ai/api/folder/v1/file/9d637fe0931f19554fba54df05da1ae9e0c2c89d44b3e656eedba1729d226de2_3016821.png" alt="Logo" class="logo">
-            </a>
-            <div class="nav-links">
-                <a href="menu.html" class="nav-link">菜單</a>
-                <a href="coffee-beans.html" class="nav-link active">自烘咖啡豆</a>
-                <a href="franchise.html" class="nav-link">加盟計畫</a>
-                <a href="space-rental.html" class="nav-link">空間租賃</a>
-                <a href="location.html" class="nav-link">店面位置</a>
-                <a href="story.html" class="nav-link">品牌故事</a>
-                <a href="gallery.html" class="nav-link">特色餐食</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a href="index.html" class="logo"><img src="./logo.png" alt="同齊咖吡"></a>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="menu.html">菜單</a>
+                <a href="coffee-beans.html" class="active">自烘咖啡豆</a>
+                <a href="franchise.html">加盟計畫</a>
+                <a href="space-rental.html">空間租賃</a>
+                <a href="location.html">店面位置</a>
+                <a href="story.html">品牌故事</a>
+                <a href="gallery.html">特色餐食</a>
             </div>
         </div>
     </nav>
-
-    <div class="mobile-nav">
-        <a href="menu.html" class="mobile-nav-link">菜單</a>
-        <a href="coffee-beans.html" class="mobile-nav-link">自烘咖啡豆</a>
-        <a href="franchise.html" class="mobile-nav-link">加盟計畫</a>
-        <a href="space-rental.html" class="mobile-nav-link">空間租賃</a>
-        <a href="location.html" class="mobile-nav-link">店面位置</a>
-        <a href="story.html" class="mobile-nav-link">品牌故事</a>
-        <a href="gallery.html" class="mobile-nav-link">特色餐食</a>
-    </div>
 
     <section class="hero">
         <div class="hero-content">
@@ -993,9 +891,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script>
         const cursor = document.querySelector(`.custom-cursor`);
-        const hamburger = document.querySelector(`.hamburger`);
-        const mobileNav = document.querySelector(`.mobile-nav`);
-        const navbar = document.querySelector(`.navbar`);
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const navbar = document.querySelector('.navbar');
         const categoryTabs = document.querySelectorAll(`.category-tab`);
         const contentSections = document.querySelectorAll(`.content-section`);
 
@@ -1009,9 +907,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             el.addEventListener(`mouseleave`, () => cursor.classList.remove(`hover`));
         });
 
-        hamburger.addEventListener(`click`, () => {
-            hamburger.classList.toggle(`active`);
-            mobileNav.classList.toggle(`active`);
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(item => {
+            item.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
         });
 
         window.addEventListener(`scroll`, () => {
