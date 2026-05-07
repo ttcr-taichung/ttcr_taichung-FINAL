@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-07T14:25:03.757Z",
+  "updated": "2026-05-07T15:25:03.728Z",
   "d7": {
     "metrics": {
-      "users": 15,
-      "sessions": 31,
-      "pv": 295,
-      "bounce": 61.29032258064516,
-      "dur": 1186.4050168387096,
+      "users": 16,
+      "sessions": 32,
+      "pv": 297,
+      "bounce": 62.5,
+      "dur": 1184.86985621875,
       "newU": 6
     },
     "trend": {
@@ -20,13 +20,13 @@
         3,
         3,
         4,
-        5
+        6
       ],
       "sessions": [
         6,
         5,
         7,
-        13
+        14
       ]
     },
     "pages": [
@@ -69,9 +69,9 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 7,
+        "pv": 8,
         "u": 1,
-        "avgT": 4895.305894,
+        "avgT": 2447.652947,
         "bounce": 100,
         "scrollD": 95
       },
@@ -157,6 +157,15 @@
         "scrollD": 0
       },
       {
+        "path": "/news.html",
+        "name": "最新消息",
+        "pv": 2,
+        "u": 2,
+        "avgT": 482.062377,
+        "bounce": 100,
+        "scrollD": 50
+      },
+      {
         "path": "/collaboration.html",
         "name": "異界合作",
         "pv": 1,
@@ -171,15 +180,6 @@
         "pv": 1,
         "u": 1,
         "avgT": 480.561774,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/news.html",
-        "name": "最新消息",
-        "pv": 1,
-        "u": 1,
-        "avgT": 943.46214,
         "bounce": 100,
         "scrollD": 95
       },
@@ -200,12 +200,21 @@
         "avgT": 0,
         "bounce": 100,
         "scrollD": 0
+      },
+      {
+        "path": "/gallery.html",
+        "name": "特色餐食",
+        "pv": 0,
+        "u": 1,
+        "avgT": 1116.617263,
+        "bounce": 100,
+        "scrollD": 95
       }
     ],
     "sources": [
       {
         "name": "直接流量",
-        "pct": 53,
+        "pct": 54,
         "color": "#223843"
       },
       {
@@ -229,7 +238,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 5
+          "users": 7
         },
         {
           "flag": "🇺🇸",
@@ -247,6 +256,16 @@
           "name": "台中市",
           "users": 5,
           "subs": []
+        },
+        {
+          "name": "新竹市",
+          "users": 1,
+          "subs": []
+        },
+        {
+          "name": "台北市",
+          "users": 1,
+          "subs": []
         }
       ]
     },
@@ -254,11 +273,11 @@
   },
   "d30": {
     "metrics": {
-      "users": 20,
-      "sessions": 46,
-      "pv": 399,
-      "bounce": 41.30434782608695,
-      "dur": 965.0659447826085,
+      "users": 21,
+      "sessions": 47,
+      "pv": 401,
+      "bounce": 42.5531914893617,
+      "dur": 968.730071,
       "newU": 9
     },
     "trend": {
@@ -278,7 +297,7 @@
         3,
         3,
         4,
-        5
+        6
       ],
       "sessions": [
         2,
@@ -287,7 +306,7 @@
         6,
         5,
         7,
-        13
+        14
       ]
     },
     "pages": [
@@ -339,9 +358,9 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 7,
+        "pv": 8,
         "u": 1,
-        "avgT": 4895.305894,
+        "avgT": 2447.652947,
         "bounce": 100,
         "scrollD": 95
       },
@@ -427,6 +446,15 @@
         "scrollD": 0
       },
       {
+        "path": "/news.html",
+        "name": "最新消息",
+        "pv": 2,
+        "u": 2,
+        "avgT": 482.062377,
+        "bounce": 100,
+        "scrollD": 50
+      },
+      {
         "path": "/collaboration.html",
         "name": "異界合作",
         "pv": 1,
@@ -441,15 +469,6 @@
         "pv": 1,
         "u": 1,
         "avgT": 480.561774,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/news.html",
-        "name": "最新消息",
-        "pv": 1,
-        "u": 1,
-        "avgT": 943.46214,
         "bounce": 100,
         "scrollD": 95
       },
@@ -475,7 +494,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 66,
+        "pct": 67,
         "color": "#223843"
       },
       {
@@ -499,7 +518,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 6
+          "users": 7
         },
         {
           "flag": "🇺🇸",
@@ -516,6 +535,11 @@
         {
           "name": "台中市",
           "users": 5,
+          "subs": []
+        },
+        {
+          "name": "新竹市",
+          "users": 1,
           "subs": []
         },
         {
@@ -529,11 +553,11 @@
   },
   "d90": {
     "metrics": {
-      "users": 20,
-      "sessions": 46,
-      "pv": 399,
-      "bounce": 41.30434782608695,
-      "dur": 965.0659447826085,
+      "users": 21,
+      "sessions": 47,
+      "pv": 401,
+      "bounce": 42.5531914893617,
+      "dur": 968.730071,
       "newU": 9
     },
     "trend": {
@@ -553,7 +577,7 @@
         3,
         3,
         4,
-        5
+        6
       ],
       "sessions": [
         2,
@@ -562,7 +586,7 @@
         6,
         5,
         7,
-        13
+        14
       ]
     },
     "pages": [
@@ -614,9 +638,9 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 7,
+        "pv": 8,
         "u": 1,
-        "avgT": 4895.305894,
+        "avgT": 2447.652947,
         "bounce": 100,
         "scrollD": 95
       },
@@ -702,6 +726,15 @@
         "scrollD": 0
       },
       {
+        "path": "/news.html",
+        "name": "最新消息",
+        "pv": 2,
+        "u": 2,
+        "avgT": 482.062377,
+        "bounce": 100,
+        "scrollD": 50
+      },
+      {
         "path": "/collaboration.html",
         "name": "異界合作",
         "pv": 1,
@@ -716,15 +749,6 @@
         "pv": 1,
         "u": 1,
         "avgT": 480.561774,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/news.html",
-        "name": "最新消息",
-        "pv": 1,
-        "u": 1,
-        "avgT": 943.46214,
         "bounce": 100,
         "scrollD": 95
       },
@@ -750,7 +774,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 66,
+        "pct": 67,
         "color": "#223843"
       },
       {
@@ -774,7 +798,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 6
+          "users": 7
         },
         {
           "flag": "🇺🇸",
@@ -791,6 +815,11 @@
         {
           "name": "台中市",
           "users": 5,
+          "subs": []
+        },
+        {
+          "name": "新竹市",
+          "users": 1,
           "subs": []
         },
         {
