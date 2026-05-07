@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-07T17:25:03.049Z",
+  "updated": "2026-05-07T18:25:03.049Z",
   "d7": {
     "metrics": {
-      "users": 13,
-      "sessions": 26,
-      "pv": 281,
-      "bounce": 69.23076923076923,
-      "dur": 1408.2610891923077,
-      "newU": 5
+      "users": 14,
+      "sessions": 27,
+      "pv": 284,
+      "bounce": 70.37037037037037,
+      "dur": 1396.9678086296296,
+      "newU": 6
     },
     "trend": {
       "dates": [
@@ -18,12 +18,12 @@
       "users": [
         3,
         4,
-        6
+        7
       ],
       "sessions": [
         5,
         7,
-        14
+        15
       ]
     },
     "pages": [
@@ -66,11 +66,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 8,
-        "u": 1,
-        "avgT": 2447.652947,
+        "pv": 9,
+        "u": 2,
+        "avgT": 2999.324204,
         "bounce": 100,
-        "scrollD": 95
+        "scrollD": 50
       },
       {
         "path": "/pages/STORES-同齊咖吡/8LGZRoU2iLGdH7ZLsm4VLv",
@@ -163,6 +163,15 @@
         "scrollD": 50
       },
       {
+        "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 1,
+        "u": 1,
+        "avgT": 0,
+        "bounce": 100,
+        "scrollD": 0
+      },
+      {
         "path": "/collaboration.html",
         "name": "異界合作",
         "pv": 1,
@@ -181,6 +190,15 @@
         "scrollD": 95
       },
       {
+        "path": "/gallery.html",
+        "name": "特色餐食",
+        "pv": 1,
+        "u": 1,
+        "avgT": 1116.617263,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
         "path": "/pages/最新消息-同齊咖吡-TOGETHER-COFFEE-PROJECT/T52eZPE7WZ2Jp5T8mieqdn",
         "name": "最新消息 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
         "pv": 1,
@@ -188,30 +206,12 @@
         "avgT": 0,
         "bounce": 100,
         "scrollD": 0
-      },
-      {
-        "path": "/pages/自烘咖啡豆-嚴選世界各地優質生豆/aWjYxehZUxaE5ntR3mnnec",
-        "name": "自烘咖啡豆 嚴選世界各地優質生豆 - Kuse AI",
-        "pv": 1,
-        "u": 1,
-        "avgT": 0,
-        "bounce": 100,
-        "scrollD": 0
-      },
-      {
-        "path": "/gallery.html",
-        "name": "特色餐食",
-        "pv": 0,
-        "u": 1,
-        "avgT": 1116.617263,
-        "bounce": 100,
-        "scrollD": 95
       }
     ],
     "sources": [
       {
         "name": "直接流量",
-        "pct": 45,
+        "pct": 47,
         "color": "#223843"
       },
       {
@@ -240,7 +240,7 @@
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 2
+          "users": 3
         },
         {
           "flag": "🇨🇳",
@@ -270,12 +270,12 @@
   },
   "d30": {
     "metrics": {
-      "users": 21,
-      "sessions": 47,
-      "pv": 401,
-      "bounce": 42.5531914893617,
-      "dur": 968.730071,
-      "newU": 9
+      "users": 22,
+      "sessions": 48,
+      "pv": 404,
+      "bounce": 43.75,
+      "dur": 971.5344968958334,
+      "newU": 10
     },
     "trend": {
       "dates": [
@@ -294,7 +294,7 @@
         3,
         3,
         4,
-        6
+        7
       ],
       "sessions": [
         2,
@@ -303,7 +303,7 @@
         6,
         5,
         7,
-        14
+        15
       ]
     },
     "pages": [
@@ -355,11 +355,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 8,
-        "u": 1,
-        "avgT": 2447.652947,
+        "pv": 9,
+        "u": 2,
+        "avgT": 2999.324204,
         "bounce": 100,
-        "scrollD": 95
+        "scrollD": 50
       },
       {
         "path": "/pages/STORES-同齊咖吡/8LGZRoU2iLGdH7ZLsm4VLv",
@@ -452,6 +452,15 @@
         "scrollD": 50
       },
       {
+        "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 1,
+        "u": 1,
+        "avgT": 0,
+        "bounce": 100,
+        "scrollD": 0
+      },
+      {
         "path": "/collaboration.html",
         "name": "異界合作",
         "pv": 1,
@@ -470,22 +479,13 @@
         "scrollD": 95
       },
       {
-        "path": "/pages/最新消息-同齊咖吡-TOGETHER-COFFEE-PROJECT/T52eZPE7WZ2Jp5T8mieqdn",
-        "name": "最新消息 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
+        "path": "/gallery.html",
+        "name": "特色餐食",
         "pv": 1,
         "u": 1,
-        "avgT": 0,
+        "avgT": 1116.617263,
         "bounce": 100,
-        "scrollD": 0
-      },
-      {
-        "path": "/pages/自烘咖啡豆-嚴選世界各地優質生豆/aWjYxehZUxaE5ntR3mnnec",
-        "name": "自烘咖啡豆 嚴選世界各地優質生豆 - Kuse AI",
-        "pv": 1,
-        "u": 1,
-        "avgT": 0,
-        "bounce": 100,
-        "scrollD": 0
+        "scrollD": 95
       }
     ],
     "sources": [
@@ -520,7 +520,7 @@
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 2
+          "users": 3
         },
         {
           "flag": "🇨🇳",
@@ -550,12 +550,12 @@
   },
   "d90": {
     "metrics": {
-      "users": 21,
-      "sessions": 47,
-      "pv": 401,
-      "bounce": 42.5531914893617,
-      "dur": 968.730071,
-      "newU": 9
+      "users": 22,
+      "sessions": 48,
+      "pv": 404,
+      "bounce": 43.75,
+      "dur": 971.5344968958334,
+      "newU": 10
     },
     "trend": {
       "dates": [
@@ -574,7 +574,7 @@
         3,
         3,
         4,
-        6
+        7
       ],
       "sessions": [
         2,
@@ -583,7 +583,7 @@
         6,
         5,
         7,
-        14
+        15
       ]
     },
     "pages": [
@@ -635,11 +635,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 8,
-        "u": 1,
-        "avgT": 2447.652947,
+        "pv": 9,
+        "u": 2,
+        "avgT": 2999.324204,
         "bounce": 100,
-        "scrollD": 95
+        "scrollD": 50
       },
       {
         "path": "/pages/STORES-同齊咖吡/8LGZRoU2iLGdH7ZLsm4VLv",
@@ -732,6 +732,15 @@
         "scrollD": 50
       },
       {
+        "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 1,
+        "u": 1,
+        "avgT": 0,
+        "bounce": 100,
+        "scrollD": 0
+      },
+      {
         "path": "/collaboration.html",
         "name": "異界合作",
         "pv": 1,
@@ -750,22 +759,13 @@
         "scrollD": 95
       },
       {
-        "path": "/pages/最新消息-同齊咖吡-TOGETHER-COFFEE-PROJECT/T52eZPE7WZ2Jp5T8mieqdn",
-        "name": "最新消息 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
+        "path": "/gallery.html",
+        "name": "特色餐食",
         "pv": 1,
         "u": 1,
-        "avgT": 0,
+        "avgT": 1116.617263,
         "bounce": 100,
-        "scrollD": 0
-      },
-      {
-        "path": "/pages/自烘咖啡豆-嚴選世界各地優質生豆/aWjYxehZUxaE5ntR3mnnec",
-        "name": "自烘咖啡豆 嚴選世界各地優質生豆 - Kuse AI",
-        "pv": 1,
-        "u": 1,
-        "avgT": 0,
-        "bounce": 100,
-        "scrollD": 0
+        "scrollD": 95
       }
     ],
     "sources": [
@@ -800,7 +800,7 @@
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 2
+          "users": 3
         },
         {
           "flag": "🇨🇳",
