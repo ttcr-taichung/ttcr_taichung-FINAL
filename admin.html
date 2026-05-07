@@ -305,8 +305,8 @@ code{font-family:'DM Mono',monospace;font-size:12px;background:var(--bg);border:
     <div class="conn-badge">
       <div class="dot demo" id="sdot"></div>
       <div>
-        <div style="font-size:11px;color:var(--ts)" id="stxt">示範模式</div>
-        <div style="font-size:10px;color:var(--tm)" id="ssub">模擬數據</div>
+        <div style="font-size:11px;color:var(--ts)" id="stxt">連接中…</div>
+        <div style="font-size:10px;color:var(--tm)" id="ssub">GA4 即時數據</div>
       </div>
     </div>
   </div>
@@ -324,7 +324,7 @@ code{font-family:'DM Mono',monospace;font-size:12px;background:var(--bg);border:
       </div>
     </div>
     <div class="tb-r">
-      <span class="demo-pill" id="dpill">⚡ 示範模式</span>
+      <span class="demo-pill" id="dpill" style="display:none">⚡ 示範模式</span>
       <button class="btn" onclick="refresh()">↻ 刷新</button>
       <button class="btn pri" onclick="exportCSV()">↓ 匯出</button>
     </div>
@@ -760,7 +760,6 @@ gtag('config', 'G-J1RH1Z5918', {
           <button class="btn pri" onclick="refresh()" style="margin-left:auto">↻ 重新載入</button>
         </div>
         <div style="display:flex;gap:8px;align-items:center">
-          <button class="btn" onclick="loadDemo()">使用示範數據</button>
           <button class="btn" onclick="signOut()" style="color:var(--err);border-color:var(--err)">登出</button>
           <span style="font-size:12px;color:var(--tm)" id="cfg-msg"></span>
         </div>
@@ -1347,20 +1346,8 @@ function refresh(){
 }
 
 function loadDemo(){
-  document.getElementById('sdot').className='dot demo';
-  document.getElementById('stxt').textContent='示範模式';
-  document.getElementById('ssub').textContent='模擬數據';
-  document.getElementById('dpill').style.display='';
-  sv('overview');
-  showOv();
-  setTimeout(()=>{
-    allData=genData(days);
-    renderOverview(allData);
-    renderHeatmap(allData);
-    renderConversion(allData);
-    hideOv();
-    toast('已載入示範數據');
-  },500);
+  // 不再主動進入示範模式，直接嘗試載入真實數據
+  loadRealGA4();
 }
 
 // 「連接 GA4」按鈕：GAS 代理直接測試連線
@@ -1473,14 +1460,10 @@ async function loadRealGA4(){
   } catch(e){
     console.error('[loadRealGA4 ERROR]', e.message, e.stack);
     toast('GA4 載入失敗：'+e.message.slice(0,60));
-    allData=genData(days);
-    document.getElementById('sdot').className='dot demo';
-    document.getElementById('stxt').textContent='示範模式';
-    document.getElementById('dpill').style.display='';
+    document.getElementById('sdot').className='dot';
+    document.getElementById('stxt').textContent='載入失敗';
+    document.getElementById('ssub').textContent=e.message.slice(0,30);
     updateConnStatus('demo');
-    renderOverview(allData);
-    renderHeatmap(allData);
-    renderConversion(allData);
   } finally{ hideOv(); }
 }
 
