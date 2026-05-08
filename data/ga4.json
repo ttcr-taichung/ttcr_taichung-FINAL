@@ -1,32 +1,35 @@
 {
-  "updated": "2026-05-08T21:25:03.038Z",
+  "updated": "2026-05-08T22:25:02.909Z",
   "d7": {
     "metrics": {
-      "users": 33,
-      "sessions": 55,
-      "pv": 370,
-      "bounce": 70.9090909090909,
-      "dur": 407.60402047272726,
-      "newU": 23
+      "users": 34,
+      "sessions": 56,
+      "pv": 371,
+      "bounce": 71.42857142857143,
+      "dur": 400.32537725000003,
+      "newU": 24
     },
     "trend": {
       "dates": [
         "05/05",
         "05/06",
         "05/07",
-        "05/08"
+        "05/08",
+        "05/09"
       ],
       "users": [
         3,
         4,
         7,
-        19
+        19,
+        1
       ],
       "sessions": [
         5,
         7,
         15,
-        28
+        28,
+        1
       ]
     },
     "pages": [
@@ -184,6 +187,15 @@
         "scrollD": 0
       },
       {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 2,
+        "u": 3,
+        "avgT": 120.41860033333334,
+        "bounce": 100,
+        "scrollD": 33
+      },
+      {
         "path": "/gallery.html",
         "name": "特色餐食",
         "pv": 2,
@@ -200,21 +212,12 @@
         "avgT": 0.121253,
         "bounce": 0,
         "scrollD": 0
-      },
-      {
-        "path": "/pages/自烘咖啡豆-嚴選世界各地優質生豆/aWjYxehZUxaE5ntR3mnnec",
-        "name": "自烘咖啡豆 嚴選世界各地優質生豆 - Kuse AI",
-        "pv": 2,
-        "u": 1,
-        "avgT": 0.100567,
-        "bounce": 0,
-        "scrollD": 0
       }
     ],
     "sources": [
       {
         "name": "直接流量",
-        "pct": 51,
+        "pct": 52,
         "color": "#223843"
       },
       {
@@ -253,6 +256,11 @@
         {
           "flag": "🇨🇳",
           "name": "中國",
+          "users": 1
+        },
+        {
+          "flag": "🌐",
+          "name": "Iraq",
           "users": 1
         }
       ],
@@ -298,12 +306,12 @@
   },
   "d30": {
     "metrics": {
-      "users": 41,
-      "sessions": 76,
-      "pv": 490,
-      "bounce": 53.94736842105263,
-      "dur": 412.2861334736842,
-      "newU": 27
+      "users": 42,
+      "sessions": 77,
+      "pv": 491,
+      "bounce": 54.54545454545454,
+      "dur": 406.93176810389605,
+      "newU": 28
     },
     "trend": {
       "dates": [
@@ -314,7 +322,8 @@
         "05/05",
         "05/06",
         "05/07",
-        "05/08"
+        "05/08",
+        "05/09"
       ],
       "users": [
         2,
@@ -324,7 +333,8 @@
         3,
         4,
         7,
-        19
+        19,
+        1
       ],
       "sessions": [
         2,
@@ -334,7 +344,8 @@
         5,
         7,
         15,
-        28
+        28,
+        1
       ]
     },
     "pages": [
@@ -501,6 +512,15 @@
         "scrollD": 0
       },
       {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 2,
+        "u": 3,
+        "avgT": 120.41860033333334,
+        "bounce": 100,
+        "scrollD": 33
+      },
+      {
         "path": "/gallery.html",
         "name": "特色餐食",
         "pv": 2,
@@ -508,15 +528,6 @@
         "avgT": 549.74284,
         "bounce": 50,
         "scrollD": 50
-      },
-      {
-        "path": "/pages/最新消息-同齊咖吡-TOGETHER-COFFEE-PROJECT/T52eZPE7WZ2Jp5T8mieqdn",
-        "name": "最新消息 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
-        "pv": 2,
-        "u": 1,
-        "avgT": 0.121253,
-        "bounce": 0,
-        "scrollD": 0
       }
     ],
     "sources": [
@@ -562,6 +573,11 @@
           "flag": "🇨🇳",
           "name": "中國",
           "users": 1
+        },
+        {
+          "flag": "🌐",
+          "name": "Iraq",
+          "users": 1
         }
       ],
       "tw": [
@@ -606,12 +622,12 @@
   },
   "d90": {
     "metrics": {
-      "users": 41,
-      "sessions": 76,
-      "pv": 490,
-      "bounce": 53.94736842105263,
-      "dur": 412.2861334736842,
-      "newU": 27
+      "users": 42,
+      "sessions": 77,
+      "pv": 491,
+      "bounce": 54.54545454545454,
+      "dur": 406.93176810389605,
+      "newU": 28
     },
     "trend": {
       "dates": [
@@ -622,7 +638,8 @@
         "05/05",
         "05/06",
         "05/07",
-        "05/08"
+        "05/08",
+        "05/09"
       ],
       "users": [
         2,
@@ -632,7 +649,8 @@
         3,
         4,
         7,
-        19
+        19,
+        1
       ],
       "sessions": [
         2,
@@ -642,7 +660,8 @@
         5,
         7,
         15,
-        28
+        28,
+        1
       ]
     },
     "pages": [
@@ -809,6 +828,15 @@
         "scrollD": 0
       },
       {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 2,
+        "u": 3,
+        "avgT": 120.41860033333334,
+        "bounce": 100,
+        "scrollD": 33
+      },
+      {
         "path": "/gallery.html",
         "name": "特色餐食",
         "pv": 2,
@@ -816,15 +844,6 @@
         "avgT": 549.74284,
         "bounce": 50,
         "scrollD": 50
-      },
-      {
-        "path": "/pages/最新消息-同齊咖吡-TOGETHER-COFFEE-PROJECT/T52eZPE7WZ2Jp5T8mieqdn",
-        "name": "最新消息 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
-        "pv": 2,
-        "u": 1,
-        "avgT": 0.121253,
-        "bounce": 0,
-        "scrollD": 0
       }
     ],
     "sources": [
@@ -869,6 +888,11 @@
         {
           "flag": "🇨🇳",
           "name": "中國",
+          "users": 1
+        },
+        {
+          "flag": "🌐",
+          "name": "Iraq",
           "users": 1
         }
       ],
