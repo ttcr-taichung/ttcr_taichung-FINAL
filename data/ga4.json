@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-08T13:25:03.061Z",
+  "updated": "2026-05-08T14:25:03.221Z",
   "d7": {
     "metrics": {
-      "users": 30,
-      "sessions": 51,
-      "pv": 359,
-      "bounce": 68.62745098039215,
-      "dur": 381.19655078431373,
-      "newU": 20
+      "users": 31,
+      "sessions": 53,
+      "pv": 362,
+      "bounce": 69.81132075471697,
+      "dur": 416.04580577358496,
+      "newU": 21
     },
     "trend": {
       "dates": [
@@ -20,13 +20,13 @@
         3,
         4,
         7,
-        16
+        17
       ],
       "sessions": [
         5,
         7,
         15,
-        24
+        26
       ]
     },
     "pages": [
@@ -35,7 +35,7 @@
         "name": "同齊咖吡 · 訪客分析後台 v2",
         "pv": 229,
         "u": 3,
-        "avgT": 593.8801807619047,
+        "avgT": 716.6508442857142,
         "bounce": 47.61904761904761,
         "scrollD": 95
       },
@@ -68,21 +68,21 @@
       },
       {
         "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 9,
+        "u": 9,
+        "avgT": 1.9383696666666665,
+        "bounce": 100,
+        "scrollD": 11
+      },
+      {
+        "path": "/",
         "name": "同齊咖吡",
         "pv": 9,
         "u": 5,
         "avgT": 17.239616833333333,
         "bounce": 83.33333333333334,
         "scrollD": 20
-      },
-      {
-        "path": "/",
-        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 8,
-        "u": 8,
-        "avgT": 1.923499375,
-        "bounce": 100,
-        "scrollD": 13
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -92,6 +92,15 @@
         "avgT": 4.5279705,
         "bounce": 0,
         "scrollD": 95
+      },
+      {
+        "path": "/menu.html",
+        "name": "菜單",
+        "pv": 6,
+        "u": 4,
+        "avgT": 18.715862833333333,
+        "bounce": 100,
+        "scrollD": 50
       },
       {
         "path": "/pages/STORES-同齊咖吡/8LGZRoU2iLGdH7ZLsm4VLv",
@@ -146,15 +155,6 @@
         "avgT": 0.8724505,
         "bounce": 0,
         "scrollD": 95
-      },
-      {
-        "path": "/menu.html",
-        "name": "菜單",
-        "pv": 4,
-        "u": 3,
-        "avgT": 20.78320675,
-        "bounce": 100,
-        "scrollD": 33
       },
       {
         "path": "/news.html",
@@ -223,13 +223,13 @@
         "color": "#1e8a4a"
       },
       {
-        "name": "社群媒體",
-        "pct": 14,
+        "name": "自然搜尋",
+        "pct": 13,
         "color": "#3a7ca5"
       },
       {
-        "name": "自然搜尋",
-        "pct": 12,
+        "name": "社群媒體",
+        "pct": 13,
         "color": "#7b4fcf"
       },
       {
@@ -243,7 +243,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 20
+          "users": 21
         },
         {
           "flag": "🇺🇸",
@@ -259,7 +259,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 10,
+          "users": 11,
           "subs": []
         },
         {
@@ -293,12 +293,12 @@
   },
   "d30": {
     "metrics": {
-      "users": 38,
-      "sessions": 72,
-      "pv": 479,
-      "bounce": 51.388888888888886,
-      "dur": 393.84095983333333,
-      "newU": 24
+      "users": 39,
+      "sessions": 74,
+      "pv": 482,
+      "bounce": 52.702702702702695,
+      "dur": 418.45882059459456,
+      "newU": 25
     },
     "trend": {
       "dates": [
@@ -319,7 +319,7 @@
         3,
         4,
         7,
-        16
+        17
       ],
       "sessions": [
         2,
@@ -329,7 +329,7 @@
         5,
         7,
         15,
-        24
+        26
       ]
     },
     "pages": [
@@ -338,7 +338,7 @@
         "name": "同齊咖吡 · 訪客分析後台 v2",
         "pv": 315,
         "u": 4,
-        "avgT": 442.97224355,
+        "avgT": 507.4268419,
         "bounce": 30,
         "scrollD": 75
       },
@@ -380,21 +380,21 @@
       },
       {
         "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 9,
+        "u": 9,
+        "avgT": 1.9383696666666665,
+        "bounce": 100,
+        "scrollD": 11
+      },
+      {
+        "path": "/",
         "name": "同齊咖吡",
         "pv": 9,
         "u": 5,
         "avgT": 17.239616833333333,
         "bounce": 83.33333333333334,
         "scrollD": 20
-      },
-      {
-        "path": "/",
-        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 8,
-        "u": 8,
-        "avgT": 1.923499375,
-        "bounce": 100,
-        "scrollD": 13
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -404,6 +404,15 @@
         "avgT": 4.5279705,
         "bounce": 0,
         "scrollD": 95
+      },
+      {
+        "path": "/menu.html",
+        "name": "菜單",
+        "pv": 6,
+        "u": 4,
+        "avgT": 18.715862833333333,
+        "bounce": 100,
+        "scrollD": 50
       },
       {
         "path": "/pages/STORES-同齊咖吡/8LGZRoU2iLGdH7ZLsm4VLv",
@@ -460,15 +469,6 @@
         "scrollD": 95
       },
       {
-        "path": "/menu.html",
-        "name": "菜單",
-        "pv": 4,
-        "u": 3,
-        "avgT": 20.78320675,
-        "bounce": 100,
-        "scrollD": 33
-      },
-      {
         "path": "/news.html",
         "name": "最新消息",
         "pv": 3,
@@ -517,7 +517,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 67,
+        "pct": 66,
         "color": "#223843"
       },
       {
@@ -526,13 +526,13 @@
         "color": "#1e8a4a"
       },
       {
-        "name": "社群媒體",
+        "name": "自然搜尋",
         "pct": 10,
         "color": "#3a7ca5"
       },
       {
-        "name": "自然搜尋",
-        "pct": 9,
+        "name": "社群媒體",
+        "pct": 10,
         "color": "#7b4fcf"
       },
       {
@@ -546,7 +546,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 20
+          "users": 21
         },
         {
           "flag": "🇺🇸",
@@ -562,7 +562,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 10,
+          "users": 11,
           "subs": []
         },
         {
@@ -596,12 +596,12 @@
   },
   "d90": {
     "metrics": {
-      "users": 38,
-      "sessions": 72,
-      "pv": 479,
-      "bounce": 51.388888888888886,
-      "dur": 393.84095983333333,
-      "newU": 24
+      "users": 39,
+      "sessions": 74,
+      "pv": 482,
+      "bounce": 52.702702702702695,
+      "dur": 418.45882059459456,
+      "newU": 25
     },
     "trend": {
       "dates": [
@@ -622,7 +622,7 @@
         3,
         4,
         7,
-        16
+        17
       ],
       "sessions": [
         2,
@@ -632,7 +632,7 @@
         5,
         7,
         15,
-        24
+        26
       ]
     },
     "pages": [
@@ -641,7 +641,7 @@
         "name": "同齊咖吡 · 訪客分析後台 v2",
         "pv": 315,
         "u": 4,
-        "avgT": 442.97224355,
+        "avgT": 507.4268419,
         "bounce": 30,
         "scrollD": 75
       },
@@ -683,21 +683,21 @@
       },
       {
         "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 9,
+        "u": 9,
+        "avgT": 1.9383696666666665,
+        "bounce": 100,
+        "scrollD": 11
+      },
+      {
+        "path": "/",
         "name": "同齊咖吡",
         "pv": 9,
         "u": 5,
         "avgT": 17.239616833333333,
         "bounce": 83.33333333333334,
         "scrollD": 20
-      },
-      {
-        "path": "/",
-        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 8,
-        "u": 8,
-        "avgT": 1.923499375,
-        "bounce": 100,
-        "scrollD": 13
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -707,6 +707,15 @@
         "avgT": 4.5279705,
         "bounce": 0,
         "scrollD": 95
+      },
+      {
+        "path": "/menu.html",
+        "name": "菜單",
+        "pv": 6,
+        "u": 4,
+        "avgT": 18.715862833333333,
+        "bounce": 100,
+        "scrollD": 50
       },
       {
         "path": "/pages/STORES-同齊咖吡/8LGZRoU2iLGdH7ZLsm4VLv",
@@ -763,15 +772,6 @@
         "scrollD": 95
       },
       {
-        "path": "/menu.html",
-        "name": "菜單",
-        "pv": 4,
-        "u": 3,
-        "avgT": 20.78320675,
-        "bounce": 100,
-        "scrollD": 33
-      },
-      {
         "path": "/news.html",
         "name": "最新消息",
         "pv": 3,
@@ -820,7 +820,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 67,
+        "pct": 66,
         "color": "#223843"
       },
       {
@@ -829,13 +829,13 @@
         "color": "#1e8a4a"
       },
       {
-        "name": "社群媒體",
+        "name": "自然搜尋",
         "pct": 10,
         "color": "#3a7ca5"
       },
       {
-        "name": "自然搜尋",
-        "pct": 9,
+        "name": "社群媒體",
+        "pct": 10,
         "color": "#7b4fcf"
       },
       {
@@ -849,7 +849,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 20
+          "users": 21
         },
         {
           "flag": "🇺🇸",
@@ -865,7 +865,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 10,
+          "users": 11,
           "subs": []
         },
         {
