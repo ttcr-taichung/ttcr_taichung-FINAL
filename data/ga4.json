@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-08T11:25:04.361Z",
+  "updated": "2026-05-08T12:25:03.517Z",
   "d7": {
     "metrics": {
-      "users": 27,
-      "sessions": 48,
-      "pv": 356,
-      "bounce": 66.66666666666666,
-      "dur": 402.7493806875,
-      "newU": 17
+      "users": 29,
+      "sessions": 50,
+      "pv": 358,
+      "bounce": 68,
+      "dur": 387.83274082,
+      "newU": 19
     },
     "trend": {
       "dates": [
@@ -20,13 +20,13 @@
         3,
         4,
         7,
-        13
+        15
       ],
       "sessions": [
         5,
         7,
         15,
-        21
+        23
       ]
     },
     "pages": [
@@ -51,11 +51,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 17,
-        "u": 8,
-        "avgT": 82.95859241666666,
-        "bounce": 91.66666666666666,
-        "scrollD": 25
+        "pv": 18,
+        "u": 9,
+        "avgT": 76.57716223076923,
+        "bounce": 92.3076923076923,
+        "scrollD": 22
       },
       {
         "path": "/coffee-beans.html",
@@ -150,11 +150,11 @@
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 3,
-        "u": 2,
-        "avgT": 7.822019666666667,
+        "pv": 4,
+        "u": 3,
+        "avgT": 20.78320675,
         "bounce": 100,
-        "scrollD": 0
+        "scrollD": 33
       },
       {
         "path": "/news.html",
@@ -214,12 +214,12 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 55,
+        "pct": 56,
         "color": "#223843"
       },
       {
         "name": "其他",
-        "pct": 17,
+        "pct": 16,
         "color": "#1e8a4a"
       },
       {
@@ -243,7 +243,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 17
+          "users": 19
         },
         {
           "flag": "🇺🇸",
@@ -259,7 +259,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 9,
+          "users": 10,
           "subs": []
         },
         {
@@ -269,7 +269,7 @@
         },
         {
           "name": "台北市",
-          "users": 2,
+          "users": 3,
           "subs": []
         },
         {
@@ -293,12 +293,12 @@
   },
   "d30": {
     "metrics": {
-      "users": 35,
-      "sessions": 69,
-      "pv": 476,
-      "bounce": 49.275362318840585,
-      "dur": 409.3839897246377,
-      "newU": 21
+      "users": 37,
+      "sessions": 71,
+      "pv": 478,
+      "bounce": 50.70422535211267,
+      "dur": 398.69242336619715,
+      "newU": 23
     },
     "trend": {
       "dates": [
@@ -319,7 +319,7 @@
         3,
         4,
         7,
-        13
+        15
       ],
       "sessions": [
         2,
@@ -329,7 +329,7 @@
         5,
         7,
         15,
-        21
+        23
       ]
     },
     "pages": [
@@ -363,11 +363,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 17,
-        "u": 8,
-        "avgT": 82.95859241666666,
-        "bounce": 91.66666666666666,
-        "scrollD": 25
+        "pv": 18,
+        "u": 9,
+        "avgT": 76.57716223076923,
+        "bounce": 92.3076923076923,
+        "scrollD": 22
       },
       {
         "path": "/coffee-beans.html",
@@ -462,11 +462,11 @@
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 3,
-        "u": 2,
-        "avgT": 7.822019666666667,
+        "pv": 4,
+        "u": 3,
+        "avgT": 20.78320675,
         "bounce": 100,
-        "scrollD": 0
+        "scrollD": 33
       },
       {
         "path": "/news.html",
@@ -546,7 +546,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 17
+          "users": 19
         },
         {
           "flag": "🇺🇸",
@@ -562,7 +562,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 9,
+          "users": 10,
           "subs": []
         },
         {
@@ -572,7 +572,7 @@
         },
         {
           "name": "台北市",
-          "users": 2,
+          "users": 3,
           "subs": []
         },
         {
@@ -596,12 +596,12 @@
   },
   "d90": {
     "metrics": {
-      "users": 35,
-      "sessions": 69,
-      "pv": 476,
-      "bounce": 49.275362318840585,
-      "dur": 409.3839897246377,
-      "newU": 21
+      "users": 37,
+      "sessions": 71,
+      "pv": 478,
+      "bounce": 50.70422535211267,
+      "dur": 398.69242336619715,
+      "newU": 23
     },
     "trend": {
       "dates": [
@@ -622,7 +622,7 @@
         3,
         4,
         7,
-        13
+        15
       ],
       "sessions": [
         2,
@@ -632,7 +632,7 @@
         5,
         7,
         15,
-        21
+        23
       ]
     },
     "pages": [
@@ -666,11 +666,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 17,
-        "u": 8,
-        "avgT": 82.95859241666666,
-        "bounce": 91.66666666666666,
-        "scrollD": 25
+        "pv": 18,
+        "u": 9,
+        "avgT": 76.57716223076923,
+        "bounce": 92.3076923076923,
+        "scrollD": 22
       },
       {
         "path": "/coffee-beans.html",
@@ -765,11 +765,11 @@
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 3,
-        "u": 2,
-        "avgT": 7.822019666666667,
+        "pv": 4,
+        "u": 3,
+        "avgT": 20.78320675,
         "bounce": 100,
-        "scrollD": 0
+        "scrollD": 33
       },
       {
         "path": "/news.html",
@@ -849,7 +849,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 17
+          "users": 19
         },
         {
           "flag": "🇺🇸",
@@ -865,7 +865,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 9,
+          "users": 10,
           "subs": []
         },
         {
@@ -875,7 +875,7 @@
         },
         {
           "name": "台北市",
-          "users": 2,
+          "users": 3,
           "subs": []
         },
         {
