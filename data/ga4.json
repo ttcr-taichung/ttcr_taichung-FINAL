@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-08T07:25:03.628Z",
+  "updated": "2026-05-08T08:25:04.608Z",
   "d7": {
     "metrics": {
-      "users": 17,
-      "sessions": 34,
-      "pv": 317,
-      "bounce": 52.94117647058824,
-      "dur": 408.6853631764706,
-      "newU": 7
+      "users": 24,
+      "sessions": 42,
+      "pv": 326,
+      "bounce": 61.904761904761905,
+      "dur": 331.7296665714286,
+      "newU": 13
     },
     "trend": {
       "dates": [
@@ -20,23 +20,23 @@
         3,
         4,
         7,
-        3
+        10
       ],
       "sessions": [
         5,
         7,
         15,
-        7
+        15
       ]
     },
     "pages": [
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 204,
+        "pv": 205,
         "u": 3,
-        "avgT": 445.94976088888893,
-        "bounce": 38.88888888888889,
+        "avgT": 422.4854681578947,
+        "bounce": 42.10526315789473,
         "scrollD": 95
       },
       {
@@ -51,11 +51,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 12,
-        "u": 4,
-        "avgT": 8.297959714285714,
-        "bounce": 85.71428571428571,
-        "scrollD": 50
+        "pv": 16,
+        "u": 7,
+        "avgT": 6.0646401999999995,
+        "bounce": 90,
+        "scrollD": 29
       },
       {
         "path": "/",
@@ -130,6 +130,15 @@
         "scrollD": 95
       },
       {
+        "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 5,
+        "u": 5,
+        "avgT": 0,
+        "bounce": 100,
+        "scrollD": 0
+      },
+      {
         "path": "/pages/菜單-同齊咖吡-TOGETHER-COFFEE-PROJECT/agerckEFqHfdFqrRHL7geX",
         "name": "菜單 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
         "pv": 5,
@@ -157,11 +166,11 @@
         "scrollD": 0
       },
       {
-        "path": "/",
-        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "path": "/menu.html",
+        "name": "菜單",
         "pv": 2,
-        "u": 2,
-        "avgT": 0,
+        "u": 1,
+        "avgT": 10.2998635,
         "bounce": 100,
         "scrollD": 0
       },
@@ -169,9 +178,9 @@
         "path": "/news.html",
         "name": "最新消息",
         "pv": 2,
-        "u": 2,
-        "avgT": 13.231161,
-        "bounce": 50,
+        "u": 3,
+        "avgT": 13.505786666666665,
+        "bounce": 66.66666666666666,
         "scrollD": 95
       },
       {
@@ -200,31 +209,22 @@
         "avgT": 4.617363,
         "bounce": 100,
         "scrollD": 95
-      },
-      {
-        "path": "/franchise.html",
-        "name": "加盟計畫",
-        "pv": 1,
-        "u": 2,
-        "avgT": 180.6279005,
-        "bounce": 100,
-        "scrollD": 50
       }
     ],
     "sources": [
       {
         "name": "直接流量",
-        "pct": 50,
+        "pct": 56,
         "color": "#223843"
       },
       {
         "name": "社群媒體",
-        "pct": 22,
+        "pct": 18,
         "color": "#1e8a4a"
       },
       {
         "name": "其他",
-        "pct": 14,
+        "pct": 13,
         "color": "#3a7ca5"
       },
       {
@@ -234,7 +234,7 @@
       },
       {
         "name": "推薦連結",
-        "pct": 3,
+        "pct": 2,
         "color": "#d97706"
       }
     ],
@@ -243,12 +243,12 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 8
+          "users": 14
         },
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 3
+          "users": 4
         },
         {
           "flag": "🇨🇳",
@@ -259,7 +259,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 5,
+          "users": 9,
           "subs": []
         },
         {
@@ -269,6 +269,16 @@
         },
         {
           "name": "新竹市",
+          "users": 1,
+          "subs": []
+        },
+        {
+          "name": "高雄市",
+          "users": 1,
+          "subs": []
+        },
+        {
+          "name": "基隆市",
           "users": 1,
           "subs": []
         }
@@ -278,12 +288,12 @@
   },
   "d30": {
     "metrics": {
-      "users": 25,
-      "sessions": 55,
-      "pv": 437,
-      "bounce": 36.36363636363637,
-      "dur": 414.7423157454545,
-      "newU": 11
+      "users": 32,
+      "sessions": 63,
+      "pv": 446,
+      "bounce": 44.44444444444444,
+      "dur": 362.6693811746032,
+      "newU": 17
     },
     "trend": {
       "dates": [
@@ -304,7 +314,7 @@
         3,
         4,
         7,
-        3
+        10
       ],
       "sessions": [
         2,
@@ -314,17 +324,17 @@
         5,
         7,
         15,
-        7
+        15
       ]
     },
     "pages": [
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 290,
+        "pv": 291,
         "u": 4,
-        "avgT": 358.77031464864865,
-        "bounce": 24.324324324324326,
+        "avgT": 349.3323642368421,
+        "bounce": 26.31578947368421,
         "scrollD": 75
       },
       {
@@ -348,11 +358,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 12,
-        "u": 4,
-        "avgT": 8.297959714285714,
-        "bounce": 85.71428571428571,
-        "scrollD": 50
+        "pv": 16,
+        "u": 7,
+        "avgT": 6.0646402,
+        "bounce": 90,
+        "scrollD": 29
       },
       {
         "path": "/",
@@ -427,6 +437,15 @@
         "scrollD": 95
       },
       {
+        "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 5,
+        "u": 5,
+        "avgT": 0,
+        "bounce": 100,
+        "scrollD": 0
+      },
+      {
         "path": "/pages/菜單-同齊咖吡-TOGETHER-COFFEE-PROJECT/agerckEFqHfdFqrRHL7geX",
         "name": "菜單 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
         "pv": 5,
@@ -454,11 +473,11 @@
         "scrollD": 0
       },
       {
-        "path": "/",
-        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "path": "/menu.html",
+        "name": "菜單",
         "pv": 2,
-        "u": 2,
-        "avgT": 0,
+        "u": 1,
+        "avgT": 10.2998635,
         "bounce": 100,
         "scrollD": 0
       },
@@ -466,9 +485,9 @@
         "path": "/news.html",
         "name": "最新消息",
         "pv": 2,
-        "u": 2,
-        "avgT": 13.231161,
-        "bounce": 50,
+        "u": 3,
+        "avgT": 13.505786666666665,
+        "bounce": 66.66666666666666,
         "scrollD": 95
       },
       {
@@ -488,26 +507,17 @@
         "avgT": 0.100567,
         "bounce": 0,
         "scrollD": 0
-      },
-      {
-        "path": "/collaboration.html",
-        "name": "異界合作",
-        "pv": 1,
-        "u": 1,
-        "avgT": 4.617363,
-        "bounce": 100,
-        "scrollD": 95
       }
     ],
     "sources": [
       {
         "name": "直接流量",
-        "pct": 68,
+        "pct": 70,
         "color": "#223843"
       },
       {
         "name": "社群媒體",
-        "pct": 14,
+        "pct": 12,
         "color": "#1e8a4a"
       },
       {
@@ -517,7 +527,7 @@
       },
       {
         "name": "自然搜尋",
-        "pct": 7,
+        "pct": 8,
         "color": "#7b4fcf"
       },
       {
@@ -531,12 +541,12 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 8
+          "users": 14
         },
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 3
+          "users": 4
         },
         {
           "flag": "🇨🇳",
@@ -547,7 +557,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 5,
+          "users": 9,
           "subs": []
         },
         {
@@ -559,6 +569,16 @@
           "name": "新竹市",
           "users": 1,
           "subs": []
+        },
+        {
+          "name": "高雄市",
+          "users": 1,
+          "subs": []
+        },
+        {
+          "name": "基隆市",
+          "users": 1,
+          "subs": []
         }
       ]
     },
@@ -566,12 +586,12 @@
   },
   "d90": {
     "metrics": {
-      "users": 25,
-      "sessions": 55,
-      "pv": 437,
-      "bounce": 36.36363636363637,
-      "dur": 414.7423157454545,
-      "newU": 11
+      "users": 32,
+      "sessions": 63,
+      "pv": 446,
+      "bounce": 44.44444444444444,
+      "dur": 362.6693811746032,
+      "newU": 17
     },
     "trend": {
       "dates": [
@@ -592,7 +612,7 @@
         3,
         4,
         7,
-        3
+        10
       ],
       "sessions": [
         2,
@@ -602,17 +622,17 @@
         5,
         7,
         15,
-        7
+        15
       ]
     },
     "pages": [
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 290,
+        "pv": 291,
         "u": 4,
-        "avgT": 358.77031464864865,
-        "bounce": 24.324324324324326,
+        "avgT": 349.3323642368421,
+        "bounce": 26.31578947368421,
         "scrollD": 75
       },
       {
@@ -636,11 +656,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 12,
-        "u": 4,
-        "avgT": 8.297959714285714,
-        "bounce": 85.71428571428571,
-        "scrollD": 50
+        "pv": 16,
+        "u": 7,
+        "avgT": 6.0646402,
+        "bounce": 90,
+        "scrollD": 29
       },
       {
         "path": "/",
@@ -715,6 +735,15 @@
         "scrollD": 95
       },
       {
+        "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 5,
+        "u": 5,
+        "avgT": 0,
+        "bounce": 100,
+        "scrollD": 0
+      },
+      {
         "path": "/pages/菜單-同齊咖吡-TOGETHER-COFFEE-PROJECT/agerckEFqHfdFqrRHL7geX",
         "name": "菜單 同齊咖吡 TOGETHER COFFEE PROJECT - Kuse AI",
         "pv": 5,
@@ -742,11 +771,11 @@
         "scrollD": 0
       },
       {
-        "path": "/",
-        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "path": "/menu.html",
+        "name": "菜單",
         "pv": 2,
-        "u": 2,
-        "avgT": 0,
+        "u": 1,
+        "avgT": 10.2998635,
         "bounce": 100,
         "scrollD": 0
       },
@@ -754,9 +783,9 @@
         "path": "/news.html",
         "name": "最新消息",
         "pv": 2,
-        "u": 2,
-        "avgT": 13.231161,
-        "bounce": 50,
+        "u": 3,
+        "avgT": 13.505786666666665,
+        "bounce": 66.66666666666666,
         "scrollD": 95
       },
       {
@@ -776,26 +805,17 @@
         "avgT": 0.100567,
         "bounce": 0,
         "scrollD": 0
-      },
-      {
-        "path": "/collaboration.html",
-        "name": "異界合作",
-        "pv": 1,
-        "u": 1,
-        "avgT": 4.617363,
-        "bounce": 100,
-        "scrollD": 95
       }
     ],
     "sources": [
       {
         "name": "直接流量",
-        "pct": 68,
+        "pct": 70,
         "color": "#223843"
       },
       {
         "name": "社群媒體",
-        "pct": 14,
+        "pct": 12,
         "color": "#1e8a4a"
       },
       {
@@ -805,7 +825,7 @@
       },
       {
         "name": "自然搜尋",
-        "pct": 7,
+        "pct": 8,
         "color": "#7b4fcf"
       },
       {
@@ -819,12 +839,12 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 8
+          "users": 14
         },
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 3
+          "users": 4
         },
         {
           "flag": "🇨🇳",
@@ -835,7 +855,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 5,
+          "users": 9,
           "subs": []
         },
         {
@@ -845,6 +865,16 @@
         },
         {
           "name": "新竹市",
+          "users": 1,
+          "subs": []
+        },
+        {
+          "name": "高雄市",
+          "users": 1,
+          "subs": []
+        },
+        {
+          "name": "基隆市",
           "users": 1,
           "subs": []
         }
