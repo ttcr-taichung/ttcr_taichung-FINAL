@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-09T04:25:02.986Z",
+  "updated": "2026-05-09T05:25:03.056Z",
   "d7": {
     "metrics": {
-      "users": 36,
-      "sessions": 58,
-      "pv": 373,
-      "bounce": 72.41379310344827,
-      "dur": 386.52105389655173,
-      "newU": 26
+      "users": 37,
+      "sessions": 60,
+      "pv": 376,
+      "bounce": 73.33333333333333,
+      "dur": 373.6370187666667,
+      "newU": 27
     },
     "trend": {
       "dates": [
@@ -22,14 +22,14 @@
         4,
         7,
         19,
-        3
+        4
       ],
       "sessions": [
         5,
         7,
         15,
         28,
-        3
+        5
       ]
     },
     "pages": [
@@ -38,7 +38,7 @@
         "name": "同齊咖吡 · 訪客分析後台 v2",
         "pv": 229,
         "u": 3,
-        "avgT": 716.6508442857142,
+        "avgT": 716.6508442857144,
         "bounce": 47.61904761904761,
         "scrollD": 95
       },
@@ -63,11 +63,20 @@
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 12,
-        "u": 12,
-        "avgT": 1.45377725,
+        "pv": 13,
+        "u": 13,
+        "avgT": 1.3419482307692308,
         "bounce": 100,
         "scrollD": 8
+      },
+      {
+        "path": "/menu.html",
+        "name": "菜單",
+        "pv": 11,
+        "u": 7,
+        "avgT": 28.3141433,
+        "bounce": 100,
+        "scrollD": 71
       },
       {
         "path": "/coffee-beans.html",
@@ -86,15 +95,6 @@
         "avgT": 17.239616833333333,
         "bounce": 83.33333333333334,
         "scrollD": 20
-      },
-      {
-        "path": "/menu.html",
-        "name": "菜單",
-        "pv": 9,
-        "u": 6,
-        "avgT": 35.392679125,
-        "bounce": 100,
-        "scrollD": 67
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -217,22 +217,22 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 53,
+        "pct": 52,
         "color": "#223843"
       },
       {
         "name": "其他",
-        "pct": 19,
+        "pct": 20,
         "color": "#1e8a4a"
       },
       {
         "name": "自然搜尋",
-        "pct": 13,
+        "pct": 14,
         "color": "#3a7ca5"
       },
       {
         "name": "社群媒體",
-        "pct": 12,
+        "pct": 11,
         "color": "#7b4fcf"
       },
       {
@@ -246,7 +246,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 23
+          "users": 24
         },
         {
           "flag": "🇺🇸",
@@ -267,7 +267,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 11,
+          "users": 12,
           "subs": []
         },
         {
@@ -306,12 +306,12 @@
   },
   "d30": {
     "metrics": {
-      "users": 44,
-      "sessions": 79,
-      "pv": 493,
-      "bounce": 55.69620253164557,
-      "dur": 396.62969802531643,
-      "newU": 30
+      "users": 45,
+      "sessions": 81,
+      "pv": 496,
+      "bounce": 56.79012345679012,
+      "dur": 386.8363721481481,
+      "newU": 31
     },
     "trend": {
       "dates": [
@@ -334,7 +334,7 @@
         4,
         7,
         19,
-        3
+        4
       ],
       "sessions": [
         2,
@@ -345,7 +345,7 @@
         7,
         15,
         28,
-        3
+        5
       ]
     },
     "pages": [
@@ -388,11 +388,20 @@
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 12,
-        "u": 12,
-        "avgT": 1.45377725,
+        "pv": 13,
+        "u": 13,
+        "avgT": 1.3419482307692308,
         "bounce": 100,
         "scrollD": 8
+      },
+      {
+        "path": "/menu.html",
+        "name": "菜單",
+        "pv": 11,
+        "u": 7,
+        "avgT": 28.3141433,
+        "bounce": 100,
+        "scrollD": 71
       },
       {
         "path": "/coffee-beans.html",
@@ -411,15 +420,6 @@
         "avgT": 17.239616833333333,
         "bounce": 83.33333333333334,
         "scrollD": 20
-      },
-      {
-        "path": "/menu.html",
-        "name": "菜單",
-        "pv": 9,
-        "u": 6,
-        "avgT": 35.392679125,
-        "bounce": 100,
-        "scrollD": 67
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -533,7 +533,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 64,
+        "pct": 63,
         "color": "#223843"
       },
       {
@@ -543,7 +543,7 @@
       },
       {
         "name": "自然搜尋",
-        "pct": 10,
+        "pct": 11,
         "color": "#3a7ca5"
       },
       {
@@ -562,7 +562,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 23
+          "users": 24
         },
         {
           "flag": "🇺🇸",
@@ -583,7 +583,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 11,
+          "users": 12,
           "subs": []
         },
         {
@@ -622,12 +622,12 @@
   },
   "d90": {
     "metrics": {
-      "users": 44,
-      "sessions": 79,
-      "pv": 493,
-      "bounce": 55.69620253164557,
-      "dur": 396.62969802531643,
-      "newU": 30
+      "users": 45,
+      "sessions": 81,
+      "pv": 496,
+      "bounce": 56.79012345679012,
+      "dur": 386.8363721481481,
+      "newU": 31
     },
     "trend": {
       "dates": [
@@ -650,7 +650,7 @@
         4,
         7,
         19,
-        3
+        4
       ],
       "sessions": [
         2,
@@ -661,7 +661,7 @@
         7,
         15,
         28,
-        3
+        5
       ]
     },
     "pages": [
@@ -704,11 +704,20 @@
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 12,
-        "u": 12,
-        "avgT": 1.45377725,
+        "pv": 13,
+        "u": 13,
+        "avgT": 1.3419482307692308,
         "bounce": 100,
         "scrollD": 8
+      },
+      {
+        "path": "/menu.html",
+        "name": "菜單",
+        "pv": 11,
+        "u": 7,
+        "avgT": 28.3141433,
+        "bounce": 100,
+        "scrollD": 71
       },
       {
         "path": "/coffee-beans.html",
@@ -727,15 +736,6 @@
         "avgT": 17.239616833333333,
         "bounce": 83.33333333333334,
         "scrollD": 20
-      },
-      {
-        "path": "/menu.html",
-        "name": "菜單",
-        "pv": 9,
-        "u": 6,
-        "avgT": 35.392679125,
-        "bounce": 100,
-        "scrollD": 67
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -849,7 +849,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 64,
+        "pct": 63,
         "color": "#223843"
       },
       {
@@ -859,7 +859,7 @@
       },
       {
         "name": "自然搜尋",
-        "pct": 10,
+        "pct": 11,
         "color": "#3a7ca5"
       },
       {
@@ -878,7 +878,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 23
+          "users": 24
         },
         {
           "flag": "🇺🇸",
@@ -899,7 +899,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 11,
+          "users": 12,
           "subs": []
         },
         {
