@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-09T11:25:03.716Z",
+  "updated": "2026-05-09T12:25:03.465Z",
   "d7": {
     "metrics": {
-      "users": 43,
-      "sessions": 66,
-      "pv": 396,
-      "bounce": 48.484848484848484,
-      "dur": 294.07071863636367,
-      "newU": 32
+      "users": 44,
+      "sessions": 67,
+      "pv": 398,
+      "bounce": 49.25373134328358,
+      "dur": 289.92830553731346,
+      "newU": 33
     },
     "trend": {
       "dates": [
@@ -22,14 +22,14 @@
         4,
         7,
         20,
-        9
+        10
       ],
       "sessions": [
         5,
         7,
         15,
         29,
-        10
+        11
       ]
     },
     "pages": [
@@ -97,6 +97,15 @@
         "scrollD": 20
       },
       {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 8,
+        "u": 7,
+        "avgT": 58.50266857142857,
+        "bounce": 71.42857142857143,
+        "scrollD": 43
+      },
+      {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
         "name": "特色餐食 同齊咖吡 TOGETHER COFFEE - Kuse AI",
         "pv": 7,
@@ -104,15 +113,6 @@
         "avgT": 4.5279705,
         "bounce": 0,
         "scrollD": 95
-      },
-      {
-        "path": "/franchise.html",
-        "name": "加盟計畫",
-        "pv": 6,
-        "u": 6,
-        "avgT": 65.49827316666666,
-        "bounce": 66.66666666666666,
-        "scrollD": 50
       },
       {
         "path": "/pages/STORES-同齊咖吡/8LGZRoU2iLGdH7ZLsm4VLv",
@@ -222,7 +222,7 @@
       },
       {
         "name": "自然搜尋",
-        "pct": 18,
+        "pct": 17,
         "color": "#1e8a4a"
       },
       {
@@ -246,7 +246,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 32
+          "users": 33
         },
         {
           "flag": "🇺🇸",
@@ -267,7 +267,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 14,
+          "users": 15,
           "subs": []
         },
         {
@@ -311,12 +311,12 @@
   },
   "d30": {
     "metrics": {
-      "users": 51,
-      "sessions": 87,
-      "pv": 516,
-      "bounce": 39.08045977011494,
-      "dur": 325.5654304367816,
-      "newU": 36
+      "users": 52,
+      "sessions": 88,
+      "pv": 518,
+      "bounce": 39.77272727272727,
+      "dur": 322.0536532840909,
+      "newU": 37
     },
     "trend": {
       "dates": [
@@ -339,7 +339,7 @@
         4,
         7,
         20,
-        9
+        10
       ],
       "sessions": [
         2,
@@ -350,7 +350,7 @@
         7,
         15,
         29,
-        10
+        11
       ]
     },
     "pages": [
@@ -427,6 +427,15 @@
         "scrollD": 20
       },
       {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 8,
+        "u": 7,
+        "avgT": 58.50266857142857,
+        "bounce": 71.42857142857143,
+        "scrollD": 43
+      },
+      {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
         "name": "特色餐食 同齊咖吡 TOGETHER COFFEE - Kuse AI",
         "pv": 7,
@@ -434,15 +443,6 @@
         "avgT": 4.5279705,
         "bounce": 0,
         "scrollD": 95
-      },
-      {
-        "path": "/franchise.html",
-        "name": "加盟計畫",
-        "pv": 6,
-        "u": 6,
-        "avgT": 65.49827316666666,
-        "bounce": 66.66666666666666,
-        "scrollD": 50
       },
       {
         "path": "/pages/STORES-同齊咖吡/8LGZRoU2iLGdH7ZLsm4VLv",
@@ -567,7 +567,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 32
+          "users": 33
         },
         {
           "flag": "🇺🇸",
@@ -588,7 +588,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 14,
+          "users": 15,
           "subs": []
         },
         {
@@ -632,12 +632,12 @@
   },
   "d90": {
     "metrics": {
-      "users": 51,
-      "sessions": 87,
-      "pv": 516,
-      "bounce": 39.08045977011494,
-      "dur": 325.5654304367816,
-      "newU": 36
+      "users": 52,
+      "sessions": 88,
+      "pv": 518,
+      "bounce": 39.77272727272727,
+      "dur": 322.0536532840909,
+      "newU": 37
     },
     "trend": {
       "dates": [
@@ -660,7 +660,7 @@
         4,
         7,
         20,
-        9
+        10
       ],
       "sessions": [
         2,
@@ -671,7 +671,7 @@
         7,
         15,
         29,
-        10
+        11
       ]
     },
     "pages": [
@@ -748,6 +748,15 @@
         "scrollD": 20
       },
       {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 8,
+        "u": 7,
+        "avgT": 58.50266857142857,
+        "bounce": 71.42857142857143,
+        "scrollD": 43
+      },
+      {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
         "name": "特色餐食 同齊咖吡 TOGETHER COFFEE - Kuse AI",
         "pv": 7,
@@ -755,15 +764,6 @@
         "avgT": 4.5279705,
         "bounce": 0,
         "scrollD": 95
-      },
-      {
-        "path": "/franchise.html",
-        "name": "加盟計畫",
-        "pv": 6,
-        "u": 6,
-        "avgT": 65.49827316666666,
-        "bounce": 66.66666666666666,
-        "scrollD": 50
       },
       {
         "path": "/pages/STORES-同齊咖吡/8LGZRoU2iLGdH7ZLsm4VLv",
@@ -888,7 +888,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 32
+          "users": 33
         },
         {
           "flag": "🇺🇸",
@@ -909,7 +909,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 14,
+          "users": 15,
           "subs": []
         },
         {
