@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-09T07:25:03.360Z",
+  "updated": "2026-05-09T08:25:02.979Z",
   "d7": {
     "metrics": {
-      "users": 39,
-      "sessions": 62,
-      "pv": 388,
-      "bounce": 45.16129032258064,
-      "dur": 311.2356307258065,
-      "newU": 28
+      "users": 41,
+      "sessions": 64,
+      "pv": 390,
+      "bounce": 46.875,
+      "dur": 301.50951726562505,
+      "newU": 30
     },
     "trend": {
       "dates": [
@@ -22,14 +22,14 @@
         4,
         7,
         20,
-        5
+        7
       ],
       "sessions": [
         5,
         7,
         15,
         29,
-        6
+        8
       ]
     },
     "pages": [
@@ -54,11 +54,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 20,
-        "u": 10,
-        "avgT": 11.374725,
-        "bounce": 35.714285714285715,
-        "scrollD": 20
+        "pv": 21,
+        "u": 11,
+        "avgT": 10.61641,
+        "bounce": 40,
+        "scrollD": 18
       },
       {
         "path": "/",
@@ -151,6 +151,15 @@
         "scrollD": 95
       },
       {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 5,
+        "u": 5,
+        "avgT": 75.9629952,
+        "bounce": 60,
+        "scrollD": 40
+      },
+      {
         "path": "/news.html",
         "name": "最新消息",
         "pv": 5,
@@ -167,15 +176,6 @@
         "avgT": 0.8724505,
         "bounce": 0,
         "scrollD": 95
-      },
-      {
-        "path": "/franchise.html",
-        "name": "加盟計畫",
-        "pv": 4,
-        "u": 4,
-        "avgT": 94.953744,
-        "bounce": 50,
-        "scrollD": 50
       },
       {
         "path": "/news.html",
@@ -217,17 +217,17 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 60,
+        "pct": 62,
         "color": "#223843"
       },
       {
         "name": "自然搜尋",
-        "pct": 19,
+        "pct": 18,
         "color": "#1e8a4a"
       },
       {
         "name": "社群媒體",
-        "pct": 13,
+        "pct": 12,
         "color": "#3a7ca5"
       },
       {
@@ -246,7 +246,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 28
+          "users": 30
         },
         {
           "flag": "🇺🇸",
@@ -282,12 +282,17 @@
         },
         {
           "name": "高雄市",
-          "users": 3,
+          "users": 4,
           "subs": []
         },
         {
           "name": "基隆市",
           "users": 2,
+          "subs": []
+        },
+        {
+          "name": "花蓮縣",
+          "users": 1,
           "subs": []
         },
         {
@@ -306,12 +311,12 @@
   },
   "d30": {
     "metrics": {
-      "users": 47,
-      "sessions": 83,
-      "pv": 508,
-      "bounce": 36.144578313253014,
-      "dur": 339.90523039759034,
-      "newU": 32
+      "users": 49,
+      "sessions": 85,
+      "pv": 510,
+      "bounce": 37.64705882352941,
+      "dur": 331.9074602705882,
+      "newU": 34
     },
     "trend": {
       "dates": [
@@ -334,7 +339,7 @@
         4,
         7,
         20,
-        5
+        7
       ],
       "sessions": [
         2,
@@ -345,7 +350,7 @@
         7,
         15,
         29,
-        6
+        8
       ]
     },
     "pages": [
@@ -379,11 +384,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 20,
-        "u": 10,
-        "avgT": 11.374725,
-        "bounce": 35.714285714285715,
-        "scrollD": 20
+        "pv": 21,
+        "u": 11,
+        "avgT": 10.61641,
+        "bounce": 40,
+        "scrollD": 18
       },
       {
         "path": "/",
@@ -476,6 +481,15 @@
         "scrollD": 95
       },
       {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 5,
+        "u": 5,
+        "avgT": 75.9629952,
+        "bounce": 60,
+        "scrollD": 40
+      },
+      {
         "path": "/news.html",
         "name": "最新消息",
         "pv": 5,
@@ -492,15 +506,6 @@
         "avgT": 0.8724505,
         "bounce": 0,
         "scrollD": 95
-      },
-      {
-        "path": "/franchise.html",
-        "name": "加盟計畫",
-        "pv": 4,
-        "u": 4,
-        "avgT": 94.953744,
-        "bounce": 50,
-        "scrollD": 50
       },
       {
         "path": "/news.html",
@@ -533,7 +538,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 70,
+        "pct": 71,
         "color": "#223843"
       },
       {
@@ -543,12 +548,12 @@
       },
       {
         "name": "社群媒體",
-        "pct": 10,
+        "pct": 9,
         "color": "#3a7ca5"
       },
       {
         "name": "推薦連結",
-        "pct": 4,
+        "pct": 3,
         "color": "#7b4fcf"
       },
       {
@@ -562,7 +567,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 28
+          "users": 30
         },
         {
           "flag": "🇺🇸",
@@ -598,12 +603,17 @@
         },
         {
           "name": "高雄市",
-          "users": 3,
+          "users": 4,
           "subs": []
         },
         {
           "name": "基隆市",
           "users": 2,
+          "subs": []
+        },
+        {
+          "name": "花蓮縣",
+          "users": 1,
           "subs": []
         },
         {
@@ -622,12 +632,12 @@
   },
   "d90": {
     "metrics": {
-      "users": 47,
-      "sessions": 83,
-      "pv": 508,
-      "bounce": 36.144578313253014,
-      "dur": 339.90523039759034,
-      "newU": 32
+      "users": 49,
+      "sessions": 85,
+      "pv": 510,
+      "bounce": 37.64705882352941,
+      "dur": 331.9074602705882,
+      "newU": 34
     },
     "trend": {
       "dates": [
@@ -650,7 +660,7 @@
         4,
         7,
         20,
-        5
+        7
       ],
       "sessions": [
         2,
@@ -661,7 +671,7 @@
         7,
         15,
         29,
-        6
+        8
       ]
     },
     "pages": [
@@ -695,11 +705,11 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 20,
-        "u": 10,
-        "avgT": 11.374725,
-        "bounce": 35.714285714285715,
-        "scrollD": 20
+        "pv": 21,
+        "u": 11,
+        "avgT": 10.61641,
+        "bounce": 40,
+        "scrollD": 18
       },
       {
         "path": "/",
@@ -792,6 +802,15 @@
         "scrollD": 95
       },
       {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 5,
+        "u": 5,
+        "avgT": 75.9629952,
+        "bounce": 60,
+        "scrollD": 40
+      },
+      {
         "path": "/news.html",
         "name": "最新消息",
         "pv": 5,
@@ -808,15 +827,6 @@
         "avgT": 0.8724505,
         "bounce": 0,
         "scrollD": 95
-      },
-      {
-        "path": "/franchise.html",
-        "name": "加盟計畫",
-        "pv": 4,
-        "u": 4,
-        "avgT": 94.953744,
-        "bounce": 50,
-        "scrollD": 50
       },
       {
         "path": "/news.html",
@@ -849,7 +859,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 70,
+        "pct": 71,
         "color": "#223843"
       },
       {
@@ -859,12 +869,12 @@
       },
       {
         "name": "社群媒體",
-        "pct": 10,
+        "pct": 9,
         "color": "#3a7ca5"
       },
       {
         "name": "推薦連結",
-        "pct": 4,
+        "pct": 3,
         "color": "#7b4fcf"
       },
       {
@@ -878,7 +888,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 28
+          "users": 30
         },
         {
           "flag": "🇺🇸",
@@ -914,12 +924,17 @@
         },
         {
           "name": "高雄市",
-          "users": 3,
+          "users": 4,
           "subs": []
         },
         {
           "name": "基隆市",
           "users": 2,
+          "subs": []
+        },
+        {
+          "name": "花蓮縣",
+          "users": 1,
           "subs": []
         },
         {
