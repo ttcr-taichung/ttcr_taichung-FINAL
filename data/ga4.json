@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-10T07:25:02.927Z",
+  "updated": "2026-05-10T08:25:04.409Z",
   "d7": {
     "metrics": {
-      "users": 51,
-      "sessions": 77,
-      "pv": 410,
-      "bounce": 55.84415584415584,
-      "dur": 252.68224119480524,
-      "newU": 40
+      "users": 54,
+      "sessions": 81,
+      "pv": 413,
+      "bounce": 50.617283950617285,
+      "dur": 241.65338680246916,
+      "newU": 43
     },
     "trend": {
       "dates": [
@@ -23,16 +23,16 @@
         4,
         7,
         20,
-        10,
-        7
+        12,
+        8
       ],
       "sessions": [
         5,
         7,
         15,
         29,
-        14,
-        7
+        17,
+        8
       ]
     },
     "pages": [
@@ -66,20 +66,29 @@
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 20,
-        "u": 19,
-        "avgT": 7.002096210526315,
-        "bounce": 63.1578947368421,
-        "scrollD": 11
+        "pv": 22,
+        "u": 21,
+        "avgT": 7.15395519047619,
+        "bounce": 52.38095238095239,
+        "scrollD": 10
       },
       {
         "path": "/menu.html",
         "name": "菜單",
         "pv": 18,
         "u": 12,
-        "avgT": 32.158131624999996,
-        "bounce": 56.25,
+        "avgT": 35.839459625,
+        "bounce": 37.5,
         "scrollD": 42
+      },
+      {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 11,
+        "u": 8,
+        "avgT": 39.4392465,
+        "bounce": 58.333333333333336,
+        "scrollD": 50
       },
       {
         "path": "/coffee-beans.html",
@@ -89,15 +98,6 @@
         "avgT": 127.4711616,
         "bounce": 60,
         "scrollD": 50
-      },
-      {
-        "path": "/franchise.html",
-        "name": "加盟計畫",
-        "pv": 10,
-        "u": 7,
-        "avgT": 41.6655363,
-        "bounce": 80,
-        "scrollD": 57
       },
       {
         "path": "/",
@@ -212,15 +212,15 @@
         "name": "STORES",
         "pv": 2,
         "u": 2,
-        "avgT": 14.6286615,
-        "bounce": 50,
+        "avgT": 6.969504,
+        "bounce": 0,
         "scrollD": 0
       }
     ],
     "sources": [
       {
         "name": "直接流量",
-        "pct": 61,
+        "pct": 63,
         "color": "#223843"
       },
       {
@@ -235,12 +235,12 @@
       },
       {
         "name": "推薦連結",
-        "pct": 8,
+        "pct": 10,
         "color": "#7b4fcf"
       },
       {
         "name": "其他",
-        "pct": 6,
+        "pct": 2,
         "color": "#d97706"
       }
     ],
@@ -249,7 +249,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 39
+          "users": 44
         },
         {
           "flag": "🇺🇸",
@@ -270,17 +270,17 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 18,
+          "users": 20,
           "subs": []
         },
         {
           "name": "台北市",
-          "users": 6,
+          "users": 8,
           "subs": []
         },
         {
           "name": "高雄市",
-          "users": 5,
+          "users": 6,
           "subs": []
         },
         {
@@ -319,12 +319,12 @@
   },
   "d30": {
     "metrics": {
-      "users": 59,
-      "sessions": 98,
-      "pv": 530,
-      "bounce": 45.91836734693878,
-      "dur": 289.5107917346939,
-      "newU": 44
+      "users": 62,
+      "sessions": 102,
+      "pv": 533,
+      "bounce": 42.15686274509804,
+      "dur": 279.30832695098036,
+      "newU": 47
     },
     "trend": {
       "dates": [
@@ -348,8 +348,8 @@
         4,
         7,
         20,
-        10,
-        7
+        12,
+        8
       ],
       "sessions": [
         2,
@@ -360,8 +360,8 @@
         7,
         15,
         29,
-        14,
-        7
+        17,
+        8
       ]
     },
     "pages": [
@@ -404,20 +404,29 @@
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 20,
-        "u": 19,
-        "avgT": 7.002096210526315,
-        "bounce": 63.1578947368421,
-        "scrollD": 11
+        "pv": 22,
+        "u": 21,
+        "avgT": 7.15395519047619,
+        "bounce": 52.38095238095239,
+        "scrollD": 10
       },
       {
         "path": "/menu.html",
         "name": "菜單",
         "pv": 18,
         "u": 12,
-        "avgT": 32.158131624999996,
-        "bounce": 56.25,
+        "avgT": 35.839459625,
+        "bounce": 37.5,
         "scrollD": 42
+      },
+      {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 11,
+        "u": 8,
+        "avgT": 39.4392465,
+        "bounce": 58.333333333333336,
+        "scrollD": 50
       },
       {
         "path": "/coffee-beans.html",
@@ -427,15 +436,6 @@
         "avgT": 127.4711616,
         "bounce": 60,
         "scrollD": 50
-      },
-      {
-        "path": "/franchise.html",
-        "name": "加盟計畫",
-        "pv": 10,
-        "u": 7,
-        "avgT": 41.6655363,
-        "bounce": 80,
-        "scrollD": 57
       },
       {
         "path": "/",
@@ -549,7 +549,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 69,
+        "pct": 71,
         "color": "#223843"
       },
       {
@@ -564,12 +564,12 @@
       },
       {
         "name": "推薦連結",
-        "pct": 6,
+        "pct": 8,
         "color": "#7b4fcf"
       },
       {
         "name": "其他",
-        "pct": 5,
+        "pct": 2,
         "color": "#d97706"
       }
     ],
@@ -578,7 +578,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 39
+          "users": 44
         },
         {
           "flag": "🇺🇸",
@@ -599,17 +599,17 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 18,
+          "users": 20,
           "subs": []
         },
         {
           "name": "台北市",
-          "users": 6,
+          "users": 8,
           "subs": []
         },
         {
           "name": "高雄市",
-          "users": 5,
+          "users": 6,
           "subs": []
         },
         {
@@ -648,12 +648,12 @@
   },
   "d90": {
     "metrics": {
-      "users": 59,
-      "sessions": 98,
-      "pv": 530,
-      "bounce": 45.91836734693878,
-      "dur": 289.5107917346939,
-      "newU": 44
+      "users": 62,
+      "sessions": 102,
+      "pv": 533,
+      "bounce": 42.15686274509804,
+      "dur": 279.30832695098036,
+      "newU": 47
     },
     "trend": {
       "dates": [
@@ -677,8 +677,8 @@
         4,
         7,
         20,
-        10,
-        7
+        12,
+        8
       ],
       "sessions": [
         2,
@@ -689,8 +689,8 @@
         7,
         15,
         29,
-        14,
-        7
+        17,
+        8
       ]
     },
     "pages": [
@@ -733,20 +733,29 @@
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 20,
-        "u": 19,
-        "avgT": 7.002096210526315,
-        "bounce": 63.1578947368421,
-        "scrollD": 11
+        "pv": 22,
+        "u": 21,
+        "avgT": 7.15395519047619,
+        "bounce": 52.38095238095239,
+        "scrollD": 10
       },
       {
         "path": "/menu.html",
         "name": "菜單",
         "pv": 18,
         "u": 12,
-        "avgT": 32.158131624999996,
-        "bounce": 56.25,
+        "avgT": 35.839459625,
+        "bounce": 37.5,
         "scrollD": 42
+      },
+      {
+        "path": "/franchise.html",
+        "name": "加盟計畫",
+        "pv": 11,
+        "u": 8,
+        "avgT": 39.4392465,
+        "bounce": 58.333333333333336,
+        "scrollD": 50
       },
       {
         "path": "/coffee-beans.html",
@@ -756,15 +765,6 @@
         "avgT": 127.4711616,
         "bounce": 60,
         "scrollD": 50
-      },
-      {
-        "path": "/franchise.html",
-        "name": "加盟計畫",
-        "pv": 10,
-        "u": 7,
-        "avgT": 41.6655363,
-        "bounce": 80,
-        "scrollD": 57
       },
       {
         "path": "/",
@@ -878,7 +878,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 69,
+        "pct": 71,
         "color": "#223843"
       },
       {
@@ -893,12 +893,12 @@
       },
       {
         "name": "推薦連結",
-        "pct": 6,
+        "pct": 8,
         "color": "#7b4fcf"
       },
       {
         "name": "其他",
-        "pct": 5,
+        "pct": 2,
         "color": "#d97706"
       }
     ],
@@ -907,7 +907,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 39
+          "users": 44
         },
         {
           "flag": "🇺🇸",
@@ -928,17 +928,17 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 18,
+          "users": 20,
           "subs": []
         },
         {
           "name": "台北市",
-          "users": 6,
+          "users": 8,
           "subs": []
         },
         {
           "name": "高雄市",
-          "users": 5,
+          "users": 6,
           "subs": []
         },
         {
