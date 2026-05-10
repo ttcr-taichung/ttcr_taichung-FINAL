@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-10T08:25:04.409Z",
+  "updated": "2026-05-10T09:25:02.932Z",
   "d7": {
     "metrics": {
       "users": 54,
-      "sessions": 81,
-      "pv": 413,
-      "bounce": 50.617283950617285,
-      "dur": 241.65338680246916,
+      "sessions": 82,
+      "pv": 414,
+      "bounce": 51.21951219512195,
+      "dur": 238.70639428048784,
       "newU": 43
     },
     "trend": {
@@ -32,7 +32,7 @@
         15,
         29,
         17,
-        8
+        9
       ]
     },
     "pages": [
@@ -55,6 +55,15 @@
         "scrollD": 21
       },
       {
+        "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 23,
+        "u": 21,
+        "avgT": 6.828775409090909,
+        "bounce": 54.54545454545454,
+        "scrollD": 10
+      },
+      {
         "path": "/index.html",
         "name": "同齊咖吡",
         "pv": 23,
@@ -62,15 +71,6 @@
         "avgT": 428.78466599999996,
         "bounce": 25,
         "scrollD": 50
-      },
-      {
-        "path": "/",
-        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 22,
-        "u": 21,
-        "avgT": 7.15395519047619,
-        "bounce": 52.38095238095239,
-        "scrollD": 10
       },
       {
         "path": "/menu.html",
@@ -220,12 +220,12 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 63,
+        "pct": 62,
         "color": "#223843"
       },
       {
         "name": "自然搜尋",
-        "pct": 15,
+        "pct": 16,
         "color": "#1e8a4a"
       },
       {
@@ -320,10 +320,10 @@
   "d30": {
     "metrics": {
       "users": 62,
-      "sessions": 102,
-      "pv": 533,
-      "bounce": 42.15686274509804,
-      "dur": 279.30832695098036,
+      "sessions": 103,
+      "pv": 534,
+      "bounce": 42.71844660194174,
+      "dur": 276.5965956213592,
       "newU": 47
     },
     "trend": {
@@ -361,7 +361,7 @@
         15,
         29,
         17,
-        8
+        9
       ]
     },
     "pages": [
@@ -393,6 +393,15 @@
         "scrollD": 21
       },
       {
+        "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 23,
+        "u": 21,
+        "avgT": 6.828775409090909,
+        "bounce": 54.54545454545454,
+        "scrollD": 10
+      },
+      {
         "path": "/index.html",
         "name": "同齊咖吡",
         "pv": 23,
@@ -400,15 +409,6 @@
         "avgT": 428.78466599999996,
         "bounce": 25,
         "scrollD": 50
-      },
-      {
-        "path": "/",
-        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 22,
-        "u": 21,
-        "avgT": 7.15395519047619,
-        "bounce": 52.38095238095239,
-        "scrollD": 10
       },
       {
         "path": "/menu.html",
@@ -549,12 +549,12 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 71,
+        "pct": 70,
         "color": "#223843"
       },
       {
         "name": "自然搜尋",
-        "pct": 12,
+        "pct": 13,
         "color": "#1e8a4a"
       },
       {
@@ -649,10 +649,10 @@
   "d90": {
     "metrics": {
       "users": 62,
-      "sessions": 102,
-      "pv": 533,
-      "bounce": 42.15686274509804,
-      "dur": 279.30832695098036,
+      "sessions": 103,
+      "pv": 534,
+      "bounce": 42.71844660194174,
+      "dur": 276.5965956213592,
       "newU": 47
     },
     "trend": {
@@ -690,7 +690,7 @@
         15,
         29,
         17,
-        8
+        9
       ]
     },
     "pages": [
@@ -722,6 +722,15 @@
         "scrollD": 21
       },
       {
+        "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 23,
+        "u": 21,
+        "avgT": 6.828775409090909,
+        "bounce": 54.54545454545454,
+        "scrollD": 10
+      },
+      {
         "path": "/index.html",
         "name": "同齊咖吡",
         "pv": 23,
@@ -729,15 +738,6 @@
         "avgT": 428.78466599999996,
         "bounce": 25,
         "scrollD": 50
-      },
-      {
-        "path": "/",
-        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 22,
-        "u": 21,
-        "avgT": 7.15395519047619,
-        "bounce": 52.38095238095239,
-        "scrollD": 10
       },
       {
         "path": "/menu.html",
@@ -878,12 +878,12 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 71,
+        "pct": 70,
         "color": "#223843"
       },
       {
         "name": "自然搜尋",
-        "pct": 12,
+        "pct": 13,
         "color": "#1e8a4a"
       },
       {
