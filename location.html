@@ -1,11 +1,11 @@
 <!DOCTYPE html><html lang="zh-TW"><head>
     <meta name="description" content="門市位置｜同齊咖吡分店資訊。查看全台門市地址、營業時間與聯絡電話，尋找離您最近的城市療癒空間。">
-<link rel="icon" type="image/png" href="https://ttcrcoffee.com/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="https://ttcrcoffee.com/favicon.svg" />
-    <link rel="shortcut icon" href="https://ttcrcoffee.com/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://ttcrcoffee.com/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="同齊咖吡" />
-    <link rel="manifest" href="https://ttcrcoffee.com/manifest.json" />
+<link rel="icon" type="image/png" href="https://ttcrcoffee.com/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="https://ttcrcoffee.com/favicon.svg">
+    <link rel="shortcut icon" href="https://ttcrcoffee.com/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ttcrcoffee.com/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="同齊咖吡">
+    <link rel="manifest" href="https://ttcrcoffee.com/manifest.json">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -735,7 +735,104 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         text-align: center;
     }
 }
+
+/* --- Adjust: center FOLLOW US, hide wave on mobile --- */
+.tt-footer .tt-footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;  /* 三欄等寬，中欄落在頁面中央 */
+}
+.tt-footer .tt-footer-col-left {
+    /* 維持靠左 */
+}
+.tt-footer .tt-footer-col-middle {
+    align-items: center;  /* 水平置中欄內內容 */
+}
+.tt-footer .tt-footer-col-right {
+    justify-content: flex-end;  /* Logo 維持靠右 */
+}
+@media (max-width: 768px) {
+    .tt-footer .tt-footer-wave { display: none !important; }
+    .tt-footer .tt-footer-grid { grid-template-columns: 1fr; }
+}
+/* --- /Adjust --- */
 /* ===== /TT Footer Module ===== */
+
+    
+/* ===== TT Mobile Nav (sync with menu.html) ===== */
+/* 桌機版維持原本樣式；以下規則只影響 <=768px 手機版 */
+@media (max-width: 768px) {
+    /* 收合菜單：從左側滑入、全屏、垂直置中 */
+    nav .nav-links,
+    nav.navbar .nav-links {
+        position: fixed !important;
+        top: 80px !important;
+        left: -100% !important;
+        right: auto !important;
+        width: 100% !important;
+        height: calc(100vh - 80px) !important;
+        background: rgba(250, 248, 245, 0.98) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 2rem !important;
+        transition: left 0.3s ease !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+        z-index: 999 !important;
+    }
+    nav .nav-links.active,
+    nav.navbar .nav-links.active,
+    nav .nav-links.mobile-active,
+    nav.navbar .nav-links.mobile-active {
+        left: 0 !important;
+    }
+    nav .nav-links a {
+        font-family: "Noto Sans TC", sans-serif !important;
+        font-size: 1.1rem !important;
+        font-weight: 700 !important;
+        letter-spacing: 2px !important;
+        color: #223843 !important;
+        text-decoration: none !important;
+    }
+
+    /* 漢堡按鈕（支援 .hamburger 和 .mobile-menu 兩種命名） */
+    .hamburger, .mobile-menu {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+        background: none !important;
+        border: none !important;
+        padding: 0 !important;
+        cursor: pointer !important;
+        width: 28px !important;
+        height: auto !important;
+    }
+    .hamburger span, .mobile-menu span {
+        display: block !important;
+        width: 25px !important;
+        height: 2px !important;
+        background: #223843 !important;
+        transition: all 0.3s ease !important;
+    }
+    .hamburger.active span:nth-child(1),
+    .mobile-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px) !important;
+    }
+    .hamburger.active span:nth-child(2),
+    .mobile-menu.active span:nth-child(2) {
+        opacity: 0 !important;
+    }
+    .hamburger.active span:nth-child(3),
+    .mobile-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px) !important;
+    }
+}
+/* 桌機版隱藏漢堡按鈕 */
+@media (min-width: 769px) {
+    .hamburger, .mobile-menu { display: none !important; }
+}
+/* ===== /TT Mobile Nav ===== */
 
     </style>
 <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}</style><style id="kgp-selected-style">
@@ -1558,36 +1655,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span></span>
             </button>
         </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="menu.html" class="nav-link">
-                <span class="nav-number">01</span>
-                <span>菜單</span>
-            </a>
-            <a href="franchise.html" class="nav-link">
-                <span class="nav-number">02</span>
-                <span>加盟計畫</span>
-            </a>
-            <a href="space-rental.html" class="nav-link">
-                <span class="nav-number">03</span>
-                <span>空間租賃</span>
-            </a>
-            <a href="location.html" class="nav-link">
-                <span class="nav-number">04</span>
-                <span>店面位置</span>
-            </a>
-            <a href="story.html" class="nav-link">
-                <span class="nav-number">05</span>
-                <span>品牌故事</span>
-            </a>
-            <a href="gallery.html" class="nav-link">
-                <span class="nav-number">06</span>
-                <span>相簿</span>
-            </a>
-            <a href="news.html" class="nav-link">
-                <span class="nav-number">07</span>
-                <span>最新消息</span>
-            </a>
-        </div>
+
     </nav>
 
     <header class="page-header">
@@ -1725,13 +1793,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
         });
 
-        const hamburger = document.getElementById(`hamburger`);
-        const mobileMenu = document.getElementById(`mobileMenu`);
-
-        hamburger.addEventListener(`click`, () => {
-            mobileMenu.classList.toggle(`active`);
-        });
-
         const kuseBranding = document.querySelector(`.kuse-branding`);
         kuseBranding.addEventListener(`mouseenter`, () => {
             kuseBranding.style.opacity = `1`;
@@ -1793,4 +1854,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
     </footer>
 
+<script>
+/* === TT Mobile Nav JS === */
+(function() {
+    function init() {
+        var toggle = document.querySelector('.hamburger') || document.querySelector('.mobile-menu');
+        var links = document.querySelector('nav .nav-links');
+        if (!toggle || !links) return;
+        // 避免重複綁定
+        if (toggle.dataset.ttBound === '1') return;
+        toggle.dataset.ttBound = '1';
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            toggle.classList.toggle('active');
+            links.classList.toggle('active');
+            links.classList.toggle('mobile-active');
+        });
+        links.querySelectorAll('a').forEach(function(a) {
+            a.addEventListener('click', function() {
+                toggle.classList.remove('active');
+                links.classList.remove('active');
+                links.classList.remove('mobile-active');
+            });
+        });
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+/* === /TT Mobile Nav JS === */
+</script>
 </body></html>

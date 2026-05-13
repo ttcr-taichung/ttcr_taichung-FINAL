@@ -621,6 +621,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         text-align: center;
     }
 }
+
+/* --- Adjust: center FOLLOW US, hide wave on mobile --- */
+.tt-footer .tt-footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;  /* 三欄等寬，中欄落在頁面中央 */
+}
+.tt-footer .tt-footer-col-left {
+    /* 維持靠左 */
+}
+.tt-footer .tt-footer-col-middle {
+    align-items: center;  /* 水平置中欄內內容 */
+}
+.tt-footer .tt-footer-col-right {
+    justify-content: flex-end;  /* Logo 維持靠右 */
+}
+@media (max-width: 768px) {
+    .tt-footer .tt-footer-wave { display: none !important; }
+    .tt-footer .tt-footer-grid { grid-template-columns: 1fr; }
+}
+/* --- /Adjust --- */
 /* ===== /TT Footer Module ===== */
 
     </style>
