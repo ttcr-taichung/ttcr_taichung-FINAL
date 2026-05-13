@@ -1,17 +1,16 @@
 {
-  "updated": "2026-05-13T15:25:05.244Z",
+  "updated": "2026-05-13T16:25:03.343Z",
   "d7": {
     "metrics": {
-      "users": 108,
-      "sessions": 153,
-      "pv": 1223,
-      "bounce": 53.59477124183007,
-      "dur": 1039.703536633987,
-      "newU": 90
+      "users": 104,
+      "sessions": 146,
+      "pv": 1196,
+      "bounce": 54.109589041095894,
+      "dur": 1065.0365529589042,
+      "newU": 87
     },
     "trend": {
       "dates": [
-        "05/06",
         "05/07",
         "05/08",
         "05/09",
@@ -21,7 +20,6 @@
         "05/13"
       ],
       "users": [
-        4,
         7,
         20,
         12,
@@ -31,7 +29,6 @@
         15
       ],
       "sessions": [
-        7,
         15,
         29,
         17,
@@ -45,10 +42,10 @@
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 260,
+        "pv": 258,
         "u": 3,
-        "avgT": 721.8214312272728,
-        "bounce": 27.27272727272727,
+        "avgT": 793.74267205,
+        "bounce": 30,
         "scrollD": 95
       },
       {
@@ -187,15 +184,6 @@
         "scrollD": 95
       },
       {
-        "path": "/index.html",
-        "name": "同齊咖吡",
-        "pv": 23,
-        "u": 2,
-        "avgT": 428.78466599999996,
-        "bounce": 25,
-        "scrollD": 50
-      },
-      {
         "path": "/pages/最新消息-同齊咖吡-TANGTSE-COFFEE-ROASTERY/7PJr9VgbJW4Pi9VFkRgcYa",
         "name": "最新消息 同齊咖吡 TANGTSE COFFEE ROASTERY - Kuse AI",
         "pv": 22,
@@ -221,6 +209,15 @@
         "avgT": 2265.865533,
         "bounce": 100,
         "scrollD": 95
+      },
+      {
+        "path": "/pages/STORES-同齊咖吡/8LGZRoU2iLGdH7ZLsm4VLv",
+        "name": "STORES 同齊咖吡 - Kuse AI",
+        "pv": 17,
+        "u": 1,
+        "avgT": 0.7052073333333334,
+        "bounce": 0,
+        "scrollD": 95
       }
     ],
     "sources": [
@@ -231,7 +228,7 @@
       },
       {
         "name": "自然搜尋",
-        "pct": 15,
+        "pct": 16,
         "color": "#1e8a4a"
       },
       {
@@ -241,12 +238,12 @@
       },
       {
         "name": "其他",
-        "pct": 7,
+        "pct": 8,
         "color": "#7b4fcf"
       },
       {
         "name": "社群媒體",
-        "pct": 5,
+        "pct": 4,
         "color": "#d97706"
       }
     ],
@@ -260,16 +257,11 @@
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 14
+          "users": 12
         },
         {
           "flag": "🌐",
           "name": "Brazil",
-          "users": 1
-        },
-        {
-          "flag": "🇨🇳",
-          "name": "中國",
           "users": 1
         },
         {
@@ -347,7 +339,7 @@
       ]
     },
     "age": {
-      "unknown": 89
+      "unknown": 86
     }
   },
   "d30": {
