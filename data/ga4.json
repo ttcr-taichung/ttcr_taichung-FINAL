@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-13T19:25:02.988Z",
+  "updated": "2026-05-13T20:25:03.110Z",
   "d7": {
     "metrics": {
-      "users": 104,
-      "sessions": 148,
-      "pv": 1198,
-      "bounce": 54.729729729729726,
-      "dur": 1050.6441671081081,
+      "users": 105,
+      "sessions": 149,
+      "pv": 1199,
+      "bounce": 55.033557046979865,
+      "dur": 1043.5928639731544,
       "newU": 87
     },
     "trend": {
@@ -28,7 +28,7 @@
         18,
         24,
         15,
-        0
+        1
       ],
       "sessions": [
         15,
@@ -38,7 +38,7 @@
         21,
         34,
         22,
-        1
+        2
       ]
     },
     "pages": [
@@ -160,6 +160,15 @@
         "scrollD": 95
       },
       {
+        "path": "/space-rental.html",
+        "name": "空間租賃",
+        "pv": 27,
+        "u": 8,
+        "avgT": 391.335791090909,
+        "bounce": 45.45454545454545,
+        "scrollD": 38
+      },
+      {
         "path": "/pages/STORES-同齊咖吡/W2t3Ar684nCooQPtvnBZp6",
         "name": "STORES 同齊咖吡 - Kuse AI",
         "pv": 26,
@@ -167,15 +176,6 @@
         "avgT": 4146.72937,
         "bounce": 100,
         "scrollD": 95
-      },
-      {
-        "path": "/space-rental.html",
-        "name": "空間租賃",
-        "pv": 26,
-        "u": 7,
-        "avgT": 430.46937019999996,
-        "bounce": 40,
-        "scrollD": 43
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -226,7 +226,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 65,
+        "pct": 64,
         "color": "#223843"
       },
       {
@@ -255,7 +255,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 89
+          "users": 90
         },
         {
           "flag": "🇺🇸",
@@ -296,7 +296,7 @@
         },
         {
           "name": "台北市",
-          "users": 17,
+          "users": 18,
           "subs": []
         },
         {
@@ -342,16 +342,16 @@
       ]
     },
     "age": {
-      "unknown": 86
+      "unknown": 87
     }
   },
   "d30": {
     "metrics": {
-      "users": 119,
-      "sessions": 181,
-      "pv": 1363,
-      "bounce": 48.06629834254144,
-      "dur": 943.4472317071823,
+      "users": 120,
+      "sessions": 182,
+      "pv": 1364,
+      "bounce": 48.35164835164835,
+      "dur": 938.2634557087912,
       "newU": 94
     },
     "trend": {
@@ -385,7 +385,7 @@
         18,
         24,
         15,
-        0
+        1
       ],
       "sessions": [
         2,
@@ -401,7 +401,7 @@
         21,
         34,
         22,
-        1
+        2
       ]
     },
     "pages": [
@@ -532,6 +532,15 @@
         "scrollD": 95
       },
       {
+        "path": "/space-rental.html",
+        "name": "空間租賃",
+        "pv": 27,
+        "u": 8,
+        "avgT": 391.335791090909,
+        "bounce": 45.45454545454545,
+        "scrollD": 38
+      },
+      {
         "path": "/pages/STORES-同齊咖吡/W2t3Ar684nCooQPtvnBZp6",
         "name": "STORES 同齊咖吡 - Kuse AI",
         "pv": 26,
@@ -539,15 +548,6 @@
         "avgT": 4146.72937,
         "bounce": 100,
         "scrollD": 95
-      },
-      {
-        "path": "/space-rental.html",
-        "name": "空間租賃",
-        "pv": 26,
-        "u": 7,
-        "avgT": 430.46937019999996,
-        "bounce": 40,
-        "scrollD": 43
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -604,7 +604,7 @@
       },
       {
         "name": "其他",
-        "pct": 6,
+        "pct": 7,
         "color": "#7b4fcf"
       },
       {
@@ -618,7 +618,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 89
+          "users": 90
         },
         {
           "flag": "🇺🇸",
@@ -664,7 +664,7 @@
         },
         {
           "name": "台北市",
-          "users": 17,
+          "users": 18,
           "subs": []
         },
         {
@@ -710,16 +710,16 @@
       ]
     },
     "age": {
-      "unknown": 89
+      "unknown": 90
     }
   },
   "d90": {
     "metrics": {
-      "users": 119,
-      "sessions": 181,
-      "pv": 1363,
-      "bounce": 48.06629834254144,
-      "dur": 943.4472317071823,
+      "users": 120,
+      "sessions": 182,
+      "pv": 1364,
+      "bounce": 48.35164835164835,
+      "dur": 938.2634557087912,
       "newU": 94
     },
     "trend": {
@@ -753,7 +753,7 @@
         18,
         24,
         15,
-        0
+        1
       ],
       "sessions": [
         2,
@@ -769,7 +769,7 @@
         21,
         34,
         22,
-        1
+        2
       ]
     },
     "pages": [
@@ -900,6 +900,15 @@
         "scrollD": 95
       },
       {
+        "path": "/space-rental.html",
+        "name": "空間租賃",
+        "pv": 27,
+        "u": 8,
+        "avgT": 391.335791090909,
+        "bounce": 45.45454545454545,
+        "scrollD": 38
+      },
+      {
         "path": "/pages/STORES-同齊咖吡/W2t3Ar684nCooQPtvnBZp6",
         "name": "STORES 同齊咖吡 - Kuse AI",
         "pv": 26,
@@ -907,15 +916,6 @@
         "avgT": 4146.72937,
         "bounce": 100,
         "scrollD": 95
-      },
-      {
-        "path": "/space-rental.html",
-        "name": "空間租賃",
-        "pv": 26,
-        "u": 7,
-        "avgT": 430.46937019999996,
-        "bounce": 40,
-        "scrollD": 43
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -972,7 +972,7 @@
       },
       {
         "name": "其他",
-        "pct": 6,
+        "pct": 7,
         "color": "#7b4fcf"
       },
       {
@@ -986,7 +986,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 89
+          "users": 90
         },
         {
           "flag": "🇺🇸",
@@ -1032,7 +1032,7 @@
         },
         {
           "name": "台北市",
-          "users": 17,
+          "users": 18,
           "subs": []
         },
         {
@@ -1078,7 +1078,7 @@
       ]
     },
     "age": {
-      "unknown": 89
+      "unknown": 90
     }
   }
 }
