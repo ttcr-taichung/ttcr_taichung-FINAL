@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-13T13:25:03.225Z",
+  "updated": "2026-05-13T14:25:04.272Z",
   "d7": {
     "metrics": {
       "users": 108,
-      "sessions": 152,
-      "pv": 1213,
-      "bounce": 53.289473684210535,
-      "dur": 998.8216911907895,
+      "sessions": 153,
+      "pv": 1217,
+      "bounce": 53.59477124183007,
+      "dur": 1004.6561370522875,
       "newU": 90
     },
     "trend": {
@@ -38,7 +38,7 @@
         9,
         21,
         34,
-        20
+        21
       ]
     },
     "pages": [
@@ -56,7 +56,7 @@
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
         "pv": 141,
         "u": 34,
-        "avgT": 623.4752851372549,
+        "avgT": 624.0151774117647,
         "bounce": 45.09803921568628,
         "scrollD": 21
       },
@@ -99,16 +99,16 @@
       {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 35,
+        "pv": 36,
         "u": 11,
-        "avgT": 437.64765750000004,
-        "bounce": 43.75,
+        "avgT": 411.9036776470589,
+        "bounce": 47.05882352941176,
         "scrollD": 45
       },
       {
         "path": "/pages/同齊咖吡-TANGTSE-COFFEE-ROASTERY/7Eg7EYsG9a4uvv7gibdMYv",
         "name": "同齊咖吡 TANGTSE COFFEE ROASTERY - Kuse AI",
-        "pv": 31,
+        "pv": 32,
         "u": 1,
         "avgT": 1540.678759,
         "bounce": 100,
@@ -353,10 +353,10 @@
   "d30": {
     "metrics": {
       "users": 119,
-      "sessions": 178,
-      "pv": 1351,
-      "bounce": 47.19101123595505,
-      "dur": 918.5966567134832,
+      "sessions": 179,
+      "pv": 1355,
+      "bounce": 47.486033519553075,
+      "dur": 924.0318257150838,
       "newU": 94
     },
     "trend": {
@@ -403,7 +403,7 @@
         9,
         21,
         34,
-        20
+        21
       ]
     },
     "pages": [
@@ -421,7 +421,7 @@
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
         "pv": 141,
         "u": 34,
-        "avgT": 623.4752851372549,
+        "avgT": 624.0151774117647,
         "bounce": 45.09803921568628,
         "scrollD": 21
       },
@@ -464,10 +464,10 @@
       {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 35,
+        "pv": 36,
         "u": 11,
-        "avgT": 437.64765750000004,
-        "bounce": 43.75,
+        "avgT": 411.9036776470589,
+        "bounce": 47.05882352941176,
         "scrollD": 45
       },
       {
@@ -482,7 +482,7 @@
       {
         "path": "/pages/同齊咖吡-TANGTSE-COFFEE-ROASTERY/7Eg7EYsG9a4uvv7gibdMYv",
         "name": "同齊咖吡 TANGTSE COFFEE ROASTERY - Kuse AI",
-        "pv": 31,
+        "pv": 32,
         "u": 1,
         "avgT": 1540.678759,
         "bounce": 100,
@@ -718,10 +718,10 @@
   "d90": {
     "metrics": {
       "users": 119,
-      "sessions": 178,
-      "pv": 1351,
-      "bounce": 47.19101123595505,
-      "dur": 918.5966567134832,
+      "sessions": 179,
+      "pv": 1355,
+      "bounce": 47.486033519553075,
+      "dur": 924.0318257150838,
       "newU": 94
     },
     "trend": {
@@ -768,7 +768,7 @@
         9,
         21,
         34,
-        20
+        21
       ]
     },
     "pages": [
@@ -786,7 +786,7 @@
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
         "pv": 141,
         "u": 34,
-        "avgT": 623.4752851372549,
+        "avgT": 624.0151774117647,
         "bounce": 45.09803921568628,
         "scrollD": 21
       },
@@ -829,10 +829,10 @@
       {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 35,
+        "pv": 36,
         "u": 11,
-        "avgT": 437.64765750000004,
-        "bounce": 43.75,
+        "avgT": 411.9036776470589,
+        "bounce": 47.05882352941176,
         "scrollD": 45
       },
       {
@@ -847,7 +847,7 @@
       {
         "path": "/pages/同齊咖吡-TANGTSE-COFFEE-ROASTERY/7Eg7EYsG9a4uvv7gibdMYv",
         "name": "同齊咖吡 TANGTSE COFFEE ROASTERY - Kuse AI",
-        "pv": 31,
+        "pv": 32,
         "u": 1,
         "avgT": 1540.678759,
         "bounce": 100,
