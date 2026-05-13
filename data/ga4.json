@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-13T14:25:04.272Z",
+  "updated": "2026-05-13T15:25:05.244Z",
   "d7": {
     "metrics": {
       "users": 108,
       "sessions": 153,
-      "pv": 1217,
+      "pv": 1223,
       "bounce": 53.59477124183007,
-      "dur": 1004.6561370522875,
+      "dur": 1039.703536633987,
       "newU": 90
     },
     "trend": {
@@ -72,10 +72,10 @@
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 46,
+        "pv": 47,
         "u": 28,
-        "avgT": 82.38154705405405,
-        "bounce": 32.432432432432435,
+        "avgT": 80.21361160526315,
+        "bounce": 34.21052631578947,
         "scrollD": 43
       },
       {
@@ -101,16 +101,25 @@
         "name": "STORES",
         "pv": 36,
         "u": 11,
-        "avgT": 411.9036776470589,
+        "avgT": 416.82776411764706,
         "bounce": 47.05882352941176,
         "scrollD": 45
       },
       {
         "path": "/pages/同齊咖吡-TANGTSE-COFFEE-ROASTERY/7Eg7EYsG9a4uvv7gibdMYv",
         "name": "同齊咖吡 TANGTSE COFFEE ROASTERY - Kuse AI",
-        "pv": 32,
+        "pv": 33,
         "u": 1,
         "avgT": 1540.678759,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
+        "path": "/pages/加盟計畫-同齊咖吡/7LvdycM22zg8cM96FcAg5e",
+        "name": "加盟計畫 同齊咖吡 - Kuse AI",
+        "pv": 28,
+        "u": 1,
+        "avgT": 1489.686636,
         "bounce": 100,
         "scrollD": 95
       },
@@ -120,15 +129,6 @@
         "pv": 28,
         "u": 1,
         "avgT": 4391.625821,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/pages/加盟計畫-同齊咖吡/7LvdycM22zg8cM96FcAg5e",
-        "name": "加盟計畫 同齊咖吡 - Kuse AI",
-        "pv": 27,
-        "u": 1,
-        "avgT": 1489.686636,
         "bounce": 100,
         "scrollD": 95
       },
@@ -207,9 +207,9 @@
       {
         "path": "/gallery.html",
         "name": "特色餐食",
-        "pv": 19,
+        "pv": 20,
         "u": 5,
-        "avgT": 868.284040875,
+        "avgT": 886.464711,
         "bounce": 50,
         "scrollD": 95
       },
@@ -246,7 +246,7 @@
       },
       {
         "name": "社群媒體",
-        "pct": 6,
+        "pct": 5,
         "color": "#d97706"
       }
     ],
@@ -354,9 +354,9 @@
     "metrics": {
       "users": 119,
       "sessions": 179,
-      "pv": 1355,
+      "pv": 1361,
       "bounce": 47.486033519553075,
-      "dur": 924.0318257150838,
+      "dur": 953.9885415586592,
       "newU": 94
     },
     "trend": {
@@ -437,10 +437,10 @@
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 46,
+        "pv": 47,
         "u": 28,
-        "avgT": 82.38154705405405,
-        "bounce": 32.432432432432435,
+        "avgT": 80.21361160526315,
+        "bounce": 34.21052631578947,
         "scrollD": 43
       },
       {
@@ -466,7 +466,7 @@
         "name": "STORES",
         "pv": 36,
         "u": 11,
-        "avgT": 411.9036776470589,
+        "avgT": 416.82776411764706,
         "bounce": 47.05882352941176,
         "scrollD": 45
       },
@@ -482,9 +482,18 @@
       {
         "path": "/pages/同齊咖吡-TANGTSE-COFFEE-ROASTERY/7Eg7EYsG9a4uvv7gibdMYv",
         "name": "同齊咖吡 TANGTSE COFFEE ROASTERY - Kuse AI",
-        "pv": 32,
+        "pv": 33,
         "u": 1,
         "avgT": 1540.678759,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
+        "path": "/pages/加盟計畫-同齊咖吡/7LvdycM22zg8cM96FcAg5e",
+        "name": "加盟計畫 同齊咖吡 - Kuse AI",
+        "pv": 28,
+        "u": 1,
+        "avgT": 1489.686636,
         "bounce": 100,
         "scrollD": 95
       },
@@ -494,15 +503,6 @@
         "pv": 28,
         "u": 1,
         "avgT": 4391.625821,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/pages/加盟計畫-同齊咖吡/7LvdycM22zg8cM96FcAg5e",
-        "name": "加盟計畫 同齊咖吡 - Kuse AI",
-        "pv": 27,
-        "u": 1,
-        "avgT": 1489.686636,
         "bounce": 100,
         "scrollD": 95
       },
@@ -581,9 +581,9 @@
       {
         "path": "/gallery.html",
         "name": "特色餐食",
-        "pv": 19,
+        "pv": 20,
         "u": 5,
-        "avgT": 868.284040875,
+        "avgT": 886.464711,
         "bounce": 50,
         "scrollD": 95
       }
@@ -719,9 +719,9 @@
     "metrics": {
       "users": 119,
       "sessions": 179,
-      "pv": 1355,
+      "pv": 1361,
       "bounce": 47.486033519553075,
-      "dur": 924.0318257150838,
+      "dur": 953.9885415586592,
       "newU": 94
     },
     "trend": {
@@ -802,10 +802,10 @@
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 46,
+        "pv": 47,
         "u": 28,
-        "avgT": 82.38154705405405,
-        "bounce": 32.432432432432435,
+        "avgT": 80.21361160526315,
+        "bounce": 34.21052631578947,
         "scrollD": 43
       },
       {
@@ -831,7 +831,7 @@
         "name": "STORES",
         "pv": 36,
         "u": 11,
-        "avgT": 411.9036776470589,
+        "avgT": 416.82776411764706,
         "bounce": 47.05882352941176,
         "scrollD": 45
       },
@@ -847,9 +847,18 @@
       {
         "path": "/pages/同齊咖吡-TANGTSE-COFFEE-ROASTERY/7Eg7EYsG9a4uvv7gibdMYv",
         "name": "同齊咖吡 TANGTSE COFFEE ROASTERY - Kuse AI",
-        "pv": 32,
+        "pv": 33,
         "u": 1,
         "avgT": 1540.678759,
+        "bounce": 100,
+        "scrollD": 95
+      },
+      {
+        "path": "/pages/加盟計畫-同齊咖吡/7LvdycM22zg8cM96FcAg5e",
+        "name": "加盟計畫 同齊咖吡 - Kuse AI",
+        "pv": 28,
+        "u": 1,
+        "avgT": 1489.686636,
         "bounce": 100,
         "scrollD": 95
       },
@@ -859,15 +868,6 @@
         "pv": 28,
         "u": 1,
         "avgT": 4391.625821,
-        "bounce": 100,
-        "scrollD": 95
-      },
-      {
-        "path": "/pages/加盟計畫-同齊咖吡/7LvdycM22zg8cM96FcAg5e",
-        "name": "加盟計畫 同齊咖吡 - Kuse AI",
-        "pv": 27,
-        "u": 1,
-        "avgT": 1489.686636,
         "bounce": 100,
         "scrollD": 95
       },
@@ -946,9 +946,9 @@
       {
         "path": "/gallery.html",
         "name": "特色餐食",
-        "pv": 19,
+        "pv": 20,
         "u": 5,
-        "avgT": 868.284040875,
+        "avgT": 886.464711,
         "bounce": 50,
         "scrollD": 95
       }
