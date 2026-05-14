@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-14T10:25:05.173Z",
+  "updated": "2026-05-14T11:25:03.401Z",
   "d7": {
     "metrics": {
       "users": 115,
-      "sessions": 160,
-      "pv": 1280,
-      "bounce": 50.625,
-      "dur": 392.82046526875007,
+      "sessions": 162,
+      "pv": 1287,
+      "bounce": 51.23456790123457,
+      "dur": 399.854896308642,
       "newU": 97
     },
     "trend": {
@@ -38,7 +38,7 @@
         21,
         34,
         22,
-        13
+        15
       ]
     },
     "pages": [
@@ -54,10 +54,10 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 152,
+        "pv": 154,
         "u": 39,
-        "avgT": 202.86378581034484,
-        "bounce": 41.37931034482759,
+        "avgT": 200.15112257627118,
+        "bounce": 42.3728813559322,
         "scrollD": 26
       },
       {
@@ -81,9 +81,9 @@
       {
         "path": "/franchise.html",
         "name": "加盟計畫",
-        "pv": 49,
+        "pv": 50,
         "u": 17,
-        "avgT": 122.95282499999999,
+        "avgT": 128.804054,
         "bounce": 46.42857142857143,
         "scrollD": 71
       },
@@ -115,6 +115,15 @@
         "scrollD": 95
       },
       {
+        "path": "/space-rental.html",
+        "name": "空間租賃",
+        "pv": 37,
+        "u": 11,
+        "avgT": 122.08634870588236,
+        "bounce": 41.17647058823529,
+        "scrollD": 45
+      },
+      {
         "path": "/pages/空間租賃-同齊咖吡/JwcLMkj2oaaM2bL7eYYX4i",
         "name": "空間租賃 同齊咖吡 - Kuse AI",
         "pv": 35,
@@ -122,15 +131,6 @@
         "avgT": 12.22412,
         "bounce": 0,
         "scrollD": 95
-      },
-      {
-        "path": "/space-rental.html",
-        "name": "空間租賃",
-        "pv": 35,
-        "u": 11,
-        "avgT": 113.14548146666668,
-        "bounce": 33.33333333333333,
-        "scrollD": 45
       },
       {
         "path": "/pages/加盟計畫-同齊咖吡/7LvdycM22zg8cM96FcAg5e",
@@ -358,10 +358,10 @@
   "d30": {
     "metrics": {
       "users": 130,
-      "sessions": 193,
-      "pv": 1445,
-      "bounce": 45.07772020725388,
-      "dur": 404.76625207253886,
+      "sessions": 195,
+      "pv": 1452,
+      "bounce": 45.64102564102564,
+      "dur": 410.4877200461539,
       "newU": 104
     },
     "trend": {
@@ -411,7 +411,7 @@
         21,
         34,
         22,
-        13
+        15
       ]
     },
     "pages": [
@@ -427,10 +427,10 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 152,
+        "pv": 154,
         "u": 39,
-        "avgT": 202.86378581034484,
-        "bounce": 41.37931034482759,
+        "avgT": 200.15112257627118,
+        "bounce": 42.3728813559322,
         "scrollD": 26
       },
       {
@@ -438,7 +438,7 @@
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
         "pv": 57,
         "u": 47,
-        "avgT": 80.64832078846153,
+        "avgT": 80.64832078846156,
         "bounce": 55.769230769230774,
         "scrollD": 17
       },
@@ -454,9 +454,9 @@
       {
         "path": "/franchise.html",
         "name": "加盟計畫",
-        "pv": 49,
+        "pv": 50,
         "u": 17,
-        "avgT": 122.952825,
+        "avgT": 128.804054,
         "bounce": 46.42857142857143,
         "scrollD": 71
       },
@@ -488,6 +488,15 @@
         "scrollD": 95
       },
       {
+        "path": "/space-rental.html",
+        "name": "空間租賃",
+        "pv": 37,
+        "u": 11,
+        "avgT": 122.08634870588236,
+        "bounce": 41.17647058823529,
+        "scrollD": 45
+      },
+      {
         "path": "/pages/空間租賃-同齊咖吡/JwcLMkj2oaaM2bL7eYYX4i",
         "name": "空間租賃 同齊咖吡 - Kuse AI",
         "pv": 35,
@@ -495,15 +504,6 @@
         "avgT": 12.22412,
         "bounce": 0,
         "scrollD": 95
-      },
-      {
-        "path": "/space-rental.html",
-        "name": "空間租賃",
-        "pv": 35,
-        "u": 11,
-        "avgT": 113.14548146666668,
-        "bounce": 33.33333333333333,
-        "scrollD": 45
       },
       {
         "path": "/admin.html",
@@ -599,7 +599,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 69,
+        "pct": 68,
         "color": "#223843"
       },
       {
@@ -736,10 +736,10 @@
   "d90": {
     "metrics": {
       "users": 130,
-      "sessions": 193,
-      "pv": 1445,
-      "bounce": 45.07772020725388,
-      "dur": 404.76625207253886,
+      "sessions": 195,
+      "pv": 1452,
+      "bounce": 45.64102564102564,
+      "dur": 410.4877200461539,
       "newU": 104
     },
     "trend": {
@@ -789,7 +789,7 @@
         21,
         34,
         22,
-        13
+        15
       ]
     },
     "pages": [
@@ -805,10 +805,10 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 152,
+        "pv": 154,
         "u": 39,
-        "avgT": 202.86378581034484,
-        "bounce": 41.37931034482759,
+        "avgT": 200.15112257627118,
+        "bounce": 42.3728813559322,
         "scrollD": 26
       },
       {
@@ -816,7 +816,7 @@
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
         "pv": 57,
         "u": 47,
-        "avgT": 80.64832078846153,
+        "avgT": 80.64832078846156,
         "bounce": 55.769230769230774,
         "scrollD": 17
       },
@@ -832,9 +832,9 @@
       {
         "path": "/franchise.html",
         "name": "加盟計畫",
-        "pv": 49,
+        "pv": 50,
         "u": 17,
-        "avgT": 122.952825,
+        "avgT": 128.804054,
         "bounce": 46.42857142857143,
         "scrollD": 71
       },
@@ -866,6 +866,15 @@
         "scrollD": 95
       },
       {
+        "path": "/space-rental.html",
+        "name": "空間租賃",
+        "pv": 37,
+        "u": 11,
+        "avgT": 122.08634870588236,
+        "bounce": 41.17647058823529,
+        "scrollD": 45
+      },
+      {
         "path": "/pages/空間租賃-同齊咖吡/JwcLMkj2oaaM2bL7eYYX4i",
         "name": "空間租賃 同齊咖吡 - Kuse AI",
         "pv": 35,
@@ -873,15 +882,6 @@
         "avgT": 12.22412,
         "bounce": 0,
         "scrollD": 95
-      },
-      {
-        "path": "/space-rental.html",
-        "name": "空間租賃",
-        "pv": 35,
-        "u": 11,
-        "avgT": 113.14548146666668,
-        "bounce": 33.33333333333333,
-        "scrollD": 45
       },
       {
         "path": "/admin.html",
@@ -977,7 +977,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 69,
+        "pct": 68,
         "color": "#223843"
       },
       {
