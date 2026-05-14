@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-14T06:25:04.116Z",
+  "updated": "2026-05-14T07:25:03.460Z",
   "d7": {
     "metrics": {
       "users": 111,
       "sessions": 155,
-      "pv": 1218,
+      "pv": 1220,
       "bounce": 56.774193548387096,
       "dur": 1028.6271474258062,
-      "newU": 92
+      "newU": 93
     },
     "trend": {
       "dates": [
@@ -54,7 +54,7 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 148,
+        "pv": 149,
         "u": 38,
         "avgT": 580.1185187368421,
         "bounce": 50.877192982456144,
@@ -117,7 +117,7 @@
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 31,
+        "pv": 32,
         "u": 10,
         "avgT": 375.3439982857143,
         "bounce": 57.14285714285714,
@@ -349,10 +349,10 @@
     "metrics": {
       "users": 126,
       "sessions": 188,
-      "pv": 1383,
+      "pv": 1385,
       "bounce": 50,
       "dur": 929.2862769042553,
-      "newU": 99
+      "newU": 100
     },
     "trend": {
       "dates": [
@@ -417,7 +417,7 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 148,
+        "pv": 149,
         "u": 38,
         "avgT": 580.1185187368421,
         "bounce": 50.877192982456144,
@@ -489,7 +489,7 @@
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 31,
+        "pv": 32,
         "u": 10,
         "avgT": 375.3439982857143,
         "bounce": 57.14285714285714,
@@ -717,10 +717,10 @@
     "metrics": {
       "users": 126,
       "sessions": 188,
-      "pv": 1383,
+      "pv": 1385,
       "bounce": 50,
       "dur": 929.2862769042553,
-      "newU": 99
+      "newU": 100
     },
     "trend": {
       "dates": [
@@ -785,7 +785,7 @@
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 148,
+        "pv": 149,
         "u": 38,
         "avgT": 580.1185187368421,
         "bounce": 50.877192982456144,
@@ -814,7 +814,7 @@
         "name": "加盟計畫",
         "pv": 47,
         "u": 16,
-        "avgT": 364.2080487037037,
+        "avgT": 364.20804870370375,
         "bounce": 59.25925925925925,
         "scrollD": 69
       },
@@ -857,7 +857,7 @@
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 31,
+        "pv": 32,
         "u": 10,
         "avgT": 375.3439982857143,
         "bounce": 57.14285714285714,
