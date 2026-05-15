@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-15T22:25:03.207Z",
+  "updated": "2026-05-15T23:25:03.463Z",
   "d7": {
     "metrics": {
-      "users": 113,
-      "sessions": 154,
-      "pv": 1028,
-      "bounce": 57.14285714285714,
-      "dur": 397.71120068181824,
+      "users": 114,
+      "sessions": 155,
+      "pv": 1029,
+      "bounce": 57.41935483870968,
+      "dur": 395.14858767741936,
       "newU": 96
     },
     "trend": {
@@ -28,7 +28,7 @@
         15,
         12,
         20,
-        4
+        5
       ],
       "sessions": [
         17,
@@ -38,7 +38,7 @@
         22,
         18,
         29,
-        4
+        5
       ]
     },
     "pages": [
@@ -99,11 +99,11 @@
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 41,
-        "u": 13,
-        "avgT": 52.64194676190476,
-        "bounce": 28.57142857142857,
-        "scrollD": 46
+        "pv": 42,
+        "u": 14,
+        "avgT": 50.27213940909091,
+        "bounce": 31.818181818181817,
+        "scrollD": 43
       },
       {
         "path": "/pages/菜單-同齊咖吡-TANGTSE-COFFEE-ROASTERY/QXBXidsXqQPKVjuxbvDNw8",
@@ -236,7 +236,7 @@
       },
       {
         "name": "其他",
-        "pct": 9,
+        "pct": 10,
         "color": "#3a7ca5"
       },
       {
@@ -255,7 +255,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 95
+          "users": 96
         },
         {
           "flag": "🇺🇸",
@@ -291,7 +291,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 52,
+          "users": 53,
           "subs": []
         },
         {
@@ -347,16 +347,16 @@
       ]
     },
     "age": {
-      "unknown": 97
+      "unknown": 98
     }
   },
   "d30": {
     "metrics": {
-      "users": 155,
-      "sessions": 231,
-      "pv": 1529,
-      "bounce": 48.484848484848484,
-      "dur": 386.76492980519487,
+      "users": 156,
+      "sessions": 232,
+      "pv": 1530,
+      "bounce": 48.706896551724135,
+      "dur": 385.1000214224139,
       "newU": 124
     },
     "trend": {
@@ -394,7 +394,7 @@
         15,
         12,
         20,
-        4
+        5
       ],
       "sessions": [
         2,
@@ -412,7 +412,7 @@
         22,
         18,
         29,
-        4
+        5
       ]
     },
     "pages": [
@@ -439,7 +439,7 @@
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
         "pv": 70,
         "u": 58,
-        "avgT": 61.76997153125,
+        "avgT": 61.76997153125001,
         "bounce": 54.6875,
         "scrollD": 24
       },
@@ -473,11 +473,11 @@
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 42,
-        "u": 14,
-        "avgT": 51.67926477272727,
-        "bounce": 27.27272727272727,
-        "scrollD": 43
+        "pv": 43,
+        "u": 15,
+        "avgT": 49.454348260869565,
+        "bounce": 30.434782608695656,
+        "scrollD": 40
       },
       {
         "path": "/pages/菜單-同齊咖吡-TANGTSE-COFFEE-ROASTERY/QXBXidsXqQPKVjuxbvDNw8",
@@ -629,7 +629,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 117
+          "users": 118
         },
         {
           "flag": "🇺🇸",
@@ -670,7 +670,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 60,
+          "users": 61,
           "subs": []
         },
         {
@@ -731,16 +731,16 @@
       ]
     },
     "age": {
-      "unknown": 120
+      "unknown": 121
     }
   },
   "d90": {
     "metrics": {
-      "users": 155,
-      "sessions": 231,
-      "pv": 1529,
-      "bounce": 48.484848484848484,
-      "dur": 386.76492980519487,
+      "users": 156,
+      "sessions": 232,
+      "pv": 1530,
+      "bounce": 48.706896551724135,
+      "dur": 385.1000214224139,
       "newU": 124
     },
     "trend": {
@@ -778,7 +778,7 @@
         15,
         12,
         20,
-        4
+        5
       ],
       "sessions": [
         2,
@@ -796,7 +796,7 @@
         22,
         18,
         29,
-        4
+        5
       ]
     },
     "pages": [
@@ -857,11 +857,11 @@
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 42,
-        "u": 14,
-        "avgT": 51.67926477272727,
-        "bounce": 27.27272727272727,
-        "scrollD": 43
+        "pv": 43,
+        "u": 15,
+        "avgT": 49.454348260869565,
+        "bounce": 30.434782608695656,
+        "scrollD": 40
       },
       {
         "path": "/pages/菜單-同齊咖吡-TANGTSE-COFFEE-ROASTERY/QXBXidsXqQPKVjuxbvDNw8",
@@ -1013,7 +1013,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 117
+          "users": 118
         },
         {
           "flag": "🇺🇸",
@@ -1054,7 +1054,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 60,
+          "users": 61,
           "subs": []
         },
         {
@@ -1115,7 +1115,7 @@
       ]
     },
     "age": {
-      "unknown": 120
+      "unknown": 121
     }
   }
 }
