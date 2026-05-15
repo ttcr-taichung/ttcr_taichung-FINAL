@@ -1,8 +1,8 @@
 <html lang="zh-Hant"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>里民愛儲值 瘋狂加碼送 | 同齊咖吡 TTCR</title>
-    <meta name="description" content="同齊咖吡 2025 里民愛儲值活動，三款組合任選：剝皮辣椒大滿足 $2,800、人氣首選組 $1,800、小小幸福組 $800，加碼瘋狂送到滿。">
+    <title>寄杯福利社｜買越多送越多 | 同齊咖吡 TTCR</title>
+    <meta name="description" content="同齊咖吡 寄杯福利社｜里民美式・里民拿鐵雙系列，買越多送越多，最高限省 $700 起。從福利社飲料到寄杯咖啡，讓你重回下課衝福利社的美好時光。">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -442,7 +442,7 @@
         }
         .related .grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 24px;
         }
         .related .card {
@@ -634,13 +634,13 @@
             .product-table .row.head { display: none; }
             .product-table .row.group .price-tag { margin: 4px 0 0 20px; display: inline-block; }
             .product-table .row:not(.head):not(.group) > div:nth-child(1)::before {
-                content: "類別　　"; color: var(--brand-muted); font-size: 0.78rem; margin-right: 8px;
+                content: "方案　　"; color: var(--brand-muted); font-size: 0.78rem; margin-right: 8px;
             }
             .product-table .row:not(.head):not(.group) > div:nth-child(2)::before {
-                content: "品項　　"; color: var(--brand-muted); font-size: 0.78rem; margin-right: 8px;
+                content: "購買杯數"; color: var(--brand-muted); font-size: 0.78rem; margin-right: 8px;
             }
             .product-table .row:not(.head):not(.group) > div:nth-child(3)::before {
-                content: "數量　　"; color: var(--brand-muted); font-size: 0.78rem; margin-right: 8px;
+                content: "總杯數　"; color: var(--brand-muted); font-size: 0.78rem; margin-right: 8px;
             }
 
             .related .grid { grid-template-columns: 1fr; }
@@ -666,6 +666,140 @@
         @media (min-width: 769px) {
             .hamburger { display: none !important; }
         }
+    
+        /* ===== News Top-Up custom ===== */
+        .bell-banner {
+            text-align: center;
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            letter-spacing: 0.3em;
+            color: var(--brand-blue);
+            padding: 14px 0;
+            margin: 0 0 24px;
+            border-top: 1px dashed var(--brand-line);
+            border-bottom: 1px dashed var(--brand-line);
+        }
+        .dialogue {
+            background: #F3EEE5;
+            border-radius: 8px;
+            padding: 22px 26px;
+            margin: 0 0 32px;
+            position: relative;
+        }
+        .dialogue::before {
+            content: "“";
+            position: absolute;
+            top: -18px; left: 14px;
+            font-family: var(--font-serif);
+            font-size: 3.4rem;
+            color: var(--brand-gold);
+            line-height: 1;
+        }
+        .dialogue p {
+            font-family: var(--font-serif);
+            color: var(--brand-blue);
+            line-height: 1.9;
+            margin: 0 0 6px;
+            font-size: 1rem;
+        }
+        .dialogue p:last-child { margin-bottom: 0; }
+        .dialogue .who {
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+        .recall {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: var(--brand-blue);
+            text-align: center;
+            margin: 0 0 10px !important;
+            letter-spacing: 0.04em;
+        }
+        .highlight-strip {
+            background: var(--brand-blue);
+            color: #fff;
+            border-radius: 4px;
+            padding: 26px 24px;
+            margin: 36px 0 12px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .highlight-strip::before {
+            content: "";
+            position: absolute; inset: 0;
+            background: radial-gradient(circle at 15% 30%, rgba(244,211,122,0.22), transparent 55%);
+            pointer-events: none;
+        }
+        .highlight-strip .hl-burst {
+            display: inline-block;
+            font-family: var(--font-serif);
+            font-size: 0.95rem;
+            letter-spacing: 0.2em;
+            color: var(--brand-gold-soft);
+            margin-bottom: 4px;
+        }
+        .highlight-strip .hl-main {
+            display: block;
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            margin: 2px 0 10px;
+        }
+        .highlight-strip .hl-main b {
+            color: var(--brand-gold-soft);
+            font-size: 1.9rem;
+        }
+        .highlight-strip .hl-sub {
+            display: block;
+            font-size: 0.9rem;
+            letter-spacing: 0.08em;
+            color: rgba(255,255,255,0.82);
+        }
+        .series-block {
+            margin: 28px 0 8px;
+            padding: 18px 20px 8px;
+            background: #fff;
+            border: 1px solid var(--brand-line);
+            border-radius: 4px;
+        }
+        .series-block + .series-block { margin-top: 20px; }
+        .series-head {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            padding: 2px 4px 14px;
+            border-bottom: 1px solid var(--brand-line);
+            margin-bottom: 16px;
+        }
+        .series-head .series-ico {
+            font-size: 1.3rem;
+        }
+        .series-head .series-name {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: var(--brand-blue);
+            letter-spacing: 0.18em;
+        }
+        .series-head .series-tag {
+            margin-left: auto;
+            font-family: var(--font-serif);
+            font-size: 0.78rem;
+            letter-spacing: 0.25em;
+            color: var(--brand-muted);
+        }
+        .series-block .plan-gallery { margin: 0; }
+        @media (max-width: 768px) {
+            .series-block { padding: 14px 14px 6px; }
+            .series-head .series-name { font-size: 1.05rem; letter-spacing: 0.14em; }
+            .highlight-strip .hl-main { font-size: 1.25rem; }
+            .highlight-strip .hl-main b { font-size: 1.5rem; }
+            .bell-banner { letter-spacing: 0.2em; font-size: 1rem; }
+        }
+
     </style>
 </head>
 <body style="outline: none;">
@@ -692,86 +826,125 @@
             <span class="sep">／</span>
             <a href="news.html">最新消息</a>
             <span class="sep">／</span>
-            <span>里民愛儲值 瘋狂加碼送</span>
+            <span>寄杯福利社｜買越多送越多</span>
         </div>
-        <span class="tag">MEMBER TOP-UP</span>
-        <h1>👑 里民愛儲值｜瘋狂加碼送</h1>
-        <div class="date">2025 · 05 · 12　·　活動訊息</div>
+        <span class="tag">COFFEE PASS</span>
+        <h1>🔔 寄杯福利社｜買越多送越多</h1>
+        <div class="date">2026 · 05 · 14　·　活動訊息</div>
     </section>
 
     <!-- Article Cover -->
     <div class="article-cover" style="max-width: none; padding: 0; margin: 40px 0 0;">
-        <div class="cover-frame" style="background:#FAF8F5; aspect-ratio:auto; height:auto; width:100%; padding:0; border-radius:0;"><img src="https://api.kuse.ai/api/file/public-assets/9722586/access/688d7ae02d295953e7caa4aff120ea531b1e80a41510e39698cc4f85d2075fa2" alt="寄杯咖啡方案" style="width:100%; height:auto; display:block; margin:0; border-radius:0;">
+        <div class="cover-frame" style="background:#FAF8F5; aspect-ratio:auto; height:auto; width:100%; padding:0; border-radius:0;"><img src="https://api.kuse.ai/api/file/public-assets/9722670/access/381dd18b15c24b42be905822760067b3ea6ea7a9dd9a8fc6bbd9d0cb4bb5f078" alt="寄杯福利社｜買越多送越多" style="width: 100%; height: auto; display: block; margin: 0px; border-radius: 0px; outline: none;">
             
         </div>
     </div>
 
     <!-- Article Body -->
     <article class="article-body" style="">
-        <p class="lead">「讓愛儲值的你們，<br>我們 <span class="accent">加碼瘋狂送到滿</span>！！！」</p>
+        <p class="lead" style="">「從福利社飲料到寄杯咖啡，<br>長大後的甜，<span class="accent" style="outline: none;">更有層次 !</span>」</p>
 
-        <p>三款儲值組合任選，從特調飲品、暖心湯品到招牌輕食，一次把日常的小確幸補好補滿。無論是結伴來店小聚、還是犒賞自己的一段安靜時光，都能在同齊找到剛剛好的選項。</p>
+        <div class="bell-banner">叮～噹～叮～噹～ 🔔</div>
 
-        <h2>三款組合　任選儲值</h2>
-
-        <div class="plan-gallery">
-            <div class="card" data-badge="儲值 $2,800" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9722579/access/1afffd07162e22059f09774dbf6a0ce7f151c23ab5b94077f58fa4d9a3bc3410&quot;); background-size: cover; background-position: 50% 50%;">
-                <div class="meta">
-                    <div class="plan-name" style="">剝皮辣椒大滿足</div>
-                    <div class="plan-price" style="outline: none; width: 149.965px;">FULL SATISFACTION SET</div>
-                </div>
-            </div>
-            <div class="card" data-badge="儲值 $1,800" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9722585/access/4875c27b515b3401f405792fe9fa167ecf987ecda414d05d6ad2387845d5a1dd&quot;); background-size: cover; background-position: 50% 50%; outline: none;">
-                <div class="meta">
-                    <div class="plan-name" style="">人氣首選組</div>
-                    <div class="plan-price">CROWD FAVOURITE SET</div>
-                </div>
-            </div>
-            <div class="card" data-badge="儲值 $800" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9722584/access/8c9d4a358ee0b5d258f7b9b7087ec25567561cf67d13ff0e2e04eaf2a24c3599&quot;); background-size: cover; background-position: 50% 50%;">
-                <div class="meta">
-                    
-                    <div class="plan-name" style="">小小幸福組</div><div class="plan-price" style="">LITTLE HAPPY <br>SET</div>
-                </div>
-            </div>
+        <div class="dialogue">
+            <p><span class="who">🧒</span>「欸下課了～走啦走啦！福利社飲料要被搶光了啦！」</p>
+            <p><span class="who">🏃‍♂️</span>「快點！我們要去搶最好喝的麥香奶茶啦～」</p>
         </div>
 
-        <p>每一組都是從「想讓客人多得到一點」出發，依儲值金額搭配飲品、輕食、暖湯與點心，清楚標示兌換數量，沒有複雜規則、沒有隱藏門檻。</p>
+        <p class="recall" style="">還記得嗎？下課鐘聲一響，衝去福利社搶飲料的那份快樂時光。</p>
+        <p style="">我們為了你們開了一間「寄杯福利社」，<br>想讓大家重回上學買飲料的美好時光。</p>
 
-        <h2>贈品明細</h2>
-        <div class="product-table">
-            <div class="row head">
-                <div>類別</div><div>品項</div><div>數量</div>
-            </div>
-
-            <!-- Plan 1 -->
-            <div class="row group">
-                <div style="font-size: 16px;">✔ 剝皮辣椒大滿足</div>
-                <div><span class="price-tag" style="font-size: 16px;">儲值 $2,800</span></div>
-            </div>
-            <div class="row"><div>飲品</div><div>特調飲品</div><div class="qty">× 2</div></div>
-            <div class="row"><div>特色餐食</div><div>剝皮辣椒輕食（單點）</div><div class="qty">× 2</div></div>
-            <div class="row"><div>湯品</div><div>剝皮辣椒雞湯</div><div class="qty">× 2</div></div>
-            <div class="row"><div>點心</div><div>薯條</div><div class="qty">× 2</div></div>
-
-            <!-- Plan 2 -->
-            <div class="row group">
-                <div style="font-size: 16px;">✔ 人氣首選組</div>
-                <div><span class="price-tag" style="font-size: 16px;">儲值 $1,800</span></div>
-            </div>
-            <div class="row"><div>飲品</div><div>特調飲品</div><div class="qty">× 2</div></div>
-            <div class="row"><div>特色餐食</div><div>豪華炸物拼盤</div><div class="qty">× 1</div></div>
-            <div class="row"><div>湯品</div><div>剝皮辣椒雞湯</div><div class="qty">× 2</div></div>
-
-            <!-- Plan 3 -->
-            <div class="row group">
-                <div style="font-size: 16px;">✔ 小小幸福組</div>
-                <div><span class="price-tag" style="font-size: 16px;">儲值 $800</span></div>
-            </div>
-            <div class="row"><div>飲品</div><div>特調飲品</div><div class="qty">× 1</div></div>
-            <div class="row"><div>點心</div><div>薯條</div><div class="qty">× 1</div></div>
+        <div class="highlight-strip">
+            <span class="hl-burst">💥 現在開始</span>
+            <span class="hl-main">最高限省 <b>$700 起</b></span>
+            <span class="hl-sub">從福利社飲料到寄杯咖啡　·　快樂一樣，年紀不一樣！</span>
         </div>
+
+        <h2>寄杯方案　買越多送越多</h2>
 
         
+
+        <div class="series-block">
+            <div class="series-head">
+                <span class="series-ico">☕</span>
+                <span class="series-name">里 民 美 式</span>
+                <span class="series-tag">AMERICANO</span>
+            </div>
+            <div class="plan-gallery">
+                <div class="card" data-badge="現省 $300" style="background: url(&quot;https://api.kuse.ai/api/file/public-assets/9722674/access/daf85e7263fd01c94b0f9e45d030abae4daec4435dbc80bae7f3d3abbdd360b2&quot;) 50% 50% / cover no-repeat;">
+                    <div class="meta">
+                        <div class="plan-name" style="">買 10 送 3</div>
+                        <div class="plan-price" style="">$999·共 13 杯</div>
+                    </div>
+                </div>
+                <div class="card" data-badge="現省 $500" style="background: url(&quot;https://api.kuse.ai/api/file/public-assets/9722673/access/66344ea013c33aba966fb39c257699833eff35ad42052dcd4f815093aade3c8a&quot;) 50% 50% / cover no-repeat;">
+                    <div class="meta">
+                        <div class="plan-name">買 15 送 5</div>
+                        <div class="plan-price" style="width: 174.899px;">$1,499·共 20 杯</div>
+                    </div>
+                </div>
+                <div class="card" data-badge="現省 $700" style="background: url(&quot;https://api.kuse.ai/api/file/public-assets/9722675/access/932947244579a645ce3828a62118db3b6751f6a418cb65110f57885120528a32&quot;) 50% 50% / cover no-repeat; outline: none;">
+                    <div class="meta">
+                        <div class="plan-name">買 20 送 7</div>
+                        <div class="plan-price" style="width: 171.552px;">$1,999·共 27 杯</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-block">
+            <div class="series-head">
+                <span class="series-ico">☕</span>
+                <span class="series-name">里 民 拿 鐵</span>
+                <span class="series-tag">LATTE</span>
+            </div>
+            <div class="plan-gallery">
+                <div class="card" data-badge="現省 $260" style="background: url(&quot;https://api.kuse.ai/api/file/public-assets/9722676/access/35c5833987d1ed5b7e78fc32ad375dffce27f36c56359a0680eaca9a232038cd&quot;) 50% 50% / cover no-repeat;">
+                    <div class="meta">
+                        <div class="plan-name">買 10 送 2</div>
+                        <div class="plan-price" style="width: 168.234px;">$1,299·共 12 杯</div>
+                    </div>
+                </div>
+                <div class="card" data-badge="現省 $520" style="background: url(&quot;https://api.kuse.ai/api/file/public-assets/9722677/access/8789f399fcd9ecbd4ad08b5fa3574362d7ef1bb6190174c3185dd38d197fadbe&quot;) 50% 50% / cover no-repeat;">
+                    <div class="meta">
+                        <div class="plan-name">買 15 送 4</div>
+                        <div class="plan-price" style="width: 165.899px; padding-bottom: 0px; outline: none;">$1,949·共 19 杯</div>
+                    </div>
+                </div>
+                <div class="card" data-badge="現省 $780" style="background: url(&quot;https://api.kuse.ai/api/file/public-assets/9722678/access/87822e8105f5510f38111ad4ddd16d69c42ecc061aae01f099feeb8fe80a7359&quot;) 50% 50% / cover no-repeat; outline: none;">
+                    <div class="meta">
+                        <div class="plan-name">買 20 送 6</div>
+                        <div class="plan-price" style="width: 163.552px; outline: none;"><span style="letter-spacing: 1.968px; outline: none;">$2,599·共 26 杯</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p style="text-align:center; font-family:var(--font-serif); color:var(--brand-blue); letter-spacing:0.08em; margin: 36px 0 8px;">我們永遠讓你回味這份溫暖 ♡</p>
+
+        <h2>寄杯方案對照</h2>
+        <div class="product-table">
+            <div class="row head">
+                <div>方案</div><div>購買杯數</div><div>總杯數</div>
+            </div>
+
+            <div class="row group">
+                <div style="font-size: 16px;">☕ 里 民 美 式</div>
+                <div><span class="price-tag" style="font-size: 16px;">美式系列</span></div>
+            </div>
+            <div class="row"><div style="">現省300</div><div>買 10 送 3　$999</div><div class="qty">共 13 杯</div></div>
+            <div class="row"><div style="">現省500</div><div>買 15 送 5　$1,499</div><div class="qty">共 20 杯</div></div>
+            <div class="row"><div style="">現省700</div><div>買 20 送 7　$1,999</div><div class="qty">共 27 杯</div></div>
+
+            <div class="row group">
+                <div style="font-size: 16px;">☕ 里 民 拿 鐵</div>
+                <div><span class="price-tag" style="font-size: 16px;">拿鐵系列</span></div>
+            </div>
+            <div class="row"><div style="">現省260</div><div>買 10 送 2　$1,299</div><div class="qty">共 12 杯</div></div>
+            <div class="row"><div style="">現省520</div><div>買 15 送 4　$1,949</div><div class="qty">共 19 杯</div></div>
+            <div class="row"><div style="outline: none;">現省780</div><div>買 20 送 6　$2,599</div><div class="qty">共 26 杯</div></div>
+        </div>
+        <p style="font-size:0.92rem; color: var(--brand-muted); margin-top: -8px;">大杯／冷熱不限，買越多送越多，最高限省 <b style="color: var(--brand-blue);">$700 起</b>。</p>
         <div class="info-grid">
             
             
@@ -779,38 +952,43 @@
         </div>
 
         <h2>如何參加</h2>
-        <p style="">1. <strong>門市儲值</strong>｜親至台中各門市現場辦理儲值，選擇想要的組合，現場即可開始使用。</p>
-        <p style="">2. <strong>LINE 官方帳號</strong>｜加入 <strong>@828kffwi</strong>，私訊「我要儲值」由專人為您服務。</p>
-        <p style="outline: none;">3. <strong style="">服務時間</strong>｜ 週一至週日 08:00–23:00。</p>
+        <p>1. <strong>現場購買</strong>｜親至同齊咖吡台中區門市，選擇想要的寄杯方案，<strong>僅限現場付款</strong>（現金、LINE Pay、信用卡）。</p>
+        <p>2. <strong>電子寄杯券</strong>｜購買後以手機電子券畫面兌換，使用效期自購買日起算 <strong>三個月</strong> 內有效。</p>
+        <p>3. <strong>LINE 諮詢</strong>｜加入官方帳號 <strong>@828kffwi</strong>，私訊「我要寄杯」由專人為您服務。</p>
+
+        
 
         <div class="remark">
-            <strong>｜消費使用規範｜</strong>
+            <strong>🔴 貼心小提醒</strong>
 
-            <h4>一、領取與兌換辦法</h4>
-            <p class="kv"><b>發券基準：</b>來店內消費憑券兌換，每人消費滿 <b>$100 元</b>可兌換一張、滿 <b>$200 元</b>兌換兩張，以此類推。</p>
-            <p class="kv"><b>適用範圍：</b>本規則僅限內用消費，外帶則不在此限。</p>
-            <p class="kv"><b>集點限制：</b>為整合會員福利，里民辦理儲值後，該筆及後續消費不再贈送集點卡。</p>
+            <h4>一、咖啡豆與飲品規格</h4>
+            <p class="kv"><b>咖啡豆：</b>本活動所使用的咖啡豆為 <b>中深焙</b>。</p>
+            <p class="kv"><b>飲品規格：</b>大杯／冷熱不限，依現場菜單為準。</p>
 
-            <h4>二、兌換品項內容</h4>
-            <p>本券僅限兌換券面標示之指定品項，兌換內容包含：</p>
+            <h4>二、會員權益與集點</h4>
+            <p class="kv"><b>不併用：</b>本活動不適用會員九折優惠，亦不可扣抵點數。</p>
+            <p class="kv"><b>集點限制：</b>販售寄杯卡不贈送集點卡。</p>
+
+            <h4>三、使用方式</h4>
             <ol>
-                <li><b>特調飲品系列：</b>任選乙杯（實際品項依現場菜單為準）。</li>
-                <li><b>剝皮辣椒輕食：</b>單點任一款輕食麵包（佛卡夏／可頌）。</li>
-                <li><b>豪華炸物拼盤：</b>乙份。</li>
-                <li><b>剝皮辣椒雞湯：</b>乙碗。</li>
-                <li><b>黃金薯條：</b>乙份。</li>
+                <li><b>電子券：</b>本活動為電子形式，兌換須出示手機電子券畫面。</li>
+                <li><b>效期：</b>使用效期自購買日起算 <b>三個月內</b>，逾期失效。</li>
+                <li><b>外帶限定：</b>本活動為外帶專屬優惠，恕不開放內用（內用須滿低消）。</li>
             </ol>
 
-            <h4>三、使用注意事項</h4>
-            <p class="kv"><b>有效期限：</b>使用效期如系統顯示為主。</p>
-            <p class="kv"><b>權益保留：</b>同齊咖吡保留隨時修改、終止變更本活動之權利。如有未盡事宜，本公司保有調整及最終解釋權，並不另行通知。</p>
+            <h4>四、付款與適用門市</h4>
+            <p class="kv"><b>付款方式：</b>購買福利社方案僅限現場付款（接受現金、LINE Pay、信用卡）。</p>
+            <p class="kv"><b>適用門市：</b>本活動僅適用於同齊咖吡「台中區門市」。</p>
+
+            <h4>五、權益保留</h4>
+            <p class="kv"><b>最終解釋權：</b>如有未盡事宜，同齊咖吡保留隨時修改、調整、終止活動及最終解釋權利。</p>
         </div>
     </article>
 
     <!-- CTA -->
     <section class="cta-section">
-        <h3>💬 即刻私訊　搶先儲值</h3>
-        <p>把喜歡的組合帶回家，聚會、小酌、獨享都剛剛好。</p>
+        <h3>💬 即刻私訊　搶先寄杯</h3>
+        <p>下課衝福利社的快樂時光，換個方式繼續陪你——買越多送越多，最高限省 $700 起。</p>
         <div class="btns">
             <a class="btn primary" href="https://line.me/R/ti/p/@828kffwi" target="_blank" rel="noopener" style="outline: none;">官方 LINE｜@828kffwi</a>
             <a class="btn ghost" href="location.html">查看門市位置</a>
@@ -821,22 +999,22 @@
     <section class="related">
         <h3>延伸閱讀</h3>
         <div class="grid">
-            <a class="card" href="news-top-up.html">
-                <div class="thumb" data-label="STORAGE" style="background-size: cover; background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723638/access/0f888e0d47c4b78ab2825295ab015c0041e2cf284c66fd771485e0e78edddeda&quot;); background-position: 50% 50%;"></div>
-                <div class="body">
-                    <div class="date">MAY 14, 2026</div>
-                    <h4>寄杯福利社｜買越多送越多</h4>
-                </div>
-            </a>
             <a class="card" href="news-vip-card.html">
-                <div class="thumb" data-label="VIP" style="background-size: cover; background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723639/access/2d8a96e82889edc683ba48269d2335b4193e9e63279bf6a7754a73759f43d53d&quot;); background-position: 50% 50%;"></div>
+                <div class="thumb" data-label="VIP" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723647/access/56a17e8f459773397420432dfb0bad863be1cdd41767b7c4b72eed75f29ea0a3&quot;); background-size: cover; background-position: 50% 50%;"></div>
                 <div class="body">
                     <div class="date">FEB 1, 2026</div>
                     <h4>作伙同行·即刻啟程｜尊爵會員限時招募</h4>
                 </div>
             </a>
+            <a class="card" href="news-christmas.html">
+                <div class="thumb" data-label="CHRISTMAS" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723648/access/f9ad518ce5156b230fe3ec01e76eb09b8c01ec8721388afc68d53a9bf770c713&quot;); background-size: cover; background-position: 50% 50%;"></div>
+                <div class="body">
+                    <div class="date">DEC 25, 2025</div>
+                    <h4>聖誕包場專案｜在同齊咖啡感受溫暖</h4>
+                </div>
+            </a>
             <a class="card" href="news-member-card.html">
-                <div class="thumb" data-label="MEMBER" style="outline: none; background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723640/access/e0fcce7f2f9efad9260a8fc31418a5e25ad11651e6dcdcf192c034bfde3f3f9e&quot;); background-size: cover; background-position: 50% 50%;"></div>
+                <div class="thumb" data-label="MEMBER" style="outline: none; background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723649/access/b701137893e0fc0d56cf89fe2a8ac8c1e7a1ef4265544a98360cd727b9eb0de0&quot;); background-size: cover; background-position: 50% 50%;"></div>
                 <div class="body">
                     <div class="date">ALWAYS · ON</div>
                     <h4>同齊咖吡｜會員制度介紹</h4>

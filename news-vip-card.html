@@ -668,7 +668,677 @@
         }
     </style>
 </head>
-<body style="outline: none;">
+<body style="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>里民愛儲值 瘋狂加碼送 | 同齊咖吡 TTCR</title>
+    <meta name="description" content="同齊咖吡 2025 里民愛儲值活動，三款組合任選：剝皮辣椒大滿足 $2,800、人氣首選組 $1,800、小小幸福組 $800，加碼瘋狂送到滿。">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&amp;family=Noto+Serif+TC:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --brand-blue: #223843;
+            --brand-blue-dark: #172832;
+            --brand-cream: #FAF8F5;
+            --brand-line: #E6E1D9;
+            --brand-muted: #7A7166;
+            --brand-gold: #C8A14A;
+            --brand-gold-soft: #F4D37A;
+            --font-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+            --font-serif: "Noto Serif TC", "Noto Serif CJK TC", serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-sans);
+            color: var(--brand-blue);
+            background: var(--brand-cream);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
+
+        /* ===== Nav ===== */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            padding: 1rem 5%;
+            background: rgba(250, 248, 245, 0.95);
+            backdrop-filter: blur(10px);
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px solid rgba(34, 56, 67, 0.08);
+        }
+        nav .logo { display: block; height: 72px; }
+        nav .logo img { height: 100%; width: auto; object-fit: contain; }
+        nav .nav-links { display: flex; gap: 3rem; list-style: none; }
+        nav .nav-links a {
+            font-family: var(--font-sans);
+            font-size: 0.95rem; font-weight: 700;
+            letter-spacing: 1px; color: #2c2c2c;
+            transition: color .25s ease;
+        }
+        nav .nav-links a:hover, nav .nav-links a.active { color: var(--brand-blue); }
+        .hamburger {
+            display: none; flex-direction: column; gap: 5px;
+            background: none; border: none; cursor: pointer; padding: 0;
+        }
+        .hamburger span { width: 25px; height: 2px; background: var(--brand-blue); transition: all .3s ease; }
+
+        /* ===== Article Hero ===== */
+        .article-hero {
+            padding: 180px 5% 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .breadcrumb {
+            font-size: 0.82rem;
+            color: var(--brand-muted);
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+        .breadcrumb a:hover { color: var(--brand-blue); }
+        .breadcrumb .sep { margin: 0 10px; opacity: 0.6; }
+        .article-hero .tag {
+            display: inline-block;
+            padding: 6px 20px;
+            background: var(--brand-blue);
+            color: #fff;
+            font-size: 0.78rem;
+            letter-spacing: 0.3em;
+            border-radius: 9999px;
+            margin-bottom: 20px;
+        }
+        .article-hero h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+            font-weight: 900;
+            letter-spacing: 0.04em;
+            line-height: 1.45;
+            color: var(--brand-blue);
+        }
+        .article-hero .date {
+            font-family: var(--font-serif);
+            font-size: 0.9rem;
+            letter-spacing: 0.18em;
+            color: var(--brand-muted);
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        /* ===== Article Cover ===== */
+        .article-cover {
+            max-width: 1100px;
+            margin: 40px auto 0;
+            padding: 0 5%;
+        }
+        .article-cover .cover-frame {
+            width: 100%;
+            aspect-ratio: 21 / 9;
+            background: linear-gradient(135deg, #2f4a57 0%, #223843 60%, #172832 100%);
+            border-radius: 2px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .article-cover .cover-frame::before,
+        .article-cover .cover-frame::after {
+            content: "";
+            position: absolute;
+            width: 220px; height: 220px;
+            border-radius: 50%;
+            filter: blur(80px);
+        }
+        .article-cover .cover-frame::before {
+            background: rgba(255,255,255,0.12);
+            top: -60px; left: 15%;
+        }
+        .article-cover .cover-frame::after {
+            background: rgba(244, 211, 122, 0.28);
+            bottom: -80px; right: 10%;
+        }
+        .article-cover .cover-frame .label {
+            position: relative;
+            color: rgba(255,255,255,0.9);
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            letter-spacing: 0.4em;
+            padding: 20px 40px;
+            border: 1px solid rgba(255,255,255,0.35);
+            text-align: center;
+        }
+        .article-cover .cover-frame .label .crown {
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 6px;
+            letter-spacing: 0;
+        }
+
+        /* ===== Article Body ===== */
+        .article-body {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 60px 5% 80px;
+            font-size: 1.02rem;
+            color: #3a4a54;
+        }
+        .article-body .lead {
+            font-family: var(--font-serif);
+            font-size: 1.35rem;
+            font-weight: 500;
+            color: var(--brand-blue);
+            line-height: 1.75;
+            padding: 0 0 40px;
+            border-bottom: 1px solid var(--brand-line);
+            margin-bottom: 48px;
+            text-align: center;
+            letter-spacing: 0.04em;
+        }
+        .article-body .lead .accent { color: var(--brand-gold); font-weight: 700; }
+        .article-body h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--brand-blue);
+            letter-spacing: 0.06em;
+            margin: 56px 0 24px;
+            padding-left: 16px;
+            border-left: 4px solid var(--brand-blue);
+        }
+        .article-body p { margin-bottom: 20px; }
+
+        /* Plan gallery — 三款儲值組合 */
+        .plan-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin: 36px 0;
+        }
+        .plan-gallery .card {
+            aspect-ratio: 3 / 4;
+            background: linear-gradient(160deg, #3d5b69, #223843);
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            padding: 22px;
+            color: #fff;
+        }
+        .plan-gallery .card::before {
+            content: attr(data-badge);
+            position: absolute;
+            top: 16px; left: 16px;
+            background: var(--brand-gold-soft);
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: 0.78rem; font-weight: 700;
+            letter-spacing: 0.08em;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            z-index: 2;
+        }
+        .plan-gallery .card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,0.55) 100%);
+        }
+        .plan-gallery .card .meta { position: relative; z-index: 1; }
+        .plan-gallery .card .plan-name {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+        }
+        .plan-gallery .card .plan-price {
+            font-size: 0.82rem;
+            color: var(--brand-gold-soft);
+            margin-top: 4px;
+            letter-spacing: 0.15em;
+        }
+
+        /* Product table (here: 儲值組合贈品明細) */
+        .product-table {
+            margin: 32px 0;
+            border: 1px solid var(--brand-line);
+            background: #fff;
+        }
+        .product-table .row {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            border-bottom: 1px solid var(--brand-line);
+            align-items: center;
+        }
+        .product-table .row:last-child { border-bottom: none; }
+        .product-table .row.head {
+            background: var(--brand-blue);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.88rem;
+            letter-spacing: 0.15em;
+        }
+        .product-table .row.group {
+            background: #F3EEE5;
+            font-family: var(--font-serif);
+            font-weight: 700;
+            color: var(--brand-blue);
+            letter-spacing: 0.08em;
+            grid-template-columns: 1fr auto;
+        }
+        .product-table .row.group .price-tag {
+            background: var(--brand-blue);
+            color: var(--brand-gold-soft);
+            font-family: var(--font-serif);
+            padding: 4px 14px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            letter-spacing: 0.08em;
+            margin-right: 14px;
+        }
+        .product-table .row > div {
+            padding: 14px 20px;
+            font-size: 0.96rem;
+        }
+        .product-table .row .qty {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            color: var(--brand-blue);
+            letter-spacing: 0.04em;
+        }
+
+        /* Info grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 36px 0;
+        }
+        .info-grid .info-card {
+            background: #fff;
+            border: 1px solid var(--brand-line);
+            padding: 28px 24px;
+            text-align: center;
+        }
+        .info-grid .info-card .icon {
+            width: 48px; height: 48px;
+            border: 1.5px solid var(--brand-blue);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            color: var(--brand-blue);
+            font-weight: 700;
+        }
+        .info-grid .info-card .label {
+            font-size: 0.78rem;
+            color: var(--brand-muted);
+            letter-spacing: 0.2em;
+            margin-bottom: 8px;
+        }
+        .info-grid .info-card .value {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            color: var(--brand-blue);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        /* Remark (消費使用規範) */
+        .remark {
+            background: #F3EEE5;
+            padding: 28px 32px;
+            margin-top: 48px;
+            font-size: 0.88rem;
+            color: var(--brand-muted);
+            line-height: 2;
+            border-radius: 2px;
+        }
+        .remark strong {
+            color: var(--brand-blue);
+            font-weight: 700;
+            display: block;
+            margin-bottom: 8px;
+            letter-spacing: 0.15em;
+            font-size: 0.92rem;
+        }
+        .remark h4 {
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: 0.98rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            margin: 18px 0 6px;
+            padding-left: 10px;
+            border-left: 3px solid var(--brand-blue);
+        }
+        .remark h4:first-child { margin-top: 0; }
+        .remark ol { padding-left: 20px; }
+        .remark ol li { margin-bottom: 4px; }
+        .remark .kv { margin-bottom: 4px; }
+        .remark .kv b { color: var(--brand-blue); font-weight: 500; }
+
+        /* CTA */
+        .cta-section {
+            background: var(--brand-blue);
+            color: #fff;
+            padding: 64px 5%;
+            text-align: center;
+            margin-top: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-section::before {
+            content: ""; position: absolute; inset: 0;
+            background: radial-gradient(circle at 18% 20%, rgba(244, 211, 122, 0.18), transparent 55%);
+            pointer-events: none;
+        }
+        .cta-section h3 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            margin-bottom: 14px;
+            position: relative;
+        }
+        .cta-section p {
+            color: rgba(255,255,255,0.78);
+            margin-bottom: 32px;
+            letter-spacing: 0.04em;
+            position: relative;
+        }
+        .cta-section .btns {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .cta-section .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 36px;
+            border-radius: 9999px;
+            font-size: 0.92rem;
+            letter-spacing: 0.2em;
+            transition: all .25s ease;
+            cursor: pointer;
+        }
+        .cta-section .btn.primary {
+            background: var(--brand-gold-soft);
+            color: var(--brand-blue);
+            border: 1.5px solid var(--brand-gold-soft);
+        }
+        .cta-section .btn.primary:hover {
+            background: transparent;
+            color: var(--brand-gold-soft);
+        }
+        .cta-section .btn.ghost {
+            background: transparent;
+            color: #fff;
+            border: 1.5px solid rgba(255,255,255,0.6);
+        }
+        .cta-section .btn.ghost:hover {
+            background: #fff;
+            color: var(--brand-blue);
+            border-color: #fff;
+        }
+
+        /* Related */
+        .related {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 5% 60px;
+        }
+        .related h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 900;
+            letter-spacing: 0.15em;
+            color: var(--brand-blue);
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--brand-blue);
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        .related .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .related .card {
+            background: #fff;
+            border: 1px solid var(--brand-line);
+            transition: all .3s ease;
+            overflow: hidden;
+        }
+        .related .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(34,56,67,0.12);
+        }
+        .related .card .thumb {
+            aspect-ratio: 16 / 10;
+            background: linear-gradient(135deg, #2f4a57, #223843);
+            position: relative;
+            overflow: hidden;
+        }
+        .related .card .thumb::after {
+            content: none;
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.6);
+            font-family: var(--font-serif);
+            font-size: 0.92rem;
+            letter-spacing: 0.3em;
+        }
+        .related .card .body { padding: 20px 22px 24px; }
+        .related .card .date {
+            font-family: var(--font-serif);
+            font-size: 0.78rem;
+            letter-spacing: 0.18em;
+            color: var(--brand-muted);
+            margin-bottom: 10px;
+        }
+        .related .card h4 {
+            font-family: var(--font-serif);
+            font-size: 1.05rem;
+            color: var(--brand-blue);
+            line-height: 1.55;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+        }
+
+        /* Back to list */
+        .back-to-list {
+            text-align: center;
+            padding: 40px 0 80px;
+        }
+        .back-to-list a {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 38px;
+            border: 1.5px solid var(--brand-blue);
+            color: var(--brand-blue);
+            border-radius: 9999px;
+            font-size: 0.9rem;
+            letter-spacing: 0.2em;
+            transition: all .25s ease;
+        }
+        .back-to-list a:hover {
+            background: var(--brand-blue);
+            color: #fff;
+        }
+
+        /* ===== Footer (TT) ===== */
+        .tt-footer {
+            background: var(--brand-blue);
+            color: #fff;
+            padding: 4rem 5% 0;
+            position: relative;
+            overflow: hidden;
+            font-family: var(--font-sans);
+        }
+        .tt-footer-inner { position: relative; z-index: 2; padding-bottom: 3rem; }
+        .tt-footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .tt-footer-company-name {
+            font-size: 2.2rem; font-weight: 800;
+            letter-spacing: 0.02em; margin-bottom: 1.8rem; color: #fff;
+        }
+        .tt-footer-info p { font-size: 0.9rem; color: rgba(255,255,255,0.75); line-height: 1.9; }
+        .tt-footer-copyright { margin-top: 2.5rem; }
+        .tt-footer-copyright p, .tt-footer-copyright a {
+            display: block; font-size: 0.82rem; font-weight: 300;
+            color: rgba(255,255,255,0.45); line-height: 1.9; letter-spacing: 0.05em;
+        }
+        .tt-footer-copyright a:hover { color: rgba(255,255,255,0.75); }
+        .tt-footer-col-middle { display: flex; flex-direction: column; align-items: center; }
+        .tt-footer-follow {
+            font-family: var(--font-serif); font-size: 1.6rem; font-weight: 700;
+            color: rgba(255,255,255,0.9); letter-spacing: 0.1em; margin-bottom: 1.8rem;
+        }
+        .tt-footer-social { display: flex; gap: 1.2rem; }
+        .tt-footer-social a {
+            width: 50px; height: 50px;
+            border: 1.5px solid rgba(255,255,255,0.5);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            transition: all .3s ease;
+        }
+        .tt-footer-social a:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+        .tt-footer-social svg { width: 24px; height: 24px; fill: rgba(255,255,255,0.85); }
+        .tt-footer-col-right { display: flex; align-items: center; justify-content: flex-end; }
+        .tt-footer-col-right img { width: 120px; height: auto; }
+        .tt-footer-wave {
+            position: absolute; bottom: 0; right: 0;
+            width: 35%; height: 55%; pointer-events: none;
+        }
+
+        /* ===== FAB ===== */
+        .tt-fab-group {
+            position: fixed; right: 28px; bottom: 28px;
+            z-index: 9999;
+            display: flex; flex-direction: column; gap: 12px;
+            pointer-events: none;
+        }
+        .tt-fab-group .tt-fab {
+            pointer-events: auto;
+            display: inline-flex; align-items: center; justify-content: center;
+            min-width: 132px; height: 52px;
+            padding: 0 26px;
+            border-radius: 9999px;
+            background: var(--brand-blue);
+            color: #fff !important;
+            font-family: var(--font-sans);
+            font-size: 16px; font-weight: 500; letter-spacing: 0.08em;
+            border: 1.5px solid var(--brand-blue);
+            box-shadow: 0 6px 18px rgba(34,56,67,0.28);
+            transition: all .25s ease;
+            white-space: nowrap;
+        }
+        .tt-fab-group .tt-fab:hover {
+            transform: translateY(-2px);
+            background: #fff;
+            color: var(--brand-blue) !important;
+            box-shadow: 0 10px 24px rgba(34,56,67,0.35);
+        }
+        .tt-fab-group .tt-fab--ghost { background: #fff; color: var(--brand-blue) !important; }
+        .tt-fab-group .tt-fab--ghost:hover { background: var(--brand-blue); color: #fff !important; }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            nav { padding: 0.8rem 5%; }
+            nav .logo { height: 58px; }
+            .hamburger { display: flex !important; }
+            nav .nav-links {
+                position: fixed !important;
+                top: 80px !important; left: -100% !important;
+                width: 100% !important;
+                height: calc(100vh - 80px) !important;
+                background: rgba(250, 248, 245, 0.98) !important;
+                display: flex !important; flex-direction: column !important;
+                align-items: center !important; justify-content: center !important;
+                gap: 2rem !important;
+                transition: left .3s ease !important;
+                margin: 0 !important; z-index: 999 !important;
+            }
+            nav .nav-links.active { left: 0 !important; }
+            nav .nav-links a {
+                font-size: 1.1rem !important; font-weight: 700 !important;
+                letter-spacing: 2px !important;
+            }
+            .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(7px, 7px); }
+            .hamburger.active span:nth-child(2) { opacity: 0; }
+            .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+
+            .article-hero { padding: 130px 5% 20px; }
+            .article-cover { padding: 0; }
+            .article-cover .cover-frame { aspect-ratio: 4 / 3; border-radius: 0; }
+            .article-body { padding: 40px 6% 60px; }
+            .article-body h2 { font-size: 1.25rem; }
+
+            .plan-gallery { grid-template-columns: 1fr; gap: 12px; }
+            .plan-gallery .card { aspect-ratio: 16 / 9; }
+            .info-grid { grid-template-columns: 1fr; }
+
+            .product-table .row { grid-template-columns: 1fr; padding: 6px 0; }
+            .product-table .row.group { grid-template-columns: 1fr; }
+            .product-table .row > div { padding: 6px 20px; }
+            .product-table .row.head { display: none; }
+            .product-table .row.group .price-tag { margin: 4px 0 0 20px; display: inline-block; }
+            .product-table .row:not(.head):not(.group) > div:nth-child(1)::before {
+                content: "類別　　"; color: var(--brand-muted); font-size: 0.78rem; margin-right: 8px;
+            }
+            .product-table .row:not(.head):not(.group) > div:nth-child(2)::before {
+                content: "品項　　"; color: var(--brand-muted); font-size: 0.78rem; margin-right: 8px;
+            }
+            .product-table .row:not(.head):not(.group) > div:nth-child(3)::before {
+                content: "數量　　"; color: var(--brand-muted); font-size: 0.78rem; margin-right: 8px;
+            }
+
+            .related .grid { grid-template-columns: 1fr; }
+
+            .tt-footer { padding: 3rem 1.5rem 0; text-align: center; }
+            .tt-footer-grid { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
+            .tt-footer-col-left { order: 2; }
+            .tt-footer-col-middle { order: 1; align-items: center; }
+            .tt-footer-col-right { order: 3; justify-content: center; }
+            .tt-footer-company-name { font-size: 1.5rem; }
+            .tt-footer-follow { font-size: 1.2rem; }
+            .tt-footer-social a { width: 44px; height: 44px; }
+            .tt-footer-col-right img { width: 90px; }
+            .tt-footer-wave { display: none !important; }
+
+            .tt-fab-group { right: 16px; bottom: 16px; gap: 10px; }
+            .tt-fab-group .tt-fab {
+                min-width: 112px; height: 46px;
+                padding: 0 20px; font-size: 14px; letter-spacing: 0.06em;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .hamburger { display: none !important; }
+        }
+    </style>
+
+
 
     <nav>
         <a href="index.html" class="logo"><img src="logo.png" alt="同齊咖吡 TTCR"></a>
@@ -685,91 +1355,71 @@
         </button>
     </nav>
 
-    <!-- Article Hero -->
+    
     <section class="article-hero" style="">
-        <div class="breadcrumb">
+        <div class="breadcrumb" style="">
             <a href="index.html">首頁</a>
             <span class="sep">／</span>
             <a href="news.html">最新消息</a>
             <span class="sep">／</span>
-            <span>里民愛儲值 瘋狂加碼送</span>
+            <span style="">尊爵會員限時招募</span>
         </div>
         <span class="tag">MEMBER TOP-UP</span>
-        <h1>👑 里民愛儲值｜瘋狂加碼送</h1>
-        <div class="date">2025 · 05 · 12　·　活動訊息</div>
+        <h1 style=""><p>作伙同行·即刻啟程</p>
+<p>尊爵會員限時招募</p></h1>
+        <div class="date" style="">2026 · 02 · 01　·　活動訊息</div>
     </section>
 
-    <!-- Article Cover -->
+    
     <div class="article-cover" style="max-width: none; padding: 0; margin: 40px 0 0;">
-        <div class="cover-frame" style="background:#FAF8F5; aspect-ratio:auto; height:auto; width:100%; padding:0; border-radius:0;"><img src="https://api.kuse.ai/api/file/public-assets/9722586/access/688d7ae02d295953e7caa4aff120ea531b1e80a41510e39698cc4f85d2075fa2" alt="寄杯咖啡方案" style="width:100%; height:auto; display:block; margin:0; border-radius:0;">
+        <div class="cover-frame" style="background: rgb(250, 248, 245); aspect-ratio: auto; height: auto; width: 100%; padding: 0px; border-radius: 0px;"><img src="https://api.kuse.ai/api/file/public-assets/9722706/access/f79a55ca15248520d9e1f45b0f28280fefe794dfbdf07ee09d999a1284d5edb9" alt="寄杯咖啡方案" style="width: 100%; height: auto; display: block; margin: 0px; border-radius: 0px;">
             
         </div>
     </div>
 
-    <!-- Article Body -->
+    
+    
+
+    
     <article class="article-body" style="">
-        <p class="lead">「讓愛儲值的你們，<br>我們 <span class="accent">加碼瘋狂送到滿</span>！！！」</p>
+        <p class="lead" style="">「您已是同齊最重要的朋友。<br>現在，我們 <span class="accent" style="">誠摯邀請您成為這個故事最核心的一員!</span>」</p>
 
-        <p>三款儲值組合任選，從特調飲品、暖心湯品到招牌輕食，一次把日常的小確幸補好補滿。無論是結伴來店小聚、還是犒賞自己的一段安靜時光，都能在同齊找到剛剛好的選項。</p>
+        
 
-        <h2>三款組合　任選儲值</h2>
+        <h2 style=""><p style="">⚠️限時招募，名額有限！</p><div class="remark" style="">
+            
+
+            <h4 style="font-size: 18px;">三大核心價值：讓您的品味，變成您的收益</h4>
+            <p class="kv" style=""><b style="font-size: 16px;">【定期分紅】</b>像持有績優股，每半年共享品牌成長果實，發放品牌推廣獎金。</p>
+            <p class="kv" style=""><b style="font-size: 16px;">【100% 回饋】</b>入會金全額抵消費，就像把資金放在更有溫度的口袋。</p>
+            <p class="kv" style=""><b style="font-size: 16px;">【共享共榮】</b><span style="font-size: 0.88rem;">就像在地台積電，北屯店生意越好，您的獎金回饋就越多！</span></p>
+<p style="margin-bottom: 0px;"><br></p>
+
+            <h4 style="font-size: 18px;">👑 尊爵專屬特權：首席股東的禮遇</h4>
+            
+            <ol style="">
+                <li style="font-size: 16px;"><b style="">免排隊特權：</b>私密品鑑會，搶先掌握第一手風味消息。</li>
+                <li style="font-size: 16px;"><b style="">新品黑卡之夜：</b>VIP 專屬通道，忙碌時刻優先為您入座。</li>
+                
+                <li style="font-size: 16px;"><b style="padding-right: 0px; padding-bottom: 0.360138px;">首席優先預訂：</b>尊爵卡專屬席次，這是您應得的優先權。<br></li>
+                
+            </ol>
+
+            
+            <p class="kv" style=""></p>
+            
+        </div></h2>
 
         <div class="plan-gallery">
-            <div class="card" data-badge="儲值 $2,800" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9722579/access/1afffd07162e22059f09774dbf6a0ce7f151c23ab5b94077f58fa4d9a3bc3410&quot;); background-size: cover; background-position: 50% 50%;">
-                <div class="meta">
-                    <div class="plan-name" style="">剝皮辣椒大滿足</div>
-                    <div class="plan-price" style="outline: none; width: 149.965px;">FULL SATISFACTION SET</div>
-                </div>
-            </div>
-            <div class="card" data-badge="儲值 $1,800" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9722585/access/4875c27b515b3401f405792fe9fa167ecf987ecda414d05d6ad2387845d5a1dd&quot;); background-size: cover; background-position: 50% 50%; outline: none;">
-                <div class="meta">
-                    <div class="plan-name" style="">人氣首選組</div>
-                    <div class="plan-price">CROWD FAVOURITE SET</div>
-                </div>
-            </div>
-            <div class="card" data-badge="儲值 $800" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9722584/access/8c9d4a358ee0b5d258f7b9b7087ec25567561cf67d13ff0e2e04eaf2a24c3599&quot;); background-size: cover; background-position: 50% 50%;">
-                <div class="meta">
-                    
-                    <div class="plan-name" style="">小小幸福組</div><div class="plan-price" style="">LITTLE HAPPY <br>SET</div>
-                </div>
-            </div>
+            
+            
+            
         </div>
 
-        <p>每一組都是從「想讓客人多得到一點」出發，依儲值金額搭配飲品、輕食、暖湯與點心，清楚標示兌換數量，沒有複雜規則、沒有隱藏門檻。</p>
+        
 
-        <h2>贈品明細</h2>
-        <div class="product-table">
-            <div class="row head">
-                <div>類別</div><div>品項</div><div>數量</div>
-            </div>
-
-            <!-- Plan 1 -->
-            <div class="row group">
-                <div style="font-size: 16px;">✔ 剝皮辣椒大滿足</div>
-                <div><span class="price-tag" style="font-size: 16px;">儲值 $2,800</span></div>
-            </div>
-            <div class="row"><div>飲品</div><div>特調飲品</div><div class="qty">× 2</div></div>
-            <div class="row"><div>特色餐食</div><div>剝皮辣椒輕食（單點）</div><div class="qty">× 2</div></div>
-            <div class="row"><div>湯品</div><div>剝皮辣椒雞湯</div><div class="qty">× 2</div></div>
-            <div class="row"><div>點心</div><div>薯條</div><div class="qty">× 2</div></div>
-
-            <!-- Plan 2 -->
-            <div class="row group">
-                <div style="font-size: 16px;">✔ 人氣首選組</div>
-                <div><span class="price-tag" style="font-size: 16px;">儲值 $1,800</span></div>
-            </div>
-            <div class="row"><div>飲品</div><div>特調飲品</div><div class="qty">× 2</div></div>
-            <div class="row"><div>特色餐食</div><div>豪華炸物拼盤</div><div class="qty">× 1</div></div>
-            <div class="row"><div>湯品</div><div>剝皮辣椒雞湯</div><div class="qty">× 2</div></div>
-
-            <!-- Plan 3 -->
-            <div class="row group">
-                <div style="font-size: 16px;">✔ 小小幸福組</div>
-                <div><span class="price-tag" style="font-size: 16px;">儲值 $800</span></div>
-            </div>
-            <div class="row"><div>飲品</div><div>特調飲品</div><div class="qty">× 1</div></div>
-            <div class="row"><div>點心</div><div>薯條</div><div class="qty">× 1</div></div>
-        </div>
+        
+        
 
         
         <div class="info-grid">
@@ -778,65 +1428,41 @@
             
         </div>
 
-        <h2>如何參加</h2>
-        <p style="">1. <strong>門市儲值</strong>｜親至台中各門市現場辦理儲值，選擇想要的組合，現場即可開始使用。</p>
-        <p style="">2. <strong>LINE 官方帳號</strong>｜加入 <strong>@828kffwi</strong>，私訊「我要儲值」由專人為您服務。</p>
-        <p style="outline: none;">3. <strong style="">服務時間</strong>｜ 週一至週日 08:00–23:00。</p>
+        <h2 style="">如何加入</h2>
+        <p style="">1. <strong>門市儲值</strong>｜親至台中北屯門市現場辦理，現場即可開始使用。</p>
+        <p style="padding-bottom: 0px;">2. <strong>LINE 官方帳號</strong>｜加入 <strong>@828kffwi</strong>，私訊「我要成為尊爵會員」由專人為您服務。</p>
+        <p style="">3. <strong style="">服務時間</strong>｜ 週一至週日 08:00–23:00。</p>
 
-        <div class="remark">
-            <strong>｜消費使用規範｜</strong>
-
-            <h4>一、領取與兌換辦法</h4>
-            <p class="kv"><b>發券基準：</b>來店內消費憑券兌換，每人消費滿 <b>$100 元</b>可兌換一張、滿 <b>$200 元</b>兌換兩張，以此類推。</p>
-            <p class="kv"><b>適用範圍：</b>本規則僅限內用消費，外帶則不在此限。</p>
-            <p class="kv"><b>集點限制：</b>為整合會員福利，里民辦理儲值後，該筆及後續消費不再贈送集點卡。</p>
-
-            <h4>二、兌換品項內容</h4>
-            <p>本券僅限兌換券面標示之指定品項，兌換內容包含：</p>
-            <ol>
-                <li><b>特調飲品系列：</b>任選乙杯（實際品項依現場菜單為準）。</li>
-                <li><b>剝皮辣椒輕食：</b>單點任一款輕食麵包（佛卡夏／可頌）。</li>
-                <li><b>豪華炸物拼盤：</b>乙份。</li>
-                <li><b>剝皮辣椒雞湯：</b>乙碗。</li>
-                <li><b>黃金薯條：</b>乙份。</li>
-            </ol>
-
-            <h4>三、使用注意事項</h4>
-            <p class="kv"><b>有效期限：</b>使用效期如系統顯示為主。</p>
-            <p class="kv"><b>權益保留：</b>同齊咖吡保留隨時修改、終止變更本活動之權利。如有未盡事宜，本公司保有調整及最終解釋權，並不另行通知。</p>
-        </div>
-    </article>
-
-    <!-- CTA -->
-    <section class="cta-section">
-        <h3>💬 即刻私訊　搶先儲值</h3>
-        <p>把喜歡的組合帶回家，聚會、小酌、獨享都剛剛好。</p>
+        
+    </article><section class="cta-section">
+        <h3 style="">💬 即刻私訊　搶先申辦</h3>
+        <p style="">來同齊，讓我們把日子過得更豐盛。</p>
         <div class="btns">
-            <a class="btn primary" href="https://line.me/R/ti/p/@828kffwi" target="_blank" rel="noopener" style="outline: none;">官方 LINE｜@828kffwi</a>
+            <a class="btn primary" href="https://line.me/R/ti/p/@828kffwi" target="_blank" rel="noopener" style="">官方 LINE｜@828kffwi</a>
             <a class="btn ghost" href="location.html">查看門市位置</a>
         </div>
     </section>
 
-    <!-- Related -->
+    
     <section class="related">
         <h3>延伸閱讀</h3>
         <div class="grid">
             <a class="card" href="news-top-up.html">
-                <div class="thumb" data-label="STORAGE" style="background-size: cover; background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723638/access/0f888e0d47c4b78ab2825295ab015c0041e2cf284c66fd771485e0e78edddeda&quot;); background-position: 50% 50%;"></div>
+                <div class="thumb" data-label="STORAGE" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723644/access/b998f156c337f809440d595f83702c500bf6261239142f87d3f18dcf7b58a507&quot;); background-size: cover; background-position: 50% 50%;"></div>
                 <div class="body">
                     <div class="date">MAY 14, 2026</div>
                     <h4>寄杯福利社｜買越多送越多</h4>
                 </div>
             </a>
-            <a class="card" href="news-vip-card.html">
-                <div class="thumb" data-label="VIP" style="background-size: cover; background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723639/access/2d8a96e82889edc683ba48269d2335b4193e9e63279bf6a7754a73759f43d53d&quot;); background-position: 50% 50%;"></div>
+            <a class="card" href="news-christmas.html">
+                <div class="thumb" data-label="CHRISTMAS" style="background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723645/access/79575f63979fbaae426f0bd26670a8a0775ae606b7bdc22e4677ad681b0a3ce5&quot;); background-size: cover; background-position: 50% 50%;"></div>
                 <div class="body">
-                    <div class="date">FEB 1, 2026</div>
-                    <h4>作伙同行·即刻啟程｜尊爵會員限時招募</h4>
+                    <div class="date">DEC 25, 2025</div>
+                    <h4>聖誕包場專案｜在同齊咖啡感受溫暖</h4>
                 </div>
             </a>
             <a class="card" href="news-member-card.html">
-                <div class="thumb" data-label="MEMBER" style="outline: none; background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723640/access/e0fcce7f2f9efad9260a8fc31418a5e25ad11651e6dcdcf192c034bfde3f3f9e&quot;); background-size: cover; background-position: 50% 50%;"></div>
+                <div class="thumb" data-label="MEMBER" style="outline: none; background-repeat: no-repeat; background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9723646/access/82a1f2cf7993dc44cd9a55555fc3e6af8346d1f4f3b5c04609e149e0f03ada24&quot;); background-size: cover; background-position: 50% 50%;"></div>
                 <div class="body">
                     <div class="date">ALWAYS · ON</div>
                     <h4>同齊咖吡｜會員制度介紹</h4>
@@ -845,15 +1471,15 @@
         </div>
     </section>
 
-    <!-- Back -->
+    
     <div class="back-to-list">
         <a href="news.html">← 回到最新消息</a>
     </div>
 
-    <!-- Footer -->
+    
     <footer class="tt-footer">
         <div class="tt-footer-inner">
-            <div class="tt-footer-grid">
+            <div class="tt-footer-grid" style="">
                 <div class="tt-footer-col-left">
                     <h3 class="tt-footer-company-name">禾松餐飲有限公司</h3>
                     <div class="tt-footer-info">
@@ -894,7 +1520,7 @@
         </div>
     </footer>
 
-    <!-- FAB -->
+    
     <div class="tt-fab-group" role="group" aria-label="快速操作">
         
         
