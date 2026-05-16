@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-16T14:25:03.242Z",
+  "updated": "2026-05-16T15:25:03.263Z",
   "d7": {
     "metrics": {
-      "users": 139,
-      "sessions": 186,
-      "pv": 1118,
-      "bounce": 56.451612903225815,
-      "dur": 340.42829779032263,
-      "newU": 119
+      "users": 143,
+      "sessions": 191,
+      "pv": 1131,
+      "bounce": 57.59162303664922,
+      "dur": 346.0297317015707,
+      "newU": 121
     },
     "trend": {
       "dates": [
@@ -28,7 +28,7 @@
         15,
         12,
         20,
-        30
+        34
       ],
       "sessions": [
         17,
@@ -38,7 +38,7 @@
         22,
         18,
         29,
-        36
+        41
       ]
     },
     "pages": [
@@ -47,26 +47,26 @@
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
         "pv": 172,
         "u": 46,
-        "avgT": 207.89237491549298,
+        "avgT": 208.6286141690141,
         "bounce": 43.66197183098591,
         "scrollD": 24
       },
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 79,
-        "u": 63,
-        "avgT": 58.214330507042256,
-        "bounce": 61.97183098591549,
-        "scrollD": 29
+        "pv": 80,
+        "u": 67,
+        "avgT": 55.10956621333333,
+        "bounce": 64,
+        "scrollD": 27
       },
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 71,
+        "pv": 74,
         "u": 41,
-        "avgT": 53.48954288679246,
-        "bounce": 37.735849056603776,
+        "avgT": 59.66224855555556,
+        "bounce": 38.88888888888889,
         "scrollD": 46
       },
       {
@@ -79,6 +79,15 @@
         "scrollD": 95
       },
       {
+        "path": "/space-rental.html",
+        "name": "空間租賃",
+        "pv": 59,
+        "u": 20,
+        "avgT": 149.8946214516129,
+        "bounce": 41.935483870967744,
+        "scrollD": 40
+      },
+      {
         "path": "/franchise.html",
         "name": "加盟計畫",
         "pv": 52,
@@ -88,20 +97,11 @@
         "scrollD": 71
       },
       {
-        "path": "/space-rental.html",
-        "name": "空間租賃",
-        "pv": 52,
-        "u": 18,
-        "avgT": 82.28234020689655,
-        "bounce": 37.93103448275862,
-        "scrollD": 44
-      },
-      {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 44,
+        "pv": 46,
         "u": 17,
-        "avgT": 267.558984375,
+        "avgT": 270.5748731666667,
         "bounce": 41.66666666666667,
         "scrollD": 41
       },
@@ -226,17 +226,17 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 67,
+        "pct": 66,
         "color": "#223843"
       },
       {
         "name": "自然搜尋",
-        "pct": 16,
+        "pct": 15,
         "color": "#1e8a4a"
       },
       {
         "name": "其他",
-        "pct": 10,
+        "pct": 12,
         "color": "#3a7ca5"
       },
       {
@@ -255,7 +255,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 120
+          "users": 125
         },
         {
           "flag": "🇺🇸",
@@ -291,7 +291,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 63,
+          "users": 66,
           "subs": []
         },
         {
@@ -300,23 +300,23 @@
           "subs": []
         },
         {
+          "name": "高雄市",
+          "users": 9,
+          "subs": []
+        },
+        {
           "name": "彰化縣",
           "users": 8,
           "subs": []
         },
         {
-          "name": "高雄市",
-          "users": 8,
+          "name": "新竹市",
+          "users": 6,
           "subs": []
         },
         {
           "name": "桃園市",
           "users": 6,
-          "subs": []
-        },
-        {
-          "name": "新竹市",
-          "users": 5,
           "subs": []
         },
         {
@@ -347,17 +347,17 @@
       ]
     },
     "age": {
-      "unknown": 119
+      "unknown": 123
     }
   },
   "d30": {
     "metrics": {
-      "users": 181,
-      "sessions": 263,
-      "pv": 1619,
-      "bounce": 49.049429657794676,
-      "dur": 347.5849325817491,
-      "newU": 147
+      "users": 185,
+      "sessions": 268,
+      "pv": 1632,
+      "bounce": 50,
+      "dur": 351.44347998134333,
+      "newU": 149
     },
     "trend": {
       "dates": [
@@ -394,7 +394,7 @@
         15,
         12,
         20,
-        30
+        34
       ],
       "sessions": [
         2,
@@ -412,7 +412,7 @@
         22,
         18,
         29,
-        36
+        41
       ]
     },
     "pages": [
@@ -430,27 +430,36 @@
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
         "pv": 192,
         "u": 53,
-        "avgT": 175.5247619882353,
+        "avgT": 176.13973830588236,
         "bounce": 42.35294117647059,
         "scrollD": 23
       },
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 90,
-        "u": 74,
-        "avgT": 51.415423731707314,
-        "bounce": 58.536585365853654,
-        "scrollD": 26
+        "pv": 91,
+        "u": 78,
+        "avgT": 49.0240086744186,
+        "bounce": 60.46511627906976,
+        "scrollD": 24
       },
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 81,
+        "pv": 84,
         "u": 47,
-        "avgT": 51.46148545161291,
-        "bounce": 35.483870967741936,
+        "avgT": 56.78456741269841,
+        "bounce": 36.507936507936506,
         "scrollD": 49
+      },
+      {
+        "path": "/space-rental.html",
+        "name": "空間租賃",
+        "pv": 60,
+        "u": 21,
+        "avgT": 146.1936315,
+        "bounce": 40.625,
+        "scrollD": 38
       },
       {
         "path": "/franchise.html",
@@ -462,20 +471,11 @@
         "scrollD": 72
       },
       {
-        "path": "/space-rental.html",
-        "name": "空間租賃",
-        "pv": 53,
-        "u": 19,
-        "avgT": 80.58836029999999,
-        "bounce": 36.666666666666664,
-        "scrollD": 42
-      },
-      {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 45,
+        "pv": 47,
         "u": 18,
-        "avgT": 257.40940844,
+        "avgT": 260.30466168,
         "bounce": 40,
         "scrollD": 39
       },
@@ -610,7 +610,7 @@
       },
       {
         "name": "其他",
-        "pct": 8,
+        "pct": 9,
         "color": "#3a7ca5"
       },
       {
@@ -629,7 +629,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 142
+          "users": 147
         },
         {
           "flag": "🇺🇸",
@@ -670,7 +670,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 71,
+          "users": 74,
           "subs": []
         },
         {
@@ -680,12 +680,12 @@
         },
         {
           "name": "高雄市",
-          "users": 11,
+          "users": 12,
           "subs": []
         },
         {
           "name": "新竹市",
-          "users": 9,
+          "users": 10,
           "subs": []
         },
         {
@@ -731,17 +731,17 @@
       ]
     },
     "age": {
-      "unknown": 142
+      "unknown": 146
     }
   },
   "d90": {
     "metrics": {
-      "users": 181,
-      "sessions": 263,
-      "pv": 1619,
-      "bounce": 49.049429657794676,
-      "dur": 347.5849325817491,
-      "newU": 147
+      "users": 185,
+      "sessions": 268,
+      "pv": 1632,
+      "bounce": 50,
+      "dur": 351.44347998134333,
+      "newU": 149
     },
     "trend": {
       "dates": [
@@ -778,7 +778,7 @@
         15,
         12,
         20,
-        30
+        34
       ],
       "sessions": [
         2,
@@ -796,7 +796,7 @@
         22,
         18,
         29,
-        36
+        41
       ]
     },
     "pages": [
@@ -814,27 +814,36 @@
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
         "pv": 192,
         "u": 53,
-        "avgT": 175.5247619882353,
+        "avgT": 176.13973830588236,
         "bounce": 42.35294117647059,
         "scrollD": 23
       },
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 90,
-        "u": 74,
-        "avgT": 51.415423731707314,
-        "bounce": 58.536585365853654,
-        "scrollD": 26
+        "pv": 91,
+        "u": 78,
+        "avgT": 49.0240086744186,
+        "bounce": 60.46511627906976,
+        "scrollD": 24
       },
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 81,
+        "pv": 84,
         "u": 47,
-        "avgT": 51.46148545161291,
-        "bounce": 35.483870967741936,
+        "avgT": 56.78456741269841,
+        "bounce": 36.507936507936506,
         "scrollD": 49
+      },
+      {
+        "path": "/space-rental.html",
+        "name": "空間租賃",
+        "pv": 60,
+        "u": 21,
+        "avgT": 146.1936315,
+        "bounce": 40.625,
+        "scrollD": 38
       },
       {
         "path": "/franchise.html",
@@ -846,20 +855,11 @@
         "scrollD": 72
       },
       {
-        "path": "/space-rental.html",
-        "name": "空間租賃",
-        "pv": 53,
-        "u": 19,
-        "avgT": 80.58836029999999,
-        "bounce": 36.666666666666664,
-        "scrollD": 42
-      },
-      {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 45,
+        "pv": 47,
         "u": 18,
-        "avgT": 257.40940844,
+        "avgT": 260.30466168,
         "bounce": 40,
         "scrollD": 39
       },
@@ -994,7 +994,7 @@
       },
       {
         "name": "其他",
-        "pct": 8,
+        "pct": 9,
         "color": "#3a7ca5"
       },
       {
@@ -1013,7 +1013,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 142
+          "users": 147
         },
         {
           "flag": "🇺🇸",
@@ -1054,7 +1054,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 71,
+          "users": 74,
           "subs": []
         },
         {
@@ -1064,12 +1064,12 @@
         },
         {
           "name": "高雄市",
-          "users": 11,
+          "users": 12,
           "subs": []
         },
         {
           "name": "新竹市",
-          "users": 9,
+          "users": 10,
           "subs": []
         },
         {
@@ -1115,7 +1115,7 @@
       ]
     },
     "age": {
-      "unknown": 142
+      "unknown": 146
     }
   }
 }
