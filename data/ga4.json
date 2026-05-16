@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-16T17:25:03.382Z",
+  "updated": "2026-05-16T18:25:03.010Z",
   "d7": {
     "metrics": {
       "users": 133,
@@ -91,7 +91,7 @@
         "u": 16,
         "avgT": 282.3338058260869,
         "bounce": 43.47826086956522,
-        "scrollD": 44
+        "scrollD": 50
       },
       {
         "path": "/franchise.html",
@@ -464,7 +464,7 @@
         "u": 18,
         "avgT": 260.30466168,
         "bounce": 40,
-        "scrollD": 39
+        "scrollD": 44
       },
       {
         "path": "/pages/菜單-同齊咖吡-TANGTSE-COFFEE-ROASTERY/QXBXidsXqQPKVjuxbvDNw8",
@@ -848,7 +848,7 @@
         "u": 18,
         "avgT": 260.30466168,
         "bounce": 40,
-        "scrollD": 39
+        "scrollD": 44
       },
       {
         "path": "/pages/菜單-同齊咖吡-TANGTSE-COFFEE-ROASTERY/QXBXidsXqQPKVjuxbvDNw8",
