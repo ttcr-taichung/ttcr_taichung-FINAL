@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-21T14:25:03.237Z",
+  "updated": "2026-05-21T15:25:03.115Z",
   "d7": {
     "metrics": {
-      "users": 172,
-      "sessions": 236,
-      "pv": 472,
-      "bounce": 49.57627118644068,
-      "dur": 149.85233157627118,
-      "newU": 159
+      "users": 174,
+      "sessions": 238,
+      "pv": 477,
+      "bounce": 50,
+      "dur": 149.30122960924368,
+      "newU": 160
     },
     "trend": {
       "dates": [
@@ -28,7 +28,7 @@
         20,
         19,
         29,
-        19
+        21
       ],
       "sessions": [
         18,
@@ -38,7 +38,7 @@
         30,
         26,
         34,
-        26
+        28
       ]
     },
     "pages": [
@@ -54,10 +54,10 @@
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 104,
+        "pv": 106,
         "u": 68,
-        "avgT": 116.76567110227273,
-        "bounce": 38.63636363636363,
+        "avgT": 115.45369726966292,
+        "bounce": 39.325842696629216,
         "scrollD": 44
       },
       {
@@ -88,6 +88,15 @@
         "scrollD": 67
       },
       {
+        "path": "/location.html",
+        "name": "STORES",
+        "pv": 18,
+        "u": 14,
+        "avgT": 33.110189875,
+        "bounce": 31.25,
+        "scrollD": 43
+      },
+      {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
         "pv": 16,
@@ -95,15 +104,6 @@
         "avgT": 13.9248727,
         "bounce": 30,
         "scrollD": 95
-      },
-      {
-        "path": "/location.html",
-        "name": "STORES",
-        "pv": 15,
-        "u": 12,
-        "avgT": 25.8014745,
-        "bounce": 21.428571428571427,
-        "scrollD": 50
       },
       {
         "path": "/franchise.html",
@@ -168,7 +168,7 @@
       },
       {
         "name": "自然搜尋",
-        "pct": 20,
+        "pct": 19,
         "color": "#1e8a4a"
       },
       {
@@ -192,7 +192,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 172
+          "users": 173
         },
         {
           "flag": "🇺🇸",
@@ -223,7 +223,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 97,
+          "users": 98,
           "subs": []
         },
         {
@@ -274,17 +274,17 @@
       ]
     },
     "age": {
-      "unknown": 151
+      "unknown": 152
     }
   },
   "d30": {
     "metrics": {
-      "users": 291,
-      "sessions": 416,
-      "pv": 1876,
-      "bounce": 45.91346153846153,
-      "dur": 261.1483327163462,
-      "newU": 253
+      "users": 293,
+      "sessions": 418,
+      "pv": 1881,
+      "bounce": 46.172248803827756,
+      "dur": 260.30203063397136,
+      "newU": 254
     },
     "trend": {
       "dates": [
@@ -331,7 +331,7 @@
         20,
         19,
         29,
-        19
+        21
       ],
       "sessions": [
         2,
@@ -354,7 +354,7 @@
         30,
         26,
         34,
-        26
+        28
       ]
     },
     "pages": [
@@ -379,10 +379,10 @@
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 153,
+        "pv": 155,
         "u": 94,
-        "avgT": 88.67712525396826,
-        "bounce": 31.746031746031743,
+        "avgT": 87.97888017322835,
+        "bounce": 32.28346456692913,
         "scrollD": 45
       },
       {
@@ -404,6 +404,15 @@
         "scrollD": 33
       },
       {
+        "path": "/location.html",
+        "name": "STORES",
+        "pv": 56,
+        "u": 24,
+        "avgT": 194.47351221212122,
+        "bounce": 30.303030303030305,
+        "scrollD": 42
+      },
+      {
         "path": "/franchise.html",
         "name": "加盟計畫",
         "pv": 55,
@@ -411,15 +420,6 @@
         "avgT": 116.69633190625,
         "bounce": 31.25,
         "scrollD": 72
-      },
-      {
-        "path": "/location.html",
-        "name": "STORES",
-        "pv": 53,
-        "u": 22,
-        "avgT": 201.58333896774192,
-        "bounce": 25.806451612903224,
-        "scrollD": 45
       },
       {
         "path": "/pages/菜單-同齊咖吡-TANGTSE-COFFEE-ROASTERY/QXBXidsXqQPKVjuxbvDNw8",
@@ -571,7 +571,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 255
+          "users": 256
         },
         {
           "flag": "🇺🇸",
@@ -627,7 +627,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 135,
+          "users": 136,
           "subs": []
         },
         {
@@ -688,17 +688,17 @@
       ]
     },
     "age": {
-      "unknown": 234
+      "unknown": 235
     }
   },
   "d90": {
     "metrics": {
-      "users": 291,
-      "sessions": 416,
-      "pv": 1876,
-      "bounce": 45.91346153846153,
-      "dur": 261.1483327163462,
-      "newU": 253
+      "users": 293,
+      "sessions": 418,
+      "pv": 1881,
+      "bounce": 46.172248803827756,
+      "dur": 260.30203063397136,
+      "newU": 254
     },
     "trend": {
       "dates": [
@@ -745,7 +745,7 @@
         20,
         19,
         29,
-        19
+        21
       ],
       "sessions": [
         2,
@@ -768,7 +768,7 @@
         30,
         26,
         34,
-        26
+        28
       ]
     },
     "pages": [
@@ -793,10 +793,10 @@
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 153,
+        "pv": 155,
         "u": 94,
-        "avgT": 88.67712525396826,
-        "bounce": 31.746031746031743,
+        "avgT": 87.97888017322835,
+        "bounce": 32.28346456692913,
         "scrollD": 45
       },
       {
@@ -813,9 +813,18 @@
         "name": "空間租賃",
         "pv": 78,
         "u": 33,
-        "avgT": 90.47722272340424,
+        "avgT": 90.47722272340427,
         "bounce": 12.76595744680851,
         "scrollD": 33
+      },
+      {
+        "path": "/location.html",
+        "name": "STORES",
+        "pv": 56,
+        "u": 24,
+        "avgT": 194.47351221212122,
+        "bounce": 30.303030303030305,
+        "scrollD": 42
       },
       {
         "path": "/franchise.html",
@@ -825,15 +834,6 @@
         "avgT": 116.69633190625,
         "bounce": 31.25,
         "scrollD": 72
-      },
-      {
-        "path": "/location.html",
-        "name": "STORES",
-        "pv": 53,
-        "u": 22,
-        "avgT": 201.58333896774192,
-        "bounce": 25.806451612903224,
-        "scrollD": 45
       },
       {
         "path": "/pages/菜單-同齊咖吡-TANGTSE-COFFEE-ROASTERY/QXBXidsXqQPKVjuxbvDNw8",
@@ -985,7 +985,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 255
+          "users": 256
         },
         {
           "flag": "🇺🇸",
@@ -1041,7 +1041,7 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 135,
+          "users": 136,
           "subs": []
         },
         {
@@ -1102,7 +1102,7 @@
       ]
     },
     "age": {
-      "unknown": 234
+      "unknown": 235
     }
   }
 }
