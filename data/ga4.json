@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-22T02:25:03.081Z",
+  "updated": "2026-05-22T03:25:02.909Z",
   "d7": {
     "metrics": {
-      "users": 166,
-      "sessions": 224,
-      "pv": 424,
-      "bounce": 52.67857142857143,
-      "dur": 136.49830913839284,
-      "newU": 151
+      "users": 167,
+      "sessions": 226,
+      "pv": 433,
+      "bounce": 53.09734513274337,
+      "dur": 135.76206769026547,
+      "newU": 152
     },
     "trend": {
       "dates": [
@@ -28,7 +28,7 @@
         19,
         29,
         23,
-        2
+        3
       ],
       "sessions": [
         29,
@@ -38,45 +38,45 @@
         26,
         34,
         30,
-        2
+        4
       ]
     },
     "pages": [
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 114,
+        "pv": 115,
         "u": 66,
-        "avgT": 74.95951740697674,
-        "bounce": 39.53488372093023,
+        "avgT": 74.12520281609196,
+        "bounce": 40.229885057471265,
         "scrollD": 18
       },
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 103,
-        "u": 66,
-        "avgT": 116.56984093181818,
-        "bounce": 42.04545454545455,
+        "pv": 104,
+        "u": 67,
+        "avgT": 115.37116200000001,
+        "bounce": 42.69662921348314,
         "scrollD": 45
       },
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 91,
+        "pv": 93,
         "u": 75,
-        "avgT": 62.17920585882352,
+        "avgT": 62.18012689411765,
         "bounce": 50.588235294117645,
         "scrollD": 17
       },
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 39,
-        "u": 24,
-        "avgT": 109.8767686,
-        "bounce": 16.666666666666664,
-        "scrollD": 25
+        "pv": 41,
+        "u": 25,
+        "avgT": 106.33235670967741,
+        "bounce": 19.35483870967742,
+        "scrollD": 24
       },
       {
         "path": "/news.html",
@@ -90,19 +90,19 @@
       {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 16,
+        "pv": 17,
         "u": 14,
-        "avgT": 34.41969775,
+        "avgT": 35.2304723125,
         "bounce": 37.5,
-        "scrollD": 36
+        "scrollD": 43
       },
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 12,
+        "pv": 14,
         "u": 1,
-        "avgT": 7.894254125,
-        "bounce": 37.5,
+        "avgT": 6.3154033,
+        "bounce": 50,
         "scrollD": 95
       },
       {
@@ -118,10 +118,10 @@
         "path": "/story.html",
         "name": "STORY",
         "pv": 7,
-        "u": 5,
-        "avgT": 36.802736800000005,
-        "bounce": 0,
-        "scrollD": 60
+        "u": 6,
+        "avgT": 44.217915000000005,
+        "bounce": 16.666666666666664,
+        "scrollD": 50
       },
       {
         "path": "/franchise.html",
@@ -163,17 +163,17 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 74,
+        "pct": 73,
         "color": "#223843"
       },
       {
         "name": "自然搜尋",
-        "pct": 18,
+        "pct": 19,
         "color": "#1e8a4a"
       },
       {
         "name": "其他",
-        "pct": 6,
+        "pct": 7,
         "color": "#3a7ca5"
       },
       {
@@ -274,12 +274,12 @@
   },
   "d30": {
     "metrics": {
-      "users": 297,
-      "sessions": 422,
-      "pv": 1886,
-      "bounce": 46.682464454976305,
-      "dur": 258.2199187061612,
-      "newU": 256
+      "users": 298,
+      "sessions": 424,
+      "pv": 1895,
+      "bounce": 46.93396226415094,
+      "dur": 257.2533295872642,
+      "newU": 257
     },
     "trend": {
       "dates": [
@@ -328,7 +328,7 @@
         19,
         29,
         23,
-        2
+        3
       ],
       "sessions": [
         2,
@@ -352,63 +352,63 @@
         26,
         34,
         30,
-        2
+        4
       ]
     },
     "pages": [
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 386,
+        "pv": 388,
         "u": 4,
-        "avgT": 406.21061973214285,
-        "bounce": 17.857142857142858,
+        "avgT": 392.20335698275863,
+        "bounce": 20.689655172413794,
         "scrollD": 75
       },
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 270,
+        "pv": 271,
         "u": 102,
-        "avgT": 125.72582660544217,
-        "bounce": 36.734693877551024,
+        "avgT": 124.89236931756757,
+        "bounce": 37.16216216216216,
         "scrollD": 19
       },
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 158,
-        "u": 96,
-        "avgT": 86.36796149999999,
-        "bounce": 33.84615384615385,
-        "scrollD": 46
+        "pv": 159,
+        "u": 97,
+        "avgT": 85.78414054198473,
+        "bounce": 34.35114503816794,
+        "scrollD": 45
       },
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 151,
+        "pv": 153,
         "u": 121,
-        "avgT": 66.71530360144926,
+        "avgT": 66.7158709057971,
         "bounce": 48.55072463768116,
         "scrollD": 19
       },
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 78,
-        "u": 33,
-        "avgT": 90.47722272340427,
-        "bounce": 12.76595744680851,
-        "scrollD": 33
+        "pv": 80,
+        "u": 34,
+        "avgT": 88.59228058333332,
+        "bounce": 14.583333333333334,
+        "scrollD": 32
       },
       {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 56,
+        "pv": 57,
         "u": 25,
-        "avgT": 189.78290947058824,
+        "avgT": 190.16445044117646,
         "bounce": 32.35294117647059,
-        "scrollD": 40
+        "scrollD": 44
       },
       {
         "path": "/franchise.html",
@@ -522,10 +522,10 @@
         "path": "/story.html",
         "name": "STORY",
         "pv": 25,
-        "u": 10,
-        "avgT": 34.2937225,
-        "bounce": 0,
-        "scrollD": 60
+        "u": 11,
+        "avgT": 37.90911353846154,
+        "bounce": 7.6923076923076925,
+        "scrollD": 55
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -540,7 +540,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 73,
+        "pct": 72,
         "color": "#223843"
       },
       {
@@ -549,12 +549,12 @@
         "color": "#1e8a4a"
       },
       {
-        "name": "推薦連結",
+        "name": "其他",
         "pct": 4,
         "color": "#3a7ca5"
       },
       {
-        "name": "其他",
+        "name": "推薦連結",
         "pct": 4,
         "color": "#7b4fcf"
       },
@@ -691,12 +691,12 @@
   },
   "d90": {
     "metrics": {
-      "users": 297,
-      "sessions": 422,
-      "pv": 1886,
-      "bounce": 46.682464454976305,
-      "dur": 258.2199187061612,
-      "newU": 256
+      "users": 298,
+      "sessions": 424,
+      "pv": 1895,
+      "bounce": 46.93396226415094,
+      "dur": 257.2533295872642,
+      "newU": 257
     },
     "trend": {
       "dates": [
@@ -745,7 +745,7 @@
         19,
         29,
         23,
-        2
+        3
       ],
       "sessions": [
         2,
@@ -769,63 +769,63 @@
         26,
         34,
         30,
-        2
+        4
       ]
     },
     "pages": [
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 386,
+        "pv": 388,
         "u": 4,
-        "avgT": 406.21061973214285,
-        "bounce": 17.857142857142858,
+        "avgT": 392.20335698275863,
+        "bounce": 20.689655172413794,
         "scrollD": 75
       },
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 270,
+        "pv": 271,
         "u": 102,
-        "avgT": 125.72582660544217,
-        "bounce": 36.734693877551024,
+        "avgT": 124.89236931756757,
+        "bounce": 37.16216216216216,
         "scrollD": 19
       },
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 158,
-        "u": 96,
-        "avgT": 86.3679615,
-        "bounce": 33.84615384615385,
-        "scrollD": 46
+        "pv": 159,
+        "u": 97,
+        "avgT": 85.78414054198474,
+        "bounce": 34.35114503816794,
+        "scrollD": 45
       },
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 151,
+        "pv": 153,
         "u": 121,
-        "avgT": 66.71530360144926,
+        "avgT": 66.7158709057971,
         "bounce": 48.55072463768116,
         "scrollD": 19
       },
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 78,
-        "u": 33,
-        "avgT": 90.47722272340424,
-        "bounce": 12.76595744680851,
-        "scrollD": 33
+        "pv": 80,
+        "u": 34,
+        "avgT": 88.59228058333333,
+        "bounce": 14.583333333333334,
+        "scrollD": 32
       },
       {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 56,
+        "pv": 57,
         "u": 25,
-        "avgT": 189.78290947058824,
+        "avgT": 190.16445044117646,
         "bounce": 32.35294117647059,
-        "scrollD": 40
+        "scrollD": 44
       },
       {
         "path": "/franchise.html",
@@ -939,10 +939,10 @@
         "path": "/story.html",
         "name": "STORY",
         "pv": 25,
-        "u": 10,
-        "avgT": 34.2937225,
-        "bounce": 0,
-        "scrollD": 60
+        "u": 11,
+        "avgT": 37.90911353846154,
+        "bounce": 7.6923076923076925,
+        "scrollD": 55
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -957,7 +957,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 73,
+        "pct": 72,
         "color": "#223843"
       },
       {
@@ -966,12 +966,12 @@
         "color": "#1e8a4a"
       },
       {
-        "name": "推薦連結",
+        "name": "其他",
         "pct": 4,
         "color": "#3a7ca5"
       },
       {
-        "name": "其他",
+        "name": "推薦連結",
         "pct": 4,
         "color": "#7b4fcf"
       },
