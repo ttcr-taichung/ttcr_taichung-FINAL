@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-24T07:25:02.961Z",
+  "updated": "2026-05-24T08:25:03.101Z",
   "d7": {
     "metrics": {
-      "users": 150,
-      "sessions": 207,
-      "pv": 377,
-      "bounce": 43.47826086956522,
-      "dur": 146.9194815169082,
-      "newU": 141
+      "users": 152,
+      "sessions": 209,
+      "pv": 382,
+      "bounce": 44.01913875598086,
+      "dur": 145.76907045454547,
+      "newU": 143
     },
     "trend": {
       "dates": [
@@ -28,7 +28,7 @@
         24,
         26,
         12,
-        4
+        6
       ],
       "sessions": [
         25,
@@ -38,10 +38,19 @@
         31,
         41,
         14,
-        6
+        8
       ]
     },
     "pages": [
+      {
+        "path": "/",
+        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
+        "pv": 106,
+        "u": 71,
+        "avgT": 97.15695351764707,
+        "bounce": 32.94117647058823,
+        "scrollD": 13
+      },
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
@@ -52,31 +61,22 @@
         "scrollD": 14
       },
       {
-        "path": "/",
-        "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 104,
-        "u": 69,
-        "avgT": 99.49808492771085,
-        "bounce": 31.32530120481928,
-        "scrollD": 13
-      },
-      {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 102,
-        "u": 68,
-        "avgT": 97.08856947872341,
-        "bounce": 29.78723404255319,
-        "scrollD": 43
+        "pv": 103,
+        "u": 69,
+        "avgT": 96.21860556842105,
+        "bounce": 30.526315789473685,
+        "scrollD": 42
       },
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 24,
-        "u": 17,
-        "avgT": 101.65149065,
-        "bounce": 5,
-        "scrollD": 24
+        "pv": 25,
+        "u": 18,
+        "avgT": 98.42664414285714,
+        "bounce": 9.523809523809524,
+        "scrollD": 22
       },
       {
         "path": "/admin",
@@ -90,11 +90,11 @@
       {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 11,
-        "u": 9,
-        "avgT": 38.589524,
-        "bounce": 27.27272727272727,
-        "scrollD": 44
+        "pv": 12,
+        "u": 10,
+        "avgT": 35.79300858333333,
+        "bounce": 33.33333333333333,
+        "scrollD": 50
       },
       {
         "path": "/gallery.html",
@@ -163,12 +163,12 @@
         "color": "#1e8a4a"
       },
       {
-        "name": "推薦連結",
+        "name": "其他",
         "pct": 2,
         "color": "#3a7ca5"
       },
       {
-        "name": "其他",
+        "name": "推薦連結",
         "pct": 2,
         "color": "#7b4fcf"
       },
@@ -183,12 +183,12 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 154
+          "users": 155
         },
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 8
+          "users": 9
         },
         {
           "flag": "🌐",
@@ -234,7 +234,7 @@
         },
         {
           "name": "彰化縣",
-          "users": 8,
+          "users": 9,
           "subs": []
         },
         {
@@ -255,17 +255,17 @@
       ]
     },
     "age": {
-      "unknown": 129
+      "unknown": 131
     }
   },
   "d30": {
     "metrics": {
-      "users": 338,
-      "sessions": 482,
-      "pv": 2031,
-      "bounce": 41.70124481327801,
-      "dur": 252.10138495020755,
-      "newU": 298
+      "users": 340,
+      "sessions": 484,
+      "pv": 2036,
+      "bounce": 41.942148760330575,
+      "dur": 251.16998057231413,
+      "newU": 300
     },
     "trend": {
       "dates": [
@@ -318,7 +318,7 @@
         24,
         26,
         12,
-        4
+        6
       ],
       "sessions": [
         2,
@@ -344,7 +344,7 @@
         31,
         41,
         14,
-        6
+        8
       ]
     },
     "pages": [
@@ -369,38 +369,38 @@
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 202,
-        "u": 146,
-        "avgT": 85.01414780701755,
-        "bounce": 35.08771929824561,
+        "pv": 204,
+        "u": 148,
+        "avgT": 84.03132528901735,
+        "bounce": 35.83815028901734,
         "scrollD": 19
       },
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 191,
-        "u": 116,
-        "avgT": 74.8107463081761,
-        "bounce": 24.528301886792452,
-        "scrollD": 46
+        "pv": 192,
+        "u": 117,
+        "avgT": 74.43344163125,
+        "bounce": 25,
+        "scrollD": 45
       },
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 88,
-        "u": 40,
-        "avgT": 85.66594551851851,
-        "bounce": 9.25925925925926,
-        "scrollD": 30
+        "pv": 89,
+        "u": 41,
+        "avgT": 84.72528676363636,
+        "bounce": 10.909090909090908,
+        "scrollD": 29
       },
       {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 60,
-        "u": 27,
-        "avgT": 183.6358206388889,
-        "bounce": 25,
-        "scrollD": 44
+        "pv": 61,
+        "u": 28,
+        "avgT": 178.8086724864865,
+        "bounce": 27.027027027027028,
+        "scrollD": 46
       },
       {
         "path": "/franchise.html",
@@ -561,12 +561,12 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 300
+          "users": 301
         },
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 27
+          "users": 28
         },
         {
           "flag": "🌐",
@@ -637,7 +637,7 @@
         },
         {
           "name": "彰化縣",
-          "users": 16,
+          "users": 17,
           "subs": []
         },
         {
@@ -678,17 +678,17 @@
       ]
     },
     "age": {
-      "unknown": 269
+      "unknown": 271
     }
   },
   "d90": {
     "metrics": {
-      "users": 338,
-      "sessions": 482,
-      "pv": 2031,
-      "bounce": 41.70124481327801,
-      "dur": 252.10138495020755,
-      "newU": 298
+      "users": 340,
+      "sessions": 484,
+      "pv": 2036,
+      "bounce": 41.942148760330575,
+      "dur": 251.16998057231413,
+      "newU": 300
     },
     "trend": {
       "dates": [
@@ -741,7 +741,7 @@
         24,
         26,
         12,
-        4
+        6
       ],
       "sessions": [
         2,
@@ -767,7 +767,7 @@
         31,
         41,
         14,
-        6
+        8
       ]
     },
     "pages": [
@@ -792,38 +792,38 @@
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 202,
-        "u": 146,
-        "avgT": 85.01414780701755,
-        "bounce": 35.08771929824561,
+        "pv": 204,
+        "u": 148,
+        "avgT": 84.03132528901735,
+        "bounce": 35.83815028901734,
         "scrollD": 19
       },
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 191,
-        "u": 116,
-        "avgT": 74.8107463081761,
-        "bounce": 24.528301886792452,
-        "scrollD": 46
+        "pv": 192,
+        "u": 117,
+        "avgT": 74.43344163125,
+        "bounce": 25,
+        "scrollD": 45
       },
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 88,
-        "u": 40,
-        "avgT": 85.66594551851851,
-        "bounce": 9.25925925925926,
-        "scrollD": 30
+        "pv": 89,
+        "u": 41,
+        "avgT": 84.72528676363636,
+        "bounce": 10.909090909090908,
+        "scrollD": 29
       },
       {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 60,
-        "u": 27,
-        "avgT": 183.6358206388889,
-        "bounce": 25,
-        "scrollD": 44
+        "pv": 61,
+        "u": 28,
+        "avgT": 178.8086724864865,
+        "bounce": 27.027027027027028,
+        "scrollD": 46
       },
       {
         "path": "/franchise.html",
@@ -984,12 +984,12 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 300
+          "users": 301
         },
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 27
+          "users": 28
         },
         {
           "flag": "🌐",
@@ -1060,7 +1060,7 @@
         },
         {
           "name": "彰化縣",
-          "users": 16,
+          "users": 17,
           "subs": []
         },
         {
@@ -1101,7 +1101,7 @@
       ]
     },
     "age": {
-      "unknown": 269
+      "unknown": 271
     }
   }
 }
