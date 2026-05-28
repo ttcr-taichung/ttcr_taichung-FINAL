@@ -356,21 +356,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             .nav-links {
                 position: fixed;
-                top: 70px;
-                left: 0;
-                right: 0;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
                 background: rgba(254, 254, 254, 0.98);
                 flex-direction: column;
-                gap: 0;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
                 padding: 0;
-                max-height: 0;
                 overflow: hidden;
-                transition: max-height 0.3s;
-                border-bottom: 1px solid var(--border-color);
+                transition: left 0.3s ease;
+                border-bottom: none;
             }
 
             .nav-links.active {
-                max-height: 300px;
+                left: 0;
             }
 
             .nav-links a {
