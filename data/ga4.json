@@ -1,17 +1,16 @@
 {
-  "updated": "2026-05-31T15:25:03.788Z",
+  "updated": "2026-05-31T16:25:03.082Z",
   "d7": {
     "metrics": {
-      "users": 216,
-      "sessions": 317,
-      "pv": 643,
-      "bounce": 52.99684542586751,
-      "dur": 202.10747650473186,
-      "newU": 193
+      "users": 204,
+      "sessions": 303,
+      "pv": 622,
+      "bounce": 53.46534653465347,
+      "dur": 196.31025029702968,
+      "newU": 181
     },
     "trend": {
       "dates": [
-        "05/24",
         "05/25",
         "05/26",
         "05/27",
@@ -21,7 +20,6 @@
         "05/31"
       ],
       "users": [
-        12,
         40,
         27,
         23,
@@ -31,7 +29,6 @@
         27
       ],
       "sessions": [
-        14,
         58,
         42,
         44,
@@ -45,38 +42,38 @@
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 150,
-        "u": 92,
-        "avgT": 105.31236146762589,
-        "bounce": 33.81294964028777,
-        "scrollD": 49
+        "pv": 144,
+        "u": 87,
+        "avgT": 109.39708884962405,
+        "bounce": 33.83458646616541,
+        "scrollD": 51
       },
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 127,
-        "u": 65,
-        "avgT": 140.2282848488372,
-        "bounce": 47.674418604651166,
-        "scrollD": 20
+        "pv": 125,
+        "u": 64,
+        "avgT": 142.9787100357143,
+        "bounce": 48.80952380952381,
+        "scrollD": 19
       },
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 120,
-        "u": 87,
-        "avgT": 71.51286475238095,
-        "bounce": 50.476190476190474,
+        "pv": 114,
+        "u": 81,
+        "avgT": 75.70189677777778,
+        "bounce": 50.505050505050505,
         "scrollD": 20
       },
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 63,
-        "u": 36,
-        "avgT": 177.28423205882356,
-        "bounce": 31.372549019607842,
-        "scrollD": 22
+        "pv": 62,
+        "u": 35,
+        "avgT": 180.43717324000002,
+        "bounce": 32,
+        "scrollD": 23
       },
       {
         "path": "/news.html",
@@ -90,37 +87,37 @@
       {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 35,
-        "u": 21,
-        "avgT": 219.35049546666667,
-        "bounce": 20,
-        "scrollD": 76
+        "pv": 34,
+        "u": 20,
+        "avgT": 225.6015605172414,
+        "bounce": 20.689655172413794,
+        "scrollD": 75
       },
       {
         "path": "/gallery.html",
         "name": "特色餐食",
-        "pv": 30,
-        "u": 21,
-        "avgT": 125.505508,
-        "bounce": 8.333333333333332,
-        "scrollD": 81
+        "pv": 29,
+        "u": 20,
+        "avgT": 129.33388865217393,
+        "bounce": 8.695652173913043,
+        "scrollD": 80
       },
       {
         "path": "/franchise.html",
         "name": "加盟計畫",
-        "pv": 24,
-        "u": 13,
-        "avgT": 308.6562746875,
-        "bounce": 12.5,
-        "scrollD": 62
+        "pv": 22,
+        "u": 11,
+        "avgT": 55.33565715384616,
+        "bounce": 7.6923076923076925,
+        "scrollD": 55
       },
       {
         "path": "/story.html",
         "name": "STORY",
-        "pv": 18,
+        "pv": 17,
         "u": 12,
-        "avgT": 82.3826916,
-        "bounce": 6.666666666666667,
+        "avgT": 81.25310921428571,
+        "bounce": 7.142857142857142,
         "scrollD": 50
       },
       {
@@ -142,21 +139,21 @@
         "scrollD": 95
       },
       {
-        "path": "/collaboration.html",
-        "name": "異界合作",
-        "pv": 5,
-        "u": 4,
-        "avgT": 14.0961865,
-        "bounce": 16.666666666666664,
-        "scrollD": 95
-      },
-      {
         "path": "/pages/最新消息-同齊咖吡-TANGTSE-COFFEE-ROASTERY/ifMCPwift3AaA2SBLqJnba",
         "name": "最新消息 同齊咖吡 TANGTSE COFFEE ROASTERY - Kuse AI",
         "pv": 5,
         "u": 1,
         "avgT": 275.73705825,
         "bounce": 50,
+        "scrollD": 95
+      },
+      {
+        "path": "/collaboration.html",
+        "name": "異界合作",
+        "pv": 4,
+        "u": 3,
+        "avgT": 12.679087599999999,
+        "bounce": 20,
         "scrollD": 95
       },
       {
@@ -172,7 +169,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 66,
+        "pct": 67,
         "color": "#223843"
       },
       {
@@ -182,17 +179,17 @@
       },
       {
         "name": "其他",
-        "pct": 3,
+        "pct": 4,
         "color": "#3a7ca5"
       },
       {
         "name": "推薦連結",
-        "pct": 2,
+        "pct": 1,
         "color": "#7b4fcf"
       },
       {
         "name": "社群媒體",
-        "pct": 1,
+        "pct": 0,
         "color": "#d97706"
       }
     ],
@@ -201,22 +198,17 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 201
+          "users": 192
         },
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 13
+          "users": 11
         },
         {
           "flag": "🇨🇦",
           "name": "加拿大",
           "users": 3
-        },
-        {
-          "flag": "🌐",
-          "name": "Germany",
-          "users": 1
         },
         {
           "flag": "🇯🇵",
@@ -237,27 +229,27 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 107,
+          "users": 103,
           "subs": []
         },
         {
           "name": "台北市",
-          "users": 31,
+          "users": 29,
           "subs": []
         },
         {
           "name": "高雄市",
-          "users": 18,
-          "subs": []
-        },
-        {
-          "name": "彰化縣",
-          "users": 9,
+          "users": 17,
           "subs": []
         },
         {
           "name": "基隆市",
           "users": 9,
+          "subs": []
+        },
+        {
+          "name": "彰化縣",
+          "users": 8,
           "subs": []
         },
         {
@@ -267,7 +259,7 @@
         },
         {
           "name": "新竹市",
-          "users": 7,
+          "users": 6,
           "subs": []
         },
         {
@@ -288,7 +280,7 @@
       ]
     },
     "age": {
-      "unknown": 175
+      "unknown": 165
     }
   },
   "d30": {
