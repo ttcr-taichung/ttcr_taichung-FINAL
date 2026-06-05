@@ -1,17 +1,16 @@
 {
-  "updated": "2026-06-05T15:25:02.991Z",
+  "updated": "2026-06-05T16:25:03.699Z",
   "d7": {
     "metrics": {
-      "users": 176,
-      "sessions": 253,
-      "pv": 456,
-      "bounce": 53.75494071146245,
-      "dur": 194.4585000750988,
-      "newU": 154
+      "users": 143,
+      "sessions": 204,
+      "pv": 375,
+      "bounce": 53.92156862745098,
+      "dur": 214.63120033823532,
+      "newU": 122
     },
     "trend": {
       "dates": [
-        "05/29",
         "05/30",
         "05/31",
         "06/01",
@@ -21,116 +20,114 @@
         "06/05"
       ],
       "users": [
-        38,
         18,
         28,
         15,
         19,
         23,
         14,
-        21
+        26
       ],
       "sessions": [
-        54,
         32,
         30,
         28,
         29,
         30,
         20,
-        30
+        35
       ]
     },
     "pages": [
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 115,
-        "u": 66,
-        "avgT": 144.24116919417474,
-        "bounce": 41.74757281553398,
+        "pv": 96,
+        "u": 53,
+        "avgT": 172.07121709638554,
+        "bounce": 43.373493975903614,
         "scrollD": 58
       },
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 94,
-        "u": 75,
-        "avgT": 109.74458640909091,
-        "bounce": 48.86363636363637,
-        "scrollD": 19
+        "pv": 77,
+        "u": 64,
+        "avgT": 103.03053137333333,
+        "bounce": 52,
+        "scrollD": 20
       },
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 88,
-        "u": 52,
-        "avgT": 77.74376386666667,
-        "bounce": 36,
-        "scrollD": 10
+        "pv": 74,
+        "u": 43,
+        "avgT": 67.04640293442623,
+        "bounce": 31.147540983606557,
+        "scrollD": 9
       },
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 53,
-        "u": 33,
-        "avgT": 164.084117025,
-        "bounce": 37.5,
-        "scrollD": 15
+        "pv": 45,
+        "u": 29,
+        "avgT": 168.81347277777778,
+        "bounce": 41.66666666666667,
+        "scrollD": 14
       },
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 28,
+        "pv": 26,
         "u": 1,
-        "avgT": 357.26264228571426,
-        "bounce": 28.57142857142857,
+        "avgT": 415.53252433333324,
+        "bounce": 25,
         "scrollD": 95
-      },
-      {
-        "path": "/gallery.html",
-        "name": "特色餐食",
-        "pv": 22,
-        "u": 15,
-        "avgT": 198.363553125,
-        "bounce": 0,
-        "scrollD": 87
       },
       {
         "path": "/location.html",
         "name": "STORES",
-        "pv": 19,
-        "u": 17,
-        "avgT": 104.90591827272728,
-        "bounce": 40.909090909090914,
-        "scrollD": 59
+        "pv": 16,
+        "u": 14,
+        "avgT": 112.34728668421052,
+        "bounce": 47.368421052631575,
+        "scrollD": 57
+      },
+      {
+        "path": "/gallery.html",
+        "name": "特色餐食",
+        "pv": 13,
+        "u": 10,
+        "avgT": 247.50441763636363,
+        "bounce": 18.181818181818183,
+        "scrollD": 80
       },
       {
         "path": "/news.html",
         "name": "最新消息",
-        "pv": 16,
-        "u": 7,
-        "avgT": 46.55728661538462,
-        "bounce": 46.15384615384615,
-        "scrollD": 43
+        "pv": 12,
+        "u": 6,
+        "avgT": 66.22132855555554,
+        "bounce": 33.33333333333333,
+        "scrollD": 33
       },
       {
         "path": "/franchise.html",
         "name": "加盟計畫",
-        "pv": 9,
-        "u": 6,
-        "avgT": 13.927481375,
-        "bounce": 25,
-        "scrollD": 67
+        "pv": 7,
+        "u": 5,
+        "avgT": 14.454021142857142,
+        "bounce": 28.57142857142857,
+        "scrollD": 60
       },
       {
         "path": "/story.html",
         "name": "STORY",
-        "pv": 6,
-        "u": 6,
-        "avgT": 16.744280166666666,
-        "bounce": 16.666666666666664,
-        "scrollD": 50
+        "pv": 5,
+        "u": 5,
+        "avgT": 17.22219,
+        "bounce": 20,
+        "scrollD": 60
       },
       {
         "path": "/collaboration.html",
@@ -147,24 +144,6 @@
         "pv": 1,
         "u": 1,
         "avgT": 909.425469,
-        "bounce": 0,
-        "scrollD": 0
-      },
-      {
-        "path": "/pages/最新消息-同齊咖吡-TANGTSE-COFFEE-ROASTERY/P95vdKfEASvdoqMnqSzXjL",
-        "name": "最新消息 同齊咖吡 TANGTSE COFFEE ROASTERY - Kuse AI",
-        "pv": 1,
-        "u": 1,
-        "avgT": 7.305205,
-        "bounce": 0,
-        "scrollD": 0
-      },
-      {
-        "path": "/pages/最新消息-同齊咖吡-TANGTSE-COFFEE-ROASTERY/ifMCPwift3AaA2SBLqJnba",
-        "name": "最新消息 同齊咖吡 TANGTSE COFFEE ROASTERY - Kuse AI",
-        "pv": 1,
-        "u": 1,
-        "avgT": 0,
         "bounce": 0,
         "scrollD": 0
       },
@@ -190,17 +169,17 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 63,
+        "pct": 60,
         "color": "#223843"
       },
       {
         "name": "自然搜尋",
-        "pct": 30,
+        "pct": 31,
         "color": "#1e8a4a"
       },
       {
         "name": "其他",
-        "pct": 5,
+        "pct": 8,
         "color": "#3a7ca5"
       },
       {
@@ -214,7 +193,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 173
+          "users": 143
         },
         {
           "flag": "🇨🇦",
@@ -227,40 +206,35 @@
           "users": 2
         },
         {
-          "flag": "🇺🇸",
-          "name": "美國",
-          "users": 2
-        },
-        {
           "flag": "🌐",
           "name": "Philippines",
           "users": 1
         },
         {
-          "flag": "🇬🇧",
-          "name": "英國",
+          "flag": "🇺🇸",
+          "name": "美國",
           "users": 1
         }
       ],
       "tw": [
         {
           "name": "台中市",
-          "users": 96,
+          "users": 74,
           "subs": []
         },
         {
           "name": "台北市",
-          "users": 22,
+          "users": 20,
           "subs": []
         },
         {
           "name": "高雄市",
-          "users": 17,
+          "users": 16,
           "subs": []
         },
         {
           "name": "基隆市",
-          "users": 14,
+          "users": 13,
           "subs": []
         },
         {
@@ -270,17 +244,17 @@
         },
         {
           "name": "彰化縣",
-          "users": 6,
+          "users": 5,
           "subs": []
         },
         {
           "name": "新竹市",
-          "users": 4,
+          "users": 3,
           "subs": []
         },
         {
           "name": "新北市",
-          "users": 4,
+          "users": 2,
           "subs": []
         },
         {
@@ -296,21 +270,20 @@
       ]
     },
     "age": {
-      "unknown": 142
+      "unknown": 118
     }
   },
   "d30": {
     "metrics": {
-      "users": 632,
-      "sessions": 905,
-      "pv": 2779,
-      "bounce": 46.408839779005525,
-      "dur": 229.699903801105,
+      "users": 633,
+      "sessions": 903,
+      "pv": 2762,
+      "bounce": 46.733111849390916,
+      "dur": 227.43796710852715,
       "newU": 562
     },
     "trend": {
       "dates": [
-        "05/06",
         "05/07",
         "05/08",
         "05/09",
@@ -343,7 +316,6 @@
         "06/05"
       ],
       "users": [
-        4,
         7,
         20,
         12,
@@ -373,10 +345,9 @@
         19,
         23,
         14,
-        21
+        26
       ],
       "sessions": [
-        7,
         15,
         29,
         17,
@@ -406,53 +377,53 @@
         29,
         30,
         20,
-        30
+        35
       ]
     },
     "pages": [
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 466,
+        "pv": 467,
         "u": 191,
-        "avgT": 119.97531161971831,
-        "bounce": 34.154929577464785,
+        "avgT": 119.75600403859647,
+        "bounce": 34.385964912280706,
         "scrollD": 15
       },
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 402,
-        "u": 235,
-        "avgT": 110.4706380862069,
-        "bounce": 28.735632183908045,
+        "pv": 405,
+        "u": 238,
+        "avgT": 111.1526251965812,
+        "bounce": 29.34472934472934,
         "scrollD": 49
       },
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 372,
-        "u": 269,
-        "avgT": 89.87168632208589,
-        "bounce": 40.79754601226993,
+        "pv": 375,
+        "u": 273,
+        "avgT": 88.79130923939394,
+        "bounce": 41.515151515151516,
         "scrollD": 20
       },
       {
         "path": "/admin",
         "name": "同齊咖吡 · 訪客分析後台 v2",
-        "pv": 331,
+        "pv": 329,
         "u": 3,
-        "avgT": 388.23394386206894,
-        "bounce": 24.137931034482758,
+        "avgT": 402.0062624642857,
+        "bounce": 25,
         "scrollD": 95
       },
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 186,
-        "u": 92,
-        "avgT": 146.24180644360902,
-        "bounce": 24.06015037593985,
+        "pv": 187,
+        "u": 93,
+        "avgT": 145.15114396268658,
+        "bounce": 24.62686567164179,
         "scrollD": 25
       },
       {
@@ -485,11 +456,11 @@
       {
         "path": "/gallery.html",
         "name": "特色餐食",
-        "pv": 67,
-        "u": 33,
-        "avgT": 153.8088679777778,
-        "bounce": 2.2222222222222223,
-        "scrollD": 79
+        "pv": 69,
+        "u": 35,
+        "avgT": 156.7544129361702,
+        "bounce": 6.382978723404255,
+        "scrollD": 77
       },
       {
         "path": "/story.html",
@@ -537,15 +508,6 @@
         "scrollD": 95
       },
       {
-        "path": "/coffee-beans.html",
-        "name": "自烘咖啡豆 - 嚴選世界各地優質生豆",
-        "pv": 27,
-        "u": 5,
-        "avgT": 154.76397287499998,
-        "bounce": 18.75,
-        "scrollD": 40
-      },
-      {
         "path": "/pages/STORES-同齊咖吡/W2t3Ar684nCooQPtvnBZp6",
         "name": "STORES 同齊咖吡 - Kuse AI",
         "pv": 27,
@@ -580,6 +542,15 @@
         "avgT": 150.36947333333333,
         "bounce": 0,
         "scrollD": 95
+      },
+      {
+        "path": "/coffee-beans.html",
+        "name": "自烘咖啡豆 - 嚴選世界各地優質生豆",
+        "pv": 25,
+        "u": 5,
+        "avgT": 138.50434571428573,
+        "bounce": 21.428571428571427,
+        "scrollD": 40
       },
       {
         "path": "/pages/特色餐食-同齊咖吡-TOGETHER-COFFEE/b3LbJnGk8t6kWd8rNHRGcV",
@@ -623,12 +594,12 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 573
+          "users": 577
         },
         {
           "flag": "🇺🇸",
           "name": "美國",
-          "users": 37
+          "users": 35
         },
         {
           "flag": "🇨🇦",
@@ -656,11 +627,6 @@
           "users": 1
         },
         {
-          "flag": "🇨🇳",
-          "name": "中國",
-          "users": 1
-        },
-        {
           "flag": "🌐",
           "name": "Germany",
           "users": 1
@@ -679,22 +645,27 @@
           "flag": "🌐",
           "name": "Philippines",
           "users": 1
+        },
+        {
+          "flag": "🇸🇬",
+          "name": "新加坡",
+          "users": 1
         }
       ],
       "tw": [
         {
           "name": "台中市",
-          "users": 304,
+          "users": 306,
           "subs": []
         },
         {
           "name": "台北市",
-          "users": 84,
+          "users": 85,
           "subs": []
         },
         {
           "name": "高雄市",
-          "users": 53,
+          "users": 54,
           "subs": []
         },
         {
@@ -740,19 +711,19 @@
       ]
     },
     "age": {
-      "unknown": 498,
+      "unknown": 499,
       "45-54": 22,
       "55-64": 18
     }
   },
   "d90": {
     "metrics": {
-      "users": 643,
-      "sessions": 931,
-      "pv": 2917,
-      "bounce": 45.435016111707846,
-      "dur": 235.84073122878627,
-      "newU": 566
+      "users": 648,
+      "sessions": 936,
+      "pv": 2927,
+      "bounce": 45.72649572649573,
+      "dur": 235.73194071153847,
+      "newU": 569
     },
     "trend": {
       "dates": [
@@ -829,7 +800,7 @@
         19,
         23,
         14,
-        21
+        26
       ],
       "sessions": [
         2,
@@ -867,17 +838,17 @@
         29,
         30,
         20,
-        30
+        35
       ]
     },
     "pages": [
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 466,
+        "pv": 467,
         "u": 191,
-        "avgT": 119.97531161971831,
-        "bounce": 34.154929577464785,
+        "avgT": 119.75600403859647,
+        "bounce": 34.385964912280706,
         "scrollD": 15
       },
       {
@@ -892,28 +863,28 @@
       {
         "path": "/menu.html",
         "name": "菜單",
-        "pv": 402,
-        "u": 235,
-        "avgT": 110.4706380862069,
-        "bounce": 28.735632183908045,
+        "pv": 405,
+        "u": 238,
+        "avgT": 111.1526251965812,
+        "bounce": 29.34472934472934,
         "scrollD": 49
       },
       {
         "path": "/",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
-        "pv": 372,
-        "u": 269,
-        "avgT": 89.87168632208589,
-        "bounce": 40.79754601226993,
+        "pv": 375,
+        "u": 273,
+        "avgT": 88.79130923939394,
+        "bounce": 41.515151515151516,
         "scrollD": 20
       },
       {
         "path": "/space-rental.html",
         "name": "空間租賃",
-        "pv": 186,
-        "u": 92,
-        "avgT": 146.24180644360902,
-        "bounce": 24.06015037593985,
+        "pv": 187,
+        "u": 93,
+        "avgT": 145.15114396268658,
+        "bounce": 24.62686567164179,
         "scrollD": 25
       },
       {
@@ -946,11 +917,11 @@
       {
         "path": "/gallery.html",
         "name": "特色餐食",
-        "pv": 67,
-        "u": 33,
-        "avgT": 153.8088679777778,
-        "bounce": 2.2222222222222223,
-        "scrollD": 79
+        "pv": 69,
+        "u": 35,
+        "avgT": 156.7544129361702,
+        "bounce": 6.382978723404255,
+        "scrollD": 77
       },
       {
         "path": "/story.html",
@@ -1084,7 +1055,7 @@
         {
           "flag": "🇹🇼",
           "name": "台灣",
-          "users": 573
+          "users": 577
         },
         {
           "flag": "🇺🇸",
@@ -1145,17 +1116,17 @@
       "tw": [
         {
           "name": "台中市",
-          "users": 304,
+          "users": 306,
           "subs": []
         },
         {
           "name": "台北市",
-          "users": 84,
+          "users": 85,
           "subs": []
         },
         {
           "name": "高雄市",
-          "users": 53,
+          "users": 54,
           "subs": []
         },
         {
@@ -1201,7 +1172,7 @@
       ]
     },
     "age": {
-      "unknown": 498,
+      "unknown": 502,
       "45-54": 22,
       "55-64": 18
     }
