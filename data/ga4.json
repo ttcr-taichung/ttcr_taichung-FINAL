@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-10T12:25:03.845Z",
+  "updated": "2026-06-10T13:25:03.186Z",
   "d7": {
     "metrics": {
       "users": 159,
@@ -56,16 +56,16 @@
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
         "pv": 96,
         "u": 71,
-        "avgT": 75.0648805,
+        "avgT": 75.06488049999999,
         "bounce": 32.5,
-        "scrollD": 17
+        "scrollD": 18
       },
       {
         "path": "/index.html",
         "name": "同齊咖吡 - TANGTSE COFFEE ROASTERY",
         "pv": 73,
         "u": 37,
-        "avgT": 99.01929298113208,
+        "avgT": 99.01929298113207,
         "bounce": 41.509433962264154,
         "scrollD": 11
       },
@@ -423,7 +423,7 @@
         "u": 287,
         "avgT": 89.52908063428572,
         "bounce": 36.285714285714285,
-        "scrollD": 20
+        "scrollD": 21
       },
       {
         "path": "/space-rental.html",
@@ -448,7 +448,7 @@
         "name": "STORES",
         "pv": 112,
         "u": 59,
-        "avgT": 175.89449564367817,
+        "avgT": 175.89449564367814,
         "bounce": 26.436781609195403,
         "scrollD": 56
       },
@@ -909,7 +909,7 @@
         "u": 308,
         "avgT": 84.41129029758713,
         "bounce": 37.26541554959786,
-        "scrollD": 19
+        "scrollD": 20
       },
       {
         "path": "/space-rental.html",
