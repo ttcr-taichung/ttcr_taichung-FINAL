@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-13T19:25:03.188Z",
+  "updated": "2026-06-13T20:25:03.263Z",
   "d7": {
     "metrics": {
       "users": 120,
       "sessions": 178,
-      "pv": 354,
+      "pv": 355,
       "bounce": 48.87640449438202,
       "dur": 103.95286206741572,
-      "newU": 93
+      "newU": 94
     },
     "trend": {
       "dates": [
@@ -90,11 +90,11 @@
       {
         "path": "/",
         "name": "同齊咖吡 TTCRCOFFEE",
-        "pv": 13,
-        "u": 11,
-        "avgT": 19.119827,
-        "bounce": 25,
-        "scrollD": 27
+        "pv": 14,
+        "u": 12,
+        "avgT": 17.64907107692308,
+        "bounce": 30.76923076923077,
+        "scrollD": 25
       },
       {
         "path": "/admin",
@@ -172,7 +172,7 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 55,
+        "pct": 56,
         "color": "#223843"
       },
       {
@@ -278,10 +278,10 @@
     "metrics": {
       "users": 661,
       "sessions": 945,
-      "pv": 1886,
+      "pv": 1887,
       "bounce": 44.44444444444444,
       "dur": 175.2554023746032,
-      "newU": 576
+      "newU": 577
     },
     "trend": {
       "dates": [
@@ -478,11 +478,11 @@
       {
         "path": "/",
         "name": "同齊咖吡 TTCRCOFFEE",
-        "pv": 13,
-        "u": 11,
-        "avgT": 19.119827,
-        "bounce": 25,
-        "scrollD": 27
+        "pv": 14,
+        "u": 12,
+        "avgT": 17.64907107692308,
+        "bounce": 30.76923076923077,
+        "scrollD": 25
       },
       {
         "path": "/coffee-beans.html",
@@ -708,10 +708,10 @@
     "metrics": {
       "users": 792,
       "sessions": 1143,
-      "pv": 3348,
+      "pv": 3349,
       "bounce": 43.657042869641295,
       "dur": 213.4816620218723,
-      "newU": 681
+      "newU": 682
     },
     "trend": {
       "dates": [
