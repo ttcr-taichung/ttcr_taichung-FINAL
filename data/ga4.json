@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-16T08:25:03.127Z",
+  "updated": "2026-06-16T09:25:11.080Z",
   "d7": {
     "metrics": {
       "users": 116,
       "sessions": 165,
-      "pv": 352,
+      "pv": 355,
       "bounce": 46.666666666666664,
-      "dur": 118.08272623030304,
-      "newU": 92
+      "dur": 118.1942285818182,
+      "newU": 93
     },
     "trend": {
       "dates": [
@@ -151,6 +151,15 @@
         "scrollD": 20
       },
       {
+        "path": "/",
+        "name": "同齊咖吡 TTCR COFFEE - 台中精緻咖啡廳｜空間租賃與場地預約首選",
+        "pv": 10,
+        "u": 11,
+        "avgT": 13.905287818181819,
+        "bounce": 54.54545454545454,
+        "scrollD": 36
+      },
+      {
         "path": "/gallery.html",
         "name": "特色餐食",
         "pv": 10,
@@ -160,13 +169,13 @@
         "scrollD": 95
       },
       {
-        "path": "/",
-        "name": "同齊咖吡 TTCR COFFEE - 台中精緻咖啡廳｜空間租賃與場地預約首選",
-        "pv": 9,
-        "u": 10,
-        "avgT": 15.2958166,
-        "bounce": 50,
-        "scrollD": 30
+        "path": "/coffee-beans.html",
+        "name": "自烘咖啡豆 - 嚴選世界各地優質生豆",
+        "pv": 5,
+        "u": 3,
+        "avgT": 6.7968839999999995,
+        "bounce": 25,
+        "scrollD": 0
       },
       {
         "path": "/news.html",
@@ -185,15 +194,6 @@
         "avgT": 27.108021,
         "bounce": 0,
         "scrollD": 33
-      },
-      {
-        "path": "/coffee-beans.html",
-        "name": "自烘咖啡豆 - 嚴選世界各地優質生豆",
-        "pv": 3,
-        "u": 3,
-        "avgT": 2.197412,
-        "bounce": 25,
-        "scrollD": 0
       },
       {
         "path": "/gallery.html",
@@ -226,12 +226,12 @@
     "sources": [
       {
         "name": "直接流量",
-        "pct": 50,
+        "pct": 49,
         "color": "#223843"
       },
       {
         "name": "自然搜尋",
-        "pct": 44,
+        "pct": 45,
         "color": "#1e8a4a"
       },
       {
@@ -334,10 +334,10 @@
     "metrics": {
       "users": 647,
       "sessions": 922,
-      "pv": 1823,
+      "pv": 1826,
       "bounce": 44.143167028199564,
-      "dur": 174.22287882754884,
-      "newU": 564
+      "dur": 174.24283315292845,
+      "newU": 565
     },
     "trend": {
       "dates": [
@@ -559,6 +559,15 @@
         "scrollD": 30
       },
       {
+        "path": "/coffee-beans.html",
+        "name": "自烘咖啡豆 - 嚴選世界各地優質生豆",
+        "pv": 14,
+        "u": 5,
+        "avgT": 177.76824988888887,
+        "bounce": 11.11111111111111,
+        "scrollD": 40
+      },
+      {
         "path": "/menu.html",
         "name": "菜單",
         "pv": 13,
@@ -568,22 +577,13 @@
         "scrollD": 20
       },
       {
-        "path": "/coffee-beans.html",
-        "name": "自烘咖啡豆 - 嚴選世界各地優質生豆",
-        "pv": 12,
-        "u": 5,
-        "avgT": 175.7240401111111,
-        "bounce": 11.11111111111111,
-        "scrollD": 40
-      },
-      {
         "path": "/",
         "name": "同齊咖吡 TTCR COFFEE - 台中精緻咖啡廳｜空間租賃與場地預約首選",
-        "pv": 9,
-        "u": 10,
-        "avgT": 15.2958166,
-        "bounce": 50,
-        "scrollD": 30
+        "pv": 10,
+        "u": 11,
+        "avgT": 13.905287818181819,
+        "bounce": 54.54545454545454,
+        "scrollD": 36
       },
       {
         "path": "/collaboration.html",
@@ -792,10 +792,10 @@
     "metrics": {
       "users": 835,
       "sessions": 1197,
-      "pv": 3477,
+      "pv": 3480,
       "bounce": 43.27485380116959,
-      "dur": 210.30411792063495,
-      "newU": 721
+      "dur": 210.31948791896411,
+      "newU": 722
     },
     "trend": {
       "dates": [
@@ -1074,6 +1074,15 @@
         "scrollD": 95
       },
       {
+        "path": "/coffee-beans.html",
+        "name": "自烘咖啡豆 - 嚴選世界各地優質生豆",
+        "pv": 32,
+        "u": 7,
+        "avgT": 125.1705551,
+        "bounce": 20,
+        "scrollD": 29
+      },
+      {
         "path": "/pages/加盟計畫-同齊咖吡/7LvdycM22zg8cM96FcAg5e",
         "name": "加盟計畫 同齊咖吡 - Kuse AI",
         "pv": 31,
@@ -1081,15 +1090,6 @@
         "avgT": 16.173906,
         "bounce": 0,
         "scrollD": 95
-      },
-      {
-        "path": "/coffee-beans.html",
-        "name": "自烘咖啡豆 - 嚴選世界各地優質生豆",
-        "pv": 30,
-        "u": 7,
-        "avgT": 124.25066069999998,
-        "bounce": 20,
-        "scrollD": 29
       },
       {
         "path": "/index.html",
