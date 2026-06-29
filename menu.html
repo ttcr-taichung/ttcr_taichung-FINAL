@@ -2469,7 +2469,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             chipPreview.style.top = `${Math.max(margin, top)}px`;
         }
 
+        const chipImageCache = {};
+        function preloadChipImage(chip) {
+            const img = chip.dataset.img;
+            if (!img || chipImageCache[img]) return;
+            const preloader = new Image();
+            preloader.src = img;
+            chipImageCache[img] = preloader;
+        }
+
         document.querySelectorAll(`.menu-chip[data-chip]`).forEach(chip => {
+            chip.addEventListener(`touchstart`, () => preloadChipImage(chip), { passive: true });
             chip.addEventListener(`click`, () => {
                 if (window.innerWidth <= 768) {
                     openLightbox(chip);
