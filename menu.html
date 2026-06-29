@@ -275,6 +275,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             flex-shrink: 0;
             width: 300px;
             margin-top: 2.5rem;
+            padding: 0;
+            display: block;
             background: #223843;
             border-right: 1px solid rgba(76, 106, 146, 0.12);
             overflow-y: visible;
@@ -605,12 +607,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             width: 100%;
             aspect-ratio: 4 / 3;
             overflow: hidden;
+            position: relative;
+            background: rgba(76, 106, 146, 0.06);
         }
 
         .lightbox-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+
+        .lightbox-img img.loaded {
+            opacity: 1;
+        }
+
+        .lightbox-img.loading::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            margin: -15px 0 0 -15px;
+            border: 3px solid rgba(76, 106, 146, 0.2);
+            border-top-color: var(--brand-blue);
+            border-radius: 50%;
+            animation: lightboxSpin 0.7s linear infinite;
+        }
+
+        @keyframes lightboxSpin {
+            to { transform: rotate(360deg); }
         }
 
         .lightbox-img.no-photo {
@@ -730,7 +758,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .category-nav {
                 position: -webkit-sticky;
                 position: sticky;
-                top: 80px;
+                top: 139px;
                 width: 100%;
                 max-width: 100vw;
                 margin-top: 0;
@@ -2385,7 +2413,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             lightboxImgWrap.classList.toggle(`no-photo`, !hasPhoto);
             lightboxImg.style.display = hasPhoto ? `` : `none`;
             lightboxPlaceholder.style.display = hasPhoto ? `none` : ``;
-            lightboxImg.src = img || ``;
+            lightboxImg.classList.remove(`loaded`);
+            lightboxImg.onload = null;
+            lightboxImg.removeAttribute(`src`);
+            lightboxImgWrap.classList.toggle(`loading`, hasPhoto);
+            if (hasPhoto) {
+                lightboxImg.onload = () => {
+                    lightboxImg.classList.add(`loaded`);
+                    lightboxImgWrap.classList.remove(`loading`);
+                };
+                lightboxImg.src = img;
+            }
             lightboxImg.alt = name || ``;
             lightboxTitle.textContent = name || ``;
             lightboxDesc.textContent = desc || ``;
