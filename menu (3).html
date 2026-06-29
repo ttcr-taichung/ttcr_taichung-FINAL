@@ -1,0 +1,2508 @@
+<html lang="zh-TW"><head>
+    <meta name="description" content="同齊咖吡門市菜單｜提供專業自烘咖啡、嚴選剝皮辣椒雞湯、在地特色餐點與精緻甜點。點一杯咖啡，享受職人風味。">
+<link rel="icon" type="image/png" href="https://ttcrcoffee.com/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="https://ttcrcoffee.com/favicon.svg" />
+    <link rel="shortcut icon" href="https://ttcrcoffee.com/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ttcrcoffee.com/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="同齊咖吡" />
+    <link rel="manifest" href="https://ttcrcoffee.com/manifest.json" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJTCF662');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜單 - 同齊咖吡 TTCR COFFEE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&amp;family=Noto+Sans+TC:wght@400;700;900&amp;family=Noto+Serif+TC:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-blue: #223843;
+            --text-dark: #2c2c2c;
+            --text-light: #666;
+            --bg-cream: #faf8f5;
+            --font-serif: "Noto Serif TC", serif;
+            --font-sans: "Noto Sans TC", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            background-color: var(--bg-cream);
+            cursor: none;
+            overflow-x: hidden;
+        }
+
+        #custom-cursor {
+            width: 22px;
+            height: 22px;
+            background: rgba(76, 106, 146, 0.15);
+            border: 1px solid var(--brand-blue);
+            border-radius: 50% !important;
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0;
+            transition: transform 0.1s ease, opacity 0.2s ease;
+            transform: translate(-50%, -50%);
+        }
+
+        #custom-cursor.visible {
+            opacity: 1;
+        }
+
+        #custom-cursor.hover {
+            transform: translate(-50%, -50%) scale(1.5);
+            background: rgba(76, 106, 146, 0.25);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(250, 248, 245, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(76, 106, 146, 0.1);
+        }
+
+        .logo {
+            display: block;
+            height: 90px;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: var(--font-sans);
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--brand-blue);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: none;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 2px;
+            background: var(--brand-blue);
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .page-header {
+            padding: 150px 5% 80px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(76, 106, 146, 0.05) 0%, rgba(250, 248, 245, 1) 100%);
+        }
+
+        .menu-hero {
+            position: relative;
+            margin-top: 95px;
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            max-height: 720px;
+            overflow: hidden;
+        }
+
+        .menu-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            animation: heroZoom 16s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroZoom {
+            from { transform: scale(1); }
+            to { transform: scale(1.08); }
+        }
+
+        .menu-hero-text {
+            padding: 3rem 5% 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(76, 106, 146, 0.05) 0%, rgba(250, 248, 245, 1) 100%);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .menu-hero-intro {
+            max-width: 640px;
+            margin: 0.8rem auto 0;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-light);
+        }
+
+        @media (max-width: 768px) {
+            .menu-hero {
+                aspect-ratio: 4 / 3;
+                max-height: none;
+                margin-top: 70px;
+            }
+        }
+
+        .page-number {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--brand-blue);
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+        }
+
+        .page-title {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--brand-blue);
+            letter-spacing: 5px;
+            margin: 0.5rem 0;
+        }
+
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+
+        .menu-layout {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .menu-container {
+            flex: 1;
+            min-width: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 5% 100px;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+        }
+
+        .category-title {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: var(--brand-blue);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid var(--brand-blue);
+            letter-spacing: 2px;
+        }
+
+        .menu-note {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: rgba(76, 106, 146, 0.05);
+            border-left: 4px solid var(--brand-blue);
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* ===== Category tab bar ===== */
+        .category-nav {
+            position: sticky;
+            top: 95px;
+            z-index: 500;
+            flex-shrink: 0;
+            width: 300px;
+            margin-top: 2.5rem;
+            max-height: calc(100vh - 95px - 2.5rem);
+            background: #223843;
+            border-right: 1px solid rgba(76, 106, 146, 0.12);
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+            touch-action: pan-y;
+            -ms-overflow-style: none;
+        }
+
+        .category-nav::-webkit-scrollbar,
+        .category-nav::-webkit-scrollbar-thumb,
+        .category-nav::-webkit-scrollbar-track {
+            display: none;
+            width: 0;
+            height: 0;
+            background: transparent;
+        }
+
+        .category-nav-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2.2rem;
+            padding: 3rem 1.8rem 3rem 2rem;
+            white-space: nowrap;
+            position: relative;
+            user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+        }
+
+        .category-nav a {
+            position: relative;
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            padding-left: 1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .category-nav a:hover {
+            color: #fff;
+            transform: translateX(2px);
+        }
+
+        .category-nav a.active {
+            color: #fff;
+        }
+
+        .category-nav-indicator {
+            position: absolute;
+            left: 0;
+            width: 2px;
+            background: #fff;
+            border-radius: 2px;
+            transition: top 0.35s cubic-bezier(0.65, 0, 0.35, 1), height 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+
+        /* ===== Dish card grid ===== */
+        .menu-section {
+            scroll-margin-top: 155px;
+            padding: 70px 0;
+            border-bottom: 1px solid rgba(76, 106, 146, 0.08);
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        .menu-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .dish-card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            cursor: none;
+            box-shadow: 0 4px 16px rgba(76, 106, 146, 0.1);
+            opacity: 0;
+            animation: bentoIn 0.6s ease forwards;
+            transform-style: preserve-3d;
+            will-change: transform;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .dish-card:hover {
+            box-shadow: 0 14px 32px rgba(76, 106, 146, 0.28);
+            z-index: 2;
+        }
+
+        @keyframes bentoIn {
+            from { opacity: 0; transform: translateY(24px) scale(0.97); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes dishBreathe {
+            0%, 100% { transform: scale(1.02); }
+            50% { transform: scale(1.07); }
+        }
+
+        .dish-card:nth-of-type(2n) .dish-img img { animation-delay: -2.3s; }
+        .dish-card:nth-of-type(3n) .dish-img img { animation-delay: -4.6s; }
+
+
+        .dish-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 36px rgba(76, 106, 146, 0.25);
+        }
+
+        .dish-img {
+            position: absolute;
+            inset: 0;
+        }
+
+        .dish-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+            animation: dishBreathe 7s ease-in-out infinite;
+        }
+
+        .dish-card:hover .dish-img img {
+            animation-play-state: paused;
+            transform: scale(1.15) rotate(0.3deg);
+        }
+
+        .dish-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.2rem;
+            background: linear-gradient(to top, rgba(20, 30, 36, 0.92) 0%, rgba(20, 30, 36, 0.15) 55%, transparent 100%);
+            color: #fff;
+            transform: translateY(8%);
+            opacity: 0;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .dish-card:hover .dish-overlay {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .dish-overlay .dish-name {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .dish-overlay .dish-desc {
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .dish-overlay .dish-price {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #fff;
+        }
+
+        /* always-visible price badge, even before hover */
+        .dish-card::after {
+            content: "$" attr(data-price);
+            position: absolute;
+            top: 0.8rem;
+            right: 0.8rem;
+            background: rgba(255, 255, 255, 0.92);
+            color: var(--brand-blue);
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 0.3rem 0.7rem;
+            border-radius: 999px;
+            transition: opacity 0.3s ease;
+            z-index: 2;
+        }
+
+        .dish-card:hover::after {
+            opacity: 0;
+        }
+
+        /* ===== TOP items: uniform horizontal large image cards ===== */
+        .top-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .top-card {
+            aspect-ratio: 16 / 9;
+        }
+
+        @media (max-width: 768px) {
+            .top-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== Chip list (items without photos) ===== */
+        .chip-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.2rem 2.5rem;
+        }
+
+        .chip-list-with-bento {
+            margin-top: 1.2rem;
+        }
+
+        .menu-chip {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            padding: 0.85rem 0.4rem;
+            border-bottom: 1px dashed rgba(76, 106, 146, 0.2);
+            opacity: 0;
+            animation: chipIn 0.5s ease forwards;
+            transition: background 0.25s ease, padding-left 0.25s ease;
+            cursor: none;
+        }
+
+        @keyframes chipIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .menu-chip:hover {
+            background: rgba(76, 106, 146, 0.06);
+            padding-left: 0.8rem;
+        }
+
+        .menu-chip:hover .chip-price {
+            color: var(--brand-blue);
+            transform: scale(1.08);
+        }
+
+        .chip-name {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
+
+        .chip-price {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-light);
+            white-space: nowrap;
+            margin-left: auto;
+            transition: color 0.25s ease, transform 0.25s ease;
+        }
+
+        /* ===== Lightbox ===== */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .lightbox.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lightbox-backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(20, 30, 36, 0.85);
+            cursor: none;
+        }
+
+        .lightbox-content {
+            position: relative;
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            max-width: 560px;
+            width: 90%;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            transform: scale(0.92) translateY(10px);
+            transition: transform 0.35s ease;
+        }
+
+        .lightbox.active .lightbox-content {
+            transform: scale(1) translateY(0);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 0.8rem;
+            right: 0.8rem;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.92);
+            color: var(--brand-blue);
+            font-size: 1.5rem;
+            line-height: 1;
+            cursor: none;
+            z-index: 2;
+        }
+
+        .lightbox-img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+        }
+
+        .lightbox-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .lightbox-img.no-photo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(76, 106, 146, 0.18) 0%, rgba(76, 106, 146, 0.06) 100%);
+        }
+
+        .lightbox-img.no-photo svg {
+            width: 64px;
+            height: 64px;
+            stroke: var(--brand-blue);
+            opacity: 0.55;
+        }
+
+        .lightbox-info {
+            padding: 1.5rem 1.8rem 1.8rem;
+        }
+
+        .lightbox-info h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--brand-blue);
+            margin-bottom: 0.6rem;
+        }
+
+        .lightbox-info p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 0.8rem;
+        }
+
+        .lightbox-info span {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--brand-blue);
+        }
+
+        /* ===== Hover preview for text-only menu rows ===== */
+        .chip-preview {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 220px;
+            background: #fff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 16px 36px rgba(20, 30, 36, 0.22);
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(6px) scale(0.96);
+            transition: opacity 0.18s ease, transform 0.18s ease;
+            z-index: 3000;
+        }
+
+        .chip-preview.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .chip-preview-img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+        }
+
+        .chip-preview-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .chip-preview-img.no-photo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(76, 106, 146, 0.18) 0%, rgba(76, 106, 146, 0.06) 100%);
+        }
+
+        .chip-preview-img.no-photo svg {
+            width: 40px;
+            height: 40px;
+            stroke: var(--brand-blue);
+            opacity: 0.55;
+        }
+
+        .chip-preview-info {
+            padding: 0.8rem 1rem 1rem;
+        }
+
+        .chip-preview-info h4 {
+            font-family: var(--font-serif);
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--brand-blue);
+            margin-bottom: 0.3rem;
+        }
+
+        .chip-preview-info span {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        @media (max-width: 768px) {
+            .chip-preview {
+                display: none;
+            }
+
+            .menu-layout {
+                display: block;
+            }
+
+            .category-nav {
+                position: sticky;
+                top: 80px;
+                width: 100%;
+                max-width: 100vw;
+                margin-top: 0;
+                max-height: none;
+                border-right: none;
+                border-bottom: 1px solid rgba(76, 106, 146, 0.12);
+                overflow-x: auto;
+                overflow-y: visible;
+                touch-action: pan-x;
+                -webkit-overflow-scrolling: touch;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+            }
+
+            .category-nav-inner {
+                flex-direction: row;
+                align-items: center;
+                padding: 0.8rem 1rem;
+                gap: 1.5rem;
+                white-space: nowrap;
+            }
+
+            .category-nav a {
+                padding-left: 0;
+                padding-bottom: 0.5rem;
+            }
+
+            .category-nav a:hover {
+                transform: translateY(-2px);
+            }
+
+            .category-nav-indicator {
+                left: 0;
+                top: auto;
+                bottom: 0;
+                width: auto;
+                height: 2px;
+                transition: left 0.35s cubic-bezier(0.65, 0, 0.35, 1), width 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+            }
+
+            .menu-section {
+                scroll-margin-top: 135px;
+                padding: 50px 0;
+            }
+
+            .chip-list {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .menu-chip {
+                padding: 0.75rem 0.4rem;
+            }
+        }
+
+        footer {
+            background: var(--brand-blue);
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        .back-to-top {
+            position: fixed;
+            right: 1.8rem;
+            bottom: 1.8rem;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 50%;
+            background: var(--brand-blue);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+            z-index: 900;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background: #2f4a58;
+        }
+
+        @media (max-width: 768px) {
+            .back-to-top {
+                right: 1.2rem;
+                bottom: 1.2rem;
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+        .social-links {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 3px;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: rgba(250, 248, 245, 0.98);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: left 0.3s ease;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .page-title {
+                font-size: 2.5rem;
+                letter-spacing: 5px;
+            }
+
+            .page-subtitle {
+                font-size: 1rem;
+            }
+
+            .category-title {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-header {
+                padding: 120px 5% 60px;
+            }
+
+            .page-title {
+                font-size: 2rem;
+                letter-spacing: 3px;
+            }
+
+            .menu-container {
+                padding: 60px 5% 80px;
+            }
+        }
+
+                        /* Footer */
+        .footer {
+            background: #223843;
+            color: #fff;
+            padding: 3rem 2rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-follow-title {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            letter-spacing: 0.15em;
+            margin-bottom: 1.5rem;
+            font-family: var(--font-sans);
+        }
+
+        .footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #fff;
+            color: #2c3e50;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer .social-links a:hover {
+            background: #e0e0e0;
+            transform: translateY(-2px);
+        }
+
+        .footer .social-links a svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0;
+        }
+
+        
+/* ===== TT Footer Module (from collaboration.html) ===== */
+.tt-footer {
+    background: #223843;
+    color: white;
+    padding: 4rem 5% 0;
+    position: relative;
+    overflow: hidden;
+    font-family: "Noto Sans TC", sans-serif;
+}
+.tt-footer *, .tt-footer *::before, .tt-footer *::after { box-sizing: border-box; }
+.tt-footer-inner {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 3rem;
+}
+.tt-footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1.8fr;
+    gap: 4rem;
+    align-items: start;
+}
+.tt-footer-company-name {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    margin: 0 0 1.8rem;
+    line-height: 1.2;
+}
+.tt-footer-info p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.9;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+.tt-footer-copyright {
+    margin-top: 2.5rem;
+}
+.tt-footer-copyright p,
+.tt-footer-copyright a {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    line-height: 1.9;
+    transition: color 0.3s;
+    margin: 0;
+}
+.tt-footer-copyright a:hover {
+    color: rgba(255,255,255,0.75);
+}
+.tt-footer-col-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.5rem;
+}
+.tt-footer-follow {
+    font-family: serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 0.1em;
+    margin: 0 0 1.8rem;
+    text-align: center;
+}
+.tt-footer-social {
+    display: flex;
+    gap: 1.2rem;
+}
+.tt-footer-social a {
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+.tt-footer-social a:hover {
+    border-color: white;
+    background: rgba(255,255,255,0.1);
+}
+.tt-footer-social svg {
+    width: 24px;
+    height: 24px;
+    fill: rgba(255,255,255,0.85);
+}
+.tt-footer-col-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+}
+.tt-footer-col-right img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+.tt-footer-wave {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    height: 55%;
+    z-index: 1;
+    pointer-events: none;
+}
+.tt-footer-wave svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+@media (max-width: 768px) {
+    .tt-footer {
+        padding: 3rem 1.5rem 0;
+        text-align: center;
+    }
+    .tt-footer-inner {
+        padding-bottom: 2rem;
+    }
+    .tt-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    .tt-footer-col-left  { order: 2; }
+    .tt-footer-col-middle {
+        order: 1;
+        align-items: center;
+        padding-top: 0;
+    }
+    .tt-footer-col-right {
+        order: 3;
+        justify-content: center;
+        padding-top: 0;
+    }
+    .tt-footer-company-name {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+    .tt-footer-info p {
+        font-size: 0.88rem;
+        line-height: 1.8;
+    }
+    .tt-footer-copyright {
+        margin-top: 1.8rem;
+    }
+    .tt-footer-copyright p,
+    .tt-footer-copyright a {
+        font-size: 0.78rem;
+    }
+    .tt-footer-follow {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+        text-align: center;
+    }
+    .tt-footer-social {
+        justify-content: center;
+        gap: 1rem;
+    }
+    .tt-footer-social a {
+        width: 44px;
+        height: 44px;
+    }
+    .tt-footer-social svg {
+        width: 20px;
+        height: 20px;
+    }
+    .tt-footer-col-right img {
+        width: 90px;
+    }
+    .tt-footer-wave {
+        width: 55%;
+        height: 30%;
+        opacity: 0.6;
+    }
+}
+@media (max-width: 480px) {
+    .tt-footer {
+        padding: 2.5rem 1.2rem 0;
+    }
+    .tt-footer-grid {
+        gap: 2rem;
+    }
+    .tt-footer-company-name {
+        font-size: 1.35rem;
+    }
+    .tt-footer-wave {
+        display: none;
+    }
+}
+
+/* --- Left column alignment override (fix global text-align: center interference) --- */
+.tt-footer .tt-footer-col-left,
+.tt-footer .tt-footer-col-left * {
+    text-align: left;
+}
+.tt-footer .tt-footer-company-name { text-align: left; }
+.tt-footer .tt-footer-info p { text-align: left; }
+.tt-footer .tt-footer-copyright p,
+.tt-footer .tt-footer-copyright a { text-align: left; }
+@media (max-width: 768px) {
+    .tt-footer .tt-footer-col-left,
+    .tt-footer .tt-footer-col-left *,
+    .tt-footer .tt-footer-company-name,
+    .tt-footer .tt-footer-info p,
+    .tt-footer .tt-footer-copyright p,
+    .tt-footer .tt-footer-copyright a {
+        text-align: center;
+    }
+}
+
+/* --- Adjust: center FOLLOW US, hide wave on mobile --- */
+.tt-footer .tt-footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;  /* 三欄等寬，中欄落在頁面中央 */
+}
+.tt-footer .tt-footer-col-left {
+    /* 維持靠左 */
+}
+.tt-footer .tt-footer-col-middle {
+    align-items: center;  /* 水平置中欄內內容 */
+}
+.tt-footer .tt-footer-col-right {
+    justify-content: flex-end;  /* Logo 維持靠右 */
+}
+@media (max-width: 768px) {
+    .tt-footer .tt-footer-wave { display: none !important; }
+    .tt-footer .tt-footer-grid { grid-template-columns: 1fr; }
+}
+/* --- /Adjust --- */
+/* ===== /TT Footer Module ===== */
+
+    </style>
+<style id="kgp-selected-style">
+  [data-kgp-selected]::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 4px;
+    outline: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 10px rgba(255, 107, 53, 0.4) !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+  [data-kgp-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-kgp-selected],
+  img[data-kgp-hover-selected],
+  [data-kgp-hover-selected],
+  [item-kgp-click-selected],
+  [item-kgp-selected] {
+    border: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 15px rgba(255, 107, 53, 0.5) !important;
+    border-radius: 4px;
+  }
+
+  [data-kgp-hover-selected]::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 2px;
+    border-radius: 4px;
+    outline: 2px solid #FFA366 !important;
+    box-shadow: 0 0 0 1px rgba(255, 163, 102, 0.3), 0 0 8px rgba(255, 163, 102, 0.4) !important;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  [data-kgp-hover-selected] {
+    position: relative;
+    outline: none;
+  }
+</style><style id="kgp-selected-style">
+  [data-kgp-selected]::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 4px;
+    outline: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 10px rgba(255, 107, 53, 0.4) !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+  [data-kgp-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-kgp-selected],
+  img[data-kgp-hover-selected],
+  [data-kgp-hover-selected],
+  [item-kgp-click-selected],
+  [item-kgp-selected] {
+    border: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 15px rgba(255, 107, 53, 0.5) !important;
+    border-radius: 4px;
+  }
+
+  [data-kgp-hover-selected]::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 2px;
+    border-radius: 4px;
+    outline: 2px solid #FFA366 !important;
+    box-shadow: 0 0 0 1px rgba(255, 163, 102, 0.3), 0 0 8px rgba(255, 163, 102, 0.4) !important;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  [data-kgp-hover-selected] {
+    position: relative;
+    outline: none;
+  }
+</style><style id="kgp-selected-style">
+  [data-kgp-selected]::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 4px;
+    outline: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 10px rgba(255, 107, 53, 0.4) !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+  [data-kgp-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-kgp-selected],
+  img[data-kgp-hover-selected],
+  [data-kgp-hover-selected],
+  [item-kgp-click-selected],
+  [item-kgp-selected] {
+    border: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 15px rgba(255, 107, 53, 0.5) !important;
+    border-radius: 4px;
+  }
+
+  [data-kgp-hover-selected]::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 2px;
+    border-radius: 4px;
+    outline: 2px solid #FFA366 !important;
+    box-shadow: 0 0 0 1px rgba(255, 163, 102, 0.3), 0 0 8px rgba(255, 163, 102, 0.4) !important;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  [data-kgp-hover-selected] {
+    position: relative;
+    outline: none;
+  }
+</style></head>
+<body style="">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJTCF662"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div id="custom-cursor"></div>
+
+    <nav>
+        <a href="index.html" class="logo"><img src="./logo.png" alt="同齊咖吡"></a>
+                <ul class="nav-links">
+            <li><a href="menu.html" class="active">菜單</a></li>
+            <li><a href="franchise.html">加盟計畫</a></li>
+            <li><a href="space-rental.html">空間租賃</a></li>
+            <li><a href="location.html">店面位置</a></li>
+            <li><a href="story.html">品牌故事</a></li>
+            <li><a href="gallery.html">特色餐食</a></li>
+        </ul>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <section class="menu-hero">
+        <img src="./餐點主視覺圖.jpg" alt="同齊咖吡 招牌料理">
+    </section>
+    <section class="menu-hero-text">
+        <div class="page-number"># 02</div>
+        <h1 class="page-title">MENU</h1>
+        <p class="page-subtitle">我們的菜單</p>
+        <p class="menu-hero-intro">從職人手作的里民套餐、輕食沙拉，到中焙、中深焙的招牌咖啡與特調茶飲，同齊咖吡用日復一日的講究，陪你度過每一個城市裡的休憩時刻。</p>
+    </section>
+
+    <div class="menu-layout">
+    <nav class="category-nav">
+        <div class="category-nav-inner">
+                <a href="#set-meal">里民套餐</a>
+                <a href="#light-meal">超值輕食</a>
+                <a href="#healthy">全新生活飲食</a>
+                <a href="#puer">普洱茶</a>
+                <a href="#coffee-medium">里民咖啡 (中焙)</a>
+                <a href="#coffee-dark">里長咖啡 (中深焙)</a>
+                <a href="#tea">里民茶飲</a>
+                <a href="#special-drinks">里民特調</a>
+                <a href="#smoothie">四季冰沙</a>
+                <a href="#beer">精釀啤酒</a>
+                <a href="#herbal">養生熱飲 (無咖啡因)</a>
+                <a href="#dessert">私藏甜品</a>
+                <a href="#snack">里民點心</a>
+                <a href="#addon">餐食加購區</a>
+                <span class="category-nav-indicator"></span>
+        </div>
+    </nav>
+
+    <div class="menu-container" style="">
+            <section class="menu-section" id="set-meal">
+                <h2 class="category-title"># 里民套餐</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="香蒜雞腿排拼盤" data-price="339" data-img="images/set-meal/香蒜雞腿排拼盤.jpg" data-desc="那塊厚實的雞腿排，外皮被煎烤至如金箔般燦爛的琥珀色。">
+                        <div class="dish-img"><img src="images/set-meal/香蒜雞腿排拼盤.jpg" alt="香蒜雞腿排拼盤" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">香蒜雞腿排拼盤</h3>
+                            <p class="dish-desc">那塊厚實的雞腿排，外皮被煎烤至如金箔般燦爛的琥珀色。</p><span class="dish-price">$339</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.07s" data-lightbox data-name="紅酒燉牛肉" data-price="389" data-img="images/set-meal/紅酒燉牛肉.jpg" data-desc="輕輕用叉子一撥，牛肉便如同初雪般輕盈散開。">
+                        <div class="dish-img"><img src="images/set-meal/紅酒燉牛肉.jpg" alt="紅酒燉牛肉" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">紅酒燉牛肉</h3>
+                            <p class="dish-desc">輕輕用叉子一撥，牛肉便如同初雪般輕盈散開。</p><span class="dish-price">$389</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.14s" data-lightbox data-name="酥炸唐揚雞咖哩 (辣味/原味)" data-price="279" data-img="images/set-meal/酥炸唐揚雞咖哩.jpg">
+                        <div class="dish-img"><img src="images/set-meal/酥炸唐揚雞咖哩.jpg" alt="酥炸唐揚雞咖哩 (辣味/原味)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">酥炸唐揚雞咖哩 (辣味/原味)</h3>
+                            <span class="dish-price">$279</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="松露奶油燉雞飯" data-price="369" data-img="images/set-meal/松露奶油燉雞飯.jpg">
+                        <span class="chip-name">松露奶油燉雞飯</span>
+                        <span class="chip-price">$369</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="煙燻鮭魚拼盤" data-price="299" data-img="images/set-meal/煙燻鮭魚拼盤.png">
+                        <span class="chip-name">煙燻鮭魚拼盤</span>
+                        <span class="chip-price">$299</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="黑胡椒雞胸拼盤" data-price="279" data-img="images/set-meal/黑胡椒雞胸拼盤.jpg">
+                        <span class="chip-name">黑胡椒雞胸拼盤</span>
+                        <span class="chip-price">$279</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.15s" data-lightbox data-chip data-name="招牌唐揚雞拼盤" data-price="279" data-img="images/set-meal/招牌唐揚雞拼盤.jpg">
+                        <span class="chip-name">招牌唐揚雞拼盤</span>
+                        <span class="chip-price">$279</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.2s" data-lightbox data-chip data-name="蜜汁咕咾肉飯" data-price="279" data-img="images/set-meal/蜜汁咕咾肉飯.jpg">
+                        <span class="chip-name">蜜汁咕咾肉飯</span>
+                        <span class="chip-price">$279</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.25s" data-lightbox data-chip data-name="香蒜雞腿排飯" data-price="299" data-img="images/set-meal/香蒜雞腿排飯.jpg">
+                        <span class="chip-name">香蒜雞腿排飯</span>
+                        <span class="chip-price">$299</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.3s" data-lightbox data-chip data-name="泰式打拋豬飯" data-price="269" data-img="images/set-meal/泰式打拋豬飯.jpg">
+                        <span class="chip-name">泰式打拋豬飯</span>
+                        <span class="chip-price">$269</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="light-meal">
+                <h2 class="category-title"># 超值輕食</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="剝皮辣椒燻雞佛卡夏" data-price="130" data-img="images/light-meal/剝皮辣椒燻雞佛卡夏.jpg">
+                        <div class="dish-img"><img src="images/light-meal/剝皮辣椒燻雞佛卡夏.jpg" alt="剝皮辣椒燻雞佛卡夏" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">剝皮辣椒燻雞佛卡夏</h3>
+                            <span class="dish-price">$130</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.07s" data-lightbox data-name="雞胸肉輕盈冷卷" data-price="150" data-img="images/light-meal/雞胸肉輕盈冷卷.jpg" data-desc="極致輕盈無負擔，讓靈魂在純粹滋味中翩然起舞。">
+                        <div class="dish-img"><img src="images/light-meal/雞胸肉輕盈冷卷.jpg" alt="雞胸肉輕盈冷卷" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">雞胸肉輕盈冷卷</h3>
+                            <p class="dish-desc">極致輕盈無負擔，讓靈魂在純粹滋味中翩然起舞。</p><span class="dish-price">$150</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.14s" data-lightbox data-name="招牌唐揚雞可頌" data-price="120" data-img="images/light-meal/招牌唐揚雞可頌.png">
+                        <div class="dish-img"><img src="images/light-meal/招牌唐揚雞可頌.png" alt="招牌唐揚雞可頌" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">招牌唐揚雞可頌</h3>
+                            <span class="dish-price">$120</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="剝皮辣椒燻雞可頌" data-price="130" data-img="images/light-meal/剝皮辣椒燻雞可頌.jpg">
+                        <span class="chip-name">剝皮辣椒燻雞可頌</span>
+                        <span class="chip-price">$130</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="剝皮辣椒雞湯" data-price="100" data-img="images/light-meal/剝皮辣椒雞湯.jpg">
+                        <span class="chip-name">剝皮辣椒雞湯</span>
+                        <span class="chip-price">$100</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="煙燻鮭魚佛卡夏/可頌" data-price="130" data-img="images/light-meal/煙燻鮭魚佛卡夏.jpg">
+                        <span class="chip-name">煙燻鮭魚佛卡夏/可頌</span>
+                        <span class="chip-price">$130</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.15s" data-lightbox data-chip data-name="煙燻雞肉佛卡夏/可頌" data-price="110" data-img="images/light-meal/煙燻雞肉可頌.jpg">
+                        <span class="chip-name">煙燻雞肉佛卡夏/可頌</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.2s" data-lightbox data-chip data-name="火腿起司可頌" data-price="100" data-img="images/light-meal/火腿起司可頌.jpg">
+                        <span class="chip-name">火腿起司可頌</span>
+                        <span class="chip-price">$100</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.25s" data-lightbox data-chip data-name="打拋豬焗烤厚片" data-price="129" data-img="images/light-meal/打拋豬焗烤厚片.jpg">
+                        <span class="chip-name">打拋豬焗烤厚片</span>
+                        <span class="chip-price">$129</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.3s" data-lightbox data-chip data-name="奶酥厚片(原味/可可/鐵觀音)" data-price="100" data-img="images/light-meal/原味奶酥厚片.jpg">
+                        <span class="chip-name">奶酥厚片(原味/可可/鐵觀音)</span>
+                        <span class="chip-price">$100</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="healthy">
+                <h2 class="category-title"># 全新生活飲食</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="蘑菇奶油千層麵 (蛋奶素)" data-price="279" data-img="images/healthy/蘑菇奶油千層麵.jpg" data-desc="當你切開那豐厚的結構，被奶油熱氣鎖住的森林蘑菇香氣瞬間爆發。">
+                        <div class="dish-img"><img src="images/healthy/蘑菇奶油千層麵.jpg" alt="蘑菇奶油千層麵 (蛋奶素)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">蘑菇奶油千層麵 (蛋奶素)</h3>
+                            <p class="dish-desc">當你切開那豐厚的結構，被奶油熱氣鎖住的森林蘑菇香氣瞬間爆發。</p><span class="dish-price">$279</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.07s" data-lightbox data-name="燻鮭魚沙拉盤" data-price="339" data-img="images/healthy/燻鮭魚沙拉盤.jpg">
+                        <div class="dish-img"><img src="images/healthy/燻鮭魚沙拉盤.jpg" alt="燻鮭魚沙拉盤" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">燻鮭魚沙拉盤</h3>
+                            <span class="dish-price">$339</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="季節蔬果沙拉盤 (全素)" data-price="198" data-img="images/healthy/季節蔬果沙拉盤.jpg">
+                        <span class="chip-name">季節蔬果沙拉盤 (全素)</span>
+                        <span class="chip-price">$198</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="鮮蝦蔬食沙拉盤" data-price="289" data-img="images/healthy/鮮蝦蔬食沙拉盤.jpg">
+                        <span class="chip-name">鮮蝦蔬食沙拉盤</span>
+                        <span class="chip-price">$289</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="雞胸肉蔬食沙拉盤" data-price="259" data-img="images/healthy/雞胸肉蔬食沙拉盤.jpg">
+                        <span class="chip-name">雞胸肉蔬食沙拉盤</span>
+                        <span class="chip-price">$259</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="puer">
+                <h2 class="category-title"># 普洱茶</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="風味普洱 (陳皮/菊花/山楂/枸杞)" data-price="110" data-img="images/puer/風味普洱.jpg">
+                        <div class="dish-img"><img src="images/puer/風味普洱.jpg" alt="風味普洱 (陳皮/菊花/山楂/枸杞)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">風味普洱 (陳皮/菊花/山楂/枸杞)</h3>
+                            <span class="dish-price">$110</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.07s" data-lightbox data-name="15年古樹紫牙 (15年陳生茶)" data-price="180" data-img="images/puer/15年古樹紫牙.jpg">
+                        <div class="dish-img"><img src="images/puer/15年古樹紫牙.jpg" alt="15年古樹紫牙 (15年陳生茶)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">15年古樹紫牙 (15年陳生茶)</h3>
+                            <span class="dish-price">$180</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="精選普洱熟茶" data-price="100" data-img="images/puer/精選普洱熟茶.jpg">
+                        <span class="chip-name">精選普洱熟茶</span>
+                        <span class="chip-price">$100</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="90年代老茶包" data-price="250" data-img="images/puer/90年代老茶包.jpg">
+                        <span class="chip-name">90年代老茶包</span>
+                        <span class="chip-price">$250</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="coffee-medium">
+                <h2 class="category-title"># 里民咖啡 (中焙)</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="拿鐵 I/H (12oz/16oz)" data-price="140/160" data-img="images/coffee-medium/拿鐵.jpg">
+                        <div class="dish-img"><img src="images/coffee-medium/拿鐵.jpg" alt="拿鐵 I/H (12oz/16oz)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">拿鐵 I/H (12oz/16oz)</h3>
+                            <span class="dish-price">$140/160</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="美式 I/H (12oz/16oz)" data-price="110/130" data-img="images/coffee-medium/美式.jpg">
+                        <span class="chip-name">美式 I/H (12oz/16oz)</span>
+                        <span class="chip-price">$110/130</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="風味拿鐵 I/H (焦糖/香草/榛果)" data-price="145/170" data-img="images/coffee-medium/風味拿鐵.jpg">
+                        <span class="chip-name">風味拿鐵 I/H (焦糖/香草/榛果)</span>
+                        <span class="chip-price">$145/170</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="coffee-dark">
+                <h2 class="category-title"># 里長咖啡 (中深焙)</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="桂花拿鐵 I/H (16oz)" data-price="140" data-img="images/coffee-dark/桂花拿鐵.jpg">
+                        <div class="dish-img"><img src="images/coffee-dark/桂花拿鐵.jpg" alt="桂花拿鐵 I/H (16oz)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">桂花拿鐵 I/H (16oz)</h3>
+                            <span class="dish-price">$140</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.07s" data-lightbox data-name="蘋果美式 I (16oz)" data-price="120" data-img="images/coffee-dark/蘋果美式.jpg">
+                        <div class="dish-img"><img src="images/coffee-dark/蘋果美式.jpg" alt="蘋果美式 I (16oz)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">蘋果美式 I (16oz)</h3>
+                            <span class="dish-price">$120</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.14s" data-lightbox data-name="西西里氣泡美式 I (16oz)" data-price="135" data-img="images/coffee-dark/西西里氣泡美式.jpg">
+                        <div class="dish-img"><img src="images/coffee-dark/西西里氣泡美式.jpg" alt="西西里氣泡美式 I (16oz)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">西西里氣泡美式 I (16oz)</h3>
+                            <span class="dish-price">$135</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="美式 I/H (12oz/16oz)" data-price="80/110" data-img="images/coffee-dark/美式.jpg">
+                        <span class="chip-name">美式 I/H (12oz/16oz)</span>
+                        <span class="chip-price">$80/110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="拿鐵 I/H (12oz/16oz)" data-price="120/140" data-img="images/coffee-dark/拿鐵.jpg">
+                        <span class="chip-name">拿鐵 I/H (12oz/16oz)</span>
+                        <span class="chip-price">$120/140</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="風味拿鐵 I/H (焦糖/香草/榛果)" data-price="125/150" data-img="images/coffee-dark/風味拿鐵.jpg">
+                        <span class="chip-name">風味拿鐵 I/H (焦糖/香草/榛果)</span>
+                        <span class="chip-price">$125/150</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.15s" data-lightbox data-chip data-name="桂花氣泡美式 I (16oz)" data-price="130" data-img="images/coffee-dark/桂花氣泡美式.jpg">
+                        <span class="chip-name">桂花氣泡美式 I (16oz)</span>
+                        <span class="chip-price">$130</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.2s" data-lightbox data-chip data-name="柳橙美式 I (16oz)" data-price="120" data-img="images/coffee-dark/柳橙美式.jpg">
+                        <span class="chip-name">柳橙美式 I (16oz)</span>
+                        <span class="chip-price">$120</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.25s" data-lightbox data-chip data-name="奶蓋美式 I (16oz)" data-price="120" data-img="images/coffee-dark/奶蓋美式.jpg">
+                        <span class="chip-name">奶蓋美式 I (16oz)</span>
+                        <span class="chip-price">$120</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.3s" data-lightbox data-chip data-name="百香果美式 I (16oz)" data-price="120" data-img="images/coffee-dark/百香果美式.jpg">
+                        <span class="chip-name">百香果美式 I (16oz)</span>
+                        <span class="chip-price">$120</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.35s" data-lightbox data-chip data-name="話梅美式 I (西區限定)" data-price="130" data-img="images/coffee-dark/話梅美式.jpg">
+                        <span class="chip-name">話梅美式 I (西區限定)</span>
+                        <span class="chip-price">$130</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="tea">
+                <h2 class="category-title"># 里民茶飲</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="精選伯爵紅茶奶蓋 I" data-price="110" data-img="images/tea/精選伯爵紅茶奶蓋.jpg">
+                        <div class="dish-img"><img src="images/tea/精選伯爵紅茶奶蓋.jpg" alt="精選伯爵紅茶奶蓋 I" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">精選伯爵紅茶奶蓋 I</h3>
+                            <span class="dish-price">$110</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.07s" data-lightbox data-name="桂花烏龍 I" data-price="100" data-img="images/tea/桂花烏龍.jpg">
+                        <div class="dish-img"><img src="images/tea/桂花烏龍.jpg" alt="桂花烏龍 I" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">桂花烏龍 I</h3>
+                            <span class="dish-price">$100</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.14s" data-lightbox data-name="草莓抹茶歐蕾 I" data-price="120" data-img="images/tea/草莓抹茶歐蕾.jpg">
+                        <div class="dish-img"><img src="images/tea/草莓抹茶歐蕾.jpg" alt="草莓抹茶歐蕾 I" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">草莓抹茶歐蕾 I</h3>
+                            <span class="dish-price">$120</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="精選伯爵紅茶 I/H" data-price="60" data-img="images/tea/精選伯爵紅茶.jpg">
+                        <span class="chip-name">精選伯爵紅茶 I/H</span>
+                        <span class="chip-price">$60</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="高山青茶 I/H" data-price="60" data-img="images/tea/高山青茶.jpg">
+                        <span class="chip-name">高山青茶 I/H</span>
+                        <span class="chip-price">$60</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="鐵觀音烏龍茶 I/H" data-price="60">
+                        <span class="chip-name">鐵觀音烏龍茶 I/H</span>
+                        <span class="chip-price">$60</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.15s" data-lightbox data-chip data-name="柚子紅茶 I/H" data-price="110" data-img="images/tea/柚子紅茶.jpg">
+                        <span class="chip-name">柚子紅茶 I/H</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.2s" data-lightbox data-chip data-name="鐵觀音烏龍茶奶蓋 I" data-price="110" data-img="images/tea/鐵觀音烏龍茶奶蓋.jpg">
+                        <span class="chip-name">鐵觀音烏龍茶奶蓋 I</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.25s" data-lightbox data-chip data-name="話梅烏龍 I (西區限定)" data-price="100" data-img="images/tea/話梅烏龍.jpg">
+                        <span class="chip-name">話梅烏龍 I (西區限定)</span>
+                        <span class="chip-price">$100</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.3s" data-lightbox data-chip data-name="玫瑰紅茶歐蕾 I/H" data-price="110" data-img="images/tea/玫瑰紅茶歐蕾.jpg">
+                        <span class="chip-name">玫瑰紅茶歐蕾 I/H</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.35s" data-lightbox data-chip data-name="精選伯爵紅茶歐蕾 I/H" data-price="110" data-img="images/tea/精選伯爵紅茶歐蕾.jpg">
+                        <span class="chip-name">精選伯爵紅茶歐蕾 I/H</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="鐵觀音烏龍茶歐蕾 I/H" data-price="110" data-img="images/tea/鐵觀音烏龍茶歐蕾.jpg">
+                        <span class="chip-name">鐵觀音烏龍茶歐蕾 I/H</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="醇濃抹茶歐蕾 I/H" data-price="120" data-img="images/tea/醇濃抹茶歐蕾.jpg">
+                        <span class="chip-name">醇濃抹茶歐蕾 I/H</span>
+                        <span class="chip-price">$120</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="濃郁可可歐蕾 I/H" data-price="130" data-img="images/tea/濃郁可可歐蕾.jpg">
+                        <span class="chip-name">濃郁可可歐蕾 I/H</span>
+                        <span class="chip-price">$130</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.15s" data-lightbox data-chip data-name="冬瓜歐蕾 I (產品含肉桂)" data-price="130" data-img="images/tea/冬瓜歐蕾.jpg">
+                        <span class="chip-name">冬瓜歐蕾 I (產品含肉桂)</span>
+                        <span class="chip-price">$130</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="special-drinks">
+                <h2 class="category-title"># 里民特調</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="冬瓜檸檬氣泡飲 I" data-price="130" data-img="images/special-drinks/冬瓜檸檬氣泡飲.jpg">
+                        <div class="dish-img"><img src="images/special-drinks/冬瓜檸檬氣泡飲.jpg" alt="冬瓜檸檬氣泡飲 I" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">冬瓜檸檬氣泡飲 I</h3>
+                            <span class="dish-price">$130</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.07s" data-lightbox data-name="薑汁汽水 I (西區限定)" data-price="130" data-img="images/special-drinks/薑汁汽水.jpg">
+                        <div class="dish-img"><img src="images/special-drinks/薑汁汽水.jpg" alt="薑汁汽水 I (西區限定)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">薑汁汽水 I (西區限定)</h3>
+                            <span class="dish-price">$130</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.14s" data-lightbox data-name="暮色橙光 I (蜜桃、柳橙、紅茶)" data-price="130" data-img="images/special-drinks/暮色橙光.jpg">
+                        <div class="dish-img"><img src="images/special-drinks/暮色橙光.jpg" alt="暮色橙光 I (蜜桃、柳橙、紅茶)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">暮色橙光 I (蜜桃、柳橙、紅茶)</h3>
+                            <span class="dish-price">$130</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.21s" data-lightbox data-name="花田氣泡 I (西瓜、玫瑰、小黃瓜)" data-price="150" data-img="images/special-drinks/花田氣泡.jpg">
+                        <div class="dish-img"><img src="images/special-drinks/花田氣泡.jpg" alt="花田氣泡 I (西瓜、玫瑰、小黃瓜)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">花田氣泡 I (西瓜、玫瑰、小黃瓜)</h3>
+                            <span class="dish-price">$150</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="港式凍檸茶 I" data-price="110" data-img="images/special-drinks/港式凍檸茶.jpg">
+                        <span class="chip-name">港式凍檸茶 I</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="香甜金芒乳酸氣泡 I" data-price="110" data-img="images/special-drinks/香甜金芒乳酸氣泡.jpg">
+                        <span class="chip-name">香甜金芒乳酸氣泡 I</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="柚香柳橙乳酸氣泡 I" data-price="110" data-img="images/special-drinks/柚香柳橙乳酸氣泡.jpg">
+                        <span class="chip-name">柚香柳橙乳酸氣泡 I</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.15s" data-lightbox data-chip data-name="草莓蜜桃乳酸氣泡 I" data-price="110" data-img="images/special-drinks/草莓蜜桃乳酸氣泡.jpg">
+                        <span class="chip-name">草莓蜜桃乳酸氣泡 I</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.2s" data-lightbox data-chip data-name="晨曦果韻 I (蘋果、蔓越莓、青茶)" data-price="110" data-img="images/special-drinks/晨曦果韻.jpg">
+                        <span class="chip-name">晨曦果韻 I (蘋果、蔓越莓、青茶)</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.25s" data-lightbox data-chip data-name="水蜜桃青 I (北屯限定)" data-price="110" data-img="images/special-drinks/水蜜桃青.jpg">
+                        <span class="chip-name">水蜜桃青 I (北屯限定)</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.3s" data-lightbox data-chip data-name="蜂蜜蘋果氣泡飲 I" data-price="110" data-img="images/special-drinks/蜂蜜蘋果氣泡飲.jpg">
+                        <span class="chip-name">蜂蜜蘋果氣泡飲 I</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="smoothie">
+                <h2 class="category-title"># 四季冰沙</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="芒果冰沙" data-price="110" data-img="images/smoothie/芒果冰沙.jpg">
+                        <div class="dish-img"><img src="images/smoothie/芒果冰沙.jpg" alt="芒果冰沙" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">芒果冰沙</h3>
+                            <span class="dish-price">$110</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="草莓冰沙" data-price="110" data-img="images/smoothie/草莓冰沙.jpg">
+                        <span class="chip-name">草莓冰沙</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="蜜桃莓冰沙" data-price="110" data-img="images/smoothie/蜜桃莓冰沙.jpg">
+                        <span class="chip-name">蜜桃莓冰沙</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="beer">
+                <h2 class="category-title"># 精釀啤酒</h2>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="德國保拉納小麥啤酒" data-price="180">
+                        <span class="chip-name">德國保拉納小麥啤酒</span>
+                        <span class="chip-price">$180</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="凡迪特白熊啤酒" data-price="180">
+                        <span class="chip-name">凡迪特白熊啤酒</span>
+                        <span class="chip-price">$180</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="杜瓦三麥啤酒" data-price="200">
+                        <span class="chip-name">杜瓦三麥啤酒</span>
+                        <span class="chip-price">$200</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="herbal">
+                <h2 class="category-title"># 養生熱飲 (無咖啡因)</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="柚子茶 (含咖啡因) 柚子醬、青茶" data-price="110" data-img="images/herbal/柚子茶.jpg">
+                        <div class="dish-img"><img src="images/herbal/柚子茶.jpg" alt="柚子茶 (含咖啡因) 柚子醬、青茶" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">柚子茶 (含咖啡因) 柚子醬、青茶</h3>
+                            <span class="dish-price">$110</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="花香果茶 (洛神、蘋果、甜菊葉、玫瑰果、黑醋栗)" data-price="100" data-img="images/herbal/花香果茶.jpg">
+                        <span class="chip-name">花香果茶 (洛神、蘋果、甜菊葉、玫瑰果、黑醋栗)</span>
+                        <span class="chip-price">$100</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="養生嗓聲茶 (澎大海、川貝、羅漢果)" data-price="110">
+                        <span class="chip-name">養生嗓聲茶 (澎大海、川貝、羅漢果)</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="草本花草茶 (甜菊葉、茉莉花、菊花、決明子、甘草)" data-price="110" data-img="images/herbal/草本花草茶.jpg">
+                        <span class="chip-name">草本花草茶 (甜菊葉、茉莉花、菊花、決明子、甘草)</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.15s" data-lightbox data-chip data-name="玫瑰健康茶 (玫瑰花、仙楂、決明子、甘草)" data-price="110" data-img="images/herbal/玫瑰健康茶.jpg">
+                        <span class="chip-name">玫瑰健康茶 (玫瑰花、仙楂、決明子、甘草)</span>
+                        <span class="chip-price">$110</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="dessert">
+                <h2 class="category-title"># 私藏甜品</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="優格杯 (黑糖、水果麥片、桔片)" data-price="110" data-img="images/dessert/優格杯.jpg" data-desc="純淨如雪的希臘優格與如寶石般晶瑩的時令鮮果優雅交疊。">
+                        <div class="dish-img"><img src="images/dessert/優格杯.jpg" alt="優格杯 (黑糖、水果麥片、桔片)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">優格杯 (黑糖、水果麥片、桔片)</h3>
+                            <p class="dish-desc">純淨如雪的希臘優格與如寶石般晶瑩的時令鮮果優雅交疊。</p><span class="dish-price">$110</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.07s" data-lightbox data-name="阿芙佳朵 (西區限定)" data-price="130" data-img="images/dessert/阿芙佳朵.jpg" data-desc="熾熱 Espresso 如黑金絲絨澆淋而下，與冰霜雪球展開一場苦甜交鋒。">
+                        <div class="dish-img"><img src="images/dessert/阿芙佳朵.jpg" alt="阿芙佳朵 (西區限定)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">阿芙佳朵 (西區限定)</h3>
+                            <p class="dish-desc">熾熱 Espresso 如黑金絲絨澆淋而下，與冰霜雪球展開一場苦甜交鋒。</p><span class="dish-price">$130</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.14s" data-lightbox data-name="鐵觀音巴斯克" data-price="160" data-img="images/dessert/鐵觀音巴斯克.jpg">
+                        <div class="dish-img"><img src="images/dessert/鐵觀音巴斯克.jpg" alt="鐵觀音巴斯克" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">鐵觀音巴斯克</h3>
+                            <span class="dish-price">$160</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.21s" data-lightbox data-name="法式布丁" data-price="120" data-img="images/dessert/法式布丁.jpg">
+                        <div class="dish-img"><img src="images/dessert/法式布丁.jpg" alt="法式布丁" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">法式布丁</h3>
+                            <span class="dish-price">$120</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="檸檬奶奶糖霜蛋糕" data-price="130" data-img="images/dessert/檸檬奶奶糖霜蛋糕.jpg">
+                        <span class="chip-name">檸檬奶奶糖霜蛋糕</span>
+                        <span class="chip-price">$130</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="起司芋頭巴斯克" data-price="180" data-img="images/dessert/起司芋頭巴斯克.jpg">
+                        <span class="chip-name">起司芋頭巴斯克</span>
+                        <span class="chip-price">$180</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="提拉米蘇巴斯克" data-price="180" data-img="images/dessert/提拉米蘇巴斯克.jpg">
+                        <span class="chip-name">提拉米蘇巴斯克</span>
+                        <span class="chip-price">$180</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.15s" data-lightbox data-chip data-name="湛藍香草巴斯克" data-price="160" data-img="images/dessert/湛藍香草巴斯克.jpg">
+                        <span class="chip-name">湛藍香草巴斯克</span>
+                        <span class="chip-price">$160</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.2s" data-lightbox data-chip data-name="原味肉桂捲 (產品含核桃)" data-price="160" data-img="images/dessert/原味肉桂捲.jpg">
+                        <span class="chip-name">原味肉桂捲 (產品含核桃)</span>
+                        <span class="chip-price">$160</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.25s" data-lightbox data-chip data-name="天然手工奶酪 (芒果、草莓+$10)" data-price="130" data-img="images/dessert/天然手工奶酪.jpg">
+                        <span class="chip-name">天然手工奶酪 (芒果、草莓+$10)</span>
+                        <span class="chip-price">$130</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.3s" data-lightbox data-chip data-name="經典法式千層" data-price="130" data-img="images/dessert/經典法式千層.jpg">
+                        <span class="chip-name">經典法式千層</span>
+                        <span class="chip-price">$130</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.35s" data-lightbox data-chip data-name="巧克力布朗尼" data-price="120" data-img="images/dessert/巧克力布朗尼.jpg">
+                        <span class="chip-name">巧克力布朗尼</span>
+                        <span class="chip-price">$120</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="snack">
+                <h2 class="category-title"># 里民點心</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="唐揚炸雞" data-price="110" data-img="images/snack/唐揚炸雞.jpg">
+                        <div class="dish-img"><img src="images/snack/唐揚炸雞.jpg" alt="唐揚炸雞" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">唐揚炸雞</h3>
+                            <span class="dish-price">$110</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.07s" data-lightbox data-name="豪華炸物拼盤 (雞塊、薯條、雙色地瓜球、鱈魚香絲)" data-price="189" data-img="images/snack/豪華炸物拼盤.jpg">
+                        <div class="dish-img"><img src="images/snack/豪華炸物拼盤.jpg" alt="豪華炸物拼盤 (雞塊、薯條、雙色地瓜球、鱈魚香絲)" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">豪華炸物拼盤 (雞塊、薯條、雙色地瓜球、鱈魚香絲)</h3>
+                            <span class="dish-price">$189</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="鱈魚香絲" data-price="50">
+                        <span class="chip-name">鱈魚香絲</span>
+                        <span class="chip-price">$50</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="雙色地瓜球" data-price="90" data-img="images/snack/雙色地瓜球.jpg">
+                        <span class="chip-name">雙色地瓜球</span>
+                        <span class="chip-price">$90</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="薯條" data-price="90" data-img="images/snack/薯條.jpg">
+                        <span class="chip-name">薯條</span>
+                        <span class="chip-price">$90</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.15s" data-lightbox data-chip data-name="香酥雞塊" data-price="100" data-img="images/snack/香酥雞塊.jpg">
+                        <span class="chip-name">香酥雞塊</span>
+                        <span class="chip-price">$100</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.2s" data-lightbox data-chip data-name="酥炸檸檬雞翅" data-price="100" data-img="images/snack/酥炸檸檬雞翅.jpg">
+                        <span class="chip-name">酥炸檸檬雞翅</span>
+                        <span class="chip-price">$100</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.25s" data-lightbox data-chip data-name="探險家兒童餐 (西區限定)" data-price="168" data-img="images/snack/探險家兒童餐.jpg">
+                        <span class="chip-name">探險家兒童餐 (西區限定)</span>
+                        <span class="chip-price">$168</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="menu-section" id="addon">
+                <h2 class="category-title"># 餐食加購區</h2>
+                <div class="top-grid">
+                    <div class="top-card dish-card" style="animation-delay:0.0s" data-lightbox data-name="黃金香蒜麵包" data-price="90" data-img="images/addon/黃金香蒜麵包.jpg" data-desc="厚實的法式麵包抹上極致奢華的鮮奶油蒜醬。">
+                        <div class="dish-img"><img src="images/addon/黃金香蒜麵包.jpg" alt="黃金香蒜麵包" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">黃金香蒜麵包</h3>
+                            <p class="dish-desc">厚實的法式麵包抹上極致奢華的鮮奶油蒜醬。</p><span class="dish-price">$90</span>
+                        </div>
+                    </div>
+
+                    <div class="top-card dish-card" style="animation-delay:0.07s" data-lightbox data-name="蛋沙拉" data-price="50" data-img="images/addon/蛋沙拉.jpg">
+                        <div class="dish-img"><img src="images/addon/蛋沙拉.jpg" alt="蛋沙拉" loading="lazy"></div>
+                        <div class="dish-overlay">
+                            <h3 class="dish-name">蛋沙拉</h3>
+                            <span class="dish-price">$50</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chip-list">
+                    <div class="menu-chip" style="animation-delay:0.0s" data-lightbox data-chip data-name="加飯" data-price="20">
+                        <span class="chip-name">加飯</span>
+                        <span class="chip-price">$20</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.05s" data-lightbox data-chip data-name="溏心蛋 (半顆)" data-price="20">
+                        <span class="chip-name">溏心蛋 (半顆)</span>
+                        <span class="chip-price">$20</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.1s" data-lightbox data-chip data-name="起司 (片)" data-price="25">
+                        <span class="chip-name">起司 (片)</span>
+                        <span class="chip-price">$25</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.15s" data-lightbox data-chip data-name="牛奶 (12oz)" data-price="45">
+                        <span class="chip-name">牛奶 (12oz)</span>
+                        <span class="chip-price">$45</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.2s" data-lightbox data-chip data-name="加咖啡醬" data-price="50">
+                        <span class="chip-name">加咖啡醬</span>
+                        <span class="chip-price">$50</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.25s" data-lightbox data-chip data-name="原味佛卡夏" data-price="60">
+                        <span class="chip-name">原味佛卡夏</span>
+                        <span class="chip-price">$60</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.3s" data-lightbox data-chip data-name="原味可頌" data-price="65">
+                        <span class="chip-name">原味可頌</span>
+                        <span class="chip-price">$65</span>
+                    </div>
+
+                    <div class="menu-chip" style="animation-delay:0.35s" data-lightbox data-chip data-name="黑胡椒雞胸肉" data-price="85">
+                        <span class="chip-name">黑胡椒雞胸肉</span>
+                        <span class="chip-price">$85</span>
+                    </div>
+
+                </div>
+            </section>
+
+        <div class="menu-note">
+            <p>* 套餐以上均附12oz純茶飲,升級其他飲品享$30折抵,也可+$70換購剝皮辣椒雞湯。</p>
+            <p>* 超值輕食升級套餐 +$129 (薯條、唐揚雞、地瓜球、溏心蛋、12oz 純茶飲)，<span style="font-size: 0.95rem;">升級其他飲品享$30折抵,也可+$70換購剝皮辣椒雞湯。</span></p>
+            <p style="">* 蔬菜內容依季節性調整</p>
+            <p style="outline: none;">* 兒童餐 +$20飲品升級牛奶&nbsp; +$80加購布丁/奶酪</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="lightbox" id="dishLightbox">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="關閉">&times;</button>
+            <div class="lightbox-img">
+                <img src="" alt="">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                    <path d="M3 7a2 2 0 012-2h2l1-2h8l1 2h2a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/>
+                    <circle cx="12" cy="13" r="4"/>
+                </svg>
+            </div>
+            <div class="lightbox-info">
+                <h3></h3>
+                <p></p>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="chip-preview" id="chipPreview">
+        <div class="chip-preview-img">
+            <img src="" alt="">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                <path d="M3 7a2 2 0 012-2h2l1-2h8l1 2h2a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/>
+                <circle cx="12" cy="13" r="4"/>
+            </svg>
+        </div>
+        <div class="chip-preview-info">
+            <h4></h4>
+            <span></span>
+        </div>
+    </div>
+
+        <script>
+        const cursor = document.getElementById(`custom-cursor`);
+        const hamburger = document.querySelector(`.hamburger`);
+        const navLinks = document.querySelector(`.nav-links`);
+
+        document.addEventListener(`mousemove`, (e) => {
+            cursor.style.left = e.clientX + `px`;
+            cursor.style.top = e.clientY + `px`;
+            cursor.classList.add(`visible`);
+        });
+
+        const hoverElements = document.querySelectorAll(`a, button, .dish-card, .menu-chip, .lightbox-close`);
+        hoverElements.forEach(element => {
+            element.addEventListener(`mouseenter`, () => {
+                cursor.classList.add(`hover`);
+            });
+            element.addEventListener(`mouseleave`, () => {
+                cursor.classList.remove(`hover`);
+            });
+        });
+
+        hamburger.addEventListener(`click`, () => {
+            hamburger.classList.toggle(`active`);
+            navLinks.classList.toggle(`active`);
+        });
+
+        navLinks.querySelectorAll(`a`).forEach(link => {
+            link.addEventListener(`click`, () => {
+                hamburger.classList.remove(`active`);
+                navLinks.classList.remove(`active`);
+            });
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: `0px 0px -50px 0px`
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = `1`;
+                    entry.target.style.transform = `translateY(0)`;
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll(`.menu-section`).forEach(section => {
+            observer.observe(section);
+        });
+
+        const categoryNavLinks = document.querySelectorAll(`.category-nav a`);
+        const sections = document.querySelectorAll(`.menu-section`);
+
+        const spyObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    categoryNavLinks.forEach(link => {
+                        link.classList.toggle(`active`, link.getAttribute(`href`) === `#${entry.target.id}`);
+                    });
+                }
+            });
+        }, { rootMargin: `-155px 0px -70% 0px`, threshold: 0 });
+
+        sections.forEach(section => spyObserver.observe(section));
+
+        const navIndicator = document.querySelector(`.category-nav-indicator`);
+        const navInner = document.querySelector(`.category-nav-inner`);
+
+        function moveIndicator(link) {
+            if (!link) return;
+            const innerRect = navInner.getBoundingClientRect();
+            const linkRect = link.getBoundingClientRect();
+            if (window.innerWidth <= 768) {
+                navIndicator.style.top = ``;
+                navIndicator.style.height = ``;
+                navIndicator.style.left = `${linkRect.left - innerRect.left + navInner.scrollLeft}px`;
+                navIndicator.style.width = `${linkRect.width}px`;
+            } else {
+                navIndicator.style.left = ``;
+                navIndicator.style.width = ``;
+                navIndicator.style.top = `${linkRect.top - innerRect.top + navInner.scrollTop}px`;
+                navIndicator.style.height = `${linkRect.height}px`;
+            }
+        }
+
+        function syncIndicatorToActive() {
+            moveIndicator(document.querySelector(`.category-nav a.active`) || categoryNavLinks[0]);
+        }
+
+        syncIndicatorToActive();
+        window.addEventListener(`resize`, syncIndicatorToActive);
+        categoryNavLinks.forEach(link => {
+            link.addEventListener(`mouseenter`, () => moveIndicator(link));
+        });
+        navInner.addEventListener(`mouseleave`, syncIndicatorToActive);
+
+        const navMutationObserver = new MutationObserver(syncIndicatorToActive);
+        categoryNavLinks.forEach(link => navMutationObserver.observe(link, { attributes: true, attributeFilter: [`class`] }));
+
+        const navScroller = document.querySelector(`.category-nav`);
+        let navIsDragging = false;
+        let navDragMoved = false;
+        let navDragStartX = 0;
+        let navScrollStart = 0;
+
+        navScroller.addEventListener(`pointerdown`, (e) => {
+            if (e.pointerType !== `mouse`) return;
+            navIsDragging = true;
+            navDragMoved = false;
+            navDragStartX = e.clientX;
+            navScrollStart = navScroller.scrollLeft;
+        });
+
+        navScroller.addEventListener(`pointermove`, (e) => {
+            if (!navIsDragging) return;
+            const delta = e.clientX - navDragStartX;
+            if (Math.abs(delta) > 5) navDragMoved = true;
+            navScroller.scrollLeft = navScrollStart - delta;
+        });
+
+        const navStopDrag = () => { navIsDragging = false; };
+        navScroller.addEventListener(`pointerup`, navStopDrag);
+        navScroller.addEventListener(`pointercancel`, navStopDrag);
+        navScroller.addEventListener(`pointerleave`, navStopDrag);
+
+        navScroller.addEventListener(`click`, (e) => {
+            if (navDragMoved) {
+                e.preventDefault();
+                navDragMoved = false;
+            }
+        }, true);
+
+        document.querySelectorAll(`.dish-card`).forEach(card => {
+            card.addEventListener(`mousemove`, (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                card.style.transform = `perspective(800px) rotateX(${(-y * 8).toFixed(2)}deg) rotateY(${(x * 8).toFixed(2)}deg) scale(1.02)`;
+            });
+            card.addEventListener(`mouseleave`, () => {
+                card.style.transform = ``;
+            });
+        });
+
+        const lightbox = document.getElementById(`dishLightbox`);
+        const lightboxImgWrap = lightbox.querySelector(`.lightbox-img`);
+        const lightboxImg = lightbox.querySelector(`.lightbox-img img`);
+        const lightboxPlaceholder = lightbox.querySelector(`.lightbox-img svg`);
+        const lightboxTitle = lightbox.querySelector(`.lightbox-info h3`);
+        const lightboxDesc = lightbox.querySelector(`.lightbox-info p`);
+        const lightboxPrice = lightbox.querySelector(`.lightbox-info span`);
+        const lightboxClose = lightbox.querySelector(`.lightbox-close`);
+        const lightboxBackdrop = lightbox.querySelector(`.lightbox-backdrop`);
+
+        function openLightbox(card) {
+            const { name, price, img, desc } = card.dataset;
+            const hasPhoto = Boolean(img);
+            lightboxImgWrap.classList.toggle(`no-photo`, !hasPhoto);
+            lightboxImg.style.display = hasPhoto ? `` : `none`;
+            lightboxPlaceholder.style.display = hasPhoto ? `none` : ``;
+            lightboxImg.src = img || ``;
+            lightboxImg.alt = name || ``;
+            lightboxTitle.textContent = name || ``;
+            lightboxDesc.textContent = desc || ``;
+            lightboxDesc.style.display = desc ? `` : `none`;
+            lightboxPrice.textContent = price ? `$${price}` : ``;
+            lightbox.classList.add(`active`);
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove(`active`);
+        }
+
+        document.querySelectorAll(`[data-lightbox]:not([data-chip])`).forEach(card => {
+            card.addEventListener(`click`, () => openLightbox(card));
+        });
+
+        lightboxClose.addEventListener(`click`, closeLightbox);
+        lightboxBackdrop.addEventListener(`click`, closeLightbox);
+        document.addEventListener(`keydown`, (e) => {
+            if (e.key === `Escape`) closeLightbox();
+        });
+
+        const chipPreview = document.getElementById(`chipPreview`);
+        const chipPreviewImgWrap = chipPreview.querySelector(`.chip-preview-img`);
+        const chipPreviewImg = chipPreview.querySelector(`.chip-preview-img img`);
+        const chipPreviewPlaceholder = chipPreview.querySelector(`.chip-preview-img svg`);
+        const chipPreviewTitle = chipPreview.querySelector(`.chip-preview-info h4`);
+        const chipPreviewPrice = chipPreview.querySelector(`.chip-preview-info span`);
+
+        function positionChipPreview(e) {
+            const margin = 16;
+            const previewWidth = chipPreview.offsetWidth || 220;
+            const previewHeight = chipPreview.offsetHeight || 200;
+            let left = e.clientX + margin;
+            let top = e.clientY + margin;
+            if (left + previewWidth > window.innerWidth - margin) {
+                left = e.clientX - previewWidth - margin;
+            }
+            if (top + previewHeight > window.innerHeight - margin) {
+                top = window.innerHeight - previewHeight - margin;
+            }
+            chipPreview.style.left = `${Math.max(margin, left)}px`;
+            chipPreview.style.top = `${Math.max(margin, top)}px`;
+        }
+
+        document.querySelectorAll(`.menu-chip[data-chip]`).forEach(chip => {
+            chip.addEventListener(`mouseenter`, (e) => {
+                const { name, price, img } = chip.dataset;
+                const hasPhoto = Boolean(img);
+                chipPreviewImgWrap.classList.toggle(`no-photo`, !hasPhoto);
+                chipPreviewImg.style.display = hasPhoto ? `` : `none`;
+                chipPreviewPlaceholder.style.display = hasPhoto ? `none` : ``;
+                chipPreviewImg.src = img || ``;
+                chipPreviewImg.alt = name || ``;
+                chipPreviewTitle.textContent = name || ``;
+                chipPreviewPrice.textContent = price ? `$${price}` : ``;
+                positionChipPreview(e);
+                chipPreview.classList.add(`active`);
+            });
+            chip.addEventListener(`mousemove`, positionChipPreview);
+            chip.addEventListener(`mouseleave`, () => {
+                chipPreview.classList.remove(`active`);
+            });
+        });
+    </script>
+    <script src="https://cdn.kuse.ai/sdk.prd.js"></script>
+
+    
+
+
+    <footer class="tt-footer">
+        <div class="tt-footer-inner">
+            <div class="tt-footer-grid">
+                <div class="tt-footer-col-left">
+                    <h3 class="tt-footer-company-name">禾松餐飲有限公司</h3>
+                    <div class="tt-footer-info">
+                        <p>服務時間 : 週一至週五 09:00-18:00</p>
+                        <p>聯絡電話 : 04-22479068</p>
+                        <p>總部地址 : 406台中市北屯區瀋陽北路73號</p>
+                    </div>
+                    <div class="tt-footer-copyright">
+                        <p>© 2021 TTCR COFFEE</p>
+                        <a href="privacy.html">隱私權政策</a>
+                    </div>
+                </div>
+
+                <div class="tt-footer-col-middle">
+                    <h4 class="tt-footer-follow">FOLLOW US</h4>
+                    <div class="tt-footer-social">
+                        <a href="https://www.instagram.com/ttcr_taichung/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                        </a>
+                        <a href="https://www.facebook.com/ttcrtaichung" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg>
+                        </a>
+                        <a href="https://line.me/R/ti/p/@828kffwi" target="_blank" rel="noopener" aria-label="LINE">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.630 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.630 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tt-footer-col-right">
+                    <img src="logo-nav.png" alt="同齊咖吡 Logo">
+                </div>
+            </div>
+        </div>
+        <div class="tt-footer-wave">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M400 200 L400 80 Q320 20 220 80 Q140 130 0 200 Z" fill="white"></path>
+            </svg>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="回到頂部">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"></path>
+        </svg>
+    </button>
+
+    <script>
+        (function() {
+            const btn = document.getElementById(`backToTop`);
+            window.addEventListener(`scroll`, () => {
+                btn.classList.toggle(`visible`, window.scrollY > 400);
+            });
+            btn.addEventListener(`click`, () => {
+                window.scrollTo({ top: 0, behavior: `smooth` });
+            });
+        })();
+    </script>
+
+</body></html>
