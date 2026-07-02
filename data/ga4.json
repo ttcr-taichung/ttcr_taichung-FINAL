@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T18:25:03.525Z",
+  "updated": "2026-07-02T19:25:03.155Z",
   "d7": {
     "metrics": {
       "users": 180,
@@ -64,7 +64,7 @@
         "u": 44,
         "avgT": 76.83499047457627,
         "bounce": 52.54237288135594,
-        "scrollD": 18
+        "scrollD": 20
       },
       {
         "path": "/space-rental.html",
@@ -391,7 +391,7 @@
         "u": 164,
         "avgT": 67.63208583333333,
         "bounce": 45.714285714285715,
-        "scrollD": 20
+        "scrollD": 21
       },
       {
         "path": "/space-rental.html",
@@ -986,7 +986,7 @@
         "u": 164,
         "avgT": 67.63208583333333,
         "bounce": 45.714285714285715,
-        "scrollD": 20
+        "scrollD": 21
       },
       {
         "path": "/location.html",
