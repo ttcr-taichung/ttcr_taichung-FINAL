@@ -199,10 +199,77 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             font-weight: 400;
         }
 
-        .stores-section {
+        .stores-layout {
             max-width: 1400px;
             margin: 0 auto;
             padding: 3rem 2rem 5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 3rem;
+        }
+
+        .stores-sidebar {
+            position: sticky;
+            top: 120px;
+            width: 220px;
+            flex-shrink: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        .sidebar-title {
+            background: var(--brand-blue);
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 1.5rem 1.25rem;
+        }
+
+        .sidebar-list {
+            list-style: none;
+            margin: 0;
+            padding: 0.5rem 0;
+        }
+
+        .sidebar-list li {
+            border-bottom: 1px solid rgba(76, 106, 146, 0.08);
+        }
+
+        .sidebar-list li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-link {
+            display: block;
+            padding: 1rem 1.25rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.25s ease;
+        }
+
+        .sidebar-link:hover {
+            background: rgba(76, 106, 146, 0.06);
+            color: var(--brand-blue);
+        }
+
+        .sidebar-link.active {
+            color: var(--brand-blue);
+            background: rgba(76, 106, 146, 0.1);
+            font-weight: 700;
+        }
+
+        .stores-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .stores-section {
+            scroll-margin-top: 140px;
         }
 
         .region-title {
@@ -266,16 +333,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .store-info-item {
             display: flex;
             align-items: flex-start;
-            gap: 0.75rem;
+            gap: 1rem;
             font-size: 0.95rem;
             color: var(--text-light);
             line-height: 1.6;
+            padding-bottom: 0.85rem;
+            border-bottom: 1px solid rgba(76, 106, 146, 0.12);
+        }
+
+        .store-info-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .info-label {
+            min-width: 84px;
+            flex-shrink: 0;
+            color: var(--brand-blue);
+            font-weight: 700;
         }
 
         .info-icon {
             color: var(--brand-blue);
             font-weight: 600;
             min-width: 20px;
+        }
+
+        .store-image-link {
+            display: block;
+            position: relative;
+        }
+
+        .store-image-link::after {
+            content: "點我加LINE詢問";
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.45);
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .store-image-link:hover::after {
+            opacity: 1;
         }
 
         .store-phone {
@@ -415,6 +521,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .stores-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
+            }
+
+            .stores-layout {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .stores-sidebar {
+                position: static;
+                width: 100%;
+            }
+
+            .sidebar-list {
+                display: flex;
+                overflow-x: auto;
+                padding: 0.5rem;
+                gap: 0.5rem;
+            }
+
+            .sidebar-list li {
+                border-bottom: none;
+                flex-shrink: 0;
+            }
+
+            .sidebar-link {
+                border-radius: 8px;
+                white-space: nowrap;
             }
 
             .region-title {
@@ -1664,25 +1797,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p class="page-subtitle">我們的店鋪</p>
     </header>
 
-    <section class="stores-section" style="">
+    <div class="stores-layout">
+        <aside class="stores-sidebar">
+            <div class="sidebar-title serif">服務據點</div>
+            <ul class="sidebar-list">
+                <li><a href="#region-taichung" class="sidebar-link active" data-region="region-taichung">台中</a></li>
+                <li><a href="#region-hualien" class="sidebar-link" data-region="region-hualien">花蓮</a></li>
+            </ul>
+        </aside>
+
+        <div class="stores-content">
+        <section class="stores-section" id="region-taichung">
         <h2 class="region-title">TAICHUNG</h2>
         <div class="stores-grid">
             <div class="store-card">
-                <img src="./images/beitun.jpg" alt="台中北屯旗艦店" class="store-image" style="height: 292.814px;">
+                <a class="store-image-link" href="https://line.me/R/ti/p/@828kffwi" target="_blank" rel="noopener" aria-label="加同齊咖吡官方LINE詢問台中北屯旗艦店">
+                    <img src="./images/beitun.jpg" alt="台中北屯旗艦店" class="store-image" style="height: 292.814px;">
+                </a>
                 <div class="store-content">
                 <h3 class="store-name serif">同齊咖吡｜台中北屯旗艦店</h3>
                 <div class="store-info">
                     <div class="store-info-item">
-                        <span class="info-icon">📍</span>
-                        <span>台中市北屯區熱河路二段226號</span>
+                        <span class="info-label">營業時間</span>
+                        <span>08:00 - 00:00 (週一至週日)</span>
                     </div>
                     <div class="store-info-item">
-                        <span class="info-icon">📞</span>
+                        <span class="info-label">電話</span>
                         <span class="store-phone">04-2247-8366</span>
                     </div>
                     <div class="store-info-item">
-                        <span class="info-icon">🕐</span>
-                        <span>08:00 - 00:00 (週一至週日)</span>
+                        <span class="info-label">地址</span>
+                        <span>台中市北屯區熱河路二段226號</span>
                     </div>
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&amp;query=同齊咖吡台中北屯旗艦店" target="_blank" class="map-button">VIEW MAP ↗</a>
@@ -1690,21 +1835,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
             <div class="store-card">
-                <img src="./images/jingzhong.jpg" alt="台中西區精忠店" class="store-image" style="height: 309.814px;">
+                <a class="store-image-link" href="https://line.me/R/ti/p/@828kffwi" target="_blank" rel="noopener" aria-label="加同齊咖吡官方LINE詢問台中西區精忠店">
+                    <img src="./images/jingzhong.jpg" alt="台中西區精忠店" class="store-image" style="height: 309.814px;">
+                </a>
                 <div class="store-content">
                 <h3 class="store-name serif">同齊咖吡｜台中西區精忠店</h3>
                 <div class="store-info">
                     <div class="store-info-item">
-                        <span class="info-icon">📍</span>
-                        <span>台中市西區精忠街36號</span>
+                        <span class="info-label">營業時間</span>
+                        <span>08:00 - 00:00 (週一至週日)</span>
                     </div>
                     <div class="store-info-item">
-                        <span class="info-icon">📞</span>
+                        <span class="info-label">電話</span>
                         <span class="store-phone">04-2320-0285</span>
                     </div>
                     <div class="store-info-item">
-                        <span class="info-icon">🕐</span>
-                        <span>08:00 - 00:00 (週一至週日)</span>
+                        <span class="info-label">地址</span>
+                        <span>台中市西區精忠街36號</span>
                     </div>
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&amp;query=同齊咖吡台中西區精忠店" target="_blank" class="map-button">VIEW MAP ↗</a>
@@ -1712,65 +1859,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
             <div class="store-card">
-                <img src="./images/zhongming.jpg" alt="台中南區忠明南店" class="store-image" style="height: 314.984px;">
+                <a class="store-image-link" href="https://line.me/R/ti/p/@828kffwi" target="_blank" rel="noopener" aria-label="加同齊咖吡官方LINE詢問台中南區忠明南店">
+                    <img src="./images/zhongming.jpg" alt="台中南區忠明南店" class="store-image" style="height: 314.984px;">
+                </a>
                 <div class="store-content">
                 <h3 class="store-name serif">同齊咖吡｜台中南區忠明南店</h3>
                 <div class="store-info" style="">
                     <div class="store-info-item">
-                        <span class="info-icon">📍</span>
-                        <span>台中市南區忠明南路576號</span>
+                        <span class="info-label">營業時間</span>
+                        <span>08:00 - 00:00 (週一至週日)</span>
                     </div>
                     <div class="store-info-item">
-                        <span class="info-icon">📞</span>
+                        <span class="info-label">電話</span>
                         <span class="store-phone" style="">04-2376-6576</span>
                     </div>
                     <div class="store-info-item">
-                        <span class="info-icon">🕐</span>
-                        <span>08:00 - 00:00 (週一至週日)</span>
+                        <span class="info-label">地址</span>
+                        <span>台中市南區忠明南路576號</span>
                     </div>
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&amp;query=同齊咖吡台中南區忠明南店" target="_blank" class="map-button">VIEW MAP ↗</a>
                 </div>
             </div>
         </div>
+        </section>
 
+        <section class="stores-section" id="region-hualien">
         <h2 class="region-title">HUALIEN</h2>
         <div class="stores-grid" style="">
             <div class="store-card">
-                <img src="./images/hualien.jpg" alt="花蓮創始店" class="store-image">
+                <a class="store-image-link" href="https://line.me/R/ti/p/@828kffwi" target="_blank" rel="noopener" aria-label="加同齊咖吡官方LINE詢問花蓮創始店">
+                    <img src="./images/hualien.jpg" alt="花蓮創始店" class="store-image">
+                </a>
                 <div class="store-content" style="">
                 <h3 class="store-name serif">同齊咖吡｜花蓮創始店</h3>
                 <div class="store-info" style="">
                     <div class="store-info-item" style="">
-                        <span class="info-icon">📍</span>
-                        <span>花蓮市建國路23號2樓</span>
-                    </div>
-                    <div class="store-info-item">
-                        <span class="info-icon" style="">🕛</span>
+                        <span class="info-label">營業時間</span>
                         <span class="store-phone" style="">12:00 - 02:00</span>
                     </div>
-                    
                     <div class="store-info-item" style="">
-                        <span class="info-icon">🚫</span>
-                        <span>公休日：週三、週四</span>
+                        <span class="info-label">地址</span>
+                        <span>花蓮市建國路23號2樓</span>
+                    </div>
+                    <div class="store-info-item" style="">
+                        <span class="info-label">公休日</span>
+                        <span>週三、週四</span>
                     </div>
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&amp;query=同齊咖吡花蓮創始店" target="_blank" class="map-button">VIEW MAP ↗</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    
-
-    
-
-    <div class="kuse-branding" style="position: fixed; bottom: 20px; right: 20px; align-items: center; gap: 8px; font-size: 12px; color: rgb(102, 102, 102); opacity: 0.7; transition: 0.3s; z-index: 999;">
-        <span>made with</span>
-        <a href="https://kuse.ai" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: inherit; transition: color 0.3s ease;">
-            <svg viewBox="0,0,160,44" xmlns="http://www.w3.org/2000/svg" style="height: 1.2em; width: auto;"><path d="m.01,20.65C-.43,8.25,9.3-2.03,22.04.34,34.78,2.72,43.29,8.32,43.29,22.9s-8.66,19.01-22.03,20.3C7.9,44.5.46,33.05.01,20.65z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m146.76,7.94c8.07,0,13.24,6.15,13.24,14.58v1.39h-20.75c.45,4.05,3.51,7.37,8.57,7.37,2.62,0,5.73-1.05,7.62-2.94l2.67,3.83c-2.67,2.55-6.62,3.88-10.9,3.88-8.07,0-14.08-5.6-14.08-14.08,0-7.76,5.67-14.02,13.63-14.02zm0,4.77c-5.01,0-7.29,3.83-7.57,7.1h15.13c-.11-3.16-2.28-7.1-7.57-7.1z" fill="currentColor"></path><path d="m86.64,24.49c0,4.15,2.39,6.84,6.84,6.84,4.4,0,6.84-2.69,6.84-6.84V8.55h5.37v16.33c0,6.7-4.06,11.14-12.21,11.14-8.21,0-12.21-4.5-12.21-11.09V8.55h5.37v15.94zm32.99-16.55c4.49,0,8.06,1.47,10.6,3.86l-2.59,3.81c-2.05-2-5.28-3.08-8.06-3.08-2.88,0-4.84,1.37-4.84,3.32,0,1.91,2.64,2.54,5.81,3.27,4.59,1.08,10.26,2.4,10.26,8.46,0,4.94-3.76,8.41-11.14,8.41-4.98,0-8.94-1.76-11.24-4.11l2.54-4.11c1.86,1.91,5.18,3.67,8.84,3.67,3.91,0,5.57-1.66,5.57-3.62,0-2.3-2.88-2.98-6.21-3.76-4.54-1.08-9.87-2.3-9.87-8.06,0-4.5,4.2-8.06,10.31-8.06zM60.79,20.82,71.44,8.55h6.5L66.46,21.26,78.82,35.44h-6.5l-9.28-11.1-2.25,2.49v8.6h-5.33V8.55h5.33v12.27z" fill="currentColor"></path></svg>
-        </a>
+        </section>
+        </div>
     </div>
+
+
+
+    
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         const cursor = document.querySelector(`.custom-cursor`);
@@ -1793,17 +1940,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
         });
 
-        const kuseBranding = document.querySelector(`.kuse-branding`);
-        kuseBranding.addEventListener(`mouseenter`, () => {
-            kuseBranding.style.opacity = `1`;
-            kuseBranding.style.color = `#4C6A92`;
-        });
-        kuseBranding.addEventListener(`mouseleave`, () => {
-            kuseBranding.style.opacity = `0.7`;
-            kuseBranding.style.color = `#666`;
-        });
+        const sidebarLinks = document.querySelectorAll(`.sidebar-link`);
+        const regionSections = document.querySelectorAll(`.stores-section[id]`);
+        if (sidebarLinks.length && regionSections.length) {
+            const setActiveLink = (id) => {
+                sidebarLinks.forEach(link => {
+                    link.classList.toggle(`active`, link.getAttribute(`data-region`) === id);
+                });
+            };
+            const spyObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setActiveLink(entry.target.id);
+                    }
+                });
+            }, { rootMargin: `-140px 0px -60% 0px`, threshold: 0 });
+            regionSections.forEach(section => spyObserver.observe(section));
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener(`click`, () => setActiveLink(link.getAttribute(`data-region`)));
+            });
+        }
+
     </script>
-    <script src="https://cdn.kuse.ai/sdk.prd.js"></script>
 
 
     
