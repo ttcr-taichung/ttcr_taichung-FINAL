@@ -2290,10 +2290,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .ttcr-plan-illustration {
             position: absolute;
             left: 50%;
-            bottom: 18px;
+            bottom: 10px;
             z-index: 3;
-            width: min(700px,75%);
+            display: block;
+            width: min(610px,66%);
+            height: auto;
+            object-fit: contain;
             transform: translateX(-50%);
+            filter: drop-shadow(0 16px 20px rgba(34,56,67,.08));
         }
         .ttcr-plan-shape {
             position: absolute;
@@ -2960,28 +2964,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="ttcr-plan-bubble ttcr-plan-bubble--center">想長期開會，也想靈活安排門市？</div>
                 <div class="ttcr-plan-bubble ttcr-plan-bubble--right">場地與咖啡，可以一起折抵嗎？</div>
 
-                <svg class="ttcr-plan-illustration" viewBox="0 0 760 390" aria-hidden="true">
-                    <rect x="205" y="62" width="350" height="206" rx="18" fill="#ffffff" stroke="#223843" stroke-width="4"/>
-                    <rect x="253" y="91" width="48" height="39" rx="4" fill="#b9cdd5" stroke="#223843" stroke-width="3"/>
-                    <rect x="356" y="103" width="48" height="39" rx="4" fill="#dbe7eb" stroke="#223843" stroke-width="3"/>
-                    <rect x="458" y="91" width="48" height="39" rx="4" fill="#9db9c5" stroke="#223843" stroke-width="3"/>
-                    <path d="M270 234 C254 196 223 179 192 190 C162 201 149 241 158 282 L173 353 H282 L285 265 Z" fill="#d7e5ea" stroke="#223843" stroke-width="4"/>
-                    <circle cx="207" cy="170" r="34" fill="#f6f8f9" stroke="#223843" stroke-width="4"/>
-                    <path d="M176 172 C174 138 191 124 216 130 C236 134 247 151 240 181 C226 160 206 153 176 172 Z" fill="#223843"/>
-                    <path d="M278 247 C325 207 343 208 380 228" fill="none" stroke="#223843" stroke-width="16" stroke-linecap="round"/>
-                    <circle cx="382" cy="229" r="10" fill="#f6f8f9" stroke="#223843" stroke-width="3"/>
-                    <path d="M491 239 C505 198 535 181 566 191 C598 202 614 242 605 285 L590 353 H482 L478 269 Z" fill="#b9cdd5" stroke="#223843" stroke-width="4"/>
-                    <circle cx="548" cy="170" r="34" fill="#f6f8f9" stroke="#223843" stroke-width="4"/>
-                    <path d="M519 164 C528 131 553 127 574 139 C590 148 593 167 580 184 C568 159 550 151 519 164 Z" fill="#223843"/>
-                    <path d="M481 250 C444 226 432 223 403 236" fill="none" stroke="#223843" stroke-width="16" stroke-linecap="round"/>
-                    <path d="M372 255 H486 L511 310 H397 Z" fill="#ffffff" stroke="#223843" stroke-width="4"/>
-                    <path d="M89 338 H665" stroke="#223843" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M295 338 L280 385 M555 338 L571 385" stroke="#223843" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M337 310 V338 M509 310 V338" stroke="#223843" stroke-width="4"/>
-                    <path d="M326 293 h31 v31 h-31 z" fill="#ffffff" stroke="#223843" stroke-width="3"/>
-                    <path d="M357 299 h9 a12 12 0 0 1 0 20 h-9" fill="none" stroke="#223843" stroke-width="3"/>
-                    <path d="M335 285 C327 276 341 271 334 262 M348 285 C340 276 354 271 347 262" fill="none" stroke="#356b86" stroke-width="3" stroke-linecap="round"/>
-                </svg>
+                <img class="ttcr-plan-illustration" src="images/ttcr-vip-meeting-illustration.webp?v=20260720" alt="兩位朋友在同齊咖吡討論工作並共享咖啡" loading="lazy" decoding="async">
 
                 <svg class="ttcr-plan-wave" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
                     <path d="M0 55 C160 118 270 8 430 62 C580 114 720 20 870 68 C1020 115 1100 45 1200 63 L1200 120 L0 120 Z" fill="#eaf1f4"/>
