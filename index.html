@@ -2328,6 +2328,408 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
     <script src="https://cdn.kuse.ai/sdk.prd.js"></script>
 
+    <!-- TTCR 首頁空間租賃動態預覽 -->
+    <section class="ttcr-space-preview" id="ttcr-space-preview" aria-labelledby="ttcr-space-preview-title">
+        <div class="ttcr-space-preview__word" aria-hidden="true">SPACE</div>
+        <span class="ttcr-space-preview__shape ttcr-space-preview__shape--one" aria-hidden="true"></span>
+        <span class="ttcr-space-preview__shape ttcr-space-preview__shape--two" aria-hidden="true"></span>
+
+        <div class="ttcr-space-preview__inner">
+            <div class="ttcr-space-preview__copy">
+                <p class="ttcr-space-preview__eyebrow">TTCR SPACE · TAICHUNG</p>
+                <h2 id="ttcr-space-preview-title">把聚會，變成<br><span>值得記住的風景</span></h2>
+                <p class="ttcr-space-preview__lead">從小型會議、課程講座到派對包場，北屯、西區、南區都有適合你的空間。咖啡、設備與場地一次準備好，讓每次相聚都更自在。</p>
+
+                <div class="ttcr-space-preview__stats" aria-label="空間租賃資訊">
+                    <div class="ttcr-space-preview__stat"><strong>3</strong><span>間台中門市</span></div>
+                    <div class="ttcr-space-preview__stat"><strong>12</strong><span>個多功能空間</span></div>
+                    <div class="ttcr-space-preview__stat"><strong>6–38</strong><span>人彈性使用</span></div>
+                </div>
+
+                <div class="ttcr-space-preview__actions">
+                    <a class="ttcr-space-preview__button ttcr-space-preview__button--primary" href="space-rental.html">查看空間與方案 <span aria-hidden="true">↗</span></a>
+                    <a class="ttcr-space-preview__button ttcr-space-preview__button--line" href="https://lin.ee/UeFqouW" target="_blank" rel="noopener">LINE 立即預約</a>
+                </div>
+            </div>
+
+            <div class="ttcr-space-preview__media">
+                <div class="ttcr-space-preview__video-shell">
+                    <video class="ttcr-space-preview__video" autoplay muted loop playsinline preload="metadata" aria-label="同齊咖吡空間租賃與同齊貓影片">
+                        <source src="videos/ttcr-cat-space-rental-2026.mp4" type="video/mp4">
+                        您的瀏覽器不支援影片播放。
+                    </video>
+                    <div class="ttcr-space-preview__video-tag"><span></span> SPACE FOR EVERY MOMENT</div>
+                </div>
+                <span class="ttcr-space-preview__bubble ttcr-space-preview__bubble--meeting">商務會議</span>
+                <span class="ttcr-space-preview__bubble ttcr-space-preview__bubble--class">課程講座</span>
+                <span class="ttcr-space-preview__bubble ttcr-space-preview__bubble--party">派對包場</span>
+                <span class="ttcr-space-preview__bubble ttcr-space-preview__bubble--workshop">工作坊</span>
+            </div>
+        </div>
+    </section>
+
+    <style id="ttcr-space-preview-style">
+        .ttcr-space-preview {
+            --space-blue: #223843;
+            --space-soft-blue: #dce6ea;
+            --space-gray: #76858d;
+            --space-yellow: #f2cf2f;
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
+            padding: clamp(5.5rem, 10vw, 9rem) 5%;
+            background: #f7f8f7;
+            color: var(--space-blue);
+        }
+
+        .ttcr-space-preview__inner {
+            position: relative;
+            z-index: 2;
+            width: min(1380px, 100%);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(0, .82fr) minmax(480px, 1.18fr);
+            align-items: center;
+            gap: clamp(3rem, 7vw, 7rem);
+        }
+
+        .ttcr-space-preview__word {
+            position: absolute;
+            z-index: 0;
+            right: -1.5vw;
+            top: -3.5rem;
+            font-family: Montserrat, sans-serif;
+            font-size: clamp(8rem, 23vw, 24rem);
+            font-weight: 900;
+            line-height: .8;
+            letter-spacing: -.08em;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(34, 56, 67, .09);
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .ttcr-space-preview__eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .7rem;
+            margin: 0 0 1.35rem;
+            font-family: Montserrat, sans-serif;
+            font-size: .82rem;
+            font-weight: 700;
+            letter-spacing: .22em;
+            color: var(--space-gray);
+        }
+
+        .ttcr-space-preview__eyebrow::before {
+            content: "";
+            width: 2.2rem;
+            height: .42rem;
+            border-radius: 999px;
+            background: var(--space-yellow);
+        }
+
+        .ttcr-space-preview h2 {
+            margin: 0;
+            font-family: "Noto Serif TC", serif;
+            font-size: clamp(2.8rem, 5.2vw, 5.7rem);
+            font-weight: 900;
+            line-height: 1.13;
+            letter-spacing: -.055em;
+            color: var(--space-blue);
+        }
+
+        .ttcr-space-preview h2 span {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+
+        .ttcr-space-preview h2 span::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: -.04em;
+            right: -.1em;
+            bottom: .08em;
+            height: .22em;
+            border-radius: 999px;
+            background: var(--space-yellow);
+            transform: scaleX(.15);
+            transform-origin: left;
+            transition: transform 1s cubic-bezier(.22, 1, .36, 1) .25s;
+        }
+
+        .ttcr-space-preview__copy.ttcr-inview h2 span::after {
+            transform: scaleX(1);
+        }
+
+        .ttcr-space-preview__lead {
+            max-width: 38rem;
+            margin: 1.7rem 0 0;
+            color: #5f7078;
+            font-size: clamp(1rem, 1.25vw, 1.15rem);
+            line-height: 2;
+            letter-spacing: .025em;
+        }
+
+        .ttcr-space-preview__stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .75rem;
+            margin: 2rem 0 0;
+        }
+
+        .ttcr-space-preview__stat {
+            min-width: 8.2rem;
+            padding: 1rem 1.15rem .9rem;
+            border: 1px solid rgba(34, 56, 67, .13);
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, .75);
+            box-shadow: 0 12px 30px rgba(34, 56, 67, .055);
+            transition: transform .35s ease, background .35s ease, box-shadow .35s ease;
+        }
+
+        .ttcr-space-preview__stat:hover {
+            transform: translateY(-7px) rotate(-1deg);
+            background: #fff;
+            box-shadow: 0 18px 38px rgba(34, 56, 67, .12);
+        }
+
+        .ttcr-space-preview__stat strong,
+        .ttcr-space-preview__stat span { display: block; }
+
+        .ttcr-space-preview__stat strong {
+            font-family: Montserrat, sans-serif;
+            font-size: 1.65rem;
+            line-height: 1;
+            color: var(--space-blue);
+        }
+
+        .ttcr-space-preview__stat span {
+            margin-top: .55rem;
+            color: #78868c;
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .04em;
+        }
+
+        .ttcr-space-preview__actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .8rem;
+            margin-top: 2rem;
+        }
+
+        .ttcr-space-preview__button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: .7rem;
+            min-height: 3.55rem;
+            padding: 0 1.6rem;
+            border: 1.5px solid var(--space-blue);
+            border-radius: 999px;
+            font-size: .95rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-decoration: none;
+            transition: transform .3s ease, color .3s ease, background .3s ease, box-shadow .3s ease;
+        }
+
+        .ttcr-space-preview__button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(34, 56, 67, .18);
+        }
+
+        .ttcr-space-preview__button--primary {
+            background: var(--space-blue);
+            color: #fff;
+        }
+
+        .ttcr-space-preview__button--primary span { font-size: 1.15rem; }
+
+        .ttcr-space-preview__button--line {
+            background: #fff;
+            color: var(--space-blue);
+        }
+
+        .ttcr-space-preview__button--line:hover {
+            background: var(--space-yellow);
+        }
+
+        .ttcr-space-preview__media {
+            position: relative;
+            min-width: 0;
+            padding: clamp(1rem, 2.5vw, 2rem);
+        }
+
+        .ttcr-space-preview__video-shell {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 16 / 10;
+            border-radius: clamp(1.8rem, 4vw, 3.6rem);
+            background: var(--space-blue);
+            box-shadow: 0 30px 70px rgba(34, 56, 67, .2);
+            transform: rotate(1.6deg);
+            transition: transform .8s cubic-bezier(.22, 1, .36, 1), box-shadow .5s ease;
+        }
+
+        .ttcr-space-preview__media:hover .ttcr-space-preview__video-shell {
+            transform: rotate(0deg) scale(1.015);
+            box-shadow: 0 38px 80px rgba(34, 56, 67, .25);
+        }
+
+        .ttcr-space-preview__video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            filter: saturate(.92) contrast(1.02);
+            transition: transform 1.2s cubic-bezier(.22, 1, .36, 1);
+        }
+
+        .ttcr-space-preview__media:hover .ttcr-space-preview__video {
+            transform: scale(1.04);
+        }
+
+        .ttcr-space-preview__video-shell::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: linear-gradient(180deg, transparent 55%, rgba(20, 40, 49, .5));
+        }
+
+        .ttcr-space-preview__video-tag {
+            position: absolute;
+            z-index: 2;
+            left: 1.4rem;
+            bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: .65rem;
+            color: #fff;
+            font-family: Montserrat, sans-serif;
+            font-size: .68rem;
+            font-weight: 700;
+            letter-spacing: .16em;
+        }
+
+        .ttcr-space-preview__video-tag span {
+            width: .62rem;
+            height: .62rem;
+            border-radius: 50%;
+            background: var(--space-yellow);
+            box-shadow: 0 0 0 .32rem rgba(242, 207, 47, .2);
+            animation: ttcrSpacePulse 2s ease-in-out infinite;
+        }
+
+        .ttcr-space-preview__bubble {
+            position: absolute;
+            z-index: 3;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: .75rem 1.15rem;
+            border: 1px solid rgba(34, 56, 67, .15);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .94);
+            color: var(--space-blue);
+            box-shadow: 0 12px 30px rgba(34, 56, 67, .13);
+            font-size: .8rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+            backdrop-filter: blur(8px);
+        }
+
+        .ttcr-space-preview__bubble--meeting { top: -.8rem; left: 6%; animation: ttcrBubbleOne 5.6s ease-in-out infinite; }
+        .ttcr-space-preview__bubble--class { top: 13%; right: -2%; animation: ttcrBubbleTwo 6.2s ease-in-out infinite .4s; }
+        .ttcr-space-preview__bubble--party { bottom: 3%; left: -2%; animation: ttcrBubbleTwo 5.8s ease-in-out infinite .1s; }
+        .ttcr-space-preview__bubble--workshop { bottom: -1rem; right: 9%; background: var(--space-yellow); animation: ttcrBubbleOne 6.5s ease-in-out infinite .7s; }
+
+        .ttcr-space-preview__shape {
+            position: absolute;
+            z-index: 1;
+            display: block;
+            background: var(--space-soft-blue);
+            opacity: .9;
+        }
+
+        .ttcr-space-preview__shape--one {
+            width: 8rem;
+            height: 8rem;
+            left: -2.5rem;
+            bottom: 8%;
+            border-radius: 45% 55% 58% 42%;
+            animation: ttcrShapeTurn 15s linear infinite;
+        }
+
+        .ttcr-space-preview__shape--two {
+            width: 3.8rem;
+            height: 3.8rem;
+            right: 4%;
+            top: 9%;
+            border: .8rem solid var(--space-yellow);
+            border-radius: 50%;
+            background: transparent;
+            animation: ttcrShapeTurn 10s linear infinite reverse;
+        }
+
+        @keyframes ttcrBubbleOne {
+            0%, 100% { transform: translate3d(0, 0, 0) rotate(-2deg); }
+            50% { transform: translate3d(0, -13px, 0) rotate(2deg); }
+        }
+
+        @keyframes ttcrBubbleTwo {
+            0%, 100% { transform: translate3d(0, 0, 0) rotate(2deg); }
+            50% { transform: translate3d(7px, -10px, 0) rotate(-2deg); }
+        }
+
+        @keyframes ttcrSpacePulse {
+            0%, 100% { transform: scale(.9); opacity: .8; }
+            50% { transform: scale(1.18); opacity: 1; }
+        }
+
+        @keyframes ttcrShapeTurn { to { transform: rotate(360deg); } }
+
+        @media (max-width: 980px) {
+            .ttcr-space-preview__inner {
+                grid-template-columns: 1fr;
+                gap: 3.5rem;
+            }
+            .ttcr-space-preview__copy { max-width: 760px; }
+            .ttcr-space-preview__media { width: min(800px, 100%); margin: 0 auto; }
+        }
+
+        @media (max-width: 600px) {
+            .ttcr-space-preview { padding: 4.7rem 1.15rem 5.3rem; }
+            .ttcr-space-preview__word { top: 1.5rem; right: -1rem; font-size: 7.5rem; }
+            .ttcr-space-preview h2 { font-size: clamp(2.45rem, 12vw, 3.5rem); line-height: 1.18; }
+            .ttcr-space-preview__lead { line-height: 1.8; }
+            .ttcr-space-preview__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .45rem; }
+            .ttcr-space-preview__stat { min-width: 0; padding: .85rem .5rem; text-align: center; }
+            .ttcr-space-preview__stat strong { font-size: 1.25rem; }
+            .ttcr-space-preview__stat span { font-size: .65rem; line-height: 1.4; }
+            .ttcr-space-preview__actions { display: grid; grid-template-columns: 1fr; }
+            .ttcr-space-preview__media { padding: .65rem; }
+            .ttcr-space-preview__video-shell { aspect-ratio: 4 / 5; border-radius: 1.8rem; transform: rotate(.8deg); }
+            .ttcr-space-preview__bubble { padding: .58rem .82rem; font-size: .68rem; }
+            .ttcr-space-preview__bubble--meeting { top: -1.2rem; left: -1%; }
+            .ttcr-space-preview__bubble--class { top: 12%; right: -3%; }
+            .ttcr-space-preview__bubble--party { bottom: 4%; left: -3%; }
+            .ttcr-space-preview__bubble--workshop { bottom: -1rem; right: 3%; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .ttcr-space-preview *, .ttcr-space-preview *::before, .ttcr-space-preview *::after {
+                animation: none !important;
+                transition-duration: .01ms !important;
+            }
+            .ttcr-space-preview h2 span::after { transform: scaleX(1); }
+        }
+    </style>
+
     <!-- 熱銷飲品區塊 -->
     <section class="bestseller-section">
         <div class="bestseller-container" style="">
@@ -3322,7 +3724,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         '.bestseller-title', '.drink-item',
         '.news-section-title', '.news-card',
         '.services-section-header', '.service-card',
-        '.ttcr-faq-header', '.ttcr-faq-row'
+        '.ttcr-faq-header', '.ttcr-faq-row',
+        '.ttcr-space-preview__copy', '.ttcr-space-preview__media', '.ttcr-space-preview__stat'
     ];
     var reveals = [];
 
