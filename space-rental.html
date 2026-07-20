@@ -1927,6 +1927,292 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     </style>
 
+
+    <style id="space-happ-inspired-style">
+        .space-home-hero {
+            max-width: 1280px;
+            margin: 150px auto 0;
+            padding: 56px 24px 0;
+            text-align: center;
+        }
+        .space-home-kicker {
+            margin: 0 0 14px;
+            color: #6f7f86;
+            font-family: "Montserrat", sans-serif;
+            font-size: .82rem;
+            font-weight: 700;
+            letter-spacing: .16em;
+        }
+        .space-home-hero h1 {
+            max-width: 920px;
+            margin: 0 auto;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: clamp(2.35rem, 5.2vw, 4.35rem);
+            font-weight: 900;
+            line-height: 1.22;
+            letter-spacing: .035em;
+        }
+        .space-home-lead {
+            max-width: 720px;
+            margin: 18px auto 30px;
+            color: #6a777d;
+            font-size: 1.05rem;
+            line-height: 1.85;
+        }
+        .space-discovery-form {
+            position: relative;
+            z-index: 4;
+            display: grid;
+            grid-template-columns: minmax(240px,1.45fr) minmax(180px,.9fr) minmax(170px,.8fr) 136px;
+            align-items: stretch;
+            max-width: 930px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #d9e0e3;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 14px 40px rgba(34,56,67,.09);
+            text-align: left;
+        }
+        .space-search-field {
+            position: relative;
+            padding: 8px 18px;
+            border-right: 1px solid #e2e7e9;
+        }
+        .space-search-field label {
+            display: block;
+            margin-bottom: 3px;
+            color: var(--brand-blue);
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+        }
+        .space-search-field input,
+        .space-search-field select {
+            width: 100%;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            color: #6f7b80;
+            font: inherit;
+            font-size: .92rem;
+        }
+        .space-search-submit {
+            border: 0;
+            border-radius: 9px;
+            background: var(--brand-blue);
+            color: #fff;
+            font: inherit;
+            font-weight: 700;
+            letter-spacing: .08em;
+            cursor: pointer;
+            transition: transform .22s ease, background .22s ease;
+        }
+        .space-search-submit:hover {
+            background: #356b86;
+            transform: translateY(-1px);
+        }
+        .space-usecase-shortcuts {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin: 20px auto 34px;
+        }
+        .space-usecase-chip {
+            border: 1px solid #dce3e6;
+            border-radius: 999px;
+            padding: 8px 15px;
+            background: #fff;
+            color: #607077;
+            font: inherit;
+            font-size: .86rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .2s ease;
+        }
+        .space-usecase-chip:hover,
+        .space-usecase-chip.is-active {
+            border-color: var(--brand-blue);
+            background: var(--brand-blue);
+            color: #fff;
+        }
+        .space-hero-visual {
+            position: relative;
+            min-height: 510px;
+            overflow: hidden;
+            border-radius: 26px 26px 0 0;
+            background:
+                linear-gradient(90deg, rgba(34,56,67,.06), rgba(34,56,67,0)),
+                url("https://api.kuse.ai/api/folder/v1/file/9e782cfde83781c1589acc8bc119672c3f6e429892b07cbe6a2c4bf39680e48b_2380972.jpg") center 56%/cover no-repeat;
+        }
+        .space-hero-visual::before,
+        .space-hero-visual::after {
+            content: "";
+            position: absolute;
+            background: #f1f5f6;
+            border-radius: 50%;
+        }
+        .space-hero-visual::before {
+            width: 360px; height: 360px; left: -160px; top: -175px;
+        }
+        .space-hero-visual::after {
+            width: 300px; height: 300px; right: -135px; bottom: -165px;
+        }
+        .space-hero-statbar {
+            position: absolute;
+            left: 50%;
+            bottom: 24px;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: min(680px,calc(100% - 40px));
+            transform: translateX(-50%);
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,.5);
+            border-radius: 14px;
+            background: rgba(255,255,255,.93);
+            box-shadow: 0 14px 36px rgba(22,40,48,.18);
+            backdrop-filter: blur(10px);
+        }
+        .space-hero-stat {
+            padding: 16px 12px;
+            color: var(--brand-blue);
+            font-size: 1.55rem;
+            font-weight: 900;
+        }
+        .space-hero-stat + .space-hero-stat { border-left: 1px solid #dfe6e8; }
+        .space-hero-stat span {
+            display: block;
+            margin-top: 2px;
+            color: #78868c;
+            font-size: .78rem;
+            font-weight: 600;
+            letter-spacing: .06em;
+        }
+        .space-story-band {
+            padding: 72px 24px 50px;
+            text-align: center;
+            background: #f4f7f8;
+        }
+        .space-story-band h2 {
+            margin: 0 auto 14px;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: clamp(2rem,4vw,3.15rem);
+            font-weight: 900;
+            line-height: 1.35;
+        }
+        .space-story-band p {
+            max-width: 760px;
+            margin: 0 auto;
+            color: #718087;
+            line-height: 1.85;
+        }
+        .space-ranking-head {
+            padding: 72px 0 26px;
+            text-align: center;
+        }
+        .space-ranking-head .space-ranking-eyebrow {
+            color: #819096;
+            font: 700 .78rem/1 "Montserrat",sans-serif;
+            letter-spacing: .16em;
+        }
+        .space-ranking-head h2 {
+            margin: 12px 0 8px;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: clamp(2rem,3.8vw,3rem);
+            font-weight: 900;
+        }
+        #space-result-count {
+            margin: 0;
+            color: #738188;
+        }
+        .space-easy-section {
+            margin: 76px 0 12px;
+            padding: 64px 38px;
+            border-radius: 24px;
+            background: #f1f5f6;
+            text-align: center;
+        }
+        .space-easy-section h2 {
+            margin: 0 0 10px;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: clamp(2rem,3.7vw,3rem);
+            font-weight: 900;
+        }
+        .space-easy-section > p {
+            margin: 0;
+            color: #738188;
+        }
+        .space-easy-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 14px;
+            margin-top: 34px;
+        }
+        .space-easy-card {
+            padding: 24px 18px;
+            border: 1px solid #dce3e6;
+            border-radius: 16px;
+            background: #fff;
+            text-align: left;
+        }
+        .space-easy-number {
+            display: inline-grid;
+            place-items: center;
+            width: 34px; height: 34px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            background: var(--brand-blue);
+            color: #fff;
+            font: 700 .78rem/1 "Montserrat",sans-serif;
+        }
+        .space-easy-card h3 {
+            margin: 0 0 7px;
+            color: var(--brand-blue);
+            font-size: 1.03rem;
+            font-weight: 700;
+        }
+        .space-easy-card p {
+            margin: 0;
+            color: #748188;
+            font-size: .9rem;
+            line-height: 1.7;
+        }
+        @media (max-width: 900px) {
+            .space-home-hero { margin-top: 125px; padding-top: 42px; }
+            .space-discovery-form { grid-template-columns: 1fr 1fr; }
+            .space-search-field:nth-child(2) { border-right: 0; }
+            .space-search-field:nth-child(3) { border-top: 1px solid #e2e7e9; }
+            .space-search-submit { min-height: 55px; margin-top: 1px; }
+            .space-hero-visual { min-height: 420px; }
+            .space-easy-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 620px) {
+            .space-home-hero { margin-top: 105px; padding: 32px 16px 0; }
+            .space-home-hero h1 { font-size: 2.25rem; }
+            .space-home-lead { font-size: .96rem; }
+            .space-discovery-form { display: block; padding: 6px 14px 14px; }
+            .space-search-field { padding: 12px 4px; border-right: 0; border-bottom: 1px solid #e2e7e9; }
+            .space-search-field:nth-child(3) { border-top: 0; }
+            .space-search-submit { width: 100%; min-height: 48px; margin-top: 12px; }
+            .space-usecase-shortcuts { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; padding-bottom: 5px; }
+            .space-usecase-chip { flex: 0 0 auto; }
+            .space-hero-visual { min-height: 310px; border-radius: 18px 18px 0 0; }
+            .space-hero-statbar { bottom: 14px; }
+            .space-hero-stat { padding: 12px 6px; font-size: 1.15rem; }
+            .space-hero-stat span { font-size: .69rem; }
+            .space-story-band { padding: 50px 20px 38px; }
+            .space-ranking-head { padding-top: 52px; }
+            .space-easy-section { margin-top: 52px; padding: 44px 18px; }
+            .space-easy-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+
 </head>
 <body style="">
 <!-- Google Tag Manager (noscript) -->
@@ -1954,23 +2240,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </nav>
 
-    <div class="page-header" style="">
-        <div class="page-number"># 03</div>
-        <h1 class="page-title" style="">台中場地租借</h1>
-        <p class="page-subtitle">小型聚會・會議講座・派對包場，6 至 38 人皆有合適空間</p>
-    </div>
+    <section class="space-home-hero" aria-labelledby="space-home-title">
+        <p class="space-home-kicker">TTCR SPACE · TAICHUNG</p>
+        <h1 id="space-home-title">台中場地租借，隨時為你的會議、聚會與派對做準備</h1>
+        <p class="space-home-lead">北屯、西區、南區共 12 個多功能空間，從 6 人小型會議到 38 人講座包場，依門市、人數與活動需求快速找到適合場地。</p>
 
-    <section class="space-seo-intro" aria-labelledby="space-intro-title">
-        <h2 id="space-intro-title">台中聚會、會議與派對場地一次找到</h2>
-        <p>同齊咖吡在台中北屯、西區與南區提供 12 個多功能場地，從 6 人小型會議、讀書會與朋友聚會，到最高建議 38 人的講座、品牌活動及派對包場，都能依人數、預算與設備需求選擇合適空間。</p>
-        <div class="space-seo-points" aria-label="場地特色">
-            <div class="space-seo-point">6～38 人彈性空間<span>小型聚會、會議與多人活動</span></div>
-            <div class="space-seo-point">三間台中門市<span>北屯、西區、南區皆可預約</span></div>
-            <div class="space-seo-point">價格與設備透明<span>時租、低消、投影與麥克風資訊</span></div>
+        <form class="space-discovery-form" id="space-discovery-form" role="search">
+            <div class="space-search-field">
+                <label for="space-keyword-search">想辦什麼活動？</label>
+                <input id="space-keyword-search" type="search" placeholder="聚會、會議、講座、派對">
+            </div>
+            <div class="space-search-field">
+                <label for="space-branch-search">門市</label>
+                <select id="space-branch-search">
+                    <option value="all">三間門市皆可</option>
+                    <option value="北屯旗艦店">北屯旗艦店</option>
+                    <option value="西區精忠店">西區精忠店</option>
+                    <option value="南區忠明店">南區忠明店</option>
+                </select>
+            </div>
+            <div class="space-search-field">
+                <label for="space-capacity-search">人數</label>
+                <select id="space-capacity-search">
+                    <option value="all">不限人數</option>
+                    <option value="small">1–10 人</option>
+                    <option value="medium">11–20 人</option>
+                    <option value="large">21 人以上</option>
+                </select>
+            </div>
+            <button class="space-search-submit" type="submit">搜尋空間</button>
+        </form>
+
+        <div class="space-usecase-shortcuts" aria-label="熱門使用情境">
+            <button type="button" class="space-usecase-chip" data-space-usecase="small">小型聚會</button>
+            <button type="button" class="space-usecase-chip" data-space-usecase="meeting">商務會議</button>
+            <button type="button" class="space-usecase-chip" data-space-usecase="class">課程講座</button>
+            <button type="button" class="space-usecase-chip" data-space-usecase="party">派對包場</button>
+            <button type="button" class="space-usecase-chip" data-space-usecase="all">查看全部</button>
+        </div>
+
+        <div class="space-hero-visual" role="img" aria-label="同齊咖吡台中場地租借空間">
+            <div class="space-hero-statbar" aria-label="場地服務數據">
+                <div class="space-hero-stat">12<span>多功能空間</span></div>
+                <div class="space-hero-stat">3<span>台中門市</span></div>
+                <div class="space-hero-stat">6–38<span>建議使用人數</span></div>
+            </div>
         </div>
     </section>
 
+    <section class="space-story-band" aria-labelledby="space-story-title">
+        <h2 id="space-story-title">空間不只是場地<br>而是每個故事開始的地方</h2>
+        <p>工作會議、讀書討論、品牌講座、朋友聚會或派對包場，都能在咖啡香與舒適空間中自在展開。</p>
+    </section>
+
     <div class="max-w-7xl mx-auto px-4">
+        <section class="space-ranking-head" aria-labelledby="space-ranking-title">
+            <div class="space-ranking-eyebrow">POPULAR SPACES</div>
+            <h2 id="space-ranking-title">台中熱門場地與空間</h2>
+            <p id="space-result-count" aria-live="polite">目前顯示 12 個空間</p>
+        </section>
         <div class="filter-buttons">
             <button class="filter-btn active" data-filter="all">全部空間</button>
             <button class="filter-btn" data-filter="北屯旗艦店" style="">北屯旗艦店</button>
@@ -2280,6 +2608,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
 
+
+        <section class="space-easy-section" aria-labelledby="space-easy-title">
+            <h2 id="space-easy-title">輕鬆預約同齊咖吡</h2>
+            <p>公開資訊、彈性方案與專人協助，讓場地規劃更安心。</p>
+            <div class="space-easy-grid">
+                <article class="space-easy-card">
+                    <span class="space-easy-number">01</span>
+                    <h3>三間門市可選</h3>
+                    <p>北屯、西區、南區皆有不同人數與風格的場地。</p>
+                </article>
+                <article class="space-easy-card">
+                    <span class="space-easy-number">02</span>
+                    <h3>費用透明</h3>
+                    <p>時租、低消與包廂專案直接列出，方便快速比較。</p>
+                </article>
+                <article class="space-easy-card">
+                    <span class="space-easy-number">03</span>
+                    <h3>設備可預約</h3>
+                    <p>Wi-Fi、投影機與麥克風依門市規則提供租借。</p>
+                </article>
+                <article class="space-easy-card">
+                    <span class="space-easy-number">04</span>
+                    <h3>LINE 專人協助</h3>
+                    <p>提供日期、人數與用途，即可確認空間與檔期。</p>
+                </article>
+            </div>
+        </section>
+
         <div class="terms-section">
             <h2 class="terms-title">租借小約定</h2>
             <div class="terms-grid">
@@ -2491,6 +2847,102 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 }, index * 100);
             });
         });
+    </script>
+
+
+    <script id="space-discovery-script">
+    (function () {
+        var form = document.getElementById('space-discovery-form');
+        var keyword = document.getElementById('space-keyword-search');
+        var branch = document.getElementById('space-branch-search');
+        var capacity = document.getElementById('space-capacity-search');
+        var countText = document.getElementById('space-result-count');
+        var cards = Array.prototype.slice.call(document.querySelectorAll('.space-card'));
+        var branchButtons = Array.prototype.slice.call(document.querySelectorAll('.filter-btn'));
+        var chips = Array.prototype.slice.call(document.querySelectorAll('.space-usecase-chip'));
+        if (!form || !cards.length) return;
+
+        var activeUsecase = 'all';
+
+        cards.forEach(function (card) {
+            var capacityText = card.querySelector('.space-capacity');
+            var match = capacityText && capacityText.textContent.match(/(\d+)(?:\s*-\s*(\d+))?\s*人/);
+            card.dataset.maxCapacity = match ? String(Number(match[2] || match[1])) : '0';
+        });
+
+        function matchesUsecase(maxPeople) {
+            if (activeUsecase === 'small') return maxPeople <= 15;
+            if (activeUsecase === 'class') return maxPeople >= 10;
+            if (activeUsecase === 'party') return maxPeople >= 15;
+            return true;
+        }
+
+        function applyDiscovery(scrollToResults) {
+            var query = keyword.value.trim().toLowerCase();
+            var selectedBranch = branch.value;
+            var selectedCapacity = capacity.value;
+            var visible = 0;
+
+            cards.forEach(function (card) {
+                var maxPeople = Number(card.dataset.maxCapacity || 0);
+                var cardText = card.textContent.toLowerCase();
+                var branchOK = selectedBranch === 'all' || card.dataset.branch === selectedBranch;
+                var capacityOK = selectedCapacity === 'all'
+                    || (selectedCapacity === 'small' && maxPeople <= 10)
+                    || (selectedCapacity === 'medium' && maxPeople >= 11 && maxPeople <= 20)
+                    || (selectedCapacity === 'large' && maxPeople >= 21);
+                var keywordOK = !query || cardText.indexOf(query) !== -1
+                    || (query.indexOf('會議') !== -1)
+                    || (query.indexOf('聚會') !== -1)
+                    || (query.indexOf('講座') !== -1 && maxPeople >= 10)
+                    || (query.indexOf('派對') !== -1 && maxPeople >= 15);
+                var show = branchOK && capacityOK && keywordOK && matchesUsecase(maxPeople);
+
+                card.style.display = show ? 'block' : 'none';
+                card.classList.toggle('visible', show);
+                if (show) visible += 1;
+            });
+
+            branchButtons.forEach(function (button) {
+                var selected = (selectedBranch === 'all' && button.dataset.filter === 'all')
+                    || button.dataset.filter === selectedBranch;
+                button.classList.toggle('active', selected);
+            });
+
+            countText.textContent = visible ? '目前顯示 ' + visible + ' 個空間' : '沒有符合條件的空間，請調整搜尋條件';
+            if (scrollToResults) {
+                document.getElementById('space-ranking-title').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            activeUsecase = 'all';
+            chips.forEach(function (chip) { chip.classList.remove('is-active'); });
+            applyDiscovery(true);
+        });
+
+        chips.forEach(function (chip) {
+            chip.addEventListener('click', function () {
+                activeUsecase = chip.dataset.spaceUsecase || 'all';
+                keyword.value = '';
+                capacity.value = 'all';
+                chips.forEach(function (item) { item.classList.toggle('is-active', item === chip); });
+                applyDiscovery(true);
+            });
+        });
+
+        branchButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                branch.value = button.dataset.filter || 'all';
+                activeUsecase = 'all';
+                keyword.value = '';
+                capacity.value = 'all';
+                chips.forEach(function (chip) { chip.classList.remove('is-active'); });
+                applyDiscovery(false);
+            });
+        });
+    })();
     </script>
 
     <script src="https://cdn.kuse.ai/sdk.prd.js"></script>
