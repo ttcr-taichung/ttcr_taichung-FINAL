@@ -3681,6 +3681,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             transform: rotate(-4deg);
         }
 
+        .ttcr-perk-shape__wifi {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .ttcr-perk-shape__wifi svg {
+            width: clamp(40px, 4.2vw, 48px);
+            height: clamp(40px, 4.2vw, 48px);
+            margin: 0 0 .45rem;
+            transform: none;
+        }
+
+        .ttcr-perk-shape__wifi span {
+            margin-top: 0;
+        }
+
         .ttcr-perk-shape--plug {
             background: #edf2f4;
         }
@@ -3852,15 +3871,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </article>
 
                 <article class="ttcr-perk-shape ttcr-perk-shape--soft">
-                    <svg viewBox="0 0 48 48" aria-hidden="true">
-                        <path d="M15 10c5.5-4.5 12.5-4.5 18 0"></path>
-                        <path d="M19 15c3-2.8 7-2.8 10 0"></path>
-                        <path d="M24 20h.01"></path>
-                        <path d="M13 25h22v7a9 9 0 0 1-9 9h-4a9 9 0 0 1-9-9v-7Z"></path>
-                        <path d="M35 28h2a5 5 0 0 1 0 10h-4"></path>
-                        <path d="M10 42h29"></path>
-                    </svg>
-                    <span>免費高速<br>Wi‑Fi</span>
+                    <div class="ttcr-perk-shape__wifi">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M15 10c5.5-4.5 12.5-4.5 18 0"></path>
+                            <path d="M19 15c3-2.8 7-2.8 10 0"></path>
+                            <path d="M24 20h.01"></path>
+                            <path d="M13 25h22v7a9 9 0 0 1-9 9h-4a9 9 0 0 1-9-9v-7Z"></path>
+                            <path d="M35 28h2a5 5 0 0 1 0 10h-4"></path>
+                            <path d="M10 42h29"></path>
+                        </svg>
+                        <span>免費高速<br>Wi‑Fi</span>
+                    </div>
                 </article>
 
                 <a class="ttcr-perks-main" href="location.html" aria-label="不限時空間 查看三間門市">
