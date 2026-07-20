@@ -2312,15 +2312,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         // Kuse Branding Hover Effect
         const kuseBranding = document.querySelector(`.kuse-branding`);
-        kuseBranding.addEventListener(`mouseenter`, () => {
-            kuseBranding.style.color = `rgba(255,255,255,0.8)`;
-        });
-        kuseBranding.addEventListener(`mouseleave`, () => {
-            kuseBranding.style.color = `rgba(255,255,255,0.5)`;
-        });
-        kuseBranding.addEventListener(`click`, () => {
-            window.open(`https://kuse.ai`, `_blank`);
-        });
+        if (kuseBranding) {
+            kuseBranding.addEventListener(`mouseenter`, () => {
+                kuseBranding.style.color = `rgba(255,255,255,0.8)`;
+            });
+            kuseBranding.addEventListener(`mouseleave`, () => {
+                kuseBranding.style.color = `rgba(255,255,255,0.5)`;
+            });
+            kuseBranding.addEventListener(`click`, () => {
+                window.open(`https://kuse.ai`, `_blank`);
+            });
+        }
 
 
     </script>
