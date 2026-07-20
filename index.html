@@ -3585,7 +3585,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .ttcr-hidden-perks {
             position: relative;
             overflow: hidden;
-            min-height: 760px;
             background: #f6f6f0;
             color: #223843;
             border-top: 1px solid rgba(34, 56, 67, .08);
@@ -3596,37 +3595,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             content: "";
             position: absolute;
             border-radius: 50%;
-            border: 1px solid rgba(34, 56, 67, .12);
             pointer-events: none;
         }
 
         .ttcr-hidden-perks::before {
-            width: 92px;
-            height: 92px;
-            top: 11%;
-            left: -28px;
+            width: 88px;
+            height: 88px;
+            top: 10%;
+            left: -30px;
+            border: 1px solid rgba(34, 56, 67, .12);
         }
 
         .ttcr-hidden-perks::after {
-            width: 54px;
-            height: 54px;
-            top: 20%;
+            width: 48px;
+            height: 48px;
+            top: 18%;
             right: 7%;
             background: #dfe7ea;
-            border: 0;
         }
 
         .ttcr-hidden-perks__content {
             width: min(1200px, 100%);
             margin: 0 auto;
-            padding: clamp(4.6rem, 8vw, 7rem) 1rem 0;
+            padding: clamp(4.5rem, 8vw, 7rem) 1rem clamp(5rem, 8vw, 7rem);
             text-align: center;
         }
 
         .ttcr-hidden-perks__eyebrow {
             display: inline-block;
-            margin: 0 0 1.8rem;
-            transform: rotate(-6deg);
+            margin: 0 0 1.7rem;
+            transform: rotate(-5deg);
             font-family: Montserrat, sans-serif;
             font-size: .82rem;
             font-weight: 700;
@@ -3636,7 +3634,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         .ttcr-hidden-perks h2 {
             max-width: 920px;
-            margin: 0 auto 1.4rem;
+            margin: 0 auto 1.35rem;
             font-family: var(--font-serif);
             font-size: clamp(2.2rem, 4.6vw, 4.2rem);
             font-weight: 900;
@@ -3653,153 +3651,124 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             line-height: 1.95;
         }
 
-        .ttcr-perks-scene {
+        .ttcr-perks-order {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: clamp(.65rem, 1.3vw, 1rem);
+            margin: clamp(3.8rem, 7vw, 6rem) auto 0;
+            padding: 0 0 1.25rem;
+        }
+
+        .ttcr-perk-bubble {
+            --bubble: #dfe7ea;
+            --bubble-text: #223843;
             position: relative;
-            height: 330px;
-            width: min(1180px, 100vw);
-            margin: clamp(3rem, 6vw, 5.5rem) auto 0;
-        }
-
-        .ttcr-perks-object,
-        .ttcr-perks-main {
-            position: absolute;
             display: flex;
+            min-width: 0;
+            min-height: 218px;
+            padding: 1.45rem clamp(.9rem, 1.6vw, 1.35rem) 1.7rem;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .ttcr-perks-object {
-            width: 138px;
-            height: 138px;
-            padding: 1rem;
-            border: 1px solid rgba(34, 56, 67, .14);
-            background: #fff;
-            color: #223843;
-            box-shadow: 0 16px 34px rgba(34, 56, 67, .09);
-            animation: ttcrPerkFloat 5s ease-in-out infinite;
-        }
-
-        .ttcr-perks-object strong {
-            font-family: Montserrat, var(--font-sans), sans-serif;
-            font-size: 1.8rem;
-            font-weight: 900;
-            line-height: 1;
-        }
-
-        .ttcr-perks-object span {
-            margin-top: .65rem;
-            font-size: .84rem;
-            font-weight: 800;
-            line-height: 1.35;
-            letter-spacing: .05em;
-        }
-
-        .ttcr-perks-object svg {
-            width: 46px;
-            height: 46px;
-            fill: none;
-            stroke: currentColor;
-            stroke-width: 5;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
-        .ttcr-perks-object--floor {
-            left: 2%;
-            bottom: 18px;
-            border-radius: 48% 52% 45% 55% / 56% 43% 57% 44%;
-            transform: rotate(-8deg);
-            animation-delay: -.6s;
-        }
-
-        .ttcr-perks-object--wifi {
-            left: 20%;
-            bottom: 116px;
-            border-radius: 2.2rem;
-            background: #dfe7ea;
-            transform: rotate(5deg);
-            animation-delay: -1.7s;
-        }
-
-        .ttcr-perks-object--spend {
-            right: 19%;
-            bottom: 120px;
-            width: 152px;
-            border-radius: 999px;
-            transform: rotate(-4deg);
-            animation-delay: -2.5s;
-        }
-
-        .ttcr-perks-object--plug {
-            right: 2%;
-            bottom: 18px;
-            border-radius: 50%;
-            background: #eef2f3;
-            transform: rotate(7deg);
-            animation-delay: -3.2s;
-        }
-
-        .ttcr-perks-main {
-            left: 50%;
-            bottom: 0;
-            width: clamp(270px, 34vw, 390px);
-            height: 235px;
-            padding: 1.5rem;
-            border-radius: 999px;
-            background: #223843;
-            color: #fff;
+            align-items: flex-start;
+            justify-content: space-between;
+            border-radius: 1.65rem;
+            background: var(--bubble);
+            color: var(--bubble-text);
+            text-align: left;
             text-decoration: none;
-            box-shadow: 0 24px 48px rgba(34, 56, 67, .22);
+            box-shadow: 0 16px 32px rgba(34, 56, 67, .08);
+            transition: transform .35s cubic-bezier(.22, 1, .36, 1), box-shadow .35s ease;
+        }
+
+        .ttcr-perk-bubble::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -17px;
+            width: 0;
+            height: 0;
+            border-left: 16px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 19px solid var(--bubble);
             transform: translateX(-50%);
-            transition: transform .4s cubic-bezier(.22, 1, .36, 1), box-shadow .4s ease;
         }
 
-        .ttcr-perks-main:hover {
-            transform: translateX(-50%) translateY(-10px);
-            box-shadow: 0 32px 60px rgba(34, 56, 67, .28);
+        .ttcr-perk-bubble:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 24px 44px rgba(34, 56, 67, .14);
         }
 
-        .ttcr-perks-main svg {
-            width: 76px;
-            height: 68px;
-            margin-bottom: .7rem;
-            fill: none;
-            stroke: currentColor;
-            stroke-width: 4;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
+        .ttcr-perk-bubble:nth-child(1) { --bubble: #dfe7ea; }
+        .ttcr-perk-bubble:nth-child(2) { --bubble: #cbd8dd; }
+        .ttcr-perk-bubble:nth-child(3) { --bubble: #223843; --bubble-text: #fff; }
+        .ttcr-perk-bubble:nth-child(4) { --bubble: #4c6a92; --bubble-text: #fff; }
+        .ttcr-perk-bubble:nth-child(5) { --bubble: #edf2f4; }
 
-        .ttcr-perks-main strong {
-            font-family: var(--font-serif);
-            font-size: clamp(1.5rem, 2.4vw, 2.2rem);
-            font-weight: 900;
-            letter-spacing: .04em;
-        }
-
-        .ttcr-perks-main span {
-            margin-top: .35rem;
+        .ttcr-perk-bubble__step {
+            display: block;
             font-family: Montserrat, sans-serif;
             font-size: .72rem;
-            font-weight: 700;
+            font-weight: 900;
             letter-spacing: .16em;
-            opacity: .78;
+            opacity: .68;
         }
 
-        @keyframes ttcrPerkFloat {
-            0%, 100% { margin-bottom: 0; }
-            50% { margin-bottom: 13px; }
+        .ttcr-perk-bubble strong {
+            display: block;
+            margin: .8rem 0;
+            font-family: var(--font-serif);
+            font-size: clamp(1.15rem, 1.7vw, 1.5rem);
+            font-weight: 900;
+            line-height: 1.35;
+        }
+
+        .ttcr-perk-bubble p {
+            margin: 0;
+            font-size: clamp(.82rem, 1.05vw, .94rem);
+            line-height: 1.75;
+            opacity: .82;
+        }
+
+        .ttcr-hidden-perks__footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2.25rem;
+        }
+
+        .ttcr-hidden-perks__link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: .75rem 1.45rem;
+            border: 1px solid #223843;
+            border-radius: 999px;
+            color: #223843;
+            font-size: .9rem;
+            font-weight: 800;
+            letter-spacing: .07em;
+            text-decoration: none;
+            transition: transform .3s ease, background .3s ease, color .3s ease;
+        }
+
+        .ttcr-hidden-perks__link:hover {
+            transform: translateY(-3px);
+            background: #223843;
+            color: #fff;
+        }
+
+        .ttcr-hidden-perks__swipe-note {
+            display: none;
+            margin: 1.1rem 0 0;
+            color: #78878e;
+            font-size: .78rem;
+            letter-spacing: .06em;
         }
 
         @media (max-width: 760px) {
-            .ttcr-hidden-perks {
-                min-height: auto;
-            }
-
             .ttcr-hidden-perks__content {
-                padding: 4rem .75rem 0;
+                padding: 4rem .8rem 4.5rem;
             }
 
             .ttcr-hidden-perks h2 {
@@ -3811,53 +3780,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 line-height: 1.85;
             }
 
-            .ttcr-perks-scene {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+            .ttcr-perks-order {
+                display: flex;
                 gap: .85rem;
-                height: auto;
-                width: min(100%, 420px);
-                padding: 0 .5rem 3.5rem;
-                margin-top: 3rem;
+                margin-top: 3.25rem;
+                padding: 0 1rem 1.5rem;
+                overflow-x: auto;
+                overscroll-behavior-inline: contain;
+                scroll-snap-type: x mandatory;
+                scrollbar-width: none;
             }
 
-            .ttcr-perks-object,
-            .ttcr-perks-main {
-                position: static;
-                transform: none;
-                justify-self: center;
+            .ttcr-perks-order::-webkit-scrollbar {
+                display: none;
             }
 
-            .ttcr-perks-main {
-                grid-column: 1 / -1;
-                width: min(270px, 78vw);
-                height: 175px;
-                order: -1;
+            .ttcr-perk-bubble {
+                flex: 0 0 min(76vw, 290px);
+                min-height: 205px;
+                scroll-snap-align: center;
             }
 
-            .ttcr-perks-main:hover {
-                transform: translateY(-6px);
+            .ttcr-perk-bubble strong {
+                font-size: 1.35rem;
             }
 
-            .ttcr-perks-main svg {
-                width: 58px;
-                height: 50px;
-            }
-
-            .ttcr-perks-object {
-                width: min(134px, 39vw);
-                height: min(134px, 39vw);
-                transform: none;
-            }
-
-            .ttcr-perks-object--wifi,
-            .ttcr-perks-object--spend {
-                width: min(134px, 39vw);
+            .ttcr-hidden-perks__swipe-note {
+                display: block;
             }
         }
 
         @media (prefers-reduced-motion: reduce) {
-            .ttcr-perks-object { animation: none; }
+            .ttcr-perk-bubble { transition: none; }
         }
     </style>
 
@@ -3867,47 +3821,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h2 id="ttcr-hidden-perks-title">台中不限時咖啡廳，<br>歡迎你來坐坐 🌿</h2>
             <p class="ttcr-hidden-perks__lead">北屯旗艦店 1–3 樓座位充足，每人低消 $100，就能自在享受不限時空間。免費高速 Wi‑Fi、插座充足，讓咖啡香陪伴工作、閱讀與每段相聚。</p>
 
-            <div class="ttcr-perks-scene" aria-label="同齊咖吡空間優點">
-                <div class="ttcr-perks-object ttcr-perks-object--floor">
-                    <strong>1–3F</strong>
-                    <span>北屯旗艦店<br>寬敞座位</span>
-                </div>
+            <div class="ttcr-perks-order" aria-label="同齊咖吡空間優點，依序為一至五">
+                <article class="ttcr-perk-bubble">
+                    <span class="ttcr-perk-bubble__step">01 / SPACE</span>
+                    <strong>1–3F 寬敞座位</strong>
+                    <p>北屯旗艦店三層空間，座位充足，找到適合自己的角落。</p>
+                </article>
 
-                <div class="ttcr-perks-object ttcr-perks-object--wifi">
-                    <svg viewBox="0 0 64 64" aria-hidden="true">
-                        <path d="M8 25c14-13 34-13 48 0"></path>
-                        <path d="M17 36c9-8 21-8 30 0"></path>
-                        <path d="M26 46c4-3 8-3 12 0"></path>
-                        <circle cx="32" cy="53" r="2" fill="currentColor" stroke="none"></circle>
-                    </svg>
-                    <span>免費高速<br>Wi‑Fi</span>
-                </div>
+                <article class="ttcr-perk-bubble">
+                    <span class="ttcr-perk-bubble__step">02 / MINIMUM</span>
+                    <strong>每人低消 $100</strong>
+                    <p>簡單清楚的低消方式，點杯喜歡的飲品就能安心停留。</p>
+                </article>
 
-                <a class="ttcr-perks-main" href="location.html" aria-label="查看同齊咖吡三間門市">
-                    <svg viewBox="0 0 110 90" aria-hidden="true">
-                        <path d="M35 14c-8 8 8 12 0 21"></path>
-                        <path d="M55 10c-8 9 8 13 0 23"></path>
-                        <path d="M22 42h58v25c0 9-8 16-17 16H39c-9 0-17-7-17-16V42Z"></path>
-                        <path d="M80 49h8c9 0 9 17 0 17h-8"></path>
-                        <path d="M14 83h76"></path>
-                    </svg>
-                    <strong>不限時空間</strong>
-                    <span>VIEW OUR STORES →</span>
+                <a class="ttcr-perk-bubble" href="location.html" aria-label="不限時使用，查看三間門市">
+                    <span class="ttcr-perk-bubble__step">03 / UNLIMITED</span>
+                    <strong>不限時使用</strong>
+                    <p>工作、閱讀或聊天都不必趕時間，讓自己的步調慢下來。</p>
                 </a>
 
-                <div class="ttcr-perks-object ttcr-perks-object--spend">
-                    <strong>$100</strong>
-                    <span>每人低消</span>
-                </div>
+                <article class="ttcr-perk-bubble">
+                    <span class="ttcr-perk-bubble__step">04 / WI-FI</span>
+                    <strong>免費高速 Wi‑Fi</strong>
+                    <p>適合工作、查資料與長時間使用，連線快速又方便。</p>
+                </article>
 
-                <div class="ttcr-perks-object ttcr-perks-object--plug">
-                    <svg viewBox="0 0 64 64" aria-hidden="true">
-                        <path d="M23 9v16M41 9v16"></path>
-                        <path d="M16 25h32v8c0 9-7 16-16 16s-16-7-16-16v-8Z"></path>
-                        <path d="M32 49v8"></path>
-                    </svg>
-                    <span>插座充足</span>
-                </div>
+                <article class="ttcr-perk-bubble">
+                    <span class="ttcr-perk-bubble__step">05 / POWER</span>
+                    <strong>插座充足</strong>
+                    <p>不用擔心筆電或手機沒電，專注完成今天想做的事。</p>
+                </article>
+            </div>
+
+            <p class="ttcr-hidden-perks__swipe-note">01 → 05　左右滑動依序查看</p>
+            <div class="ttcr-hidden-perks__footer">
+                <a class="ttcr-hidden-perks__link" href="location.html">查看三間門市 →</a>
             </div>
         </div>
     </section>
