@@ -2508,6 +2508,146 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     </style>
 
+
+    <style id="space-branch-signature-style">
+        .space-branch-signatures {
+            padding: 82px 24px 76px;
+            background: #ffffff;
+            color: var(--brand-blue);
+        }
+        .space-branch-signatures__inner {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+        .space-branch-signatures__head {
+            max-width: 760px;
+            margin: 0 auto 38px;
+            text-align: center;
+        }
+        .space-branch-signatures__eyebrow {
+            margin-bottom: 10px;
+            color: #7b898f;
+            font: 700 .78rem/1.4 "Montserrat",sans-serif;
+            letter-spacing: .18em;
+        }
+        .space-branch-signatures h2 {
+            margin: 0 0 14px;
+            font-family: var(--font-serif);
+            font-size: clamp(2rem,4vw,3.25rem);
+            font-weight: 900;
+            line-height: 1.35;
+        }
+        .space-branch-signatures__lead {
+            margin: 0;
+            color: #6f7d83;
+            line-height: 1.85;
+        }
+        .space-branch-signatures__grid {
+            display: grid;
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            gap: 20px;
+        }
+        .space-branch-card {
+            position: relative;
+            display: flex;
+            min-height: 405px;
+            flex-direction: column;
+            padding: 30px 28px 27px;
+            overflow: hidden;
+            border: 1px solid #dce4e7;
+            border-radius: 22px;
+            background: #f7f9fa;
+            box-shadow: 0 14px 36px rgba(34,56,67,.06);
+            transition: transform .25s ease,box-shadow .25s ease;
+        }
+        .space-branch-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 42px rgba(34,56,67,.11);
+        }
+        .space-branch-card::before {
+            content: "";
+            position: absolute;
+            inset: 0 0 auto;
+            height: 5px;
+            background: #356b86;
+        }
+        .space-branch-card--west::before { background: #c5a544; }
+        .space-branch-card--south::before { background: #9db9c5; }
+        .space-branch-card__number {
+            margin-bottom: 24px;
+            color: #9aabb2;
+            font: 700 .78rem/1 "Montserrat",sans-serif;
+            letter-spacing: .18em;
+        }
+        .space-branch-card__district {
+            margin-bottom: 8px;
+            color: #65757c;
+            font-size: .78rem;
+            font-weight: 800;
+            letter-spacing: .13em;
+        }
+        .space-branch-card h3 {
+            margin: 0 0 16px;
+            font-family: var(--font-serif);
+            font-size: 1.65rem;
+            font-weight: 900;
+            line-height: 1.4;
+        }
+        .space-branch-card p {
+            margin: 0;
+            color: #66767d;
+            line-height: 1.85;
+        }
+        .space-branch-card__tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-top: auto;
+            padding-top: 24px;
+        }
+        .space-branch-card__tags span {
+            padding: 7px 10px;
+            border: 1px solid #d9e2e5;
+            border-radius: 999px;
+            background: #fff;
+            color: #52656e;
+            font-size: .75rem;
+            font-weight: 700;
+        }
+        .space-branch-card__quote {
+            margin-top: 20px !important;
+            color: #819097 !important;
+            font: 600 .72rem/1.6 "Montserrat",sans-serif !important;
+            letter-spacing: .08em;
+        }
+        .space-branch-answer {
+            margin-top: 28px;
+            padding: 24px 28px;
+            border-left: 4px solid #356b86;
+            border-radius: 0 16px 16px 0;
+            background: #eef3f5;
+        }
+        .space-branch-answer h3 {
+            margin: 0 0 8px;
+            font-size: 1.08rem;
+            font-weight: 900;
+        }
+        .space-branch-answer p {
+            margin: 0;
+            color: #62737a;
+            line-height: 1.8;
+        }
+        @media (max-width: 900px) {
+            .space-branch-signatures__grid { grid-template-columns: 1fr; }
+            .space-branch-card { min-height: 0; }
+        }
+        @media (max-width: 620px) {
+            .space-branch-signatures { padding: 58px 16px 54px; }
+            .space-branch-card { padding: 26px 22px 23px; border-radius: 18px; }
+            .space-branch-answer { padding: 20px; }
+        }
+    </style>
+
 </head>
 <body style="">
 <!-- Google Tag Manager (noscript) -->
@@ -2586,6 +2726,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="space-story-band" aria-labelledby="space-story-title">
         <h2 id="space-story-title">空間不只是場地<br>而是每個故事開始的地方</h2>
         <p>工作會議、讀書討論、品牌講座、朋友聚會或派對包場，都能在咖啡香與舒適空間中自在展開。</p>
+    </section>
+
+    <section class="space-branch-signatures" aria-labelledby="space-branch-signatures-title">
+        <div class="space-branch-signatures__inner">
+            <header class="space-branch-signatures__head">
+                <div class="space-branch-signatures__eyebrow">THREE STORES · THREE STORIES</div>
+                <h2 id="space-branch-signatures-title">三間門市，三種城市場景</h2>
+                <p class="space-branch-signatures__lead">依照活動氛圍、人數與使用情境，找到最適合你的台中場地。</p>
+            </header>
+
+            <div class="space-branch-signatures__grid">
+                <article class="space-branch-card">
+                    <div class="space-branch-card__number">01 · BEITUN</div>
+                    <div class="space-branch-card__district">北屯旗艦店</div>
+                    <h3>里民旗艦・溫暖陪伴</h3>
+                    <p>深耕北屯熱河路的城市客廳，從早晨咖啡到深夜思考，提供不限時的自在與溫度。空間設備完善，適合商務簡報、手作課程、讀書會及溫馨的社區聚會。</p>
+                    <div class="space-branch-card__tags" aria-label="北屯旗艦店特色">
+                        <span>城市客廳</span><span>旗艦設備</span><span>社區聚會</span><span>08:00–00:00</span>
+                    </div>
+                </article>
+
+                <article class="space-branch-card space-branch-card--west">
+                    <div class="space-branch-card__number">02 · WEST DISTRICT</div>
+                    <div class="space-branch-card__district">西區精忠店</div>
+                    <h3>藝文聚落・寬敞餘裕</h3>
+                    <p>座落於藝文氣息濃厚的精忠街，擁有三間店中更寬敞、餘裕的活動空間。藝術牆面、自然光影與咖啡香氣交織，適合美學講座、品牌活動、商務會議、手作工作坊與包場派對。</p>
+                    <div class="space-branch-card__tags" aria-label="西區精忠店特色">
+                        <span>寬敞場域</span><span>藝文氛圍</span><span>彈性佈置</span><span>品牌活動</span>
+                    </div>
+                    <p class="space-branch-card__quote">WHERE ART SPEAKS AND COFFEE SOOTHES.</p>
+                </article>
+
+                <article class="space-branch-card space-branch-card--south">
+                    <div class="space-branch-card__number">03 · SOUTH DISTRICT</div>
+                    <div class="space-branch-card__district">南區忠明店</div>
+                    <h3>明亮共享・學區交流</h3>
+                    <p>鄰近學區，以明亮設計、充足座位與共享交流為主要特色。適合學生社團、讀書會、團隊協作、小型講座及朋友聚會，從個人 Me Time 到多人交流都能自在使用。</p>
+                    <div class="space-branch-card__tags" aria-label="南區忠明店特色">
+                        <span>鄰近學區</span><span>座位充足</span><span>共享交流</span><span>遊戲聚會</span>
+                    </div>
+                    <p class="space-branch-card__quote">MAY YOUR DAY BE AS BRIGHT AS OUR ROAST.</p>
+                </article>
+            </div>
+
+            <div class="space-branch-answer">
+                <h3>台中三間同齊咖吡，場地特色有什麼不同？</h3>
+                <p>北屯旗艦店主打溫暖的城市客廳與完善設備；西區精忠店擁有較寬敞的藝文活動空間；南區忠明店鄰近學區、座位充足，適合學生社團與多人交流。</p>
+            </div>
+        </div>
     </section>
 
     <div class="max-w-7xl mx-auto px-4">
