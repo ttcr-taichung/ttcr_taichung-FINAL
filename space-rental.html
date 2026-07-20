@@ -2076,19 +2076,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             backdrop-filter: blur(10px);
         }
         .space-hero-stat {
+            position: relative;
             padding: 16px 12px;
             color: var(--brand-blue);
             font-size: 1.55rem;
             font-weight: 900;
+            transition: background-color .25s ease;
         }
         .space-hero-stat + .space-hero-stat { border-left: 1px solid #dfe6e8; }
-        .space-hero-stat span {
+        .space-hero-stat__number {
+            display: inline-block;
+            min-width: 2.2ch;
+            font-variant-numeric: tabular-nums;
+            transition: color .25s ease, transform .25s ease;
+            transform-origin: center bottom;
+        }
+        .space-hero-stat:hover {
+            background: rgba(34,56,67,.055);
+        }
+        .space-hero-stat:hover .space-hero-stat__number {
+            color: #356b86;
+            transform: translateY(-3px) scale(1.08);
+        }
+        .space-hero-stat__label {
             display: block;
             margin-top: 2px;
             color: #78868c;
             font-size: .78rem;
             font-weight: 600;
             letter-spacing: .06em;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .space-hero-stat,
+            .space-hero-stat__number { transition: none; }
         }
         .space-story-band {
             padding: 72px 24px 50px;
@@ -2743,9 +2763,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="space-hero-visual" role="img" aria-label="同齊咖吡西區精忠店場地租借空間實景">
             <div class="space-hero-statbar" aria-label="場地服務數據">
-                <div class="space-hero-stat">12<span>多功能空間</span></div>
-                <div class="space-hero-stat">3<span>台中門市</span></div>
-                <div class="space-hero-stat">6–38<span>建議使用人數</span></div>
+                <div class="space-hero-stat" aria-label="12 個多功能空間">
+                    <span class="space-hero-stat__number" data-count-to="12" aria-hidden="true">12</span>
+                    <span class="space-hero-stat__label">多功能空間</span>
+                </div>
+                <div class="space-hero-stat" aria-label="3 間台中門市">
+                    <span class="space-hero-stat__number" data-count-to="3" aria-hidden="true">3</span>
+                    <span class="space-hero-stat__label">台中門市</span>
+                </div>
+                <div class="space-hero-stat" aria-label="建議使用人數 6 到 38 人">
+                    <span class="space-hero-stat__number" data-count-min="6" data-count-max="38" aria-hidden="true">6–38</span>
+                    <span class="space-hero-stat__label">建議使用人數</span>
+                </div>
             </div>
         </div>
     </section>
@@ -3477,6 +3506,79 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 applyDiscovery(false);
             });
         });
+    })();
+    </script>
+
+    <script id="space-stat-counter-script">
+    (function () {
+        var stats = Array.prototype.slice.call(document.querySelectorAll('.space-hero-stat'));
+        if (!stats.length) return;
+
+        var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var running = new WeakMap();
+
+        function finalText(number) {
+            if (number.dataset.countMax) {
+                return number.dataset.countMin + '–' + number.dataset.countMax;
+            }
+            return number.dataset.countTo || number.textContent;
+        }
+
+        function animateStat(stat) {
+            var number = stat.querySelector('.space-hero-stat__number');
+            if (!number) return;
+            if (reducedMotion) {
+                number.textContent = finalText(number);
+                return;
+            }
+
+            var previous = running.get(stat);
+            if (previous) cancelAnimationFrame(previous);
+
+            var duration = 900;
+            var startedAt = performance.now();
+            var singleTarget = Number(number.dataset.countTo || 0);
+            var minTarget = Number(number.dataset.countMin || 0);
+            var maxTarget = Number(number.dataset.countMax || 0);
+
+            function frame(now) {
+                var progress = Math.min((now - startedAt) / duration, 1);
+                var eased = 1 - Math.pow(1 - progress, 3);
+
+                if (number.dataset.countMax) {
+                    number.textContent = Math.round(minTarget * eased) + '–' + Math.round(maxTarget * eased);
+                } else {
+                    number.textContent = String(Math.round(singleTarget * eased));
+                }
+
+                if (progress < 1) {
+                    running.set(stat, requestAnimationFrame(frame));
+                } else {
+                    number.textContent = finalText(number);
+                    running.delete(stat);
+                }
+            }
+
+            running.set(stat, requestAnimationFrame(frame));
+        }
+
+        stats.forEach(function (stat) {
+            stat.addEventListener('mouseenter', function () { animateStat(stat); });
+        });
+
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        animateStat(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.45 });
+            stats.forEach(function (stat) { observer.observe(stat); });
+        } else {
+            stats.forEach(animateStat);
+        }
     })();
     </script>
 
