@@ -3581,6 +3581,202 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     })();
     </script>
 
+    <style id="ttcr-hidden-perks-style">
+        .ttcr-hidden-perks {
+            position: relative;
+            overflow: hidden;
+            background: #edf2f4;
+            color: #223843;
+            border-top: 1px solid rgba(34, 56, 67, .1);
+        }
+
+        .ttcr-hidden-perks__marquee {
+            overflow: hidden;
+            background: #223843;
+            color: #fff;
+            border-block: 1px solid rgba(255, 255, 255, .14);
+        }
+
+        .ttcr-hidden-perks__track {
+            display: flex;
+            align-items: center;
+            width: max-content;
+            min-width: 100%;
+            padding: .9rem 0;
+            animation: ttcrPerksMarquee 25s linear infinite;
+        }
+
+        .ttcr-hidden-perks__track span {
+            flex: none;
+            padding-inline: 1.35rem;
+            font-family: Montserrat, "Noto Sans TC", sans-serif;
+            font-size: .78rem;
+            font-weight: 800;
+            letter-spacing: .16em;
+            white-space: nowrap;
+        }
+
+        .ttcr-hidden-perks__track span::after {
+            content: "✦";
+            margin-left: 2.7rem;
+            color: #f2cf2f;
+        }
+
+        .ttcr-hidden-perks__content {
+            width: min(1120px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding: clamp(4rem, 8vw, 7rem) 1rem clamp(4.5rem, 8vw, 7rem);
+            text-align: center;
+        }
+
+        .ttcr-hidden-perks__eyebrow {
+            margin: 0 0 1.1rem;
+            font-family: Montserrat, sans-serif;
+            font-size: .78rem;
+            font-weight: 800;
+            letter-spacing: .2em;
+            color: #60727b;
+        }
+
+        .ttcr-hidden-perks h2 {
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+            font-family: var(--font-serif);
+            font-size: clamp(2.1rem, 4.7vw, 4.3rem);
+            font-weight: 900;
+            line-height: 1.25;
+            letter-spacing: -.035em;
+            color: #223843;
+        }
+
+        .ttcr-hidden-perks__lead {
+            max-width: 850px;
+            margin: 0 auto;
+            color: #5f6f77;
+            font-size: clamp(.98rem, 1.35vw, 1.12rem);
+            line-height: 1.95;
+        }
+
+        .ttcr-hidden-perks__chips {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: .75rem;
+            margin: 2.2rem auto 1.8rem;
+        }
+
+        .ttcr-perk-chip {
+            display: inline-flex;
+            align-items: center;
+            min-height: 46px;
+            padding: .72rem 1.15rem;
+            border: 1px solid rgba(34, 56, 67, .18);
+            border-radius: 999px;
+            background: #fff;
+            color: #223843;
+            font-size: .92rem;
+            font-weight: 700;
+            letter-spacing: .03em;
+            box-shadow: 0 8px 22px rgba(34, 56, 67, .08);
+            transition: transform .3s ease, background .3s ease, color .3s ease;
+        }
+
+        .ttcr-perk-chip:hover {
+            transform: translateY(-4px);
+            background: #223843;
+            color: #fff;
+        }
+
+        .ttcr-hidden-perks__closing {
+            margin: 0 auto 1.8rem;
+            font-family: var(--font-serif);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #223843;
+        }
+
+        .ttcr-hidden-perks__link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: .78rem 1.5rem;
+            border: 1px solid #223843;
+            border-radius: 999px;
+            background: transparent;
+            color: #223843;
+            font-size: .92rem;
+            font-weight: 800;
+            letter-spacing: .08em;
+            text-decoration: none;
+            transition: transform .3s ease, background .3s ease, color .3s ease;
+        }
+
+        .ttcr-hidden-perks__link:hover {
+            transform: translateY(-3px);
+            background: #223843;
+            color: #fff;
+        }
+
+        @keyframes ttcrPerksMarquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        @media (max-width: 640px) {
+            .ttcr-hidden-perks__content {
+                width: min(100% - 1rem, 1120px);
+                padding-inline: .75rem;
+            }
+
+            .ttcr-hidden-perks h2 {
+                font-size: clamp(1.85rem, 9.3vw, 2.7rem);
+            }
+
+            .ttcr-hidden-perks__lead {
+                font-size: .94rem;
+                line-height: 1.85;
+            }
+
+            .ttcr-hidden-perks__chips {
+                gap: .55rem;
+            }
+
+            .ttcr-perk-chip {
+                min-height: 42px;
+                padding: .62rem .9rem;
+                font-size: .84rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .ttcr-hidden-perks__track { animation: none; }
+        }
+    </style>
+
+    <section class="ttcr-hidden-perks" id="ttcr-hidden-perks" aria-labelledby="ttcr-hidden-perks-title">
+        <div class="ttcr-hidden-perks__marquee" aria-hidden="true">
+            <div class="ttcr-hidden-perks__track">
+                <span>不限時咖啡廳</span><span>FREE HIGH-SPEED WI-FI</span><span>插座充足</span><span>LOW SPEND $100</span><span>COFFEE &amp; GOOD TIME</span>
+                <span>不限時咖啡廳</span><span>FREE HIGH-SPEED WI-FI</span><span>插座充足</span><span>LOW SPEND $100</span><span>COFFEE &amp; GOOD TIME</span>
+            </div>
+        </div>
+        <div class="ttcr-hidden-perks__content">
+            <p class="ttcr-hidden-perks__eyebrow">A LITTLE SECRET · TTCR COFFEE</p>
+            <h2 id="ttcr-hidden-perks-title">台中不限時咖啡廳，<br>歡迎你來坐坐 🌿</h2>
+            <p class="ttcr-hidden-perks__lead">北屯旗艦店 1–3 樓座位充足，每人低消 $100，就能自在享受不限時空間。免費高速 Wi‑Fi、插座充足，適合工作、閱讀、讀書與長時間使用。</p>
+            <div class="ttcr-hidden-perks__chips" aria-label="同齊咖吡空間優點">
+                <span class="ttcr-perk-chip">北屯旗艦店 1–3F</span>
+                <span class="ttcr-perk-chip">每人低消 $100</span>
+                <span class="ttcr-perk-chip">不限時使用</span>
+                <span class="ttcr-perk-chip">免費高速 Wi‑Fi</span>
+                <span class="ttcr-perk-chip">插座充足</span>
+            </div>
+            <p class="ttcr-hidden-perks__closing">讓咖啡香陪伴每段專注與相聚，成為你心中值得收藏的好所在。</p>
+            <a class="ttcr-hidden-perks__link" href="location.html">查看三間門市 →</a>
+        </div>
+    </section>
+
     <footer class="tt-footer">
         <div class="tt-footer-inner">
             <div class="tt-footer-grid">
@@ -3954,7 +4150,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         '.news-section-title', '.news-card',
         '.services-section-header', '.service-card',
         '.ttcr-faq-header', '.ttcr-faq-row',
-        '.ttcr-space-preview__copy', '.ttcr-space-preview__media', '.ttcr-space-preview__stat'
+        '.ttcr-space-preview__copy', '.ttcr-space-preview__media', '.ttcr-space-preview__stat',
+        '.ttcr-hidden-perks__content', '.ttcr-perk-chip'
     ];
     var reveals = [];
 
