@@ -2301,83 +2301,556 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 
 
-    <!-- SEO / AEO：台中咖啡廳常見問題 -->
+    <!-- SEO / AEO：互動式咖啡 Q&A -->
     <style>
-        .ttcr-search-guide {
-            background: #f2eee8;
-            padding: 72px 24px;
-            color: #223843;
+        .ttcr-coffee-qa {
+            --qa-ink: #223843;
+            --qa-cream: #fff8ec;
+            --qa-latte: #d99a5b;
+            --qa-coral: #ef806c;
+            --qa-mint: #8eb9aa;
+            position: relative;
+            overflow: hidden;
+            padding: 96px 24px 110px;
+            color: var(--qa-ink);
+            background:
+                radial-gradient(circle at 8% 18%, rgba(239,128,108,.16) 0 90px, transparent 92px),
+                radial-gradient(circle at 94% 82%, rgba(142,185,170,.18) 0 130px, transparent 132px),
+                linear-gradient(135deg, #fffaf1 0%, #f5ecde 52%, #fff7eb 100%);
         }
-        .ttcr-search-guide-inner {
-            max-width: 1080px;
+
+        .ttcr-coffee-qa::before,
+        .ttcr-coffee-qa::after {
+            content: "";
+            position: absolute;
+            border: 3px solid rgba(217,154,91,.22);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .ttcr-coffee-qa::before {
+            width: 230px;
+            height: 230px;
+            top: -110px;
+            right: 12%;
+        }
+
+        .ttcr-coffee-qa::after {
+            width: 120px;
+            height: 120px;
+            bottom: 28px;
+            left: 4%;
+            box-shadow: 0 0 0 18px rgba(217,154,91,.06);
+        }
+
+        .ttcr-coffee-qa-inner {
+            position: relative;
+            z-index: 2;
+            max-width: 1180px;
             margin: 0 auto;
         }
-        .ttcr-search-guide h2 {
+
+        .ttcr-qa-heading {
+            max-width: 790px;
+            margin: 0 auto 58px;
+            text-align: center;
+        }
+
+        .ttcr-qa-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            margin-bottom: 14px;
+            padding: 8px 16px;
+            border: 1px solid rgba(34,56,67,.14);
+            border-radius: 999px;
+            background: rgba(255,255,255,.62);
+            color: #9a5f33;
+            font-family: "Montserrat", sans-serif;
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .16em;
+        }
+
+        .ttcr-qa-kicker::before {
+            content: "●";
+            color: var(--qa-coral);
+            animation: ttcrQaBlink 1.8s ease-in-out infinite;
+        }
+
+        .ttcr-coffee-qa h2 {
+            margin: 0 0 17px;
             font-family: var(--font-serif);
-            font-size: clamp(1.8rem, 4vw, 2.6rem);
-            line-height: 1.4;
-            text-align: center;
-            margin-bottom: 16px;
+            font-size: clamp(2rem, 4.2vw, 3.35rem);
+            font-weight: 900;
+            line-height: 1.35;
+            letter-spacing: .03em;
         }
-        .ttcr-search-intro {
-            max-width: 820px;
-            margin: 0 auto 36px;
-            text-align: center;
-            line-height: 1.9;
-            color: #465a64;
-        }
-        .ttcr-faq-list {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 18px;
-        }
-        .ttcr-faq-item {
-            background: #fff;
-            border: 1px solid rgba(34, 56, 67, .12);
-            border-radius: 14px;
-            padding: 24px;
-            box-shadow: 0 8px 24px rgba(34, 56, 67, .06);
-        }
-        .ttcr-faq-item h3 {
-            font-size: 1.08rem;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-        .ttcr-faq-item p {
-            color: #52656e;
-            line-height: 1.85;
+
+        .ttcr-qa-intro {
             margin: 0;
+            color: #52636a;
+            font-size: 1.05rem;
+            line-height: 1.9;
         }
-        @media (max-width: 768px) {
-            .ttcr-search-guide { padding: 52px 18px; }
-            .ttcr-faq-list { grid-template-columns: 1fr; }
+
+        .ttcr-qa-stage {
+            display: grid;
+            grid-template-columns: minmax(290px, .78fr) minmax(0, 1.35fr);
+            gap: clamp(38px, 6vw, 78px);
+            align-items: center;
+        }
+
+        .ttcr-qa-character-zone {
+            position: relative;
+            min-height: 470px;
+            display: grid;
+            place-items: center;
+        }
+
+        .ttcr-qa-character-zone::before {
+            content: "";
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            border-radius: 46% 54% 58% 42% / 52% 42% 58% 48%;
+            background: rgba(255,255,255,.58);
+            box-shadow: inset 0 0 0 2px rgba(34,56,67,.05);
+            animation: ttcrQaBlob 8s ease-in-out infinite;
+        }
+
+        .ttcr-qa-speech {
+            position: absolute;
+            z-index: 5;
+            top: 14px;
+            right: -4px;
+            max-width: 185px;
+            padding: 14px 17px;
+            border: 2px solid var(--qa-ink);
+            border-radius: 18px 18px 18px 4px;
+            background: #fff;
+            font-weight: 700;
+            line-height: 1.55;
+            transform: rotate(2deg);
+            box-shadow: 5px 6px 0 rgba(34,56,67,.12);
+            animation: ttcrQaSpeech 3.2s ease-in-out infinite;
+        }
+
+        .ttcr-qa-cup-wrap {
+            position: relative;
+            z-index: 3;
+            width: 300px;
+            height: 330px;
+            animation: ttcrQaFloat 3.4s ease-in-out infinite;
+        }
+
+        .ttcr-qa-steam {
+            position: absolute;
+            top: 0;
+            left: 72px;
+            width: 145px;
+            height: 105px;
+        }
+
+        .ttcr-qa-steam span {
+            position: absolute;
+            bottom: 0;
+            width: 26px;
+            height: 78px;
+            border: 5px solid rgba(34,56,67,.38);
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            opacity: 0;
+            animation: ttcrQaSteam 3s ease-in-out infinite;
+        }
+
+        .ttcr-qa-steam span:nth-child(1) { left: 15px; animation-delay: 0s; }
+        .ttcr-qa-steam span:nth-child(2) { left: 60px; animation-delay: .7s; }
+        .ttcr-qa-steam span:nth-child(3) { left: 103px; animation-delay: 1.35s; }
+
+        .ttcr-qa-mug {
+            position: absolute;
+            left: 42px;
+            top: 102px;
+            width: 205px;
+            height: 145px;
+            border: 6px solid var(--qa-ink);
+            border-radius: 18px 18px 76px 76px;
+            background: #fffdf8;
+            box-shadow: inset 0 -14px 0 #f1dfc6, 0 14px 0 rgba(34,56,67,.08);
+        }
+
+        .ttcr-qa-mug::before {
+            content: "";
+            position: absolute;
+            right: -67px;
+            top: 22px;
+            width: 73px;
+            height: 78px;
+            border: 6px solid var(--qa-ink);
+            border-left: 0;
+            border-radius: 0 48px 48px 0;
+            background: transparent;
+        }
+
+        .ttcr-qa-coffee {
+            position: absolute;
+            left: 8px;
+            right: 8px;
+            top: 7px;
+            height: 27px;
+            border: 4px solid var(--qa-ink);
+            border-radius: 50%;
+            background: #7b462b;
+            overflow: hidden;
+        }
+
+        .ttcr-qa-coffee::after {
+            content: "";
+            position: absolute;
+            width: 65px;
+            height: 9px;
+            top: 2px;
+            left: 24px;
+            border-radius: 50%;
+            background: rgba(255,255,255,.22);
+            transform: rotate(-4deg);
+        }
+
+        .ttcr-qa-eye {
+            position: absolute;
+            top: 73px;
+            width: 11px;
+            height: 15px;
+            border-radius: 50%;
+            background: var(--qa-ink);
+            animation: ttcrQaEyes 4s infinite;
+        }
+
+        .ttcr-qa-eye-left { left: 69px; }
+        .ttcr-qa-eye-right { right: 69px; }
+
+        .ttcr-qa-cheek {
+            position: absolute;
+            top: 94px;
+            width: 22px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(239,128,108,.55);
+        }
+
+        .ttcr-qa-cheek-left { left: 38px; }
+        .ttcr-qa-cheek-right { right: 38px; }
+
+        .ttcr-qa-smile {
+            position: absolute;
+            left: 50%;
+            top: 91px;
+            width: 28px;
+            height: 18px;
+            border: 4px solid var(--qa-ink);
+            border-top: 0;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-radius: 0 0 22px 22px;
+            transform: translateX(-50%);
+        }
+
+        .ttcr-qa-saucer {
+            position: absolute;
+            left: 16px;
+            top: 249px;
+            width: 276px;
+            height: 42px;
+            border: 6px solid var(--qa-ink);
+            border-radius: 50%;
+            background: #f4c982;
+            box-shadow: 0 13px 0 rgba(34,56,67,.09);
+        }
+
+        .ttcr-qa-bean {
+            position: absolute;
+            z-index: 4;
+            width: 30px;
+            height: 42px;
+            border: 3px solid var(--qa-ink);
+            border-radius: 50%;
+            background: #9b5a36;
+            box-shadow: inset -6px -6px 0 rgba(75,36,20,.25);
+            animation: ttcrQaBean 4s ease-in-out infinite;
+        }
+
+        .ttcr-qa-bean::after {
+            content: "";
+            position: absolute;
+            left: 12px;
+            top: 4px;
+            width: 3px;
+            height: 29px;
+            border-radius: 50%;
+            background: rgba(255,235,205,.65);
+            transform: rotate(14deg);
+        }
+
+        .ttcr-qa-bean-one { left: 5px; top: 102px; transform: rotate(-28deg); }
+        .ttcr-qa-bean-two { right: 11px; bottom: 72px; transform: rotate(32deg); animation-delay: .9s; }
+        .ttcr-qa-bean-three { left: 43px; bottom: 24px; transform: rotate(55deg) scale(.75); animation-delay: 1.7s; }
+
+        .ttcr-qa-list {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+        }
+
+        .ttcr-qa-item {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid rgba(34,56,67,.13);
+            border-radius: 20px;
+            background: rgba(255,255,255,.76);
+            box-shadow: 0 8px 0 rgba(34,56,67,.07);
+            transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease, background .25s ease;
+        }
+
+        .ttcr-qa-item:hover {
+            transform: translateX(5px);
+            border-color: rgba(34,56,67,.32);
+            box-shadow: -5px 8px 0 rgba(239,128,108,.12);
+        }
+
+        .ttcr-qa-item[open] {
+            border-color: var(--qa-latte);
+            background: #fffdf8;
+        }
+
+        .ttcr-qa-item summary {
+            display: grid;
+            grid-template-columns: 48px minmax(0,1fr) 34px;
+            gap: 14px;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .ttcr-qa-item summary::-webkit-details-marker { display: none; }
+
+        .ttcr-qa-number {
+            display: grid;
+            place-items: center;
+            width: 45px;
+            height: 45px;
+            border: 2px solid var(--qa-ink);
+            border-radius: 50% 48% 52% 46%;
+            background: #f4c982;
+            font-family: "Montserrat", sans-serif;
+            font-size: .82rem;
+            font-weight: 800;
+            transform: rotate(-6deg);
+            transition: transform .3s ease;
+        }
+
+        .ttcr-qa-item:nth-child(even) .ttcr-qa-number {
+            background: #add0c3;
+            transform: rotate(6deg);
+        }
+
+        .ttcr-qa-item:nth-child(3n) .ttcr-qa-number { background: #f6a998; }
+
+        .ttcr-qa-item[open] .ttcr-qa-number {
+            transform: rotate(12deg) scale(1.08);
+        }
+
+        .ttcr-qa-question {
+            margin: 0;
+            font-size: 1.08rem;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .ttcr-qa-toggle {
+            position: relative;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--qa-ink);
+            transition: transform .3s ease, background .3s ease;
+        }
+
+        .ttcr-qa-toggle::before,
+        .ttcr-qa-toggle::after {
+            content: "";
+            position: absolute;
+            left: 9px;
+            top: 15px;
+            width: 14px;
+            height: 2px;
+            border-radius: 2px;
+            background: #fff;
+        }
+
+        .ttcr-qa-toggle::after { transform: rotate(90deg); }
+
+        .ttcr-qa-item[open] .ttcr-qa-toggle {
+            transform: rotate(45deg);
+            background: var(--qa-coral);
+        }
+
+        .ttcr-qa-answer {
+            padding: 0 72px 21px 82px;
+            color: #52636a;
+            line-height: 1.85;
+            animation: ttcrQaAnswer .35s ease both;
+        }
+
+        .ttcr-qa-answer p { margin: 0; }
+
+        @keyframes ttcrQaFloat {
+            0%,100% { transform: translateY(0) rotate(-1deg); }
+            50% { transform: translateY(-13px) rotate(1deg); }
+        }
+
+        @keyframes ttcrQaSteam {
+            0% { transform: translateY(18px) scale(.7); opacity: 0; }
+            35% { opacity: .7; }
+            100% { transform: translateY(-32px) scale(1.12); opacity: 0; }
+        }
+
+        @keyframes ttcrQaBean {
+            0%,100% { margin-top: 0; }
+            50% { margin-top: -15px; }
+        }
+
+        @keyframes ttcrQaSpeech {
+            0%,100% { transform: translateY(0) rotate(2deg); }
+            50% { transform: translateY(-7px) rotate(-1deg); }
+        }
+
+        @keyframes ttcrQaBlob {
+            0%,100% { border-radius: 46% 54% 58% 42% / 52% 42% 58% 48%; transform: rotate(0); }
+            50% { border-radius: 57% 43% 39% 61% / 42% 58% 42% 58%; transform: rotate(5deg); }
+        }
+
+        @keyframes ttcrQaEyes {
+            0%,46%,50%,100% { transform: scaleY(1); }
+            48% { transform: scaleY(.12); }
+        }
+
+        @keyframes ttcrQaBlink {
+            0%,100% { opacity: .35; transform: scale(.8); }
+            50% { opacity: 1; transform: scale(1.15); }
+        }
+
+        @keyframes ttcrQaAnswer {
+            from { opacity: 0; transform: translateY(-8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 900px) {
+            .ttcr-coffee-qa { padding: 78px 20px 88px; }
+            .ttcr-qa-stage { grid-template-columns: 1fr; gap: 22px; }
+            .ttcr-qa-character-zone { min-height: 390px; }
+            .ttcr-qa-speech { right: 10%; top: 4px; }
+        }
+
+        @media (max-width: 560px) {
+            .ttcr-coffee-qa { padding: 62px 15px 72px; }
+            .ttcr-qa-heading { margin-bottom: 35px; }
+            .ttcr-qa-intro { font-size: .96rem; }
+            .ttcr-qa-character-zone { min-height: 350px; transform: scale(.88); margin: -20px -18px; }
+            .ttcr-qa-speech { right: 0; top: 0; font-size: .9rem; }
+            .ttcr-qa-item summary { grid-template-columns: 40px minmax(0,1fr) 28px; gap: 10px; padding: 15px 14px; }
+            .ttcr-qa-number { width: 38px; height: 38px; }
+            .ttcr-qa-question { font-size: .98rem; }
+            .ttcr-qa-toggle { width: 28px; height: 28px; }
+            .ttcr-qa-toggle::before, .ttcr-qa-toggle::after { left: 8px; top: 13px; width: 12px; }
+            .ttcr-qa-answer { padding: 0 17px 18px 64px; font-size: .94rem; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .ttcr-coffee-qa *, .ttcr-coffee-qa *::before, .ttcr-coffee-qa *::after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+            }
         }
     </style>
-    <section class="ttcr-search-guide" aria-labelledby="ttcr-search-guide-title">
-        <div class="ttcr-search-guide-inner">
-            <h2 id="ttcr-search-guide-title">台中不限時咖啡廳、深夜聚會與場地租借</h2>
-            <p class="ttcr-search-intro">同齊咖吡 TTCR COFFEE 在台中北屯、西區與南區打造適合工作、閱讀、會議與聚會的第三空間，提供自家烘焙咖啡、免費 Wi-Fi，以及多功能場地預約服務。</p>
-            <div class="ttcr-faq-list">
-                <article class="ttcr-faq-item">
-                    <h3>台中哪裡有不限時、營業到深夜的咖啡廳？</h3>
-                    <p>同齊咖吡在台中北屯、西區與南區設有門市，提供適合長時間工作、閱讀及聚會的咖啡空間；各門市營業時間與臨時調整請以官方最新公告為準。</p>
-                </article>
-                <article class="ttcr-faq-item">
-                    <h3>同齊咖吡可以租借場地嗎？</h3>
-                    <p>可以。店內提供多功能場地租借與預約服務，適合商務會議、講座、社區活動及私人聚會，可透過網站場地預約頁面洽詢。</p>
-                </article>
-                <article class="ttcr-faq-item">
-                    <h3>同齊咖吡在台中有哪些門市？</h3>
-                    <p>目前設有北屯旗艦店（熱河路二段226號）、西區精忠店（精忠街36號）及南區忠明南店（忠明南路576號）。</p>
-                </article>
-                <article class="ttcr-faq-item">
-                    <h3>適合工作、開會或舉辦活動嗎？</h3>
-                    <p>適合。門市提供免費 Wi-Fi 與商務辦公友善環境，也有多功能空間可預約，適合個人工作、小型會議與團體活動。</p>
-                </article>
-                <article class="ttcr-faq-item">
-                    <h3>如何預約座位或活動場地？</h3>
-                    <p>可由官網的立即訂位或場地預約入口提出需求，也可加入官方 LINE 詢問門市座位與場地檔期。</p>
-                </article>
+
+    <section class="ttcr-coffee-qa" aria-labelledby="ttcr-search-guide-title">
+        <div class="ttcr-coffee-qa-inner">
+            <header class="ttcr-qa-heading">
+                <div class="ttcr-qa-kicker">COFFEE Q&amp;A TIME</div>
+                <h2 id="ttcr-search-guide-title">咖啡時間，問題也要有好答案</h2>
+                <p class="ttcr-qa-intro">想找台中不限時深夜咖啡廳、工作空間或聚會場地？讓同齊咖吡的小咖啡杯陪你快速找到答案。</p>
+            </header>
+
+            <div class="ttcr-qa-stage">
+                <div class="ttcr-qa-character-zone" aria-hidden="true">
+                    <div class="ttcr-qa-speech">點一題，<br>喝一口答案吧！</div>
+                    <span class="ttcr-qa-bean ttcr-qa-bean-one"></span>
+                    <span class="ttcr-qa-bean ttcr-qa-bean-two"></span>
+                    <span class="ttcr-qa-bean ttcr-qa-bean-three"></span>
+                    <div class="ttcr-qa-cup-wrap">
+                        <div class="ttcr-qa-steam"><span></span><span></span><span></span></div>
+                        <div class="ttcr-qa-mug">
+                            <span class="ttcr-qa-coffee"></span>
+                            <span class="ttcr-qa-eye ttcr-qa-eye-left"></span>
+                            <span class="ttcr-qa-eye ttcr-qa-eye-right"></span>
+                            <span class="ttcr-qa-cheek ttcr-qa-cheek-left"></span>
+                            <span class="ttcr-qa-cheek ttcr-qa-cheek-right"></span>
+                            <span class="ttcr-qa-smile"></span>
+                        </div>
+                        <div class="ttcr-qa-saucer"></div>
+                    </div>
+                </div>
+
+                <div class="ttcr-qa-list">
+                    <details class="ttcr-qa-item" open>
+                        <summary>
+                            <span class="ttcr-qa-number">01</span>
+                            <h3 class="ttcr-qa-question">台中哪裡有不限時、營業到深夜的咖啡廳？</h3>
+                            <span class="ttcr-qa-toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="ttcr-qa-answer"><p>同齊咖吡在台中北屯、西區與南區設有門市，提供適合長時間工作、閱讀及聚會的咖啡空間；各門市營業時間與臨時調整請以官方最新公告為準。</p></div>
+                    </details>
+
+                    <details class="ttcr-qa-item">
+                        <summary>
+                            <span class="ttcr-qa-number">02</span>
+                            <h3 class="ttcr-qa-question">同齊咖吡可以租借場地嗎？</h3>
+                            <span class="ttcr-qa-toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="ttcr-qa-answer"><p>可以。店內提供多功能場地租借與預約服務，適合商務會議、講座、社區活動及私人聚會，可透過網站場地預約頁面洽詢。</p></div>
+                    </details>
+
+                    <details class="ttcr-qa-item">
+                        <summary>
+                            <span class="ttcr-qa-number">03</span>
+                            <h3 class="ttcr-qa-question">同齊咖吡在台中有哪些門市？</h3>
+                            <span class="ttcr-qa-toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="ttcr-qa-answer"><p>目前設有北屯旗艦店（熱河路二段226號）、西區精忠店（精忠街36號）及南區忠明南店（忠明南路576號）。</p></div>
+                    </details>
+
+                    <details class="ttcr-qa-item">
+                        <summary>
+                            <span class="ttcr-qa-number">04</span>
+                            <h3 class="ttcr-qa-question">適合工作、開會或舉辦活動嗎？</h3>
+                            <span class="ttcr-qa-toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="ttcr-qa-answer"><p>適合。門市提供免費 Wi-Fi 與商務辦公友善環境，也有多功能空間可預約，適合個人工作、小型會議與團體活動。</p></div>
+                    </details>
+
+                    <details class="ttcr-qa-item">
+                        <summary>
+                            <span class="ttcr-qa-number">05</span>
+                            <h3 class="ttcr-qa-question">如何預約座位或活動場地？</h3>
+                            <span class="ttcr-qa-toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="ttcr-qa-answer"><p>可由官網的立即訂位或場地預約入口提出需求，也可加入官方 LINE 詢問門市座位與場地檔期。</p></div>
+                    </details>
+                </div>
             </div>
         </div>
     </section>
