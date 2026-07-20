@@ -2182,7 +2182,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             font-size: .9rem;
             line-height: 1.7;
         }
-        @media (max-width: 900px) {
+        @media (max-width: 1080px) {
             .space-home-hero { margin-top: 125px; padding-top: 42px; }
             .space-discovery-form { grid-template-columns: 1fr 1fr; }
             .space-search-field:nth-child(2) { border-right: 0; }
@@ -2553,6 +2553,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .space-branch-story--reverse .space-branch-story__media { order: 2; }
         .space-branch-story__media {
             position: relative;
+            isolation: isolate;
             margin: 0;
         }
         .space-branch-story__media::after {
@@ -2583,7 +2584,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             box-shadow: 0 18px 42px rgba(34,56,67,.12);
         }
         .space-branch-story__media figcaption {
+            position: relative;
+            z-index: 2;
+            display: inline-block;
             margin-top: 12px;
+            padding: 3px 8px 3px 0;
+            background: #fff;
             color: #87959a;
             font-size: .75rem;
             letter-spacing: .06em;
