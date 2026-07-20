@@ -2021,23 +2021,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 </style>
 <style id="ttcr-home-motion-style">
-    .同齊咖吡index::before {
-        content: "TTCR";
-        position: absolute;
-        left: 50%;
-        top: 49%;
-        z-index: 3;
-        transform: translate(-50%, -50%);
-        color: rgba(255,255,255,.09);
-        font-family: "Montserrat", sans-serif;
-        font-size: clamp(9rem, 28vw, 26rem);
-        font-weight: 900;
-        letter-spacing: -.07em;
-        line-height: .8;
-        white-space: nowrap;
-        pointer-events: none;
-        animation: ttcr-hero-word-drift 12s ease-in-out infinite alternate;
-    }
     .同齊咖吡index .slide {
         transform: scale(1.075);
         transition: opacity 1.5s ease-in-out, transform 6s cubic-bezier(.2,.7,.2,1), background-position .1s linear;
@@ -2156,10 +2139,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @keyframes ttcr-hero-reveal {
         from { opacity: 0; transform: translateY(32px); }
         to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes ttcr-hero-word-drift {
-        from { transform: translate(-52%,-50%) rotate(-1deg); }
-        to { transform: translate(-48%,-50%) rotate(1deg); }
     }
     @keyframes ttcr-bean-float {
         from { translate: 0 -8px; rotate: -3deg; }
