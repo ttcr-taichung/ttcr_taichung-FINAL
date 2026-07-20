@@ -698,124 +698,307 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             margin: 0;
         }
 
-        /* 最新消息區塊 */
+        /* 最新消息區塊：TTCR News Line Up */
         .news-section {
-            padding: 80px 0;
-            background: #fafaf8;
-            display: flex;
-            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: clamp(5.5rem, 9vw, 8.5rem) 0 clamp(5rem, 8vw, 7rem);
+            background:
+                radial-gradient(circle at 14% 16%, rgba(242, 207, 47, .23) 0 5rem, transparent 5.1rem),
+                radial-gradient(circle at 91% 86%, rgba(172, 191, 200, .28) 0 7rem, transparent 7.1rem),
+                #f5f2e8;
+        }
+
+        .news-section::after {
+            content: "";
+            position: absolute;
+            left: -4%;
+            right: -4%;
+            bottom: 1.4rem;
+            height: 4rem;
+            opacity: .48;
+            background-image: radial-gradient(circle, #fff 0 4px, transparent 5px);
+            background-size: 24px 24px;
+            transform: rotate(-2deg);
+            pointer-events: none;
+        }
+
+        .news-section .container {
+            width: 100%;
+            max-width: none;
+            padding: 0;
+        }
+
+        .news-section-header {
+            width: min(1320px, 90%);
+            margin: 0 auto clamp(2.5rem, 5vw, 4.5rem);
+            text-align: center;
+        }
+
+        .news-section-kicker {
+            margin: 0 0 .8rem;
+            color: #71828a;
+            font-family: Montserrat, sans-serif;
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .24em;
         }
 
         .news-section-title {
-            font-family: var(--font-serif);
-            font-size: 3rem;
-            font-weight: 900;
-            text-align: center;
+            margin: 0;
             color: var(--brand-blue);
-            margin-bottom: 3rem;
+            font-family: Montserrat, var(--font-sans);
+            font-size: clamp(3.2rem, 7.4vw, 7.4rem);
+            font-weight: 900;
+            line-height: .9;
+            letter-spacing: -.06em;
+        }
+
+        .news-section-intro {
+            max-width: 38rem;
+            margin: 1.3rem auto 0;
+            color: #66777f;
+            font-size: 1rem;
+            line-height: 1.8;
+            letter-spacing: .04em;
+        }
+
+        .news-carousel {
+            position: relative;
         }
 
         .news-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-            justify-items: center;
-            max-width: 1400px;
-            margin-left: auto;
-            margin-right: auto;
+            display: flex;
+            gap: clamp(1rem, 2vw, 2rem);
+            width: 100%;
+            margin: 0;
+            padding: .8rem max(5vw, calc((100vw - 1420px) / 2)) 2rem;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
         }
+
+        .news-grid::-webkit-scrollbar { display: none; }
 
         .news-card {
-            background: white;
-            border-radius: 12px;
+            --news-card-bg: #dfe7ea;
+            position: relative;
+            flex: 0 0 clamp(340px, 39vw, 590px);
+            min-height: clamp(440px, 48vw, 610px);
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
+            border: 1px solid rgba(34, 56, 67, .1);
+            border-radius: clamp(1.7rem, 3vw, 3rem);
+            background: var(--news-card-bg);
+            color: var(--brand-blue);
             text-decoration: none;
-            color: inherit;
-            display: block;
+            scroll-snap-align: center;
+            box-shadow: 0 18px 45px rgba(34, 56, 67, .12);
+            transition: transform .55s cubic-bezier(.22, 1, .36, 1), box-shadow .55s ease;
         }
+
+        .news-card:nth-child(2) { --news-card-bg: #223843; color: #fff; }
+        .news-card:nth-child(3) { --news-card-bg: #f2cf2f; }
+        .news-card:nth-child(4) { --news-card-bg: #fff; }
 
         .news-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(34, 56, 67, 0.15);
+            transform: translateY(-12px) rotate(-.45deg);
+            box-shadow: 0 30px 65px rgba(34, 56, 67, .2);
         }
 
+        .news-card-topline {
+            position: absolute;
+            z-index: 3;
+            top: 1.45rem;
+            left: 1.6rem;
+            right: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            font-family: Montserrat, sans-serif;
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .14em;
+        }
+
+        .news-date-badge {
+            position: static;
+            padding: .58rem .85rem;
+            border: 1px solid currentColor;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .76);
+            color: var(--brand-blue);
+            backdrop-filter: blur(8px);
+        }
+
+        .news-card:nth-child(2) .news-date-badge {
+            background: rgba(255, 255, 255, .12);
+            color: #fff;
+        }
+
+        .news-card-no { opacity: .7; }
+
         .news-card-image {
-            position: relative;
+            position: absolute;
+            inset: 0;
             width: 100%;
-            padding-top: 66.67%;
+            height: 100%;
+            padding: 0;
             overflow: hidden;
-            background: #e8e8e8;
+            background: transparent;
+        }
+
+        .news-card-image::after {
+            content: "";
+            position: absolute;
+            inset: 38% 0 0;
+            background: linear-gradient(180deg, transparent, var(--news-card-bg) 76%);
+            pointer-events: none;
         }
 
         .news-card-image img {
             position: absolute;
-            top: 0;
-            left: 0;
+            inset: 0;
             width: 100%;
-            height: 100%;
+            height: 72%;
             object-fit: cover;
-            transition: transform 0.4s ease;
+            transform: scale(1.01);
+            transition: transform 1s cubic-bezier(.22, 1, .36, 1), filter .5s ease;
         }
 
         .news-card:hover .news-card-image img {
-            transform: scale(1.08);
-        }
-
-        .news-date-badge {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            background: rgba(34, 56, 67, 0.9);
-            color: white;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
+            transform: scale(1.075);
+            filter: saturate(1.06);
         }
 
         .news-card-content {
-            padding: 25px 20px;
+            position: absolute;
+            z-index: 3;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 2.1rem clamp(1.4rem, 3vw, 2.5rem) 2.2rem;
+        }
+
+        .news-card-category {
+            display: block;
+            margin-bottom: .75rem;
+            font-family: Montserrat, sans-serif;
+            font-size: .72rem;
+            font-weight: 800;
+            letter-spacing: .17em;
+            opacity: .68;
         }
 
         .news-card-title {
-            font-size: 1.05rem;
-            line-height: 1.6;
-            color: #223843;
+            max-width: calc(100% - 4rem);
             margin: 0;
-            font-weight: 600;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+            color: inherit;
+            font-family: var(--font-serif);
+            font-size: clamp(1.45rem, 2.4vw, 2.35rem);
+            font-weight: 900;
+            line-height: 1.35;
+            letter-spacing: -.025em;
+            display: block;
+            overflow: visible;
         }
 
+        .news-card-plus {
+            position: absolute;
+            right: clamp(1.35rem, 3vw, 2.2rem);
+            bottom: 2rem;
+            display: grid;
+            place-items: center;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 1rem;
+            background: var(--brand-blue);
+            color: #fff;
+            font-family: Montserrat, sans-serif;
+            font-size: 1.7rem;
+            line-height: 1;
+            box-shadow: 0 10px 24px rgba(34, 56, 67, .18);
+            transition: transform .4s cubic-bezier(.22, 1, .36, 1), background .3s ease, color .3s ease;
+        }
+
+        .news-card:nth-child(2) .news-card-plus {
+            background: #f2cf2f;
+            color: var(--brand-blue);
+        }
+
+        .news-card:hover .news-card-plus { transform: rotate(90deg) scale(1.08); }
+
+        .news-carousel-controls {
+            display: flex;
+            justify-content: center;
+            gap: .75rem;
+            margin-top: 1.1rem;
+        }
+
+        .news-carousel-btn {
+            display: grid;
+            place-items: center;
+            width: 3.35rem;
+            height: 3.35rem;
+            border: 0;
+            border-radius: 1rem;
+            background: var(--brand-blue);
+            color: #fff;
+            font-size: 1.4rem;
+            cursor: pointer;
+            box-shadow: 0 10px 22px rgba(34, 56, 67, .16);
+            transition: transform .25s ease, opacity .25s ease, background .25s ease;
+        }
+
+        .news-carousel-btn:hover { transform: translateY(-3px); background: #31505f; }
+        .news-carousel-btn:disabled { opacity: .32; cursor: default; transform: none; }
+
         .news-more-wrapper {
+            position: relative;
+            z-index: 2;
+            margin-top: 2.3rem;
             text-align: center;
-            margin-top: 50px;
         }
 
         .news-more-btn {
-            display: inline-block;
-            padding: 15px 40px;
-            background: #223843;
-            color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 3.5rem;
+            padding: 0 1.7rem;
+            border: 1.5px solid var(--brand-blue);
+            border-radius: 999px;
+            background: transparent;
+            color: var(--brand-blue);
+            font-size: .92rem;
+            font-weight: 700;
+            letter-spacing: .12em;
             text-decoration: none;
-            border-radius: 30px;
-            font-size: 1rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(34, 56, 67, 0.2);
+            transition: color .3s ease, background .3s ease, transform .3s ease;
         }
 
         .news-more-btn:hover {
-            background: #2c4a5a;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(34, 56, 67, 0.3);
+            background: var(--brand-blue);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 720px) {
+            .news-section { padding-top: 4.6rem; }
+            .news-section-title { font-size: clamp(2.8rem, 16vw, 4.2rem); }
+            .news-section-intro { padding: 0 1rem; font-size: .92rem; }
+            .news-grid { gap: .9rem; padding-inline: 1rem; }
+            .news-card {
+                flex-basis: min(84vw, 390px);
+                min-height: 485px;
+                border-radius: 1.7rem;
+            }
+            .news-card-title { font-size: 1.4rem; }
+            .news-card-topline { top: 1rem; left: 1rem; right: 1rem; }
+            .news-card-content { padding: 1.5rem 1.2rem 1.5rem; }
+            .news-card-plus { right: 1.2rem; bottom: 1.35rem; width: 2.7rem; height: 2.7rem; }
         }
 
         /* Services Section */
@@ -2750,57 +2933,119 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </section>
 
     <!-- 最新消息區塊 -->
-    <section class="news-section">
+    <section class="news-section" aria-labelledby="news-lineup-title">
         <div class="container">
-            <h2 class="news-section-title">NEWS</h2>
-            
-            <div class="news-grid">
-                <a href="news.html#news-1" class="news-card">
-                    <div class="news-card-image">
-                        <img src="news-vip.jpg" alt="尊爵會員限時招募" style="object-fit: cover; outline: none;">
-                        <div class="news-date-badge" style="padding-bottom: 6px;">2026.02.01</div>
-                    </div>
-                    <div class="news-card-content">
-                        <h3 class="news-card-title">👑 作伙同行·即刻啟程｜尊爵會員限時招募</h3>
-                    </div>
-                </a>
+            <header class="news-section-header">
+                <p class="news-section-kicker">TTCR COFFEE · LATEST STORIES</p>
+                <h2 class="news-section-title" id="news-lineup-title">NEWS LINE UP</h2>
+                <p class="news-section-intro">滑動探索同齊咖吡的最新活動、限定企劃與季節風味；點擊卡片即可查看完整活動內容。</p>
+            </header>
 
-                <a href="news.html#news-2" class="news-card">
-                    <div class="news-card-image">
-                        <img src="news-christmas.jpg" alt="聖誕包場專案" style="outline: none;">
-                        <div class="news-date-badge" style="">2025.12.25</div>
-                    </div>
-                    <div class="news-card-content">
-                        <h3 class="news-card-title">🎄 聖誕包場專案｜在同齊咖啡感受溫暖</h3>
-                    </div>
-                </a>
+            <div class="news-carousel" aria-label="最新活動輪播">
+                <div class="news-grid" id="ttcr-news-track">
+                    <a href="news.html#news-1" class="news-card" aria-label="查看尊爵會員限時招募活動">
+                        <div class="news-card-topline">
+                            <span class="news-date-badge">2026.02.01</span>
+                            <span class="news-card-no">NEWS 01</span>
+                        </div>
+                        <div class="news-card-image">
+                            <img src="news-vip.jpg" alt="尊爵會員限時招募" loading="lazy">
+                        </div>
+                        <div class="news-card-content">
+                            <span class="news-card-category">MEMBERSHIP</span>
+                            <h3 class="news-card-title">作伙同行・即刻啟程｜尊爵會員限時招募</h3>
+                            <span class="news-card-plus" aria-hidden="true">＋</span>
+                        </div>
+                    </a>
 
-                <a href="news.html#news-3" class="news-card">
-                    <div class="news-card-image">
-                        <img src="chili-focaccia.jpg" alt="剝皮辣椒燻雞佛卡夏" style="">
-                        <div class="news-date-badge" style="">2025.01.05</div>
-                    </div>
-                    <div class="news-card-content">
-                        <h3 class="news-card-title">🍞 剝皮辣椒燻雞佛卡夏｜獨享時光，也要好好對自己辣一下</h3>
-                    </div>
-                </a>
+                    <a href="news.html#news-2" class="news-card" aria-label="查看聖誕包場專案">
+                        <div class="news-card-topline">
+                            <span class="news-date-badge">2025.12.25</span>
+                            <span class="news-card-no">NEWS 02</span>
+                        </div>
+                        <div class="news-card-image">
+                            <img src="news-christmas.jpg" alt="聖誕包場專案" loading="lazy">
+                        </div>
+                        <div class="news-card-content">
+                            <span class="news-card-category">SPACE EVENT</span>
+                            <h3 class="news-card-title">聖誕包場專案｜在同齊咖吡感受溫暖</h3>
+                            <span class="news-card-plus" aria-hidden="true">＋</span>
+                        </div>
+                    </a>
 
-                <a href="news.html#news-4" class="news-card">
-                    <div class="news-card-image">
-                        <img src="osmanthus-latte.jpg" alt="春季新品上市" style="object-fit: cover; outline: none;">
-                        <div class="news-date-badge" style="outline: none;">2026.05.01</div>
-                    </div>
-                    <div class="news-card-content">
-                        <h3 class="news-card-title" style="padding-bottom: 0px; outline: none;">🌸 春季新品上市｜桂花拿鐵限定登場</h3>
-                    </div>
-                </a>
+                    <a href="news.html#news-3" class="news-card" aria-label="查看剝皮辣椒燻雞佛卡夏活動">
+                        <div class="news-card-topline">
+                            <span class="news-date-badge">2025.01.05</span>
+                            <span class="news-card-no">NEWS 03</span>
+                        </div>
+                        <div class="news-card-image">
+                            <img src="chili-focaccia.jpg" alt="剝皮辣椒燻雞佛卡夏" loading="lazy">
+                        </div>
+                        <div class="news-card-content">
+                            <span class="news-card-category">SPECIAL CUISINE</span>
+                            <h3 class="news-card-title">剝皮辣椒燻雞佛卡夏｜獨享時光也要好好吃</h3>
+                            <span class="news-card-plus" aria-hidden="true">＋</span>
+                        </div>
+                    </a>
+
+                    <a href="news.html#news-4" class="news-card" aria-label="查看桂花拿鐵限定活動">
+                        <div class="news-card-topline">
+                            <span class="news-date-badge">2026.05.01</span>
+                            <span class="news-card-no">NEWS 04</span>
+                        </div>
+                        <div class="news-card-image">
+                            <img src="osmanthus-latte.jpg" alt="春季新品桂花拿鐵" loading="lazy">
+                        </div>
+                        <div class="news-card-content">
+                            <span class="news-card-category">SEASONAL DRINK</span>
+                            <h3 class="news-card-title">春季新品上市｜桂花拿鐵限定登場</h3>
+                            <span class="news-card-plus" aria-hidden="true">＋</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="news-carousel-controls" aria-label="輪播控制">
+                    <button class="news-carousel-btn news-carousel-btn--prev" type="button" aria-label="上一則活動">‹</button>
+                    <button class="news-carousel-btn news-carousel-btn--next" type="button" aria-label="下一則活動">›</button>
+                </div>
             </div>
 
             <div class="news-more-wrapper">
-                <a href="news.html" class="news-more-btn">查看更多消息</a>
+                <a href="news.html" class="news-more-btn">查看全部活動</a>
             </div>
         </div>
     </section>
+
+    <script id="ttcr-news-carousel-script">
+    (function () {
+        var track = document.getElementById('ttcr-news-track');
+        var prev = document.querySelector('.news-carousel-btn--prev');
+        var next = document.querySelector('.news-carousel-btn--next');
+        if (!track || !prev || !next) return;
+
+        function step() {
+            var card = track.querySelector('.news-card');
+            var gap = parseFloat(getComputedStyle(track).gap) || 16;
+            return card ? card.getBoundingClientRect().width + gap : track.clientWidth * .82;
+        }
+
+        function update() {
+            var max = track.scrollWidth - track.clientWidth;
+            prev.disabled = track.scrollLeft <= 4;
+            next.disabled = track.scrollLeft >= max - 4;
+        }
+
+        prev.addEventListener('click', function () {
+            track.scrollBy({ left: -step(), behavior: 'smooth' });
+        });
+        next.addEventListener('click', function () {
+            track.scrollBy({ left: step(), behavior: 'smooth' });
+        });
+        track.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+        update();
+    })();
+    </script>
 
     <!-- 多樣化服務區塊 -->
     <section class="services-section">
