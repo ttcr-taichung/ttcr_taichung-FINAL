@@ -2019,7 +2019,196 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     position: relative;
     outline: none;
   }
-</style></head>
+</style>
+<style id="ttcr-home-motion-style">
+    .同齊咖吡index::before {
+        content: "TTCR";
+        position: absolute;
+        left: 50%;
+        top: 49%;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+        color: rgba(255,255,255,.09);
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(9rem, 28vw, 26rem);
+        font-weight: 900;
+        letter-spacing: -.07em;
+        line-height: .8;
+        white-space: nowrap;
+        pointer-events: none;
+        animation: ttcr-hero-word-drift 12s ease-in-out infinite alternate;
+    }
+    .同齊咖吡index .slide {
+        transform: scale(1.075);
+        transition: opacity 1.5s ease-in-out, transform 6s cubic-bezier(.2,.7,.2,1), background-position .1s linear;
+        will-change: opacity, transform, background-position;
+    }
+    .同齊咖吡index .slide.active { transform: scale(1); }
+    .ttcr-motion-ready .hero-content .serif-italic,
+    .ttcr-motion-ready .hero-content .main-title,
+    .ttcr-motion-ready .hero-content .hero-btns,
+    .ttcr-motion-ready .scroll-indicator {
+        opacity: 0;
+        animation: ttcr-hero-reveal .9s cubic-bezier(.2,.75,.25,1) forwards;
+    }
+    .ttcr-motion-ready .hero-content .serif-italic { animation-delay: .08s; }
+    .ttcr-motion-ready .hero-content .main-title { animation-delay: .24s; }
+    .ttcr-motion-ready .hero-content .hero-btns { animation-delay: .48s; }
+    .ttcr-motion-ready .scroll-indicator { animation-delay: .72s; }
+
+    .ttcr-motion-beans {
+        position: absolute;
+        inset: 0;
+        z-index: 5;
+        overflow: hidden;
+        pointer-events: none;
+    }
+    .ttcr-bean-wrap {
+        position: absolute;
+        display: block;
+        opacity: .34;
+        will-change: transform;
+    }
+    .ttcr-bean-wrap--one { left: 7%; top: 25%; }
+    .ttcr-bean-wrap--two { right: 8%; top: 31%; }
+    .ttcr-bean-wrap--three { right: 19%; bottom: 12%; opacity: .22; }
+    .ttcr-bean {
+        position: relative;
+        display: block;
+        width: clamp(34px,4vw,62px);
+        aspect-ratio: .72;
+        border: 2px solid rgba(255,255,255,.78);
+        border-radius: 55% 45% 55% 45%;
+        transform: rotate(34deg);
+        animation: ttcr-bean-float 5.8s ease-in-out infinite alternate;
+    }
+    .ttcr-bean-wrap--two .ttcr-bean { animation-delay: -2s; animation-duration: 7.2s; transform: rotate(-28deg); }
+    .ttcr-bean-wrap--three .ttcr-bean { animation-delay: -4s; animation-duration: 6.4s; }
+    .ttcr-bean::after {
+        content: "";
+        position: absolute;
+        left: 48%;
+        top: 10%;
+        width: 2px;
+        height: 80%;
+        border-radius: 999px;
+        background: rgba(255,255,255,.7);
+        transform: rotate(12deg);
+    }
+
+    .ttcr-motion-marquee {
+        position: relative;
+        z-index: 4;
+        overflow: hidden;
+        padding: 13px 0 12px;
+        border-top: 1px solid rgba(255,255,255,.15);
+        border-bottom: 1px solid rgba(255,255,255,.15);
+        background: var(--brand-blue);
+        color: #fff;
+    }
+    .ttcr-motion-marquee__track {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+        width: max-content;
+        animation: ttcr-marquee 24s linear infinite;
+        font-family: "Montserrat","Noto Sans TC",sans-serif;
+        font-size: .86rem;
+        font-weight: 700;
+        letter-spacing: .15em;
+        white-space: nowrap;
+    }
+    .ttcr-motion-marquee__track i {
+        color: #d7b64d;
+        font-size: .58rem;
+        font-style: normal;
+    }
+
+    .ttcr-motion-ready .ttcr-reveal {
+        opacity: 0;
+        transform: translateY(48px);
+        transition: opacity .85s cubic-bezier(.2,.7,.2,1), transform .85s cubic-bezier(.2,.7,.2,1);
+        transition-delay: var(--ttcr-motion-delay, 0ms);
+    }
+    .ttcr-motion-ready .ttcr-reveal.ttcr-inview {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .ttcr-motion-ready .drink-item img,
+    .ttcr-motion-ready .news-card-image img,
+    .ttcr-motion-ready .service-card-image img {
+        transform: scale(1.1);
+        transition: transform 1.15s cubic-bezier(.2,.7,.2,1);
+    }
+    .ttcr-motion-ready .ttcr-inview img { transform: scale(1); }
+    .ttcr-motion-ready .drink-item:hover img,
+    .ttcr-motion-ready .news-card:hover .news-card-image img,
+    .ttcr-motion-ready .service-card:hover .service-card-image img {
+        transform: scale(1.075);
+    }
+    .ttcr-motion-ready .top-badge {
+        animation: ttcr-badge-bob 2.8s ease-in-out infinite;
+    }
+    .ttcr-motion-ready .ttcr-faq-cup {
+        animation: ttcr-cup-bob 4s ease-in-out infinite;
+    }
+
+    @keyframes ttcr-hero-reveal {
+        from { opacity: 0; transform: translateY(32px); filter: blur(5px); }
+        to { opacity: 1; transform: translateY(0); filter: blur(0); }
+    }
+    @keyframes ttcr-hero-word-drift {
+        from { transform: translate(-52%,-50%) rotate(-1deg); }
+        to { transform: translate(-48%,-50%) rotate(1deg); }
+    }
+    @keyframes ttcr-bean-float {
+        from { translate: 0 -8px; rotate: -3deg; }
+        to { translate: 0 12px; rotate: 5deg; }
+    }
+    @keyframes ttcr-marquee {
+        to { transform: translateX(-50%); }
+    }
+    @keyframes ttcr-badge-bob {
+        0%,100% { transform: rotate(-3deg) translateY(0); }
+        50% { transform: rotate(3deg) translateY(-5px); }
+    }
+    @keyframes ttcr-cup-bob {
+        0%,100% { transform: translateY(0) rotate(-1deg); }
+        50% { transform: translateY(-7px) rotate(2deg); }
+    }
+
+    @media (max-width: 768px) {
+        .同齊咖吡index::before { font-size: 42vw; opacity: .8; }
+        .ttcr-bean-wrap--one { left: 3%; top: 20%; }
+        .ttcr-bean-wrap--two { right: 3%; top: 26%; }
+        .ttcr-bean-wrap--three { display: none; }
+        .ttcr-motion-marquee { padding: 11px 0; }
+        .ttcr-motion-marquee__track { gap: 25px; font-size: .75rem; }
+        .ttcr-motion-ready .ttcr-reveal { transform: translateY(30px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .同齊咖吡index::before,
+        .ttcr-bean,
+        .ttcr-motion-marquee__track,
+        .ttcr-motion-ready .top-badge,
+        .ttcr-motion-ready .ttcr-faq-cup {
+            animation: none !important;
+        }
+        .同齊咖吡index .slide,
+        .ttcr-motion-ready .ttcr-reveal,
+        .ttcr-motion-ready .hero-content .serif-italic,
+        .ttcr-motion-ready .hero-content .main-title,
+        .ttcr-motion-ready .hero-content .hero-btns,
+        .ttcr-motion-ready .scroll-indicator {
+            opacity: 1 !important;
+            transform: none !important;
+            filter: none !important;
+            animation: none !important;
+            transition: none !important;
+        }
+    }
+</style>
+</head>
 <body style="">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJTCF662" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -2048,6 +2237,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="slide slide-2 active"></div>
         <div class="slide slide-3"></div>
 
+        <div class="ttcr-motion-beans" aria-hidden="true">
+            <span class="ttcr-bean-wrap ttcr-bean-wrap--one"><i class="ttcr-bean"></i></span>
+            <span class="ttcr-bean-wrap ttcr-bean-wrap--two"><i class="ttcr-bean"></i></span>
+            <span class="ttcr-bean-wrap ttcr-bean-wrap--three"><i class="ttcr-bean"></i></span>
+        </div>
+
         <div class="hero-content">
             <p class="serif-italic">Coffee is better when we are together.</p>
             <h1 class="main-title">台中不限時深夜咖啡廳<br>一杯咖啡，千種連結</h1>
@@ -2060,6 +2255,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="scroll-indicator" onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})">
             <span>Scroll</span>
             <div class="scroll-arrow"></div>
+        </div>
+    </div>
+
+    <div class="ttcr-motion-marquee" aria-hidden="true">
+        <div class="ttcr-motion-marquee__track">
+            <span>COFFEE IS BETTER TOGETHER</span><i>◆</i><span>一杯咖啡，千種連結</span><i>◆</i><span>TAICHUNG · LATE NIGHT · SPACE</span><i>◆</i>
+            <span>COFFEE IS BETTER TOGETHER</span><i>◆</i><span>一杯咖啡，千種連結</span><i>◆</i><span>TAICHUNG · LATE NIGHT · SPACE</span><i>◆</i>
         </div>
     </div>
 
@@ -3109,5 +3311,72 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 })();
 /* === /TT Mobile Nav JS === */
+</script>
+
+<script id="ttcr-home-motion-script">
+(function () {
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var revealSelectors = [
+        '.bestseller-title', '.drink-item',
+        '.news-section-title', '.news-card',
+        '.services-section-header', '.service-card',
+        '.ttcr-faq-header', '.ttcr-faq-row'
+    ];
+    var reveals = [];
+
+    revealSelectors.forEach(function (selector) {
+        Array.prototype.forEach.call(document.querySelectorAll(selector), function (element, index) {
+            element.classList.add('ttcr-reveal');
+            element.style.setProperty('--ttcr-motion-delay', Math.min(index % 4, 3) * 110 + 'ms');
+            reveals.push(element);
+        });
+    });
+
+    document.documentElement.classList.add('ttcr-motion-ready');
+
+    if (reduced || !('IntersectionObserver' in window)) {
+        reveals.forEach(function (element) { element.classList.add('ttcr-inview'); });
+    } else {
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('ttcr-inview');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: .12, rootMargin: '0px 0px -7% 0px' });
+        reveals.forEach(function (element) { observer.observe(element); });
+    }
+
+    if (!reduced) {
+        var hero = document.querySelector('.同齊咖吡index');
+        var beanOne = document.querySelector('.ttcr-bean-wrap--one');
+        var beanTwo = document.querySelector('.ttcr-bean-wrap--two');
+        var beanThree = document.querySelector('.ttcr-bean-wrap--three');
+        var ticking = false;
+
+        function updateMotion() {
+            var y = window.scrollY || window.pageYOffset || 0;
+            if (hero && y < window.innerHeight * 1.2) {
+                hero.style.setProperty('--ttcr-hero-scroll', y + 'px');
+                Array.prototype.forEach.call(hero.querySelectorAll('.slide'), function (slide) {
+                    slide.style.backgroundPosition = 'center calc(50% + ' + Math.round(y * .12) + 'px)';
+                });
+                if (beanOne) beanOne.style.transform = 'translate3d(0,' + Math.round(y * .18) + 'px,0)';
+                if (beanTwo) beanTwo.style.transform = 'translate3d(0,' + Math.round(y * -.1) + 'px,0)';
+                if (beanThree) beanThree.style.transform = 'translate3d(0,' + Math.round(y * .08) + 'px,0)';
+            }
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function () {
+            if (!ticking) {
+                ticking = true;
+                window.requestAnimationFrame(updateMotion);
+            }
+        }, { passive: true });
+        updateMotion();
+    }
+})();
 </script>
 </body></html>
