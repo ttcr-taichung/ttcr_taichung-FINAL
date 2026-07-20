@@ -770,7 +770,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         .news-grid {
             display: flex;
-            gap: clamp(1rem, 2vw, 2rem);
+            gap: clamp(.85rem, 1.5vw, 1.35rem);
             width: 100%;
             margin: 0;
             padding: .8rem clamp(1rem, 2.4vw, 2.25rem) 2rem;
@@ -786,8 +786,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .news-card {
             --news-card-bg: #dfe7ea;
             position: relative;
-            flex: 0 0 clamp(340px, 39vw, 590px);
-            min-height: clamp(440px, 48vw, 610px);
+            flex: 0 0 clamp(300px, 32vw, 460px);
+            min-height: clamp(390px, 40vw, 520px);
             overflow: hidden;
             border: 1px solid rgba(34, 56, 67, .1);
             border-radius: clamp(1.7rem, 3vw, 3rem);
@@ -884,7 +884,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             left: 0;
             right: 0;
             bottom: 0;
-            padding: 2.1rem clamp(1.4rem, 3vw, 2.5rem) 2.2rem;
+            padding: 1.65rem clamp(1.2rem, 2vw, 1.8rem) 1.75rem;
         }
 
         .news-card-category {
@@ -902,7 +902,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             margin: 0;
             color: inherit;
             font-family: var(--font-serif);
-            font-size: clamp(1.45rem, 2.4vw, 2.35rem);
+            font-size: clamp(1.3rem, 1.8vw, 1.85rem);
             font-weight: 900;
             line-height: 1.35;
             letter-spacing: -.025em;
@@ -912,12 +912,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         .news-card-plus {
             position: absolute;
-            right: clamp(1.35rem, 3vw, 2.2rem);
-            bottom: 2rem;
+            right: clamp(1.15rem, 2vw, 1.7rem);
+            bottom: 1.55rem;
             display: grid;
             place-items: center;
-            width: 3rem;
-            height: 3rem;
+            width: 2.7rem;
+            height: 2.7rem;
             border-radius: 1rem;
             background: var(--brand-blue);
             color: #fff;
@@ -996,8 +996,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .news-section-intro { padding: 0 1rem; font-size: .92rem; }
             .news-grid { gap: .9rem; padding-inline: 1rem; }
             .news-card {
-                flex-basis: min(84vw, 390px);
-                min-height: 485px;
+                flex-basis: min(78vw, 340px);
+                min-height: 420px;
                 border-radius: 1.7rem;
             }
             .news-card-title { font-size: 1.4rem; }
