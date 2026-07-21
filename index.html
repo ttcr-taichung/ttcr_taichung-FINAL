@@ -878,6 +878,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             filter: saturate(1.06);
         }
 
+        .news-card--member-topup .news-card-image {
+            background: #fff;
+        }
+
+        .news-card--member-topup .news-card-image img {
+            top: 0;
+            bottom: auto;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: contain;
+            object-position: center top;
+            background: #fff;
+            transform: none;
+        }
+
+        .news-card--member-topup .news-card-image::after {
+            inset: 42% 0 0;
+            background: linear-gradient(180deg, rgba(34, 56, 67, 0), var(--news-card-bg) 18%);
+        }
+
+        .news-card--member-topup:hover .news-card-image img {
+            transform: scale(1.018);
+            filter: saturate(1.04);
+        }
+
         .news-card-content {
             position: absolute;
             z-index: 3;
@@ -2963,7 +2988,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </a>
 
-                    <a href="news-coffee-plan.html" class="news-card" aria-label="查看里民儲值加倍精彩活動">
+                    <a href="news-coffee-plan.html" class="news-card news-card--member-topup" aria-label="查看里民儲值加倍精彩活動">
                         <div class="news-card-topline">
                             <span class="news-date-badge">2026.07.14</span>
                             <span class="news-card-no">NEWS 02</span>
