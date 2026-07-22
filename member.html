@@ -36,7 +36,47 @@
         .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0; }
         .hamburger span { width: 25px; height: 2px; background: var(--brand-blue); transition: all .3s ease; }
 
-        .article-hero { padding: 180px 5% 40px; max-width: 900px; margin: 0 auto; text-align: center; }
+        .member-subnav {
+            position: fixed;
+            top: 105px;
+            left: 0;
+            right: 0;
+            z-index: 998;
+            border-top: 1px solid rgba(34,56,67,.06);
+            border-bottom: 1px solid rgba(34,56,67,.12);
+            background: rgba(250,248,245,.96);
+            backdrop-filter: blur(14px);
+        }
+        .member-subnav__inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+        .member-subnav a {
+            padding: 9px 15px;
+            border-radius: 999px;
+            color: #65757c;
+            font-size: .84rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            white-space: nowrap;
+            transition: background .25s ease, color .25s ease, transform .25s ease;
+        }
+        .member-subnav a:hover,
+        .member-subnav a:focus-visible {
+            background: var(--brand-blue);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+        #member-top, #member-guide, #member-levels, #member-benefits, #member-join, #member-faq {
+            scroll-margin-top: 185px;
+        }
+
+        .article-hero { padding: 235px 5% 40px; max-width: 900px; margin: 0 auto; text-align: center; }
         .breadcrumb { font-size: 0.82rem; color: var(--brand-muted); letter-spacing: 0.1em; margin-bottom: 24px; }
         .breadcrumb a:hover { color: var(--brand-blue); }
         .breadcrumb .sep { margin: 0 10px; opacity: 0.6; }
@@ -118,6 +158,33 @@
         .benefit-table .row .val .em { color: var(--brand-gold); font-family: var(--font-serif); font-weight: 700; }
         .benefit-table .row .val .dash { color: var(--brand-muted); opacity: 0.5; font-size: 1.2rem; }
 
+        .member-faq { margin: 36px 0 8px; border-top: 1px solid var(--brand-line); }
+        .member-faq details { border-bottom: 1px solid var(--brand-line); background: rgba(255,255,255,.48); }
+        .member-faq summary {
+            position: relative;
+            padding: 22px 58px 22px 20px;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: 1.02rem;
+            font-weight: 700;
+            letter-spacing: .04em;
+            cursor: pointer;
+            list-style: none;
+        }
+        .member-faq summary::-webkit-details-marker { display: none; }
+        .member-faq summary::after {
+            content: "＋";
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-family: var(--font-sans);
+            font-size: 1.35rem;
+            font-weight: 400;
+        }
+        .member-faq details[open] summary::after { content: "－"; }
+        .member-faq details p { padding: 0 58px 22px 20px; margin: 0; color: #66757c; }
+
         .remark { background: #F3EEE5; padding: 28px 32px; margin-top: 48px; font-size: 0.88rem; color: var(--brand-muted); line-height: 2; border-radius: 2px; }
         .remark strong { color: var(--brand-blue); font-weight: 700; display: block; margin-bottom: 8px; letter-spacing: 0.15em; font-size: 0.92rem; }
         .remark h4 { color: var(--brand-blue); font-family: var(--font-serif); font-size: 0.98rem; font-weight: 700; letter-spacing: 0.08em; margin: 18px 0 6px; padding-left: 10px; border-left: 3px solid var(--brand-blue); }
@@ -184,7 +251,12 @@
             .hamburger.active span:nth-child(2) { opacity: 0; }
             .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
 
-            .article-hero { padding: 130px 5% 20px; }
+            .member-subnav { top: 84px; overflow-x: auto; scrollbar-width: none; }
+            .member-subnav::-webkit-scrollbar { display: none; }
+            .member-subnav__inner { justify-content: flex-start; width: max-content; min-width: 100%; padding: 8px 12px; }
+            .member-subnav a { padding: 8px 12px; font-size: .78rem; }
+            #member-top, #member-guide, #member-levels, #member-benefits, #member-join, #member-faq { scroll-margin-top: 150px; }
+            .article-hero { padding: 175px 5% 20px; }
             .article-cover { padding: 0; }
             .article-cover .cover-frame { aspect-ratio: 4 / 3; border-radius: 0; }
             .article-body { padding: 40px 6% 60px; }
@@ -243,7 +315,18 @@
         </button>
     </nav>
 
-    <section class="article-hero">
+    <nav class="member-subnav" aria-label="會員專區導覽">
+        <div class="member-subnav__inner">
+            <a href="#member-top">會員首頁</a>
+            <a href="#member-guide">制度說明</a>
+            <a href="#member-levels">會員等級</a>
+            <a href="#member-benefits">權益比較</a>
+            <a href="#member-join">加入方式</a>
+            <a href="#member-faq">常見問題</a>
+        </div>
+    </nav>
+
+    <section class="article-hero" id="member-top">
         <div class="breadcrumb">
             <a href="index.html">首頁</a>
             <span class="sep">／</span>
@@ -265,7 +348,7 @@
 
         <p style="">同齊咖吡的會員制度，依照累積消費金額分為 <strong>銀卡</strong>、<strong>金卡</strong>、<strong>VIP</strong> 三個等級。會員享有 9 折常態優惠、升等禮、生日禮以及活動集點卡等專屬權益，讓日常的一杯咖啡，也能累積一點剛剛好的回饋。</p>
 
-        <h2>會員制度怎麼運作？</h2>
+        <h2 id="member-guide">會員制度怎麼運作？</h2>
         <p>這不只是一張折扣卡，而是一套陪你把每次到店消費慢慢累積成專屬回饋的電子會員制度。從加入、消費到升等，所有紀錄都能透過 LINE 會員卡隨時查看。</p>
 
         <div class="membership-overview" aria-label="同齊咖吡會員制度流程">
@@ -286,7 +369,7 @@
             </section>
         </div>
 
-        <h2>三種會員卡</h2>
+        <h2 id="member-levels">三種會員卡</h2>
 
         <div class="card-gallery">
             <div class="m-card">
@@ -311,7 +394,7 @@
 
         <p style="">會員卡為電子會員形式，加入 LINE 官方帳號即可開通，隨時查詢消費紀錄、升等進度與專屬優惠。</p>
 
-        <h2>會員權益一覽</h2>
+        <h2 id="member-benefits">會員權益一覽</h2>
 
         <div class="benefit-table">
             <div class="row head">
@@ -391,10 +474,34 @@
             </div>
         </div>
 
-        <h2>如何加入會員</h2>
+        <h2 id="member-join">如何加入會員</h2>
         <p>1. <strong>一鍵加入</strong>｜點擊下方「立即加入會員」按鈕，使用 LINE 一鍵開通電子會員卡。</p>
         <p>2. <strong>門市入會</strong>｜親至台中各門市櫃檯，由夥伴協助您完成會員綁定。</p>
         <p>3. <strong>服務時間</strong>｜週一至週日 08:00–23:00。</p>
+
+        <h2 id="member-faq">會員常見問題</h2>
+        <div class="member-faq">
+            <details>
+                <summary>如何加入同齊會員？</summary>
+                <p>點擊頁面中的「立即加入會員」，透過 LINE 開通電子會員卡；也可以到同齊咖吡各門市，由現場夥伴協助完成會員綁定。</p>
+            </details>
+            <details>
+                <summary>會員等級如何升等？</summary>
+                <p>會員等級會依消費條件與累積金額自動判定。達到對應門檻後，系統會更新會員級別，詳細門檻請參考上方「會員權益一覽」。</p>
+            </details>
+            <details>
+                <summary>會員優惠如何使用？</summary>
+                <p>結帳前請出示 LINE 電子會員卡，由門市夥伴確認會員身分與可使用的優惠券；部分優惠不得合併使用。</p>
+            </details>
+            <details>
+                <summary>會籍效期多久？</summary>
+                <p>各會員級別會籍效期為一年，期滿後依當期累積消費重新評等，實際狀態以會員系統顯示為準。</p>
+            </details>
+            <details>
+                <summary>生日禮與升等禮在哪裡查看？</summary>
+                <p>符合資格後，相關會員禮會顯示於 LINE 電子會員帳戶。各票券都有使用期限與適用條件，使用前請先查看票券說明。</p>
+            </details>
+        </div>
 
         <div class="remark">
             <strong>｜會員制度使用規範｜</strong>
