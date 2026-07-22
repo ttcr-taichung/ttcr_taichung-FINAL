@@ -396,7 +396,7 @@
             transform: translateX(-50%);
             transform-origin: 50% 85%;
             z-index: 3;
-            animation: memberCatSway 3.8s ease-in-out infinite;
+            animation: memberCatSway 4.8s cubic-bezier(.45,.05,.55,.95) infinite;
         }
         .member-cat img {
             width: 100%;
@@ -405,7 +405,32 @@
             object-fit: contain;
             position: relative;
             z-index: 1;
-            filter: drop-shadow(10px 13px 0 #f4cf3f) drop-shadow(0 18px 18px rgba(34,56,67,.18));
+            filter: drop-shadow(8px 10px 0 #f4cf3f) drop-shadow(0 16px 16px rgba(34,56,67,.16));
+            transform-origin: 50% 82%;
+            animation: memberCatBreathe 3.2s ease-in-out infinite;
+        }
+        .member-cat::before {
+            content: "";
+            position: absolute;
+            left: 16%;
+            right: 10%;
+            bottom: 4px;
+            height: 22px;
+            z-index: -1;
+            border-radius: 50%;
+            background: rgba(34,56,67,.14);
+            filter: blur(7px);
+            animation: memberCatShadow 4.8s ease-in-out infinite;
+        }
+        .member-cat::after {
+            content: "✦";
+            position: absolute;
+            right: 0;
+            top: 18%;
+            color: #f4cf3f;
+            font-size: 25px;
+            text-shadow: -28px 22px 0 #dce9ed;
+            animation: memberSparkle 2.6s ease-in-out infinite;
         }
         .member-float-tag {
             position: absolute;
@@ -424,10 +449,22 @@
         .member-float-tag--two { right: 4%; top: 32px; background: #dff1f5; transform: rotate(7deg); animation-delay: .5s; }
         .member-float-tag--three { right: 13%; bottom: 8px; background: #d9e0e3; transform: rotate(-4deg); animation-delay: 1s; }
         @keyframes memberCatSway {
-            0%, 100% { transform: translateX(-50%) translateY(0) rotate(-1deg); }
-            50% { transform: translateX(-50%) translateY(-8px) rotate(2deg); }
+            0%, 100% { transform: translateX(-50%) translateY(0) rotate(-.6deg); }
+            50% { transform: translateX(-50%) translateY(-5px) rotate(1deg); }
         }
-        @keyframes memberTagFloat { 50% { translate: 0 -7px; } }
+        @keyframes memberCatBreathe {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.012, .995); }
+        }
+        @keyframes memberCatShadow {
+            0%, 100% { transform: scaleX(1); opacity: .7; }
+            50% { transform: scaleX(.92); opacity: .48; }
+        }
+        @keyframes memberSparkle {
+            0%, 100% { transform: scale(.78) rotate(-8deg); opacity: .48; }
+            50% { transform: scale(1.12) rotate(8deg); opacity: 1; }
+        }
+        @keyframes memberTagFloat { 50% { translate: 0 -5px; } }
 
         .article-cover {
             width: min(1080px,90%);
@@ -523,7 +560,7 @@
             .article-body h2 { max-width: 94%; font-size: 1.12rem; padding: 8px 16px; box-shadow: 4px 5px 0 var(--brand-blue); }
         }
         @media (prefers-reduced-motion: reduce) {
-            .member-cat, .member-float-tag { animation: none; }
+            .member-cat, .member-cat img, .member-cat::before, .member-cat::after, .member-float-tag { animation: none; }
         }
     </style>
 </head>
@@ -570,7 +607,7 @@
             <span class="member-float-tag member-float-tag--two">會員 9 折 ✦</span>
             <span class="member-float-tag member-float-tag--three">升等好禮 ☕</span>
             <div class="member-cat" aria-label="同齊貓咪 2D 會員形象">
-                <img src="images/ttcr-cat-member-2d.png" alt="揮手歡迎的同齊貓咪 2D 動畫角色">
+                <img src="images/ttcr-cat-member-2d-v2.png" alt="揮手歡迎的同齊貓咪 2D 動畫角色">
             </div>
         </div>
     </section>
