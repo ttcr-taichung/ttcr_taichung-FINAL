@@ -52,6 +52,48 @@
         .article-body h2 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 900; color: var(--brand-blue); letter-spacing: 0.06em; margin: 56px 0 24px; padding-left: 16px; border-left: 4px solid var(--brand-blue); }
         .article-body p { margin-bottom: 20px; }
 
+        .membership-overview {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin: 32px 0 12px;
+        }
+        .membership-overview .overview-card {
+            min-height: 210px;
+            padding: 28px 24px;
+            border: 1px solid var(--brand-line);
+            border-radius: 14px;
+            background: #fff;
+            box-shadow: 0 10px 28px rgba(34,56,67,.07);
+        }
+        .membership-overview .overview-no {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            margin-bottom: 18px;
+            border-radius: 50%;
+            background: var(--brand-blue);
+            color: #fff;
+            font-family: var(--font-serif);
+            font-weight: 700;
+        }
+        .membership-overview h3 {
+            margin-bottom: 10px;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: 1.12rem;
+            font-weight: 900;
+            letter-spacing: .06em;
+        }
+        .membership-overview p {
+            margin: 0;
+            color: #66757c;
+            font-size: .94rem;
+            line-height: 1.85;
+        }
+
         .card-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 36px 0 8px; }
         .card-gallery .m-card { background: #fff; border: 1px solid var(--brand-line); padding: 22px 22px 26px; text-align: center; border-radius: 4px; transition: all .3s ease; position: relative; overflow: hidden; }
         .card-gallery .m-card:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(34,56,67,0.14); }
@@ -147,6 +189,9 @@
             .article-body { padding: 40px 6% 60px; }
             .article-body h2 { font-size: 1.25rem; }
 
+            .membership-overview { grid-template-columns: 1fr; gap: 14px; }
+            .membership-overview .overview-card { min-height: 0; padding: 22px 20px; }
+
             .card-gallery { grid-template-columns: 1fr; gap: 18px; }
 
             .benefit-table { border: none; background: transparent; }
@@ -219,6 +264,27 @@
         <p class="lead" style="">「一杯咖啡，<br>累積日常，<span class="accent" style="">與你同齊</span>。」</p>
 
         <p style="">同齊咖吡的會員制度，依照累積消費金額分為 <strong>銀卡</strong>、<strong>金卡</strong>、<strong>VIP</strong> 三個等級。會員享有 9 折常態優惠、升等禮、生日禮以及活動集點卡等專屬權益，讓日常的一杯咖啡，也能累積一點剛剛好的回饋。</p>
+
+        <h2>會員制度怎麼運作？</h2>
+        <p>這不只是一張折扣卡，而是一套陪你把每次到店消費慢慢累積成專屬回饋的電子會員制度。從加入、消費到升等，所有紀錄都能透過 LINE 會員卡隨時查看。</p>
+
+        <div class="membership-overview" aria-label="同齊咖吡會員制度流程">
+            <section class="overview-card">
+                <span class="overview-no">1</span>
+                <h3>LINE 一鍵開通</h3>
+                <p>加入同齊咖吡 LINE 電子會員，完成基本資料綁定後，即可開始使用會員優惠與查看個人紀錄。</p>
+            </section>
+            <section class="overview-card">
+                <span class="overview-no">2</span>
+                <h3>每次消費都能累積</h3>
+                <p>結帳時出示電子會員卡，系統會保留消費與升等進度，日常喝咖啡也能逐步累積會員資格。</p>
+            </section>
+            <section class="overview-card">
+                <span class="overview-no">3</span>
+                <h3>升等解鎖更多回饋</h3>
+                <p>達到對應條件後即可升等，依會員級別享有升等禮、生日禮、專屬折扣與不定期會員活動。</p>
+            </section>
+        </div>
 
         <h2>三種會員卡</h2>
 
