@@ -295,6 +295,211 @@
         @media (min-width: 769px) {
             .hamburger { display: none !important; }
         }
+        /* ===== TTCR Cute Member World ===== */
+        body {
+            background:
+                radial-gradient(circle at 8% 16%, rgba(244,211,122,.34) 0 86px, transparent 88px),
+                radial-gradient(circle at 94% 31%, rgba(180,216,226,.36) 0 110px, transparent 112px),
+                #fffaf1;
+        }
+        .member-subnav {
+            background: rgba(255,250,241,.94);
+            border-bottom-color: rgba(34,56,67,.1);
+            box-shadow: 0 8px 24px rgba(34,56,67,.06);
+        }
+        .member-subnav__inner { gap: 9px; }
+        .member-subnav a {
+            border: 1px solid rgba(34,56,67,.1);
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(34,56,67,.05);
+        }
+        .member-subnav a:nth-child(2n) { background: #fff3c9; }
+        .member-subnav a:nth-child(3n) { background: #e5f1f4; }
+
+        .article-hero {
+            position: relative;
+            max-width: 1180px;
+            min-height: 650px;
+            padding: 230px 5% 70px;
+            overflow: hidden;
+        }
+        .article-hero::before,
+        .article-hero::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            border-radius: 47% 53% 58% 42%;
+        }
+        .article-hero::before {
+            width: 420px;
+            height: 420px;
+            left: -180px;
+            top: 190px;
+            background: #f8dc72;
+            transform: rotate(18deg);
+        }
+        .article-hero::after {
+            width: 340px;
+            height: 340px;
+            right: -120px;
+            top: 250px;
+            background: #d9eaef;
+            transform: rotate(-14deg);
+        }
+        .article-hero .tag {
+            background: #f6cb43;
+            color: var(--brand-blue);
+            font-weight: 900;
+            box-shadow: 0 7px 0 rgba(34,56,67,.12);
+        }
+        .article-hero h1 {
+            max-width: 780px;
+            margin: 0 auto;
+            font-size: clamp(2.4rem,5vw,4.7rem);
+            line-height: 1.2;
+            letter-spacing: -.02em;
+        }
+        .article-hero .date {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 999px;
+            background: #fff;
+            box-shadow: 0 8px 24px rgba(34,56,67,.1);
+        }
+        .member-hero-art {
+            position: relative;
+            width: min(650px,100%);
+            height: 250px;
+            margin: 38px auto 0;
+        }
+        .member-cup {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 210px;
+            transform: translateX(-50%);
+            filter: drop-shadow(0 18px 18px rgba(34,56,67,.16));
+            animation: memberCupFloat 4s ease-in-out infinite;
+        }
+        .member-cup .cup-body { fill: #fff; stroke: #223843; stroke-width: 4; }
+        .member-cup .coffee { fill: #b8774f; }
+        .member-cup .cheek { fill: #f6a6a6; }
+        .member-cup .face { fill: none; stroke: #223843; stroke-width: 4; stroke-linecap: round; }
+        .member-cup .steam { fill: none; stroke: #7eb3c1; stroke-width: 5; stroke-linecap: round; }
+        .member-float-tag {
+            position: absolute;
+            padding: 12px 18px;
+            border: 2px solid var(--brand-blue);
+            border-radius: 999px;
+            background: #fff;
+            color: var(--brand-blue);
+            font-weight: 900;
+            letter-spacing: .08em;
+            box-shadow: 6px 7px 0 var(--brand-blue);
+            animation: memberTagFloat 3.6s ease-in-out infinite;
+        }
+        .member-float-tag--one { left: 5%; top: 48px; background: #fff1a9; transform: rotate(-7deg); }
+        .member-float-tag--two { right: 4%; top: 32px; background: #dff1f5; transform: rotate(7deg); animation-delay: .5s; }
+        .member-float-tag--three { right: 13%; bottom: 8px; background: #ffd9d2; transform: rotate(-4deg); animation-delay: 1s; }
+        @keyframes memberCupFloat { 50% { transform: translateX(-50%) translateY(-8px) rotate(1deg); } }
+        @keyframes memberTagFloat { 50% { translate: 0 -7px; } }
+
+        .article-cover {
+            width: min(1080px,90%);
+            margin: -8px auto 0 !important;
+            padding: 14px !important;
+            border: 2px solid var(--brand-blue);
+            border-radius: 34px;
+            background: #fff;
+            box-shadow: 12px 14px 0 #f4d37a;
+            transform: rotate(-.5deg);
+        }
+        .article-cover .cover-frame,
+        .article-cover img { border-radius: 22px !important; }
+
+        .article-body {
+            max-width: 1040px;
+            margin-top: 70px;
+            padding: 60px 5% 90px;
+            border-radius: 42px;
+            background: rgba(255,255,255,.72);
+            box-shadow: 0 24px 70px rgba(34,56,67,.08);
+        }
+        .article-body .lead {
+            border: 0;
+            font-size: clamp(1.4rem,2.6vw,2rem);
+        }
+        .article-body h2 {
+            width: fit-content;
+            margin: 64px auto 28px;
+            padding: 10px 24px;
+            border: 2px solid var(--brand-blue);
+            border-left: 2px solid var(--brand-blue);
+            border-radius: 999px;
+            background: #fff1a9;
+            box-shadow: 6px 7px 0 var(--brand-blue);
+            transform: rotate(-1deg);
+            text-align: center;
+        }
+        .membership-overview .overview-card {
+            border: 2px solid rgba(34,56,67,.14);
+            border-radius: 28px;
+            box-shadow: 0 12px 0 rgba(34,56,67,.07);
+            transition: transform .25s ease;
+        }
+        .membership-overview .overview-card:nth-child(1) { background: #fff3c9; transform: rotate(-1deg); }
+        .membership-overview .overview-card:nth-child(2) { background: #e5f1f4; transform: rotate(1deg); }
+        .membership-overview .overview-card:nth-child(3) { background: #ffe3dd; transform: rotate(-.6deg); }
+        .membership-overview .overview-card:hover { transform: translateY(-6px) rotate(0); }
+        .membership-overview .overview-no { background: #f4cb42; color: var(--brand-blue); border: 2px solid var(--brand-blue); }
+
+        .card-gallery .m-card {
+            border: 2px solid rgba(34,56,67,.14);
+            border-radius: 26px;
+            box-shadow: 0 12px 0 rgba(34,56,67,.07);
+        }
+        .card-gallery .m-card:nth-child(1) { background: #e5f1f4; }
+        .card-gallery .m-card:nth-child(2) { background: #fff3c9; }
+        .card-gallery .m-card:nth-child(3) { background: #ffe3dd; }
+
+        .benefit-table { border-radius: 24px; box-shadow: 0 14px 36px rgba(34,56,67,.08); }
+        .member-faq { border: 0; display: grid; gap: 12px; }
+        .member-faq details {
+            border: 2px solid rgba(34,56,67,.12);
+            border-radius: 20px;
+            background: #fff;
+            overflow: hidden;
+        }
+        .member-faq details[open] { background: #fff7d9; }
+        .remark { border-radius: 28px; border: 2px dashed rgba(34,56,67,.25); }
+        .cta-section {
+            border-radius: 42px 42px 0 0;
+            background: #223843;
+        }
+        .cta-section .btn.primary { box-shadow: 0 7px 0 #9d7b22; }
+
+        @media (max-width: 768px) {
+            body {
+                background:
+                    radial-gradient(circle at 0 15%, rgba(244,211,122,.32) 0 55px, transparent 57px),
+                    #fffaf1;
+            }
+            .article-hero { min-height: 610px; padding: 175px 5% 35px; }
+            .article-hero h1 { font-size: clamp(2.15rem,11vw,3.25rem); }
+            .member-hero-art { height: 220px; margin-top: 26px; }
+            .member-cup { width: 175px; }
+            .member-float-tag { padding: 9px 12px; font-size: .76rem; box-shadow: 4px 5px 0 var(--brand-blue); }
+            .member-float-tag--one { left: 0; top: 38px; }
+            .member-float-tag--two { right: 0; top: 20px; }
+            .member-float-tag--three { right: 2%; bottom: 10px; }
+            .article-cover { width: calc(100% - 28px); padding: 8px !important; border-radius: 24px; box-shadow: 7px 8px 0 #f4d37a; }
+            .article-cover .cover-frame, .article-cover img { border-radius: 16px !important; }
+            .article-body { width: calc(100% - 20px); margin-top: 46px; padding: 38px 18px 60px; border-radius: 28px; }
+            .article-body h2 { max-width: 94%; font-size: 1.12rem; padding: 8px 16px; box-shadow: 4px 5px 0 var(--brand-blue); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .member-cup, .member-float-tag { animation: none; }
+        }
     </style>
 </head>
 <body style="">
@@ -335,6 +540,20 @@
         <span class="tag">TTCR MEMBERSHIP</span>
         <h1>同齊會員｜每杯日常，都有回饋</h1>
         <div class="date">VIP · 銀卡 · 金卡　·　會員專屬權益</div>
+        <div class="member-hero-art" aria-hidden="true">
+            <span class="member-float-tag member-float-tag--one">生日禮物 ♡</span>
+            <span class="member-float-tag member-float-tag--two">會員 9 折 ✦</span>
+            <span class="member-float-tag member-float-tag--three">升等好禮 ☕</span>
+            <svg class="member-cup" viewBox="0 0 240 220">
+                <path class="steam" d="M84 48c-18-20 18-28 0-48M126 48c-18-20 18-28 0-48"></path>
+                <ellipse class="coffee" cx="113" cy="72" rx="72" ry="20"></ellipse>
+                <path class="cup-body" d="M42 72h142v72c0 38-28 63-65 63h-12c-37 0-65-25-65-63V72Z"></path>
+                <path class="cup-body" d="M184 92h12c44 0 44 60 0 60h-18"></path>
+                <path class="face" d="M84 124h.01M140 124h.01M94 149c12 12 28 12 40 0"></path>
+                <circle class="cheek" cx="74" cy="145" r="8"></circle>
+                <circle class="cheek" cx="151" cy="145" r="8"></circle>
+            </svg>
+        </div>
     </section>
 
     <div class="article-cover" style="max-width: none; padding: 0; margin: 40px 0 0;">
