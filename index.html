@@ -572,7 +572,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         #tâng-tsê-bell-trigger {
             position: fixed;
             right: 30px;
-            top: 25px;
+            top: 150px;
             width: 60px; 
             height: 60px;
             background: rgba(59, 77, 90, 0.9);
@@ -590,6 +590,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         #tâng-tsê-bell-trigger:hover {
             background-color: rgba(44, 58, 68, 0.95);
             transform: scale(1.1) rotate(15deg);
+        }
+
+        @media (max-width: 768px) {
+            #tâng-tsê-bell-trigger {
+                top: 92px;
+                right: 16px;
+                width: 52px;
+                height: 52px;
+            }
         }
 
         .bell-dot {
