@@ -3664,6 +3664,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             padding: 0 19px;
             font-size: .9rem;
         }
+        body.menu-open .space-booking-fab-wrap,
+        body:has(.nav-links.active) .space-booking-fab-wrap {
+            display: none;
+        }
     }
     @media (prefers-reduced-motion: reduce) {
         .space-booking-fab-wrap { animation: none; }
