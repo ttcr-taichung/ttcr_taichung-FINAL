@@ -375,22 +375,21 @@
         .member-cat {
             position: absolute;
             left: 50%;
-            bottom: 0;
+            bottom: -8px;
             width: 245px;
-            height: 220px;
-            overflow: hidden;
-            border: 4px solid var(--brand-blue);
-            border-radius: 46% 54% 48% 52% / 42% 45% 55% 58%;
-            background: #dce9ed;
-            box-shadow: 12px 14px 0 #f4cf3f, 0 22px 40px rgba(34,56,67,.18);
+            height: 235px;
+            overflow: visible;
+            background: transparent;
             transform: translateX(-50%);
-            animation: memberCupFloat 4s ease-in-out infinite;
+            transform-origin: 50% 85%;
+            animation: memberCatSway 3.8s ease-in-out infinite;
         }
-        .member-cat video {
+        .member-cat img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            object-position: center;
+            display: block;
+            object-fit: contain;
+            filter: drop-shadow(10px 13px 0 #f4cf3f) drop-shadow(0 18px 18px rgba(34,56,67,.18));
         }
         .member-float-tag {
             position: absolute;
@@ -407,7 +406,10 @@
         .member-float-tag--one { left: 5%; top: 48px; background: #f7df79; transform: rotate(-7deg); }
         .member-float-tag--two { right: 4%; top: 32px; background: #dff1f5; transform: rotate(7deg); animation-delay: .5s; }
         .member-float-tag--three { right: 13%; bottom: 8px; background: #d9e0e3; transform: rotate(-4deg); animation-delay: 1s; }
-        @keyframes memberCupFloat { 50% { transform: translateX(-50%) translateY(-8px) rotate(1deg); } }
+        @keyframes memberCatSway {
+            0%, 100% { transform: translateX(-50%) translateY(0) rotate(-1deg); }
+            50% { transform: translateX(-50%) translateY(-8px) rotate(2deg); }
+        }
         @keyframes memberTagFloat { 50% { translate: 0 -7px; } }
 
         .article-cover {
@@ -493,7 +495,7 @@
             .article-hero { min-height: 610px; padding: 175px 5% 35px; }
             .article-hero h1 { font-size: clamp(2.15rem,11vw,3.25rem); }
             .member-hero-art { height: 220px; margin-top: 26px; }
-            .member-cat { width: 205px; height: 185px; }
+            .member-cat { width: 205px; height: 200px; }
             .member-float-tag { padding: 9px 12px; font-size: .76rem; box-shadow: 4px 5px 0 var(--brand-blue); }
             .member-float-tag--one { left: 0; top: 38px; }
             .member-float-tag--two { right: 0; top: 20px; }
@@ -550,10 +552,8 @@
             <span class="member-float-tag member-float-tag--one">生日禮物 ♡</span>
             <span class="member-float-tag member-float-tag--two">會員 9 折 ✦</span>
             <span class="member-float-tag member-float-tag--three">升等好禮 ☕</span>
-            <div class="member-cat">
-                <video autoplay muted loop playsinline preload="metadata" aria-label="同齊貓咪會員形象">
-                    <source src="videos/ttcr-cat-space-rental-2026.mp4" type="video/mp4">
-                </video>
+            <div class="member-cat" aria-label="同齊貓咪 2D 會員形象">
+                <img src="images/ttcr-cat-member-2d.png" alt="揮手歡迎的同齊貓咪 2D 動畫角色">
             </div>
         </div>
     </section>
