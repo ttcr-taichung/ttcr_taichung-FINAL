@@ -1,0 +1,505 @@
+<html lang="zh-Hant"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員制度介紹 | 同齊咖吡 TTCR</title>
+    <meta name="description" content="同齊咖吡會員專區｜了解 VIP、銀卡與金卡會員制度、升等門檻、生日禮與會員專屬優惠，並透過 LINE 開通電子會員卡。">
+    <link rel="canonical" href="https://ttcrcoffee.com/member.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&amp;family=Noto+Serif+TC:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --brand-blue: #223843;
+            --brand-blue-dark: #172832;
+            --brand-cream: #FAF8F5;
+            --brand-line: #E6E1D9;
+            --brand-muted: #7A7166;
+            --brand-gold: #C8A14A;
+            --brand-gold-soft: #F4D37A;
+            --font-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+            --font-serif: "Noto Serif TC", "Noto Serif CJK TC", serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-sans); color: var(--brand-blue); background: var(--brand-cream); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
+
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 5%; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(10px); display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(34, 56, 67, 0.08); }
+        nav .logo { display: block; height: 72px; }
+        nav .logo img { height: 100%; width: auto; object-fit: contain; }
+        nav .nav-links { display: flex; gap: 3rem; list-style: none; }
+        nav .nav-links a { font-family: var(--font-sans); font-size: 0.95rem; font-weight: 700; letter-spacing: 1px; color: #2c2c2c; transition: color .25s ease; }
+        nav .nav-links a:hover, nav .nav-links a.active { color: var(--brand-blue); }
+        .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0; }
+        .hamburger span { width: 25px; height: 2px; background: var(--brand-blue); transition: all .3s ease; }
+
+        .article-hero { padding: 180px 5% 40px; max-width: 900px; margin: 0 auto; text-align: center; }
+        .breadcrumb { font-size: 0.82rem; color: var(--brand-muted); letter-spacing: 0.1em; margin-bottom: 24px; }
+        .breadcrumb a:hover { color: var(--brand-blue); }
+        .breadcrumb .sep { margin: 0 10px; opacity: 0.6; }
+        .article-hero .tag { display: inline-block; padding: 6px 20px; background: var(--brand-blue); color: #fff; font-size: 0.78rem; letter-spacing: 0.3em; border-radius: 9999px; margin-bottom: 20px; }
+        .article-hero h1 { font-family: var(--font-serif); font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 900; letter-spacing: 0.04em; line-height: 1.45; color: var(--brand-blue); }
+        .article-hero .date { font-family: var(--font-serif); font-size: 0.9rem; letter-spacing: 0.18em; color: var(--brand-muted); margin-top: 20px; text-transform: uppercase; }
+
+        .article-cover { max-width: 1100px; margin: 40px auto 0; padding: 0 5%; }
+        .article-cover .cover-frame { width: 100%; aspect-ratio: 21 / 9; background: linear-gradient(135deg, #2f4a57 0%, #223843 60%, #172832 100%); border-radius: 2px; overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; }
+
+        .article-body { max-width: 960px; margin: 0 auto; padding: 60px 5% 80px; font-size: 1.02rem; color: #3a4a54; }
+        .article-body .lead { font-family: var(--font-serif); font-size: 1.35rem; font-weight: 500; color: var(--brand-blue); line-height: 1.75; padding: 0 0 40px; border-bottom: 1px solid var(--brand-line); margin-bottom: 48px; text-align: center; letter-spacing: 0.04em; }
+        .article-body .lead .accent { color: var(--brand-gold); font-weight: 700; }
+        .article-body h2 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 900; color: var(--brand-blue); letter-spacing: 0.06em; margin: 56px 0 24px; padding-left: 16px; border-left: 4px solid var(--brand-blue); }
+        .article-body p { margin-bottom: 20px; }
+
+        .membership-overview {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin: 32px 0 12px;
+        }
+        .membership-overview .overview-card {
+            min-height: 210px;
+            padding: 28px 24px;
+            border: 1px solid var(--brand-line);
+            border-radius: 14px;
+            background: #fff;
+            box-shadow: 0 10px 28px rgba(34,56,67,.07);
+        }
+        .membership-overview .overview-no {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            margin-bottom: 18px;
+            border-radius: 50%;
+            background: var(--brand-blue);
+            color: #fff;
+            font-family: var(--font-serif);
+            font-weight: 700;
+        }
+        .membership-overview h3 {
+            margin-bottom: 10px;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: 1.12rem;
+            font-weight: 900;
+            letter-spacing: .06em;
+        }
+        .membership-overview p {
+            margin: 0;
+            color: #66757c;
+            font-size: .94rem;
+            line-height: 1.85;
+        }
+
+        .card-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 36px 0 8px; }
+        .card-gallery .m-card { background: #fff; border: 1px solid var(--brand-line); padding: 22px 22px 26px; text-align: center; border-radius: 4px; transition: all .3s ease; position: relative; overflow: hidden; }
+        .card-gallery .m-card:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(34,56,67,0.14); }
+        .card-gallery .m-card .card-face { width: 100%; aspect-ratio: 1.58 / 1; background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 10px; box-shadow: 0 10px 24px rgba(34,56,67,0.18); margin-bottom: 20px; }
+        .card-gallery .m-card .tier-label { display: inline-block; font-family: var(--font-serif); font-size: 0.72rem; letter-spacing: 0.28em; color: var(--brand-muted); margin-bottom: 6px; }
+        .card-gallery .m-card .tier-name { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 900; color: var(--brand-blue); letter-spacing: 0.08em; margin-bottom: 10px; }
+        .card-gallery .m-card .tier-threshold { font-size: 0.88rem; color: var(--brand-muted); letter-spacing: 0.04em; line-height: 1.7; }
+        .card-gallery .m-card .tier-threshold b { color: var(--brand-blue); font-weight: 700; }
+
+        .benefit-table { margin: 32px 0; border: 1px solid var(--brand-line); background: #fff; overflow: hidden; }
+        .benefit-table .row { display: grid; grid-template-columns: 1.1fr 1fr 1fr 1fr; border-bottom: 1px solid var(--brand-line); align-items: stretch; }
+        .benefit-table .row:last-child { border-bottom: none; }
+        .benefit-table .row.head { background: var(--brand-blue); color: #fff; font-weight: 700; font-size: 0.92rem; letter-spacing: 0.15em; text-align: center; }
+        .benefit-table .row.head > div { padding: 16px 12px; }
+        .benefit-table .row.head .tier-h { font-family: var(--font-serif); font-size: 1.02rem; letter-spacing: 0.12em; color: var(--brand-gold-soft); }
+        .benefit-table .row > div { padding: 16px 18px; font-size: 0.94rem; line-height: 1.7; border-right: 1px solid var(--brand-line); }
+        .benefit-table .row > div:last-child { border-right: none; }
+        .benefit-table .row .label-col { background: #F3EEE5; font-family: var(--font-serif); font-weight: 700; color: var(--brand-blue); letter-spacing: 0.08em; font-size: 0.96rem; display: flex; align-items: center; }
+        .benefit-table .row .val { color: #3a4a54; }
+        .benefit-table .row .val b { color: var(--brand-blue); font-weight: 700; }
+        .benefit-table .row .val .em { color: var(--brand-gold); font-family: var(--font-serif); font-weight: 700; }
+        .benefit-table .row .val .dash { color: var(--brand-muted); opacity: 0.5; font-size: 1.2rem; }
+
+        .remark { background: #F3EEE5; padding: 28px 32px; margin-top: 48px; font-size: 0.88rem; color: var(--brand-muted); line-height: 2; border-radius: 2px; }
+        .remark strong { color: var(--brand-blue); font-weight: 700; display: block; margin-bottom: 8px; letter-spacing: 0.15em; font-size: 0.92rem; }
+        .remark h4 { color: var(--brand-blue); font-family: var(--font-serif); font-size: 0.98rem; font-weight: 700; letter-spacing: 0.08em; margin: 18px 0 6px; padding-left: 10px; border-left: 3px solid var(--brand-blue); }
+        .remark h4:first-of-type { margin-top: 0; }
+        .remark ol { padding-left: 20px; }
+        .remark ol li { margin-bottom: 4px; }
+
+        .cta-section { background: var(--brand-blue); color: #fff; padding: 64px 5%; text-align: center; margin-top: 40px; position: relative; overflow: hidden; }
+        .cta-section::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 18% 20%, rgba(244, 211, 122, 0.18), transparent 55%); pointer-events: none; }
+        .cta-section h3 { font-family: var(--font-serif); font-size: clamp(1.5rem, 2.4vw, 1.9rem); font-weight: 900; letter-spacing: 0.08em; margin-bottom: 14px; position: relative; }
+        .cta-section p { color: rgba(255,255,255,0.78); margin-bottom: 32px; letter-spacing: 0.04em; position: relative; }
+        .cta-section .btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; }
+        .cta-section .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 36px; border-radius: 9999px; font-size: 0.92rem; letter-spacing: 0.2em; transition: all .25s ease; cursor: pointer; }
+        .cta-section .btn.primary { background: var(--brand-gold-soft); color: var(--brand-blue); border: 1.5px solid var(--brand-gold-soft); font-weight: 700; }
+        .cta-section .btn.primary:hover { background: transparent; color: var(--brand-gold-soft); }
+        .cta-section .btn.ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.6); }
+        .cta-section .btn.ghost:hover { background: #fff; color: var(--brand-blue); border-color: #fff; }
+
+        .related { max-width: 1100px; margin: 0 auto; padding: 80px 5% 60px; }
+        .related h3 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 900; letter-spacing: 0.15em; color: var(--brand-blue); padding-bottom: 16px; border-bottom: 2px solid var(--brand-blue); margin-bottom: 32px; text-align: center; }
+        .related .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .related .card { background: #fff; border: 1px solid var(--brand-line); transition: all .3s ease; overflow: hidden; }
+        .related .card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(34,56,67,0.12); }
+        .related .card .thumb { aspect-ratio: 16 / 10; background: linear-gradient(135deg, #2f4a57, #223843); position: relative; overflow: hidden; }
+        .related .card .thumb::after { content: none; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.6); font-family: var(--font-serif); font-size: 0.92rem; letter-spacing: 0.3em; }
+        .related .card .body { padding: 20px 22px 24px; }
+        .related .card .date { font-family: var(--font-serif); font-size: 0.78rem; letter-spacing: 0.18em; color: var(--brand-muted); margin-bottom: 10px; }
+        .related .card h4 { font-family: var(--font-serif); font-size: 1.05rem; color: var(--brand-blue); line-height: 1.55; font-weight: 700; letter-spacing: 0.03em; }
+
+        .back-to-list { text-align: center; padding: 40px 0 80px; }
+        .back-to-list a { display: inline-flex; align-items: center; gap: 12px; padding: 14px 38px; border: 1.5px solid var(--brand-blue); color: var(--brand-blue); border-radius: 9999px; font-size: 0.9rem; letter-spacing: 0.2em; transition: all .25s ease; }
+        .back-to-list a:hover { background: var(--brand-blue); color: #fff; }
+
+        .tt-footer { background: var(--brand-blue); color: #fff; padding: 4rem 5% 0; position: relative; overflow: hidden; font-family: var(--font-sans); }
+        .tt-footer-inner { position: relative; z-index: 2; padding-bottom: 3rem; }
+        .tt-footer-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4rem; align-items: start; }
+        .tt-footer-company-name { font-size: 2.2rem; font-weight: 800; letter-spacing: 0.02em; margin-bottom: 1.8rem; color: #fff; }
+        .tt-footer-info p { font-size: 0.9rem; color: rgba(255,255,255,0.75); line-height: 1.9; }
+        .tt-footer-copyright { margin-top: 2.5rem; }
+        .tt-footer-copyright p, .tt-footer-copyright a { display: block; font-size: 0.82rem; font-weight: 300; color: rgba(255,255,255,0.45); line-height: 1.9; letter-spacing: 0.05em; }
+        .tt-footer-copyright a:hover { color: rgba(255,255,255,0.75); }
+        .tt-footer-col-middle { display: flex; flex-direction: column; align-items: center; }
+        .tt-footer-follow { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 700; color: rgba(255,255,255,0.9); letter-spacing: 0.1em; margin-bottom: 1.8rem; }
+        .tt-footer-social { display: flex; gap: 1.2rem; }
+        .tt-footer-social a { width: 50px; height: 50px; border: 1.5px solid rgba(255,255,255,0.5); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all .3s ease; }
+        .tt-footer-social a:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+        .tt-footer-social svg { width: 24px; height: 24px; fill: rgba(255,255,255,0.85); }
+        .tt-footer-col-right { display: flex; align-items: center; justify-content: flex-end; }
+        .tt-footer-col-right img { width: 120px; height: auto; }
+        .tt-footer-wave { position: absolute; bottom: 0; right: 0; width: 35%; height: 55%; pointer-events: none; }
+
+        .tt-fab-group { position: fixed; right: 28px; bottom: 28px; z-index: 9999; display: flex; flex-direction: column; gap: 12px; pointer-events: none; }
+        .tt-fab-group .tt-fab { pointer-events: auto; display: inline-flex; align-items: center; justify-content: center; min-width: 132px; height: 52px; padding: 0 26px; border-radius: 9999px; background: var(--brand-blue); color: #fff !important; font-family: var(--font-sans); font-size: 16px; font-weight: 500; letter-spacing: 0.08em; border: 1.5px solid var(--brand-blue); box-shadow: 0 6px 18px rgba(34,56,67,0.28); transition: all .25s ease; white-space: nowrap; }
+        .tt-fab-group .tt-fab:hover { transform: translateY(-2px); background: #fff; color: var(--brand-blue) !important; box-shadow: 0 10px 24px rgba(34,56,67,0.35); }
+
+        @media (max-width: 768px) {
+            nav { padding: 0.8rem 5%; }
+            nav .logo { height: 58px; }
+            .hamburger { display: flex !important; }
+            nav .nav-links { position: fixed !important; top: 80px !important; left: -100% !important; width: 100% !important; height: calc(100vh - 80px) !important; background: rgba(250, 248, 245, 0.98) !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 2rem !important; transition: left .3s ease !important; margin: 0 !important; z-index: 999 !important; }
+            nav .nav-links.active { left: 0 !important; }
+            nav .nav-links a { font-size: 1.1rem !important; font-weight: 700 !important; letter-spacing: 2px !important; }
+            .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(7px, 7px); }
+            .hamburger.active span:nth-child(2) { opacity: 0; }
+            .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+
+            .article-hero { padding: 130px 5% 20px; }
+            .article-cover { padding: 0; }
+            .article-cover .cover-frame { aspect-ratio: 4 / 3; border-radius: 0; }
+            .article-body { padding: 40px 6% 60px; }
+            .article-body h2 { font-size: 1.25rem; }
+
+            .membership-overview { grid-template-columns: 1fr; gap: 14px; }
+            .membership-overview .overview-card { min-height: 0; padding: 22px 20px; }
+
+            .card-gallery { grid-template-columns: 1fr; gap: 18px; }
+
+            .benefit-table { border: none; background: transparent; }
+            .benefit-table .row { grid-template-columns: 1fr; border: 1px solid var(--brand-line); background: #fff; margin-bottom: 12px; }
+            .benefit-table .row.head { display: none; }
+            .benefit-table .row > div { border-right: none; border-bottom: 1px solid var(--brand-line); padding: 12px 18px; }
+            .benefit-table .row > div:last-child { border-bottom: none; }
+            .benefit-table .row .label-col { background: var(--brand-blue); color: #fff; }
+            .benefit-table .row:not(.head) > div.val::before { content: attr(data-tier); display: block; font-size: 0.72rem; letter-spacing: 0.2em; color: var(--brand-muted); margin-bottom: 4px; font-family: var(--font-serif); }
+
+            .related .grid { grid-template-columns: 1fr; }
+
+            .tt-footer { padding: 3rem 1.5rem 0; text-align: center; }
+            .tt-footer-grid { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
+            .tt-footer-col-left { order: 2; }
+            .tt-footer-col-middle { order: 1; align-items: center; }
+            .tt-footer-col-right { order: 3; justify-content: center; }
+            .tt-footer-company-name { font-size: 1.5rem; }
+            .tt-footer-follow { font-size: 1.2rem; }
+            .tt-footer-social a { width: 44px; height: 44px; }
+            .tt-footer-col-right img { width: 90px; }
+            .tt-footer-wave { display: none !important; }
+
+            .tt-fab-group { right: 16px; bottom: 16px; gap: 10px; }
+            .tt-fab-group .tt-fab { min-width: 112px; height: 46px; padding: 0 20px; font-size: 14px; letter-spacing: 0.06em; }
+        }
+
+        @media (min-width: 769px) {
+            .hamburger { display: none !important; }
+        }
+    </style>
+</head>
+<body style="">
+
+    <nav>
+        <a href="index.html" class="logo"><img src="logo.png" alt="同齊咖吡 TTCR"></a>
+        <ul class="nav-links">
+            <li><a href="menu.html">菜單</a></li>
+            <li><a href="member.html" class="active">會員專區</a></li>
+            <li><a href="franchise.html">加盟計畫</a></li>
+            <li><a href="space-rental.html">空間租賃</a></li>
+            <li><a href="location.html">店面位置</a></li>
+            <li><a href="story.html">品牌故事</a></li>
+            <li><a href="gallery.html">特色餐食</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <section class="article-hero">
+        <div class="breadcrumb">
+            <a href="index.html">首頁</a>
+            <span class="sep">／</span>
+            <span>會員專區</span>
+        </div>
+        <span class="tag">TTCR MEMBERSHIP</span>
+        <h1>同齊會員｜每杯日常，都有回饋</h1>
+        <div class="date">VIP · 銀卡 · 金卡　·　會員專屬權益</div>
+    </section>
+
+    <div class="article-cover" style="max-width: none; padding: 0; margin: 40px 0 0;">
+        <div class="cover-frame" style="background:#FAF8F5; aspect-ratio:auto; height:auto; width:100%; padding:0; border-radius:0;">
+            <img src="https://api.kuse.ai/api/file/public-assets/9722936/access/66b52626969f2334e60c0ab1b7cdb9174f75f1f2b0cd03429815246f215e3e88" alt="會員制度" style="width: 100%; height: auto; display: block; margin: 0px; border-radius: 0px;">
+        </div>
+    </div>
+
+    <article class="article-body" style="">
+        <p class="lead" style="">「一杯咖啡，<br>累積日常，<span class="accent" style="">與你同齊</span>。」</p>
+
+        <p style="">同齊咖吡的會員制度，依照累積消費金額分為 <strong>銀卡</strong>、<strong>金卡</strong>、<strong>VIP</strong> 三個等級。會員享有 9 折常態優惠、升等禮、生日禮以及活動集點卡等專屬權益，讓日常的一杯咖啡，也能累積一點剛剛好的回饋。</p>
+
+        <h2>會員制度怎麼運作？</h2>
+        <p>這不只是一張折扣卡，而是一套陪你把每次到店消費慢慢累積成專屬回饋的電子會員制度。從加入、消費到升等，所有紀錄都能透過 LINE 會員卡隨時查看。</p>
+
+        <div class="membership-overview" aria-label="同齊咖吡會員制度流程">
+            <section class="overview-card">
+                <span class="overview-no">1</span>
+                <h3>LINE 一鍵開通</h3>
+                <p>加入同齊咖吡 LINE 電子會員，完成基本資料綁定後，即可開始使用會員優惠與查看個人紀錄。</p>
+            </section>
+            <section class="overview-card">
+                <span class="overview-no">2</span>
+                <h3>每次消費都能累積</h3>
+                <p>結帳時出示電子會員卡，系統會保留消費與升等進度，日常喝咖啡也能逐步累積會員資格。</p>
+            </section>
+            <section class="overview-card">
+                <span class="overview-no">3</span>
+                <h3>升等解鎖更多回饋</h3>
+                <p>達到對應條件後即可升等，依會員級別享有升等禮、生日禮、專屬折扣與不定期會員活動。</p>
+            </section>
+        </div>
+
+        <h2>三種會員卡</h2>
+
+        <div class="card-gallery">
+            <div class="m-card">
+                <div class="card-face" style="background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9726580/access/64430527b654e355e7b150a821b30ac78cb4ff2bae23977877c47f44f3938442&quot;); background-repeat: no-repeat;"></div>
+                <div class="tier-label" style="">VIP</div>
+                <div class="tier-name" style=""><span style="letter-spacing: 1.6px;">VIP卡會員</span></div>
+                <div class="tier-threshold" style="">入會即享<br><b>9 折常態優惠</b>與活動集點卡</div>
+            </div>
+            <div class="m-card">
+                <div class="card-face" style="background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9734027/access/224dbd2e43a1b3fd5434f45ffc508325b53c7d6bd98b150f9ac85dd776f7b002&quot;); background-repeat: no-repeat;"></div>
+                <div class="tier-label" style=""><span style="letter-spacing: 3.2256px;">SILVER</span></div>
+                <div class="tier-name" style="">銀卡會員</div>
+                <div class="tier-threshold">累積消費滿 <b>$5,000</b><br>升等禮與生日禮加碼</div>
+            </div>
+            <div class="m-card" style="">
+                <div class="card-face" style="background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9734028/access/24cf6d6585b3afa7b89471afcbff90b569c23572b27a74b5e8d823f1da626a9b&quot;); background-repeat: no-repeat; outline: none;"></div>
+                <div class="tier-label" style="">GOLD</div>
+                <div class="tier-name" style="">金卡會員</div>
+                <div class="tier-threshold" style="">累積消費滿 <b>$12,000</b><br>最高等級專屬禮遇</div>
+            </div>
+        </div>
+
+        <p style="">會員卡為電子會員形式，加入 LINE 官方帳號即可開通，隨時查詢消費紀錄、升等進度與專屬優惠。</p>
+
+        <h2>會員權益一覽</h2>
+
+        <div class="benefit-table">
+            <div class="row head">
+                <div>項目</div>
+                <div class="tier-h" style="">VIP卡會員</div>
+                <div class="tier-h" style="">銀卡會員</div>
+                <div class="tier-h" style="">金卡會員</div>
+            </div>
+
+            <div class="row">
+                <div class="label-col" style="">會籍效期</div>
+                <div class="val" data-tier="銀卡" style="text-align: center; height: 122.944px;">1 年<span style="font-size: 0.82rem; color: var(--brand-muted); width: 422.11px; left: 2.98601px; position: relative;"><br>（下方升等金額門檻若為 300 元，實際效期等同於無期限）</span></div>
+                <div class="val" data-tier="金卡" style="text-align: center;"><br>1 年</div>
+                <div class="val" data-tier="VIP" style="text-align: center;"><br>1 年<br></div>
+            </div>
+
+            <div class="row">
+                <div class="label-col">升等條件</div>
+                <div class="val" data-tier="銀卡" style="text-align: center;">單筆消費滿 <b>$300</b></div>
+                <div class="val" data-tier="金卡" style="text-align: center;">累積消費滿 <b style="">$5,000</b></div>
+                <div class="val" data-tier="VIP" style="outline: none; text-align: center;">累積消費滿 <b>$12,000</b></div>
+            </div>
+
+            <div class="row">
+                <div class="label-col">升等禮</div>
+                <div class="val" data-tier="銀卡"><span class="dash">—</span></div>
+                <div class="val" data-tier="金卡">
+                    50 元飲品折價券 <b>×1 張</b><br>
+                    點購手沖精品咖啡 <b>乙杯</b><br>
+                    贈送中深焙濾掛 <b>乙包</b>
+                </div>
+                <div class="val" data-tier="VIP">
+                    點購手沖精品咖啡 <b>乙杯</b><br>
+                    贈送中深焙濾掛 <b>五包</b><br>
+                    單筆消費 85 折券 <b>×1 張</b><br>
+                    單筆消費滿 500 折 50 元券 <b>×1 張</b>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label-col">集點回饋</div>
+                <div class="val" style="grid-column: span 3; text-align:center;">
+                    未啟用會員集點，但有 <span class="em">【活動集點卡】</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label-col">生日禮</div>
+                <div class="val" data-tier="銀卡"><span class="dash">—</span></div>
+                <div class="val" data-tier="金卡">
+                    中深焙美式 <b>乙杯</b><br>
+                    甜點折價券 $100 <b>×1 張</b><br>
+                    <span style="font-size:0.82rem; color:var(--brand-muted);">（限當日）</span>
+                </div>
+                <div class="val" data-tier="VIP">
+                    中深焙美式 <b>乙杯</b><br>
+                    甜點折價券 $100 <b>×1 張</b><br>
+                    任選輕食系列（單點）<b>乙份</b><br>
+                    <span style="font-size:0.82rem; color:var(--brand-muted);">（限當日）</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label-col">其他優惠</div>
+                <div class="val" data-tier="銀卡">
+                    會員享 <b>9 折優惠</b><br>
+                    <span style="font-size:0.82rem; color:var(--brand-muted);">（咖啡豆及濾掛系列除外）</span>
+                </div>
+                <div class="val" data-tier="金卡">
+                    會員享 <b>9 折優惠</b><br>
+                    <span style="font-size:0.82rem; color:var(--brand-muted);">（咖啡豆及濾掛系列除外）</span>
+                </div>
+                <div class="val" data-tier="VIP">
+                    會員享 <b>9 折優惠</b><br>
+                    <span style="font-size:0.82rem; color:var(--brand-muted);">（咖啡豆及濾掛系列除外）</span>
+                </div>
+            </div>
+        </div>
+
+        <h2>如何加入會員</h2>
+        <p>1. <strong>一鍵加入</strong>｜點擊下方「立即加入會員」按鈕，使用 LINE 一鍵開通電子會員卡。</p>
+        <p>2. <strong>門市入會</strong>｜親至台中各門市櫃檯，由夥伴協助您完成會員綁定。</p>
+        <p>3. <strong>服務時間</strong>｜週一至週日 08:00–23:00。</p>
+
+        <div class="remark">
+            <strong>｜會員制度使用規範｜</strong>
+
+            <h4>一、會籍與升等</h4>
+            <ol>
+                <li style="">會員等級依累積消費金額自動判定，VIP卡為入會基本等級。</li>
+                <li>會籍效期為自升等日起 1 年，期滿後將依當期累積消費重新評等。</li>
+                <li>升等禮於達到門檻當次結帳後由系統自動發放至會員帳戶。</li>
+            </ol>
+
+            <h4>二、優惠使用</h4>
+            <ol>
+                <li>會員 9 折優惠適用於店內大部分品項，<b>咖啡豆、濾掛系列不適用</b>。</li>
+                <li>生日禮限當日使用，未使用恕不補發；兌換時請出示會員身份。</li>
+                <li>各項折價券、升等禮券不得與其他優惠合併使用。</li>
+            </ol>
+
+            <h4>三、權益保留</h4>
+            <p>同齊咖吡保留隨時修改、終止或變更本會員制度之權利。如有未盡事宜，本公司保有調整及最終解釋權，並不另行通知。</p>
+        </div>
+    </article>
+
+    <section class="cta-section">
+        <h3>☕ 立即加入　開啟會員旅程</h3>
+        <p>點擊下方按鈕，一鍵加入 LINE 電子會員，立即享有 9 折優惠與專屬權益。</p>
+        <div class="btns">
+            <a class="btn primary" href="https://line.me/R/app/2009721756-SEhmBVfJ" target="_blank" rel="noopener">立即加入會員 ›</a>
+            <a class="btn ghost" href="location.html">查看門市位置</a>
+        </div>
+    </section>
+
+
+    <footer class="tt-footer">
+        <div class="tt-footer-inner">
+            <div class="tt-footer-grid">
+                <div class="tt-footer-col-left">
+                    <h3 class="tt-footer-company-name">禾松餐飲有限公司</h3>
+                    <div class="tt-footer-info">
+                        <p>服務時間 : 週一至週五 09:00-18:00</p>
+                        <p>聯絡電話 : 04-22479068</p>
+                        <p>總部地址 : 406 台中市北屯區瀋陽北路 73 號</p>
+                    </div>
+                    <div class="tt-footer-copyright">
+                        <p>© 2026 TANGTSE COFFEE ROASTERY</p>
+                        <a href="privacy.html">隱私權政策</a>
+                    </div>
+                </div>
+                <div class="tt-footer-col-middle">
+                    <h4 class="tt-footer-follow">FOLLOW US</h4>
+                    <div class="tt-footer-social">
+                        <a href="https://www.instagram.com/ttcr_taichung/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 1 0 2.88 1.44 1.44 0 0 1 0-2.88z"></path></svg>
+                        </a>
+                        <a href="https://www.facebook.com/ttcrtaichung" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg>
+                        </a>
+                        <a href="https://line.me/R/ti/p/@828kffwi" target="_blank" rel="noopener" aria-label="LINE">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.630 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.630 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="tt-footer-col-right">
+                    <img src="logo-nav.png" alt="同齊咖吡 Logo">
+                </div>
+            </div>
+        </div>
+        <div class="tt-footer-wave">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M400 200 L400 80 Q320 20 220 80 Q140 130 0 200 Z" fill="white"></path>
+            </svg>
+        </div>
+    </footer>
+
+    <div class="tt-fab-group" role="group" aria-label="快速操作">
+        <a class="tt-fab" href="https://line.me/R/app/2009721756-SEhmBVfJ" target="_blank" rel="noopener">加入會員</a>
+    </div>
+
+    <script>
+        (function() {
+            function init() {
+                var toggle = document.querySelector('.hamburger');
+                var links = document.querySelector('nav .nav-links');
+                if (!toggle || !links) return;
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    toggle.classList.toggle('active');
+                    links.classList.toggle('active');
+                });
+                links.querySelectorAll('a').forEach(function(a) {
+                    a.addEventListener('click', function() {
+                        toggle.classList.remove('active');
+                        links.classList.remove('active');
+                    });
+                });
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
+    </script>
+
+
+</body></html>
