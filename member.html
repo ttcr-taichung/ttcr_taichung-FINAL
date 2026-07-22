@@ -565,13 +565,78 @@
     </style>
 
     <style id="member-v3">
-        :root { --member-yellow:#f4cf3f; --member-blue:#223843; --member-sky:#dce9ed; --member-gray:#eef1f2; }
-        html { scroll-behavior:smooth; scroll-padding-top:170px; }
-        .member-subnav { background:rgba(250,248,245,.94); }
-        .member-v3 { overflow:hidden; background:#faf8f5; color:var(--brand-blue); }
-        .member-v3 * { box-sizing:border-box; }
-        .member-v3-hero { min-height:760px; padding:210px max(6vw,32px) 90px; display:grid; grid-template-columns:minmax(0,1fr) minmax(360px,.86fr); align-items:center; gap:5vw; position:relative; isolation:isolate; }
-        .member-v3-hero::before { content:""; position:absolute; width<nav class="member-subnav" aria-label="會員專區導覽">
+      :root{--my:#f4cf3f;--mb:#223843;--ms:#dce9ed;--mg:#eef1f2}
+      html{scroll-behavior:smooth;scroll-padding-top:170px}
+      body{overflow-x:hidden}
+      .member-v3{overflow:hidden;background:#faf8f5;color:var(--mb)}
+      .member-v3 *{box-sizing:border-box}
+      .member-v3-hero{min-height:760px;padding:210px max(6vw,28px) 90px;display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,.85fr);align-items:center;gap:5vw;position:relative;isolation:isolate}
+      .member-v3-hero:before,.member-v3-hero:after{content:"";position:absolute;border-radius:50%;z-index:-1}
+      .member-v3-hero:before{width:520px;height:520px;right:-140px;top:155px;background:var(--ms)}
+      .member-v3-hero:after{width:230px;height:230px;left:-90px;bottom:20px;background:var(--my)}
+      .member-v3-eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:20px;font-size:.78rem;font-weight:900;letter-spacing:.24em}
+      .member-v3-eyebrow:before{content:"";width:42px;height:8px;border-radius:9px;background:var(--my)}
+      .member-v3-hero h1{max-width:720px;margin:0;font-family:var(--font-serif);font-size:clamp(3.1rem,6vw,6.3rem);line-height:1.04}
+      .member-v3-hero h1 span{display:block;color:#2f718b}
+      .member-v3-hero-copy{max-width:600px;margin:27px 0 34px;color:#64747d;font-size:1.05rem;line-height:2}
+      .member-v3-actions{display:flex;flex-wrap:wrap;gap:12px}
+      .member-v3-btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;border:2px solid var(--mb);border-radius:999px;font-weight:900;letter-spacing:.08em;transition:.25s}
+      .member-v3-btn--primary{background:var(--mb);color:#fff!important;box-shadow:7px 8px 0 var(--my)}
+      .member-v3-btn--ghost{background:#fff}
+      .member-v3-btn:hover{transform:translateY(-3px);box-shadow:4px 6px 0 var(--my)}
+      .member-v3-mascot{position:relative;min-height:480px;display:grid;place-items:center}
+      .member-v3-mascot img{position:relative;z-index:2;width:min(430px,92%);filter:drop-shadow(14px 18px 0 var(--my)) drop-shadow(0 24px 22px rgba(34,56,67,.18));animation:v3cat 4.8s ease-in-out infinite}
+      .member-v3-badge{position:absolute;z-index:3;padding:12px 18px;border:2px solid var(--mb);border-radius:999px;background:#fff;font-weight:900;box-shadow:6px 7px 0 var(--mb);animation:v3badge 3.4s ease-in-out infinite}
+      .member-v3-badge--a{left:0;top:18%;background:#f8df7b;transform:rotate(-7deg)}
+      .member-v3-badge--b{right:0;top:32%;transform:rotate(7deg);animation-delay:.5s}
+      .member-v3-badge--c{right:8%;bottom:8%;background:var(--mg);transform:rotate(-4deg);animation-delay:1s}
+      @keyframes v3cat{50%{transform:translateY(-8px) rotate(1deg)}}@keyframes v3badge{50%{translate:0 -7px}}
+      .member-v3-jump{background:var(--mb);color:#fff;overflow:hidden}
+      .member-v3-jump-inner{width:max-content;display:flex;gap:34px;padding:14px 0;font-size:.82rem;font-weight:900;letter-spacing:.17em;animation:v3marquee 23s linear infinite}
+      .member-v3-jump span:after{content:"◆";margin-left:34px;color:var(--my)}@keyframes v3marquee{to{transform:translateX(-50%)}}
+      .member-v3-section{padding:110px max(6vw,28px);position:relative}.member-v3-section--sky{background:var(--ms)}.member-v3-section--blue{background:var(--mb);color:#fff}
+      .member-v3-container{max-width:1180px;margin:auto}
+      .member-v3-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:6vw;align-items:end;margin-bottom:64px}
+      .member-v3-kicker{display:block;margin-bottom:12px;color:#2f718b;font-size:.78rem;font-weight:900;letter-spacing:.2em}.member-v3-section--blue .member-v3-kicker{color:var(--my)}
+      .member-v3-head h2{margin:0;font-family:var(--font-serif);font-size:clamp(2.5rem,5vw,5.2rem);line-height:1.05}.member-v3-head p{margin:0;color:#697983;line-height:2}.member-v3-section--blue .member-v3-head p{color:#ffffffb8}
+      .member-v3-journey{display:grid;gap:26px}
+      .member-v3-step{display:grid;grid-template-columns:120px 1fr 260px;align-items:center;gap:32px;padding:28px 34px;border:2px solid var(--mb);border-radius:28px;background:#fff;box-shadow:10px 12px 0 var(--my)}
+      .member-v3-step:nth-child(even){grid-template-columns:260px 120px 1fr;background:#f2f6f7}.member-v3-step:nth-child(even) .member-v3-step-no{grid-column:2}.member-v3-step:nth-child(even) .member-v3-step-copy{grid-column:3}.member-v3-step:nth-child(even) .member-v3-step-art{grid-column:1;grid-row:1}
+      .member-v3-step-no{width:90px;height:90px;display:grid;place-items:center;border-radius:50%;background:var(--my);font-family:var(--font-serif);font-size:2.5rem;font-weight:900}.member-v3-step h3{margin:0 0 8px;font-size:1.5rem}.member-v3-step p{margin:0;color:#687780;line-height:1.85}
+      .member-v3-step-art{height:132px;display:grid;place-items:center;border-radius:24px;background:var(--ms);overflow:hidden}.member-v3-step-art:before{font-size:4rem;font-weight:900;color:var(--mb);opacity:.18}.member-v3-step:nth-child(1) .member-v3-step-art:before{content:"LINE";font-size:2rem;opacity:1}.member-v3-step:nth-child(2) .member-v3-step-art:before{content:"$100"}.member-v3-step:nth-child(3) .member-v3-step-art:before{content:"UP";opacity:1;color:#2f718b}
+      .member-v3-benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.member-v3-benefit{min-height:280px;padding:28px 24px;border:2px solid #ffffff2e;border-radius:28px;background:#ffffff12;position:relative;overflow:hidden}.member-v3-benefit:nth-child(even){transform:translateY(32px)}
+      .member-v3-benefit-no{position:absolute;right:12px;top:-24px;font-family:var(--font-serif);font-size:7rem;font-weight:900;color:#ffffff0f}.member-v3-benefit-icon{width:64px;height:64px;display:grid;place-items:center;margin-bottom:34px;border-radius:22px;background:var(--my);color:var(--mb);font-size:1.5rem;font-weight:900}.member-v3-benefit h3{margin:0 0 10px;font-size:1.35rem}.member-v3-benefit p{margin:0;color:#ffffffad;line-height:1.8}
+      .member-v3-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.member-v3-tier{padding:14px 14px 30px;border:2px solid var(--mb);border-radius:30px;background:#fff;box-shadow:8px 10px 0 #2238431f;transition:.3s}.member-v3-tier:hover{transform:translateY(-8px);box-shadow:12px 15px 0 var(--my)}
+      .member-v3-tier-card{aspect-ratio:1.58/1;border-radius:20px;background-size:cover;background-position:center}.member-v3-tier-body{padding:22px 14px 0}.member-v3-tier-label{font-size:.72rem;font-weight:900;letter-spacing:.22em;color:#2f718b}.member-v3-tier h3{margin:8px 0 12px;font-family:var(--font-serif);font-size:1.8rem}.member-v3-tier p{margin:0;color:#65757e;line-height:1.75}
+      .member-v3-compare{margin-top:70px;overflow:auto;border:2px solid var(--mb);border-radius:28px;background:#fff;box-shadow:10px 12px 0 var(--my)}.member-v3-compare table{width:100%;min-width:780px;border-collapse:collapse}.member-v3-compare th,.member-v3-compare td{padding:19px 16px;border-bottom:1px solid #d8dfe2;text-align:left;vertical-align:top;line-height:1.65}.member-v3-compare th{background:var(--mb);color:#fff}.member-v3-compare td:first-child{font-weight:900;background:#f1f4f5}
+      .member-v3-join{display:grid;grid-template-columns:.8fr 1.2fr;gap:6vw;align-items:center}.member-v3-join-visual{min-height:460px;border-radius:44% 56% 48% 52%;background:var(--my);display:grid;place-items:center}.member-v3-join-visual img{width:min(380px,90%);filter:drop-shadow(0 20px 18px #22384333)}.member-v3-join-list{display:grid;gap:18px;margin:32px 0}.member-v3-join-item{display:grid;grid-template-columns:54px 1fr;gap:18px}.member-v3-join-item b{width:54px;height:54px;display:grid;place-items:center;border-radius:50%;background:var(--mb);color:#fff}.member-v3-join-item h3{margin:1px 0 4px}.member-v3-join-item p{margin:0;color:#687780;line-height:1.75}
+      .member-v3-faq{display:grid;gap:12px;max-width:900px;margin:auto}.member-v3-faq details{border:2px solid #ffffff3d;border-radius:20px;background:#ffffff12;overflow:hidden}.member-v3-faq summary{cursor:pointer;list-style:none;padding:22px 64px 22px 24px;font-weight:900;position:relative}.member-v3-faq summary:after{content:"＋";position:absolute;right:24px;top:18px;color:var(--my);font-size:1.6rem}.member-v3-faq details[open] summary:after{content:"－"}.member-v3-faq details p{margin:0;padding:0 24px 24px;color:#ffffffb3;line-height:1.85}
+      .member-v3-cta{padding:95px 6%;text-align:center;background:var(--my)}.member-v3-cta h2{margin:0 0 14px;font-family:var(--font-serif);font-size:clamp(2.3rem,5vw,4.8rem)}.member-v3-cta p{margin:0 auto 30px;max-width:650px;color:#596b74;line-height:1.8}
+      .member-v3-reveal{opacity:0;transform:translateY(28px);transition:.75s}.member-v3-reveal.is-visible{opacity:1;transform:none}
+      @media(max-width:900px){.member-v3-hero{grid-template-columns:1fr;padding-top:180px;text-align:center}.member-v3-hero-copy{margin-left:auto;margin-right:auto}.member-v3-actions{justify-content:center}.member-v3-mascot{min-height:420px}.member-v3-head,.member-v3-join{grid-template-columns:1fr}.member-v3-benefits{grid-template-columns:repeat(2,1fr)}.member-v3-benefit:nth-child(even){transform:none}.member-v3-step,.member-v3-step:nth-child(even){grid-template-columns:88px 1fr}.member-v3-step-art,.member-v3-step:nth-child(even) .member-v3-step-art{grid-column:1/-1;grid-row:auto}.member-v3-step:nth-child(even) .member-v3-step-no{grid-column:1}.member-v3-step:nth-child(even) .member-v3-step-copy{grid-column:2}}
+      @media(max-width:680px){.member-v3-hero{min-height:auto;padding:165px 22px 60px}.member-v3-hero h1{font-size:clamp(2.8rem,15vw,4.6rem)}.member-v3-mascot{min-height:350px}.member-v3-mascot img{width:280px}.member-v3-badge{padding:9px 12px;font-size:.75rem;box-shadow:4px 5px 0 var(--mb)}.member-v3-badge--a{left:0}.member-v3-badge--b{right:0}.member-v3-badge--c{right:2%}.member-v3-section{padding:78px 22px}.member-v3-head{margin-bottom:42px}.member-v3-benefits,.member-v3-tiers{grid-template-columns:1fr}.member-v3-step,.member-v3-step:nth-child(even){grid-template-columns:64px 1fr;padding:22px 18px;gap:16px;box-shadow:6px 7px 0 var(--my)}.member-v3-step-no{width:58px;height:58px;font-size:1.7rem}.member-v3-step h3{font-size:1.2rem}.member-v3-join-visual{min-height:340px}.member-v3-btn{width:100%}}
+      @media(prefers-reduced-motion:reduce){.member-v3-mascot img,.member-v3-badge,.member-v3-jump-inner{animation:none}.member-v3-reveal{opacity:1;transform:none}}
+    </style>
+</head>
+<body style="">
+
+    <nav>
+        <a href="index.html" class="logo"><img src="logo.png" alt="同齊咖吡 TTCR"></a>
+        <ul class="nav-links">
+            <li><a href="menu.html">菜單</a></li>
+            <li><a href="member.html" class="active">會員專區</a></li>
+            <li><a href="franchise.html">加盟計畫</a></li>
+            <li><a href="space-rental.html">空間租賃</a></li>
+            <li><a href="location.html">店面位置</a></li>
+            <li><a href="story.html">品牌故事</a></li>
+            <li><a href="gallery.html">特色餐食</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <nav class="member-subnav" aria-label="會員專區導覽">
         <div class="member-subnav__inner">
             <a href="#member-top">會員首頁</a>
             <a href="#member-guide">會員旅程</a>
@@ -716,285 +781,6 @@
         </section>
     </main>
 
-    ight:420px; }
-            .member-v3-head,.member-v3-join { grid-template-columns:1fr; }
-            .member-v3-benefits { grid-template-columns:repeat(2,1fr); }
-            .member-v3-benefit:nth-child(even){transform:none}
-            .member-v3-step,.member-v3-step:nth-child(even){grid-template-columns:88px 1fr;}
-            .member-v3-step-art,.member-v3-step:nth-child(even) .member-v3-step-art{grid-column:1/-1;grid-row:auto}
-            .member-v3-step:nth-child(even) .member-v3-step-no{grid-column:1}
-            .member-v3-step:nth-child(even) .member-v3-step-copy{grid-column:2}
-        }
-        @media(max-width:680px){
-            .member-v3-hero { min-height:auto; padding:165px 22px 60px; }
-            .member-v3-hero h1 { font-size:clamp(2.8rem,15vw,4.6rem); }
-            .member-v3-mascot { min-height:350px; margin-top:10px; }
-            .member-v3-mascot img { width:280px; }
-            .member-v3-badge { padding:9px 12px; font-size:.75rem; box-shadow:4px 5px 0 var(--member-blue); }
-            .member-v3-badge--a { left:0; top:22%; }
-            .member-v3-badge--b { right:0; top:34%; }
-            .member-v3-badge--c { right:2%; bottom:3%; }
-            .member-v3-section { padding:78px 22px; }
-            .member-v3-head { margin-bottom:42px; }
-            .member-v3-benefits,.member-v3-tiers { grid-template-columns:1fr; }
-            .member-v3-step,.member-v3-step:nth-child(even){grid-template-columns:64px 1fr;padding:22px 18px;gap:16px;box-shadow:6px 7px 0 var(--member-yellow)}
-            .member-v3-step-no{width:58px;height:58px;font-size:1.7rem}
-            .member-v3-step h3{font-size:1.2rem}
-            .member-v3-join-visual{min-height:340px}
-            .member-v3-btn{width:100%}
-        }
-        @media(prefers-reduced-motion:reduce){
-            .member-v3-mascot img,.member-v3-badge,.member-v3-jump-inner{animation:none}
-            .member-v3-reveal{opacity:1;transform:none}
-        }
-    </style>
-</head>
-<body style="">
-
-    <nav>
-        <a href="index.html" class="logo"><img src="logo.png" alt="同齊咖吡 TTCR"></a>
-        <ul class="nav-links">
-            <li><a href="menu.html">菜單</a></li>
-            <li><a href="member.html" class="active">會員專區</a></li>
-            <li><a href="franchise.html">加盟計畫</a></li>
-            <li><a href="space-rental.html">空間租賃</a></li>
-            <li><a href="location.html">店面位置</a></li>
-            <li><a href="story.html">品牌故事</a></li>
-            <li><a href="gallery.html">特色餐食</a></li>
-        </ul>
-        <button class="hamburger" aria-label="Menu">
-            <span></span><span></span><span></span>
-        </button>
-    </nav>
-
-    <nav class="member-subnav" aria-label="會員專區導覽">
-        <div class="member-subnav__inner">
-            <a href="#member-top">會員首頁</a>
-            <a href="#member-guide">制度說明</a>
-            <a href="#member-levels">會員等級</a>
-            <a href="#member-benefits">權益比較</a>
-            <a href="#member-join">加入方式</a>
-            <a href="#member-faq">常見問題</a>
-        </div>
-    </nav>
-
-    <section class="article-hero" id="member-top">
-        <div class="breadcrumb">
-            <a href="index.html">首頁</a>
-            <span class="sep">／</span>
-            <span>會員專區</span>
-        </div>
-        <span class="tag">TTCR MEMBERSHIP</span>
-        <h1>同齊會員｜每杯日常，都有回饋</h1>
-        <div class="date">VIP · 銀卡 · 金卡　·　會員專屬權益</div>
-        <div class="member-hero-art" aria-hidden="true">
-            <span class="member-float-tag member-float-tag--one">生日禮物 ♡</span>
-            <span class="member-float-tag member-float-tag--two">會員 9 折 ✦</span>
-            <span class="member-float-tag member-float-tag--three">升等好禮 ☕</span>
-            <div class="member-cat" aria-label="同齊貓咪 2D 會員形象">
-                <img src="images/ttcr-cat-member-2d-v2.png" alt="揮手歡迎的同齊貓咪 2D 動畫角色">
-            </div>
-        </div>
-    </section>
-
-    <div class="article-cover" style="max-width: none; padding: 0; margin: 40px 0 0;">
-        <div class="cover-frame" style="background:#FAF8F5; aspect-ratio:auto; height:auto; width:100%; padding:0; border-radius:0;">
-            <img src="https://api.kuse.ai/api/file/public-assets/9722936/access/66b52626969f2334e60c0ab1b7cdb9174f75f1f2b0cd03429815246f215e3e88" alt="會員制度" style="width: 100%; height: auto; display: block; margin: 0px; border-radius: 0px;">
-        </div>
-    </div>
-
-    <article class="article-body" style="">
-        <p class="lead" style="">「一杯咖啡，<br>累積日常，<span class="accent" style="">與你同齊</span>。」</p>
-
-        <p style="">同齊咖吡的會員制度，依照累積消費金額分為 <strong>銀卡</strong>、<strong>金卡</strong>、<strong>VIP</strong> 三個等級。會員享有 9 折常態優惠、升等禮、生日禮以及活動集點卡等專屬權益，讓日常的一杯咖啡，也能累積一點剛剛好的回饋。</p>
-
-        <h2 id="member-guide">會員制度怎麼運作？</h2>
-        <p>這不只是一張折扣卡，而是一套陪你把每次到店消費慢慢累積成專屬回饋的電子會員制度。從加入、消費到升等，所有紀錄都能透過 LINE 會員卡隨時查看。</p>
-
-        <div class="membership-overview" aria-label="同齊咖吡會員制度流程">
-            <section class="overview-card">
-                <span class="overview-no">1</span>
-                <h3>LINE 一鍵開通</h3>
-                <p>加入同齊咖吡 LINE 電子會員，完成基本資料綁定後，即可開始使用會員優惠與查看個人紀錄。</p>
-            </section>
-            <section class="overview-card">
-                <span class="overview-no">2</span>
-                <h3>每次消費都能累積</h3>
-                <p>結帳時出示電子會員卡，系統會保留消費與升等進度，日常喝咖啡也能逐步累積會員資格。</p>
-            </section>
-            <section class="overview-card">
-                <span class="overview-no">3</span>
-                <h3>升等解鎖更多回饋</h3>
-                <p>達到對應條件後即可升等，依會員級別享有升等禮、生日禮、專屬折扣與不定期會員活動。</p>
-            </section>
-        </div>
-
-        <h2 id="member-levels">三種會員卡</h2>
-
-        <div class="card-gallery">
-            <div class="m-card">
-                <div class="card-face" style="background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9726580/access/64430527b654e355e7b150a821b30ac78cb4ff2bae23977877c47f44f3938442&quot;); background-repeat: no-repeat;"></div>
-                <div class="tier-label" style="">VIP</div>
-                <div class="tier-name" style=""><span style="letter-spacing: 1.6px;">VIP卡會員</span></div>
-                <div class="tier-threshold" style="">入會即享<br><b>9 折常態優惠</b>與活動集點卡</div>
-            </div>
-            <div class="m-card">
-                <div class="card-face" style="background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9734027/access/224dbd2e43a1b3fd5434f45ffc508325b53c7d6bd98b150f9ac85dd776f7b002&quot;); background-repeat: no-repeat;"></div>
-                <div class="tier-label" style=""><span style="letter-spacing: 3.2256px;">SILVER</span></div>
-                <div class="tier-name" style="">銀卡會員</div>
-                <div class="tier-threshold">累積消費滿 <b>$5,000</b><br>升等禮與生日禮加碼</div>
-            </div>
-            <div class="m-card" style="">
-                <div class="card-face" style="background-image: url(&quot;https://api.kuse.ai/api/file/public-assets/9734028/access/24cf6d6585b3afa7b89471afcbff90b569c23572b27a74b5e8d823f1da626a9b&quot;); background-repeat: no-repeat; outline: none;"></div>
-                <div class="tier-label" style="">GOLD</div>
-                <div class="tier-name" style="">金卡會員</div>
-                <div class="tier-threshold" style="">累積消費滿 <b>$12,000</b><br>最高等級專屬禮遇</div>
-            </div>
-        </div>
-
-        <p style="">會員卡為電子會員形式，加入 LINE 官方帳號即可開通，隨時查詢消費紀錄、升等進度與專屬優惠。</p>
-
-        <h2 id="member-benefits">會員權益一覽</h2>
-
-        <div class="benefit-table">
-            <div class="row head">
-                <div>項目</div>
-                <div class="tier-h" style="">VIP卡會員</div>
-                <div class="tier-h" style="">銀卡會員</div>
-                <div class="tier-h" style="">金卡會員</div>
-            </div>
-
-            <div class="row">
-                <div class="label-col" style="">會籍效期</div>
-                <div class="val" data-tier="銀卡" style="text-align: center; height: 122.944px;">1 年<span style="font-size: 0.82rem; color: var(--brand-muted); width: 422.11px; left: 2.98601px; position: relative;"><br>（下方升等金額門檻若為 300 元，實際效期等同於無期限）</span></div>
-                <div class="val" data-tier="金卡" style="text-align: center;"><br>1 年</div>
-                <div class="val" data-tier="VIP" style="text-align: center;"><br>1 年<br></div>
-            </div>
-
-            <div class="row">
-                <div class="label-col">升等條件</div>
-                <div class="val" data-tier="銀卡" style="text-align: center;">單筆消費滿 <b>$300</b></div>
-                <div class="val" data-tier="金卡" style="text-align: center;">累積消費滿 <b style="">$5,000</b></div>
-                <div class="val" data-tier="VIP" style="outline: none; text-align: center;">累積消費滿 <b>$12,000</b></div>
-            </div>
-
-            <div class="row">
-                <div class="label-col">升等禮</div>
-                <div class="val" data-tier="銀卡"><span class="dash">—</span></div>
-                <div class="val" data-tier="金卡">
-                    50 元飲品折價券 <b>×1 張</b><br>
-                    點購手沖精品咖啡 <b>乙杯</b><br>
-                    贈送中深焙濾掛 <b>乙包</b>
-                </div>
-                <div class="val" data-tier="VIP">
-                    點購手沖精品咖啡 <b>乙杯</b><br>
-                    贈送中深焙濾掛 <b>五包</b><br>
-                    單筆消費 85 折券 <b>×1 張</b><br>
-                    單筆消費滿 500 折 50 元券 <b>×1 張</b>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="label-col">集點回饋</div>
-                <div class="val" style="grid-column: span 3; text-align:center;">
-                    未啟用會員集點，但有 <span class="em">【活動集點卡】</span>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="label-col">生日禮</div>
-                <div class="val" data-tier="銀卡"><span class="dash">—</span></div>
-                <div class="val" data-tier="金卡">
-                    中深焙美式 <b>乙杯</b><br>
-                    甜點折價券 $100 <b>×1 張</b><br>
-                    <span style="font-size:0.82rem; color:var(--brand-muted);">（限當日）</span>
-                </div>
-                <div class="val" data-tier="VIP">
-                    中深焙美式 <b>乙杯</b><br>
-                    甜點折價券 $100 <b>×1 張</b><br>
-                    任選輕食系列（單點）<b>乙份</b><br>
-                    <span style="font-size:0.82rem; color:var(--brand-muted);">（限當日）</span>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="label-col">其他優惠</div>
-                <div class="val" data-tier="銀卡">
-                    會員享 <b>9 折優惠</b><br>
-                    <span style="font-size:0.82rem; color:var(--brand-muted);">（咖啡豆及濾掛系列除外）</span>
-                </div>
-                <div class="val" data-tier="金卡">
-                    會員享 <b>9 折優惠</b><br>
-                    <span style="font-size:0.82rem; color:var(--brand-muted);">（咖啡豆及濾掛系列除外）</span>
-                </div>
-                <div class="val" data-tier="VIP">
-                    會員享 <b>9 折優惠</b><br>
-                    <span style="font-size:0.82rem; color:var(--brand-muted);">（咖啡豆及濾掛系列除外）</span>
-                </div>
-            </div>
-        </div>
-
-        <h2 id="member-join">如何加入會員</h2>
-        <p>1. <strong>一鍵加入</strong>｜點擊下方「立即加入會員」按鈕，使用 LINE 一鍵開通電子會員卡。</p>
-        <p>2. <strong>門市入會</strong>｜親至台中各門市櫃檯，由夥伴協助您完成會員綁定。</p>
-        <p>3. <strong>服務時間</strong>｜週一至週日 08:00–23:00。</p>
-
-        <h2 id="member-faq">會員常見問題</h2>
-        <div class="member-faq">
-            <details>
-                <summary>如何加入同齊會員？</summary>
-                <p>點擊頁面中的「立即加入會員」，透過 LINE 開通電子會員卡；也可以到同齊咖吡各門市，由現場夥伴協助完成會員綁定。</p>
-            </details>
-            <details>
-                <summary>會員等級如何升等？</summary>
-                <p>會員等級會依消費條件與累積金額自動判定。達到對應門檻後，系統會更新會員級別，詳細門檻請參考上方「會員權益一覽」。</p>
-            </details>
-            <details>
-                <summary>會員優惠如何使用？</summary>
-                <p>結帳前請出示 LINE 電子會員卡，由門市夥伴確認會員身分與可使用的優惠券；部分優惠不得合併使用。</p>
-            </details>
-            <details>
-                <summary>會籍效期多久？</summary>
-                <p>各會員級別會籍效期為一年，期滿後依當期累積消費重新評等，實際狀態以會員系統顯示為準。</p>
-            </details>
-            <details>
-                <summary>生日禮與升等禮在哪裡查看？</summary>
-                <p>符合資格後，相關會員禮會顯示於 LINE 電子會員帳戶。各票券都有使用期限與適用條件，使用前請先查看票券說明。</p>
-            </details>
-        </div>
-
-        <div class="remark">
-            <strong>｜會員制度使用規範｜</strong>
-
-            <h4>一、會籍與升等</h4>
-            <ol>
-                <li style="">會員等級依累積消費金額自動判定，VIP卡為入會基本等級。</li>
-                <li>會籍效期為自升等日起 1 年，期滿後將依當期累積消費重新評等。</li>
-                <li>升等禮於達到門檻當次結帳後由系統自動發放至會員帳戶。</li>
-            </ol>
-
-            <h4>二、優惠使用</h4>
-            <ol>
-                <li>會員 9 折優惠適用於店內大部分品項，<b>咖啡豆、濾掛系列不適用</b>。</li>
-                <li>生日禮限當日使用，未使用恕不補發；兌換時請出示會員身份。</li>
-                <li>各項折價券、升等禮券不得與其他優惠合併使用。</li>
-            </ol>
-
-            <h4>三、權益保留</h4>
-            <p>同齊咖吡保留隨時修改、終止或變更本會員制度之權利。如有未盡事宜，本公司保有調整及最終解釋權，並不另行通知。</p>
-        </div>
-    </article>
-
-    <section class="cta-section">
-        <h3>☕ 立即加入　開啟會員旅程</h3>
-        <p>點擊下方按鈕，一鍵加入 LINE 電子會員，立即享有 9 折優惠與專屬權益。</p>
-        <div class="btns">
-            <a class="btn primary" href="https://line.me/R/app/2009721756-SEhmBVfJ" target="_blank" rel="noopener">立即加入會員 ›</a>
-            <a class="btn ghost" href="location.html">查看門市位置</a>
-        </div>
-    </section>
-
-
     <footer class="tt-footer">
         <div class="tt-footer-inner">
             <div class="tt-footer-grid">
@@ -1069,15 +855,5 @@
     </script>
 
 
-
-    <script>
-        (function(){
-            var items=document.querySelectorAll('.member-v3-reveal');
-            if(!('IntersectionObserver' in window)){items.forEach(function(el){el.classList.add('is-visible')});return;}
-            var observer=new IntersectionObserver(function(entries){
-                entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}});
-            },{threshold:.12});
-            items.forEach(function(el){observer.observe(el);});
-        })();
-    </script>
+<script>(function(){var a=document.querySelectorAll('.member-v3-reveal');if(!('IntersectionObserver' in window)){a.forEach(function(e){e.classList.add('is-visible')});return}var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');o.unobserve(e.target)}})},{threshold:.12});a.forEach(function(e){o.observe(e)})})();</script>
 </body></html>
