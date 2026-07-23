@@ -1018,6 +1018,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
 
+        <style>
+        .tt-fee{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:760px;margin:0 auto}
+        .tt-fee-card{position:relative;border:1px solid #e8e4da;border-radius:16px;background:#fff;padding:46px 36px 40px;text-align:center;box-shadow:0 8px 24px rgba(34,56,67,.05);transition:transform .3s ease,box-shadow .3s ease}
+        .tt-fee-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(34,56,67,.1)}
+        .tt-fee-card--featured{border:2px solid #c8a24b;background:#fbf9f3}
+        .tt-fee-term{display:inline-block;font-size:.9rem;font-weight:700;letter-spacing:.15em;color:#c8a24b;margin-bottom:16px}
+        .tt-fee-amount{font-family:var(--font-serif);font-weight:700;color:#223843;line-height:1;font-size:3.4rem}
+        .tt-fee-amount span{font-size:1.4rem;margin-left:6px;font-weight:600}
+        .tt-fee-card p{margin:14px 0 0;color:#65757e;font-size:.95rem}
+        .tt-fee-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#f2c531;color:#223843;font-size:.75rem;font-weight:700;letter-spacing:.12em;padding:6px 18px;border-radius:999px;white-space:nowrap}
+        .tt-fee-note{max-width:760px;margin:24px auto 0;text-align:center;color:#94a0a5;font-size:.86rem;line-height:1.7}
+        @media(max-width:680px){.tt-fee{grid-template-columns:1fr;gap:32px}.tt-fee-amount{font-size:3rem}}
+        </style>
+        <section class="member-v3-section" id="fh-fee">
+            <div class="member-v3-container">
+                <header class="member-v3-head member-v3-reveal">
+                    <div><span class="member-v3-kicker">FRANCHISE FEE</span><h2>加盟金方案</h2></div>
+                </header>
+                <div class="tt-fee">
+                    <article class="tt-fee-card member-v3-reveal">
+                        <span class="tt-fee-term">5 年方案</span>
+                        <div class="tt-fee-amount">88<span>萬</span></div>
+                        <p>五年加盟合約</p>
+                    </article>
+                    <article class="tt-fee-card tt-fee-card--featured member-v3-reveal">
+                        <span class="tt-fee-badge">推薦方案</span>
+                        <span class="tt-fee-term">8 年方案</span>
+                        <div class="tt-fee-amount">58<span>萬</span></div>
+                        <p>八年加盟合約</p>
+                    </article>
+                </div>
+                <p class="tt-fee-note member-v3-reveal">＊以上為加盟金，實際開店費用另含設備、裝潢及開辦成本，將依店型與現場評估為準。</p>
+            </div>
+        </section>
+
         <section class="member-v3-section member-v3-section--sky">
             <div class="member-v3-container">
                 <header class="member-v3-head member-v3-reveal">
@@ -1524,4 +1559,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 /* === /TT Mobile Nav JS === */
 </script>
+
+<!-- ===== 右下角浮動 LINE 預約按鈕 ===== -->
+<style>
+.tt-float-cta{
+    position:fixed;right:24px;bottom:24px;z-index:1500;
+    display:inline-flex;align-items:center;gap:10px;
+    background:#223843;color:#fff;
+    padding:15px 26px;border-radius:999px;
+    font-family:"Noto Sans TC",sans-serif;font-weight:700;font-size:1rem;letter-spacing:1px;
+    text-decoration:none;white-space:nowrap;
+    box-shadow:0 8px 24px rgba(34,56,67,.3);
+    animation:tt-float-flash 10s ease-in-out infinite;
+}
+.tt-float-cta:hover{background:#2e4a58;}
+.tt-float-cta svg{width:24px;height:24px;fill:#06C755;flex-shrink:0;}
+@keyframes tt-float-flash{
+    0%,86%,100%{transform:scale(1);box-shadow:0 8px 24px rgba(34,56,67,.3);}
+    89%{transform:scale(1.1);box-shadow:0 0 0 6px rgba(242,197,49,.35),0 12px 30px rgba(34,56,67,.45);}
+    92%{transform:scale(1);}
+    95%{transform:scale(1.06);box-shadow:0 0 0 4px rgba(242,197,49,.3),0 10px 26px rgba(34,56,67,.4);}
+    98%{transform:scale(1);}
+}
+@media (max-width:680px){
+    .tt-float-cta{right:16px;bottom:16px;padding:13px 20px;font-size:.9rem;gap:8px;}
+    .tt-float-cta svg{width:20px;height:20px;}
+}
+@media (prefers-reduced-motion:reduce){
+    .tt-float-cta{animation:none;}
+}
+@media print{ .tt-float-cta{display:none!important;} }
+</style>
+<a class="tt-float-cta" href="https://line.me/R/ti/p/@828kffwi" target="_blank" rel="noopener" aria-label="預約加盟說明會 - 加入官方LINE">預約加盟說明會</a>
+<!-- ===== /右下角浮動 LINE 預約按鈕 ===== -->
 </body></html>
