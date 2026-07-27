@@ -3588,6 +3588,113 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
 
 
+    <!-- === Space Rental Mobile Stats + Back To Top === -->
+<style id="space-back-to-top-style">
+    @media (max-width: 768px) {
+        .space-hero-stat {
+            padding: 16px 7px;
+        }
+        .space-hero-stat .space-hero-stat__number {
+            font-size: 1.28rem;
+            line-height: 1.1;
+            font-weight: 900;
+            letter-spacing: 0;
+        }
+        .space-hero-stat .space-hero-stat__label {
+            margin-top: 7px;
+            font-size: .9rem;
+            line-height: 1.35;
+            font-weight: 700;
+            letter-spacing: .025em;
+        }
+    }
+
+    .space-back-to-top {
+        position: fixed;
+        right: 28px;
+        bottom: 24px;
+        z-index: 9997;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 48px;
+        padding: 0 18px;
+        border: 1.5px solid var(--brand-blue);
+        border-radius: 9999px;
+        background: #fff;
+        color: var(--brand-blue);
+        box-shadow: 0 8px 24px rgba(34,56,67,.22);
+        font-family: var(--font-sans);
+        font-size: .92rem;
+        font-weight: 800;
+        letter-spacing: .06em;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(12px);
+        transition: opacity .25s ease, visibility .25s ease, transform .25s ease, box-shadow .25s ease;
+    }
+    .space-back-to-top svg {
+        width: 17px;
+        height: 17px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2.4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+    .space-back-to-top.is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .space-back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 28px rgba(34,56,67,.3);
+    }
+    @media (max-width: 768px) {
+        .space-back-to-top {
+            right: 16px;
+            bottom: calc(18px + env(safe-area-inset-bottom));
+            min-height: 44px;
+            padding: 0 15px;
+            font-size: .84rem;
+        }
+        body.menu-open .space-back-to-top,
+        body:has(.nav-links.active) .space-back-to-top {
+            display: none;
+        }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .space-back-to-top { transition: none; }
+    }
+</style>
+
+<button class="space-back-to-top" type="button" aria-label="回到頁面最上方">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15l7-7 7 7"></path></svg>
+    <span>回到最上方</span>
+</button>
+
+<script id="space-back-to-top-script">
+(function () {
+    var button = document.querySelector('.space-back-to-top');
+    if (!button) return;
+
+    function updateButton() {
+        button.classList.toggle('is-visible', window.scrollY > 420);
+    }
+
+    button.addEventListener('click', function () {
+        var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+    });
+    window.addEventListener('scroll', updateButton, { passive: true });
+    updateButton();
+})();
+</script>
+    <!-- === /Space Rental Mobile Stats + Back To Top === -->
+
+
     <!-- === Space Rental Floating Booking Button === -->
 <style id="space-booking-fab-style">
     .space-booking-fab-wrap {
