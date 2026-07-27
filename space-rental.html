@@ -3618,11 +3618,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 8px;
-        min-height: 48px;
-        padding: 0 18px;
+        width: 50px;
+        height: 50px;
+        padding: 0;
         border: 1.5px solid var(--brand-blue);
-        border-radius: 9999px;
+        border-radius: 50%;
         background: #fff;
         color: var(--brand-blue);
         box-shadow: 0 8px 24px rgba(34,56,67,.22);
@@ -3657,9 +3657,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         .space-back-to-top {
             right: 16px;
             bottom: calc(18px + env(safe-area-inset-bottom));
-            min-height: 44px;
-            padding: 0 15px;
-            font-size: .84rem;
+            width: 46px;
+            height: 46px;
+            padding: 0;
         }
         body.menu-open .space-back-to-top,
         body:has(.nav-links.active) .space-back-to-top {
@@ -3673,7 +3673,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <button class="space-back-to-top" type="button" aria-label="回到頁面最上方">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15l7-7 7 7"></path></svg>
-    <span>回到最上方</span>
 </button>
 
 <script id="space-back-to-top-script">
