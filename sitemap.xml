@@ -1,64 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-<url>
-  <loc>https://ttcrcoffee.com/</loc>
-  <lastmod>2026-05-13T07:25:54+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://ttcrcoffee.com/menu.html</loc>
-  <lastmod>2026-05-13T07:25:54+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://ttcrcoffee.com/space-rental.html</loc>
-  <lastmod>2026-07-20T00:00:00+08:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://ttcrcoffee.com/coffee-beans.html</loc>
-  <lastmod>2026-05-13T07:25:54+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://ttcrcoffee.com/location.html</loc>
-  <lastmod>2026-05-13T07:25:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ttcrcoffee.com/franchise.html</loc>
-  <lastmod>2026-05-13T07:25:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ttcrcoffee.com/story.html</loc>
-  <lastmod>2026-05-13T07:25:54+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://ttcrcoffee.com/news.html</loc>
-  <lastmod>2026-05-13T07:25:54+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://ttcrcoffee.com/gallery.html</loc>
-  <lastmod>2026-05-13T07:25:54+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://ttcrcoffee.com/collaboration.html</loc>
-  <lastmod>2026-05-13T07:25:54+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://ttcrcoffee.com/privacy.html</loc>
-  <lastmod>2026-05-13T07:25:54+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ttcrcoffee.com/</loc><lastmod>2026-07-28</lastmod><priority>1.0</priority></url>
+  <url><loc>https://ttcrcoffee.com/menu.html</loc><lastmod>2026-07-28</lastmod><priority>0.9</priority></url>
+  <url><loc>https://ttcrcoffee.com/location.html</loc><lastmod>2026-07-28</lastmod><priority>0.9</priority></url>
+  <url><loc>https://ttcrcoffee.com/space-rental.html</loc><lastmod>2026-07-28</lastmod><priority>0.9</priority></url>
+  <url><loc>https://ttcrcoffee.com/member.html</loc><lastmod>2026-07-28</lastmod><priority>0.9</priority></url>
+  <url><loc>https://ttcrcoffee.com/coffee-beans.html</loc><lastmod>2026-05-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ttcrcoffee.com/franchise.html</loc><lastmod>2026-05-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ttcrcoffee.com/story.html</loc><lastmod>2026-05-13</lastmod><priority>0.7</priority></url>
+  <url><loc>https://ttcrcoffee.com/news.html</loc><lastmod>2026-05-13</lastmod><priority>0.7</priority></url>
+  <url><loc>https://ttcrcoffee.com/news-member-card.html</loc><lastmod>2026-07-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://ttcrcoffee.com/gallery.html</loc><lastmod>2026-07-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://ttcrcoffee.com/collaboration.html</loc><lastmod>2026-05-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ttcrcoffee.com/privacy.html</loc><lastmod>2026-05-13</lastmod><priority>0.3</priority></url>
 </urlset>
