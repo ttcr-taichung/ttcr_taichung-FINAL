@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ttcrcoffee.com/sitemap.xml
+Sitemap: https://ttcrcoffee.com/sitemap-images.xml
