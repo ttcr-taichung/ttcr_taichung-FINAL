@@ -611,6 +611,74 @@
       .member-v3-reveal{opacity:0;transform:translateY(28px);transition:.75s}.member-v3-reveal.is-visible{opacity:1;transform:none}
       @media(max-width:900px){.member-v3-hero{grid-template-columns:1fr;padding-top:180px;text-align:center}.member-v3-hero-copy{margin-left:auto;margin-right:auto}.member-v3-actions{justify-content:center}.member-v3-mascot{min-height:420px}.member-v3-head,.member-v3-join{grid-template-columns:1fr}.member-v3-head--faq p{white-space:normal}.member-v3-benefits{grid-template-columns:repeat(2,1fr)}.member-v3-benefit:nth-child(even){transform:none}.member-v3-step{grid-template-columns:72px minmax(0,1fr) 82px}.member-v3-step-art{width:78px;height:78px}.member-v3-step-art svg{width:48px;height:48px}}
       @media(max-width:680px){.member-v3-hero{min-height:auto;padding:165px 22px 60px}.member-v3-hero h1{font-size:clamp(2.1rem,10vw,3.2rem)}.member-v3-mascot{min-height:350px}.member-v3-mascot img{width:280px}.member-v3-badge{padding:9px 12px;font-size:.75rem;box-shadow:4px 5px 0 var(--mb)}.member-v3-badge--a{left:0}.member-v3-badge--b{right:0}.member-v3-badge--c{right:2%}.member-v3-section{padding:78px 22px}.member-v3-head{margin-bottom:42px}.member-v3-benefits,.member-v3-tiers{grid-template-columns:1fr}.member-v3-step{grid-template-columns:58px 1fr;padding:20px 16px;gap:16px;border-left-width:6px;box-shadow:0 10px 24px #22384312,4px 5px 0 #d1d1d1}.member-v3-step-no{width:54px;height:54px;border-width:3px;font-size:1.15rem}.member-v3-step h3{font-size:1.1rem}.member-v3-step-art{grid-column:2;width:58px;height:58px;justify-self:start;margin-top:3px}.member-v3-step-art svg{width:38px;height:38px}.member-v3-join-visual{min-height:340px}.member-v3-btn{width:100%}}
+      /* member-mobile-table-usability */
+      @media(max-width:680px){
+        .member-v3-compare{
+          position:relative;
+          margin-left:-10px;
+          margin-right:-10px;
+          overflow-x:auto;
+          overflow-y:hidden;
+          -webkit-overflow-scrolling:touch;
+          overscroll-behavior-inline:contain;
+          scroll-behavior:smooth;
+          scrollbar-width:thin;
+          scrollbar-color:var(--mb) #d9dde0;
+          border-radius:22px;
+          box-shadow:7px 8px 0 var(--my);
+        }
+        .member-v3-compare::-webkit-scrollbar{height:7px}
+        .member-v3-compare::-webkit-scrollbar-track{background:#d9dde0}
+        .member-v3-compare::-webkit-scrollbar-thumb{background:var(--mb);border-radius:99px}
+        .member-v3-compare:before{
+          content:"左右滑動查看完整內容  ↔";
+          position:sticky;
+          left:0;
+          z-index:8;
+          display:block;
+          width:max-content;
+          margin:10px 12px;
+          padding:7px 12px;
+          border-radius:999px;
+          background:var(--mb);
+          color:#fff;
+          font-size:.76rem;
+          font-weight:800;
+          letter-spacing:.06em;
+          box-shadow:0 4px 12px rgba(34,56,67,.2);
+          pointer-events:none;
+        }
+        .member-v3-compare table{
+          width:790px;
+          min-width:790px;
+          table-layout:fixed;
+        }
+        .member-v3-compare thead th:first-child,
+        .member-v3-compare tbody th{
+          position:sticky;
+          left:0;
+          width:138px;
+          min-width:138px;
+          z-index:4;
+          box-shadow:5px 0 10px rgba(34,56,67,.08);
+        }
+        .member-v3-compare thead th:first-child{
+          z-index:6;
+          background:var(--mb);
+        }
+        .member-v3-compare tbody th{background:#f2f2f2}
+        .member-v3-compare th,
+        .member-v3-compare td{
+          padding:18px 14px;
+          font-size:.94rem;
+          line-height:1.6;
+        }
+        .member-v3-compare thead th:not(:first-child),
+        .member-v3-compare td{
+          width:217px;
+          min-width:217px;
+        }
+      }
       @media(prefers-reduced-motion:reduce){.member-v3-mascot img,.member-v3-badge,.member-v3-jump-inner,.member-v3-drinking-cat,.member-v3-join-visual:before,.member-v3-join-visual:after{animation:none}.member-v3-reveal{opacity:1;transform:none}}
     </style>
 </head>
