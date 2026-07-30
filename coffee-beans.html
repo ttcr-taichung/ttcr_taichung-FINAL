@@ -472,7 +472,2155 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         .flavor-one-line {
             display:flex;
-          …25729 tokens truncated…桃? 10 ??/h3></div>
+            flex-wrap:wrap;
+            align-items:center;
+            gap:.28rem 0;
+            margin:0;
+            color:#536770;
+            font-size:.78rem;
+            line-height:1.55;
+            font-weight:600;
+        }
+        .flavor-one-line span { white-space:nowrap; }
+        .flavor-one-line span:not(:last-child)::after {
+            content:"??;
+            margin:0 .25rem;
+            color:#9aadb5;
+        }
+        .flavor-radar { width:168px; }
+        .flavor-radar svg {
+            display:block;
+            width:100%;
+            height:auto;
+            overflow:visible;
+        }
+        .radar-grid {
+            fill:none;
+            stroke:#cbd8dd;
+            stroke-width:1;
+        }
+        .radar-axis {
+            fill:none;
+            stroke:#dbe4e8;
+            stroke-width:1;
+        }
+        .radar-shape {
+            fill:rgba(74,130,153,.22);
+            stroke:#315c6a;
+            stroke-width:2;
+            stroke-linejoin:round;
+        }
+        .radar-dot { fill:#315c6a; stroke:none; }
+        .radar-label {
+            fill:#71838b;
+            stroke:none;
+            font-family:var(--font-sans);
+            font-size:8px;
+            font-weight:700;
+            text-anchor:middle;
+        }
+        @media (max-width:460px) {
+            .flavor-visual { grid-template-columns:minmax(0,1fr) 132px; gap:.6rem; }
+            .flavor-radar { width:132px; }
+            .flavor-doodle { width:48px; }
+            .flavor-doodle svg { width:36px; height:36px; padding:6px; }
+        }
+
+        .roast-story-note {
+            max-width: 720px;
+            margin: -1rem 0 2rem;
+            font-family: var(--font-sans);
+            font-size: 0.98rem;
+            line-height: 1.8;
+            color: #5f7078;
+        }
+        .story-chapter {
+            display: block !important;
+            margin-top: 6rem;
+            padding-top: 1rem;
+        }
+        .story-chapter-head {
+            display: grid;
+            grid-template-columns: minmax(0,0.65fr) minmax(0,1.35fr);
+            gap: 2rem;
+            align-items: end;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(34,56,67,0.16);
+        }
+        .story-chapter-head .section-title {
+            margin: 0;
+            text-align: left;
+        }
+        .story-chapter-copy {
+            margin: 0;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.85;
+            color: #5a6c74;
+        }
+        .story-number {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-sans);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            color: #6f9fb3;
+        }
+        @media (max-width: 900px) {
+            .story-benefits { grid-template-columns: repeat(2,minmax(0,1fr)); }
+            .story-chapter-head { grid-template-columns: 1fr; gap: 1rem; }
+        }
+        @media (max-width: 600px) {
+            .bean-story { padding: 2rem 1.35rem; border-radius: 22px; }
+            .story-benefits { grid-template-columns: 1fr; }
+            .story-chapter { margin-top: 4rem; }
+        }
+
+        .roast-process-guide {
+            margin: -1rem 0 4rem;
+            padding: 2.25rem;
+            border: 1px solid rgba(34, 56, 67, 0.14);
+            border-radius: 28px;
+            background:
+                radial-gradient(circle at 95% 10%, rgba(92, 145, 168, 0.16), transparent 30%),
+                linear-gradient(135deg, #ffffff 0%, #edf4f7 100%);
+            box-shadow: 0 14px 35px rgba(34, 56, 67, 0.08);
+            color: var(--brand-blue);
+        }
+        .guide-intro {
+            display: grid;
+            grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1.35fr);
+            gap: 2.5rem;
+            align-items: end;
+            padding-bottom: 1.75rem;
+            margin-bottom: 1.75rem;
+            border-bottom: 1px solid rgba(34, 56, 67, 0.14);
+        }
+        .guide-kicker {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            color: #456f82;
+        }
+        .guide-title {
+            margin: 0;
+            font-family: var(--font-serif);
+            font-size: clamp(1.55rem, 2.5vw, 2.2rem);
+            font-weight: 700;
+            color: var(--brand-blue);
+        }
+        .guide-description {
+            margin: 0;
+            max-width: 660px;
+            font-family: var(--font-sans);
+            font-size: 0.98rem;
+            line-height: 1.85;
+            color: #52636b;
+        }
+        .guide-content {
+            display: grid;
+            grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+            gap: 2rem;
+        }
+        .guide-panel {
+            padding: 1.4rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.68);
+        }
+        .guide-panel-title {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            margin: 0 0 1.15rem;
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: var(--brand-blue);
+        }
+        .guide-panel-title::before {
+            content: "";
+            width: 22px;
+            height: 3px;
+            border-radius: 99px;
+            background: #6f9fb3;
+        }
+        .roast-scale {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0.7rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .roast-scale-item {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            min-height: 48px;
+            padding: 0.65rem 0.75rem;
+            border: 1px solid rgba(34, 56, 67, 0.1);
+            border-radius: 13px;
+            background: #fffdf9;
+            font-family: var(--font-sans);
+            color: #344b56;
+        }
+        .roast-dot {
+            width: 16px;
+            height: 16px;
+            flex: 0 0 16px;
+            border-radius: 50%;
+            background: var(--roast-color);
+            box-shadow: inset 0 0 0 1px rgba(34, 56, 67, 0.08);
+        }
+        .roast-label {
+            display: grid;
+            line-height: 1.25;
+        }
+        .roast-label strong { font-size: 0.86rem; font-weight: 700; }
+        .roast-label small { font-size: 0.7rem; color: #7b878d; }
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.7rem;
+        }
+        .process-card {
+            display: grid;
+            grid-template-columns: 36px minmax(0, 1fr);
+            gap: 0.65rem;
+            align-items: center;
+            min-height: 68px;
+            padding: 0.75rem;
+            border-radius: 14px;
+            background: var(--process-bg);
+            color: var(--process-color);
+        }
+        .process-icon {
+            display: grid;
+            place-items: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 11px;
+            background: rgba(255, 255, 255, 0.72);
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+        .process-name {
+            display: grid;
+            font-family: var(--font-sans);
+            line-height: 1.25;
+        }
+        .process-name strong { font-size: 0.88rem; }
+        .process-name small { font-size: 0.68rem; opacity: 0.72; }
+        @media (max-width: 900px) {
+            .guide-intro, .guide-content { grid-template-columns: 1fr; }
+            .guide-intro { gap: 1rem; align-items: start; }
+        }
+        @media (max-width: 600px) {
+            .roast-process-guide {
+                margin-top: -1rem;
+                padding: 1.25rem;
+                border-radius: 20px;
+            }
+            .roast-scale { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .process-grid { grid-template-columns: 1fr; }
+            .guide-panel { padding: 1rem; }
+        }
+
+        /* Local product showcase preview ??not published */
+        .product-showcase {
+            margin: 0 0 4.5rem;
+            padding: 3.25rem;
+            border: 1px solid rgba(34,56,67,.12);
+            border-radius: 30px;
+            background:
+                radial-gradient(circle at 92% 8%,rgba(189,145,70,.13),transparent 28%),
+                linear-gradient(145deg,#fff 0%,#fbf8f1 100%);
+            box-shadow: 0 18px 45px rgba(34,56,67,.08);
+        }
+        .product-showcase-head {
+            display: grid;
+            grid-template-columns: minmax(260px,.8fr) minmax(0,1.2fr);
+            gap: 2rem;
+            align-items: end;
+            margin-bottom: 2.25rem;
+        }
+        .product-showcase-kicker {
+            display: block;
+            margin-bottom: .55rem;
+            color: #b7893d;
+            font-size: .72rem;
+            font-weight: 800;
+            letter-spacing: .2em;
+        }
+        .product-showcase-title {
+            margin: 0;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: clamp(1.85rem,3vw,2.7rem);
+            font-weight: 700;
+            line-height: 1.35;
+        }
+        .product-showcase-copy {
+            margin: 0;
+            max-width: 620px;
+            color: #66777f;
+            font-size: .95rem;
+            line-height: 1.85;
+        }
+        .product-showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(4,minmax(0,1fr));
+            gap: 1rem;
+        }
+        .product-tile {
+            position: relative;
+            overflow: hidden;
+            min-width: 0;
+            border: 1px solid rgba(34,56,67,.1);
+            border-radius: 22px;
+            background: rgba(255,255,255,.92);
+            box-shadow: 0 10px 25px rgba(34,56,67,.07);
+            transition: transform .3s ease,box-shadow .3s ease;
+        }
+        .product-tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 32px rgba(34,56,67,.12);
+        }
+        .product-tile-image {
+            display: grid;
+            place-items: center;
+            aspect-ratio: 1 / 1.06;
+            padding: 1rem;
+            overflow: hidden;
+            background: linear-gradient(160deg,#fff 0%,#f7f4ee 100%);
+        }
+        .product-tile-image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 12px 13px rgba(34,56,67,.11));
+            transform: scale(1.08);
+        }
+        .product-tile--drip .product-tile-image img {
+            transform: scale(.96);
+        }
+        .product-tile-content {
+            min-height: 112px;
+            padding: 1.25rem 1.2rem 1.35rem;
+            border-top: 1px solid rgba(34,56,67,.08);
+        }
+        .product-tile-tag {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: .55rem;
+            color: #b7893d;
+            font-size: .66rem;
+            font-weight: 800;
+            letter-spacing: .14em;
+        }
+        .product-tile-tag::before {
+            content: "";
+            width: 20px;
+            height: 2px;
+            margin-right: .45rem;
+            border-radius: 10px;
+            background: #d2a64f;
+        }
+        .product-tile-title {
+            margin: 0;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: 1.12rem;
+            font-weight: 700;
+            line-height: 1.45;
+        }
+        .product-tile-note {
+            margin: .3rem 0 0;
+            color: #7a898f;
+            font-size: .76rem;
+            line-height: 1.55;
+        }
+        @media (max-width: 980px) {
+            .product-showcase { padding: 2.5rem; }
+            .product-showcase-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+        }
+        @media (max-width: 640px) {
+            .product-showcase { margin-bottom: 3.5rem; padding: 2rem 1.2rem; border-radius: 22px; }
+            .product-showcase-head { grid-template-columns: 1fr; gap: .8rem; margin-bottom: 1.5rem; }
+            .product-showcase-grid {
+                display: flex;
+                gap: .85rem;
+                margin: 0 -1.2rem;
+                padding: 0 1.2rem .6rem;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                scrollbar-width: none;
+            }
+            .product-showcase-grid::-webkit-scrollbar { display: none; }
+            .product-tile { flex: 0 0 78vw; max-width: 310px; scroll-snap-align: start; }
+            .product-tile-content { min-height: 104px; }
+        }
+
+        /* Gift and drip editorial columns with on-page detail layer */
+        .shop-column {
+            margin-top: 6rem;
+        }
+        .shop-column-head {
+            display: grid;
+            grid-template-columns: minmax(260px,.72fr) minmax(0,1.28fr);
+            gap: 3rem;
+            align-items: end;
+            margin-bottom: 2.4rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(34,56,67,.16);
+        }
+        .shop-column-number {
+            display: block;
+            margin-bottom: .6rem;
+            color: #b7893d;
+            font-size: .72rem;
+            font-weight: 800;
+            letter-spacing: .2em;
+        }
+        .shop-column-title {
+            margin: 0;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: clamp(2rem,4vw,3.3rem);
+            font-weight: 700;
+            line-height: 1.25;
+        }
+        .shop-column-intro {
+            margin: 0;
+            max-width: 700px;
+            color: #65767e;
+            font-size: 1rem;
+            line-height: 1.9;
+        }
+        .shop-column-grid {
+            display: grid;
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            gap: 1.2rem;
+        }
+        .editorial-card {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            overflow: hidden;
+            border: 1px solid rgba(34,56,67,.12);
+            border-radius: 24px;
+            background: #fff;
+            box-shadow: 0 12px 32px rgba(34,56,67,.08);
+        }
+        .editorial-card-image {
+            position: relative;
+            aspect-ratio: 1.24 / 1;
+            overflow: hidden;
+            background: #f4f1eb;
+        }
+        .editorial-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .45s ease;
+        }
+        .editorial-card:hover .editorial-card-image img { transform: scale(1.04); }
+        .editorial-card-index {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            display: grid;
+            place-items: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255,255,255,.92);
+            color: #b7893d;
+            font-family: Georgia,serif;
+            font-weight: 700;
+            box-shadow: 0 5px 18px rgba(34,56,67,.12);
+        }
+        .editorial-card-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 1.45rem;
+        }
+        .editorial-card-kicker {
+            color: #b7893d;
+            font-size: .67rem;
+            font-weight: 800;
+            letter-spacing: .14em;
+        }
+        .editorial-card-title {
+            margin: .55rem 0 .55rem;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: 1.35rem;
+            font-weight: 700;
+        }
+        .editorial-card-copy {
+            margin: 0 0 1.25rem;
+            color: #718087;
+            font-size: .82rem;
+            line-height: 1.7;
+        }
+        .editorial-card-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: auto;
+            padding: .85rem 1rem;
+            border: 1px solid var(--brand-blue);
+            border-radius: 999px;
+            background: transparent;
+            color: var(--brand-blue);
+            font-family: var(--font-sans);
+            font-size: .82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background .25s ease,color .25s ease;
+        }
+        .editorial-card-button:hover { background: var(--brand-blue); color: #fff; }
+        .editorial-card-button::after { content: "嚗?; font-size: 1rem; }
+        .gift-service {
+            display: grid;
+            grid-template-columns: minmax(0,1.35fr) auto;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1.25rem;
+            padding: 2rem 2.2rem;
+            border: 1px solid rgba(34,56,67,.2);
+            border-radius: 24px;
+            background: var(--brand-blue);
+            box-shadow: 10px 10px 0 #d2ac59;
+        }
+        .gift-service-kicker {
+            color: #d8b767;
+            font-size: .72rem;
+            font-weight: 800;
+            letter-spacing: .18em;
+        }
+        .gift-service h3 {
+            margin: .45rem 0 .65rem;
+            color: #fff;
+            font-family: var(--font-serif);
+            font-size: clamp(1.65rem,2.6vw,2.35rem);
+            font-weight: 700;
+        }
+        .gift-service p {
+            max-width: 690px;
+            margin: 0;
+            color: rgba(255,255,255,.72);
+            font-size: .92rem;
+            line-height: 1.8;
+        }
+        .gift-service-badge {
+            display: grid;
+            width: 120px;
+            aspect-ratio: 1;
+            place-items: center;
+            border: 1px solid rgba(255,255,255,.32);
+            border-radius: 50%;
+            color: #fff;
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        .gift-category-label {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            margin: 2.6rem 0 1rem;
+            color: var(--brand-blue);
+            font-size: .75rem;
+            font-weight: 800;
+            letter-spacing: .16em;
+        }
+        .gift-category-label::after {
+            height: 1px;
+            flex: 1;
+            background: rgba(34,56,67,.18);
+            content: "";
+        }
+        .gift-category-grid {
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+            gap: 1rem;
+        }
+        .gift-category-card {
+            position: relative;
+            min-width: 0;
+            overflow: hidden;
+            padding: 1.7rem;
+            border: 1px solid rgba(34,56,67,.18);
+            border-radius: 22px;
+            background: #fff;
+            box-shadow: 0 10px 28px rgba(34,56,67,.07);
+        }
+        .gift-category-card::after {
+            position: absolute;
+            top: -2rem;
+            right: -1rem;
+            color: rgba(34,56,67,.045);
+            font-family: var(--font-serif);
+            font-size: 8rem;
+            font-weight: 800;
+            line-height: 1;
+            content: attr(data-index);
+            pointer-events: none;
+        }
+        .gift-category-image {
+            position: relative;
+            z-index: 1;
+            height: 230px;
+            margin: -1.7rem -1.7rem 1.35rem;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(34,56,67,.12);
+            background: #fff;
+        }
+        .gift-category-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform .4s ease;
+        }
+        .gift-category-card:hover .gift-category-image img {
+            transform: scale(1.025);
+        }
+        .gift-category-top {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(34,56,67,.12);
+        }
+        .gift-category-type {
+            display: block;
+            margin-bottom: .35rem;
+            color: #b7893d;
+            font-size: .68rem;
+            font-weight: 800;
+            letter-spacing: .14em;
+        }
+        .gift-category-card h3 {
+            margin: 0;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: 1.45rem;
+            font-weight: 700;
+        }
+        .gift-category-price {
+            position: relative;
+            z-index: 1;
+            flex: 0 0 auto;
+            color: var(--brand-blue);
+            font-size: 1.55rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+        .gift-category-price small {
+            margin-right: .16rem;
+            color: #7c8a90;
+            font-size: .68rem;
+            font-weight: 600;
+        }
+        .gift-category-body {
+            position: relative;
+            z-index: 1;
+            padding-top: 1rem;
+            color: #66767d;
+            font-size: .86rem;
+            line-height: 1.75;
+        }
+        .gift-category-body p { margin: 0; }
+        .gift-option {
+            display: grid;
+            grid-template-columns: 1.6rem minmax(0,1fr);
+            gap: .45rem;
+            margin-top: .55rem;
+        }
+        .gift-option b { color: var(--brand-blue); }
+        .gift-calculator-link {
+            display: inline-flex;
+            align-items: center;
+            gap: .45rem;
+            margin-top: 1rem;
+            color: var(--brand-blue);
+            font-weight: 800;
+            text-decoration: none;
+        }
+        .gift-calculator-link::after { content: "??; }
+        .gift-note {
+            margin: 1.2rem 0 0;
+            padding: 1rem 1.2rem;
+            border-left: 4px solid #d2ac59;
+            border-radius: 0 12px 12px 0;
+            background: #f6f3ed;
+            color: #63737a;
+            font-size: .84rem;
+            line-height: 1.7;
+        }
+        .drip-column {
+            padding: 3.3rem;
+            border-radius: 30px;
+            background: var(--brand-blue);
+        }
+        .drip-column .shop-column-head { border-bottom-color: rgba(255,255,255,.18); }
+        .drip-column .shop-column-title { color: #fff; }
+        .drip-column .shop-column-intro { color: rgba(255,255,255,.7); }
+        .drip-column .shop-column-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+        .drip-column .editorial-card { border-color: rgba(255,255,255,.16); background: rgba(255,255,255,.075); box-shadow: none; }
+        .drip-column .editorial-card-image { aspect-ratio: 1 / 1.05; background: #fff; }
+        .drip-column .editorial-card-image img { object-fit: contain; padding: 1rem; }
+        .drip-column .editorial-card-title { color: #fff; }
+        .drip-column .editorial-card-copy { color: rgba(255,255,255,.62); }
+        .drip-column .editorial-card-button { border-color: rgba(255,255,255,.62); color: #fff; }
+        .drip-column .editorial-card-button:hover { background: #fff; color: var(--brand-blue); }
+        .drip-mix-column {
+            margin-top: 6rem;
+            overflow: hidden;
+            border-radius: 32px;
+            background: #fff;
+            box-shadow: 0 20px 55px rgba(34,56,67,.11);
+        }
+        .drip-mix-hero {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            min-height: 520px;
+            padding: 3.5rem;
+            overflow: hidden;
+            color: #fff;
+            background: #1e333d url("preview-assets/products/drip-coffee-hero.jpg") center/cover no-repeat;
+        }
+        .drip-mix-hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg,rgba(15,31,38,.88) 0%,rgba(15,31,38,.52) 45%,rgba(15,31,38,.06) 78%);
+        }
+        .drip-mix-hero-copy {
+            position: relative;
+            z-index: 1;
+            max-width: 610px;
+        }
+        .drip-mix-kicker {
+            display: block;
+            margin-bottom: .8rem;
+            color: #f0c65f;
+            font-size: .75rem;
+            font-weight: 800;
+            letter-spacing: .2em;
+        }
+        .drip-mix-title {
+            margin: 0;
+            font-family: var(--font-serif);
+            font-size: clamp(2.6rem,5vw,4.8rem);
+            font-weight: 700;
+            line-height: 1.18;
+        }
+        .drip-mix-lead {
+            margin: 1.15rem 0 1.5rem;
+            max-width: 540px;
+            color: rgba(255,255,255,.84);
+            font-size: 1rem;
+            line-height: 1.85;
+        }
+        .drip-price-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .65rem;
+        }
+        .drip-price-pill {
+            display: inline-flex;
+            align-items: baseline;
+            gap: .35rem;
+            padding: .62rem .95rem;
+            border: 1px solid rgba(255,255,255,.28);
+            border-radius: 999px;
+            background: rgba(255,255,255,.12);
+            backdrop-filter: blur(7px);
+            color: #fff;
+            font-size: .76rem;
+        }
+        .drip-price-pill strong {
+            color: #f4d26d;
+            font-size: 1.15rem;
+        }
+        .drip-mix-body {
+            display: grid;
+            grid-template-columns: minmax(0,1.25fr) minmax(340px,.75fr);
+            gap: 2rem;
+            padding: 3.2rem;
+            background:
+                radial-gradient(circle at 100% 0,rgba(210,166,79,.12),transparent 32%),
+                #fff;
+        }
+        .drip-menu-head {
+            margin-bottom: 1.4rem;
+        }
+        .drip-menu-head h3 {
+            margin: 0 0 .45rem;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: 1.7rem;
+        }
+        .drip-menu-head p {
+            margin: 0;
+            color: #718087;
+            font-size: .86rem;
+        }
+        .drip-mix-list {
+            display: grid;
+            gap: .75rem;
+        }
+        .drip-mix-item {
+            display: grid;
+            grid-template-columns: minmax(0,1fr) auto auto;
+            gap: 1rem;
+            align-items: center;
+            padding: 1.05rem 1.15rem;
+            border: 1px solid rgba(34,56,67,.11);
+            border-radius: 18px;
+            background: #fff;
+        }
+        .drip-mix-item-name {
+            min-width: 0;
+        }
+        .drip-mix-item-name strong {
+            display: block;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: 1.03rem;
+        }
+        .drip-mix-item-name small {
+            display: block;
+            margin-top: .22rem;
+            overflow: hidden;
+            color: #829097;
+            font-size: .7rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .drip-mix-item-price {
+            min-width: 72px;
+            color: #b7893d;
+            text-align: right;
+            white-space: nowrap;
+        }
+        .drip-mix-item-price strong {
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+        .drip-quantity {
+            display: grid;
+            grid-template-columns: 34px 40px 34px;
+            align-items: center;
+            overflow: hidden;
+            border: 1px solid rgba(34,56,67,.2);
+            border-radius: 999px;
+        }
+        .drip-quantity button {
+            display: grid;
+            place-items: center;
+            height: 34px;
+            border: 0;
+            background: transparent;
+            color: var(--brand-blue);
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .drip-quantity button:hover { background: #f2eee6; }
+        .drip-quantity input {
+            width: 40px;
+            border: 0;
+            background: transparent;
+            color: var(--brand-blue);
+            font-family: var(--font-sans);
+            font-size: .9rem;
+            font-weight: 700;
+            text-align: center;
+            outline: 0;
+        }
+        .drip-calculator {
+            position: sticky;
+            top: 145px;
+            align-self: start;
+            padding: 1.8rem;
+            border-radius: 24px;
+            background: var(--brand-blue);
+            color: #fff;
+            box-shadow: 10px 12px 0 #d2a64f;
+        }
+        .drip-calculator-kicker {
+            color: #efc75e;
+            font-size: .68rem;
+            font-weight: 800;
+            letter-spacing: .15em;
+        }
+        .drip-calculator h3 {
+            margin: .55rem 0 1.5rem;
+            font-family: var(--font-serif);
+            font-size: 1.55rem;
+        }
+        .drip-summary-line {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: .72rem 0;
+            border-bottom: 1px solid rgba(255,255,255,.13);
+            color: rgba(255,255,255,.72);
+            font-size: .84rem;
+        }
+        .drip-summary-line strong { color: #fff; font-size: 1rem; }
+        .drip-total {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.4rem 0 1rem;
+        }
+        .drip-total span { color: rgba(255,255,255,.72); font-size: .8rem; }
+        .drip-total strong {
+            display: inline-flex;
+            align-items: baseline;
+            gap: .18rem;
+            color: #f4d26d;
+            font-size: 3.15rem;
+            line-height: 1;
+        }
+        .drip-total .currency-symbol {
+            font-size: 1.3rem !important;
+            font-weight: 700;
+            transform: translateY(-.12rem);
+        }
+#dripTotalPrice {
+    display: inline-block;
+    font-size: 3.125rem !important;
+    font-weight: 800;
+    line-height: .9;
+    letter-spacing: -.04em;
+}
+        .drip-calculator-note {
+            margin: .35rem 0 1.25rem;
+            color: rgba(255,255,255,.55);
+            font-size: .7rem;
+            line-height: 1.6;
+        }
+        .drip-reset {
+            width: 100%;
+            padding: .82rem;
+            border: 1px solid rgba(255,255,255,.55);
+            border-radius: 999px;
+            background: transparent;
+            color: #fff;
+            font-family: var(--font-sans);
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .drip-reset:hover { background: #fff; color: var(--brand-blue); }
+        @media (max-width: 900px) {
+            .drip-mix-body { grid-template-columns: 1fr; }
+            .drip-calculator { position: static; }
+        }
+        @media (max-width: 620px) {
+            .drip-mix-column { margin: 4rem -1rem 0; border-radius: 0; }
+            .drip-mix-hero { min-height: 510px; padding: 2rem 1.25rem; background-position: 62% center; }
+            .drip-mix-hero::before { background: linear-gradient(0deg,rgba(15,31,38,.92) 0%,rgba(15,31,38,.32) 72%,rgba(15,31,38,.06) 100%); }
+            .drip-mix-body { padding: 2rem 1.1rem 2.8rem; }
+            .drip-mix-item { grid-template-columns: minmax(0,1fr) auto; gap: .75rem; }
+            .drip-quantity { grid-column: 1 / -1; width: 100%; grid-template-columns: 1fr 50px 1fr; }
+            .drip-mix-item-price strong { font-size: 1.25rem; }
+        }
+        .detail-layer {
+            position: fixed;
+            inset: 0;
+            z-index: 4000;
+            display: grid;
+            place-items: center;
+            padding: 1.5rem;
+            background: rgba(17,35,43,.72);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .25s ease,visibility .25s ease;
+        }
+        .detail-layer.is-open { opacity: 1; visibility: visible; }
+        .detail-panel {
+            position: relative;
+            display: grid;
+            grid-template-columns: minmax(260px,.85fr) minmax(0,1.15fr);
+            width: min(920px,100%);
+            max-height: min(680px,88vh);
+            overflow: auto;
+            border-radius: 28px;
+            background: #fff;
+            box-shadow: 0 30px 80px rgba(0,0,0,.28);
+            transform: translateY(18px) scale(.98);
+            transition: transform .25s ease;
+        }
+        .detail-layer.is-open .detail-panel { transform: none; }
+        .detail-panel-visual {
+            min-height: 420px;
+            background: #f5f1e9 center/cover no-repeat;
+        }
+        .detail-panel-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3.2rem;
+        }
+        .detail-panel-kicker {
+            color: #b7893d;
+            font-size: .72rem;
+            font-weight: 800;
+            letter-spacing: .17em;
+        }
+        .detail-panel-title {
+            margin: .8rem 0 1rem;
+            color: var(--brand-blue);
+            font-family: var(--font-serif);
+            font-size: clamp(2rem,4vw,3rem);
+            line-height: 1.3;
+        }
+        .detail-panel-description {
+            color: #66777f;
+            font-size: .95rem;
+            line-height: 1.9;
+        }
+        .detail-panel-meta {
+            margin-top: 1.5rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid #e5e1da;
+            color: var(--brand-blue);
+            font-size: .82rem;
+            font-weight: 700;
+        }
+        .detail-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            z-index: 2;
+            display: grid;
+            place-items: center;
+            width: 44px;
+            height: 44px;
+            border: 1px solid rgba(34,56,67,.15);
+            border-radius: 50%;
+            background: rgba(255,255,255,.94);
+            color: var(--brand-blue);
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+        @media (max-width: 980px) {
+            .shop-column-grid,.drip-column .shop-column-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+        }
+        @media (max-width: 680px) {
+            .shop-column { margin-top: 4rem; }
+            .shop-column-head { grid-template-columns: 1fr; gap: 1rem; }
+            .gift-service {
+                grid-template-columns: 1fr;
+                padding: 1.6rem;
+                box-shadow: 7px 7px 0 #d2ac59;
+            }
+            .gift-service-badge {
+                width: 92px;
+                aspect-ratio: auto;
+                padding: .7rem 1rem;
+                border-radius: 999px;
+                font-size: .88rem;
+            }
+            .gift-category-grid { grid-template-columns: 1fr; }
+            .gift-category-card { padding: 1.4rem; }
+            .gift-category-image {
+                height: 210px;
+                margin: -1.4rem -1.4rem 1.2rem;
+            }
+            .gift-category-card h3 { font-size: 1.28rem; }
+            .gift-category-price { font-size: 1.3rem; }
+            .shop-column-grid,.drip-column .shop-column-grid {
+                display: flex;
+                gap: .9rem;
+                margin: 0 -1.2rem;
+                padding: 0 1.2rem .7rem;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                scrollbar-width: none;
+            }
+            .shop-column-grid::-webkit-scrollbar { display: none; }
+            .editorial-card { flex: 0 0 82vw; max-width: 320px; scroll-snap-align: start; }
+            .drip-column { padding: 2.4rem 1.2rem; }
+            .drip-column .shop-column-grid { margin-inline: 0; padding-inline: 0; }
+            .detail-panel { grid-template-columns: 1fr; max-height: 88vh; }
+            .detail-panel-visual { min-height: 270px; }
+            .detail-panel-copy { padding: 2rem 1.5rem; }
+        }
+
+        .roast-section {
+            margin-bottom: 4rem;
+        }
+
+        .roast-title {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--brand-blue);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--brand-blue);
+        }
+
+        .coffee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .coffee-card {
+            background-color: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .coffee-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .coffee-card-header {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, var(--brand-blue) 0%, #2d4a56 100%);
+            color: white;
+        }
+
+        .coffee-name {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .coffee-name-en {
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .roast-badge {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-top: 0.8rem;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .coffee-card-body {
+            padding: 1.5rem;
+        }
+
+        .flavor-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .flavor-label {
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 0.8rem;
+        }
+
+        .flavor-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .flavor-tag {
+            font-size: 0.85rem;
+            padding: 0.4rem 0.9rem;
+            background-color: #f0f0f0;
+            color: #555;
+            border-radius: 20px;
+            font-weight: 400;
+        }
+
+        .price-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .price-item {
+            text-align: center;
+        }
+
+        .price-label {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 0.3rem;
+        }
+
+        .price-value {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--brand-blue);
+        }
+
+        .drip-coffee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .drip-card {
+            background-color: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .drip-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .drip-title {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--brand-blue);
+            margin-bottom: 1rem;
+        }
+
+        .drip-price {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--brand-blue);
+        }
+
+        .gift-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .gift-card {
+            background-color: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .gift-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .gift-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .gift-content {
+            padding: 2rem;
+        }
+
+        .gift-title {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--brand-blue);
+            margin-bottom: 1rem;
+        }
+
+        .gift-description {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--brand-blue) 0%, #2d4a56 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            font-family: var(--font-sans);
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+
+        .cta-button-primary {
+            background-color: white;
+            color: var(--brand-blue);
+        }
+
+        .cta-button-primary:hover {
+            background-color: transparent;
+            color: white;
+        }
+
+        .cta-button-secondary {
+            background-color: transparent;
+            color: white;
+        }
+
+        .cta-button-secondary:hover {
+            background-color: white;
+            color: var(--brand-blue);
+        }
+
+        .footer {
+            background-color: var(--brand-blue);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+@media (max-width: 768px) {
+            .nav-links {
+                position: fixed; top: 90px; left: -100%; width: 100%;
+                height: calc(100vh - 90px); background-color: #faf8f5;
+                flex-direction: column; align-items: center; justify-content: center;
+                gap: 2rem; transition: left 0.3s ease;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+            .nav-links.active { left: 0; }
+            .hamburger { display: flex; }
+            .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+            .hamburger.active span:nth-child(2) { opacity: 0; }
+            .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(7px,-7px); }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 3rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .coffee-grid,
+            .drip-coffee-grid,
+            .gift-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .category-tabs {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    
+/* ===== TT Footer Module (from collaboration.html) ===== */
+.tt-footer {
+    background: #223843;
+    color: white;
+    padding: 4rem 5% 0;
+    position: relative;
+    overflow: hidden;
+    font-family: "Noto Sans TC", sans-serif;
+}
+.tt-footer *, .tt-footer *::before, .tt-footer *::after { box-sizing: border-box; }
+.tt-footer-inner {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 3rem;
+}
+.tt-footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1.8fr;
+    gap: 4rem;
+    align-items: start;
+}
+.tt-footer-company-name {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    margin: 0 0 1.8rem;
+    line-height: 1.2;
+}
+.tt-footer-info p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.9;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+.tt-footer-copyright {
+    margin-top: 2.5rem;
+}
+.tt-footer-copyright p,
+.tt-footer-copyright a {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    line-height: 1.9;
+    transition: color 0.3s;
+    margin: 0;
+}
+.tt-footer-copyright a:hover {
+    color: rgba(255,255,255,0.75);
+}
+.tt-footer-col-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.5rem;
+}
+.tt-footer-follow {
+    font-family: serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 0.1em;
+    margin: 0 0 1.8rem;
+    text-align: center;
+}
+.tt-footer-social {
+    display: flex;
+    gap: 1.2rem;
+}
+.tt-footer-social a {
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+.tt-footer-social a:hover {
+    border-color: white;
+    background: rgba(255,255,255,0.1);
+}
+.tt-footer-social svg {
+    width: 24px;
+    height: 24px;
+    fill: rgba(255,255,255,0.85);
+}
+.tt-footer-col-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+}
+.tt-footer-col-right img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+.tt-footer-wave {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    height: 55%;
+    z-index: 1;
+    pointer-events: none;
+}
+.tt-footer-wave svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+@media (max-width: 768px) {
+    .tt-footer {
+        padding: 3rem 1.5rem 0;
+        text-align: center;
+    }
+    .tt-footer-inner {
+        padding-bottom: 2rem;
+    }
+    .tt-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    .tt-footer-col-left  { order: 2; }
+    .tt-footer-col-middle {
+        order: 1;
+        align-items: center;
+        padding-top: 0;
+    }
+    .tt-footer-col-right {
+        order: 3;
+        justify-content: center;
+        padding-top: 0;
+    }
+    .tt-footer-company-name {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+    .tt-footer-info p {
+        font-size: 0.88rem;
+        line-height: 1.8;
+    }
+    .tt-footer-copyright {
+        margin-top: 1.8rem;
+    }
+    .tt-footer-copyright p,
+    .tt-footer-copyright a {
+        font-size: 0.78rem;
+    }
+    .tt-footer-follow {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+        text-align: center;
+    }
+    .tt-footer-social {
+        justify-content: center;
+        gap: 1rem;
+    }
+    .tt-footer-social a {
+        width: 44px;
+        height: 44px;
+    }
+    .tt-footer-social svg {
+        width: 20px;
+        height: 20px;
+    }
+    .tt-footer-col-right img {
+        width: 90px;
+    }
+    .tt-footer-wave {
+        width: 55%;
+        height: 30%;
+        opacity: 0.6;
+    }
+}
+@media (max-width: 480px) {
+    .tt-footer {
+        padding: 2.5rem 1.2rem 0;
+    }
+    .tt-footer-grid {
+        gap: 2rem;
+    }
+    .tt-footer-company-name {
+        font-size: 1.35rem;
+    }
+    .tt-footer-wave {
+        display: none;
+    }
+}
+
+/* --- Left column alignment override (fix global text-align: center interference) --- */
+.tt-footer .tt-footer-col-left,
+.tt-footer .tt-footer-col-left * {
+    text-align: left;
+}
+.tt-footer .tt-footer-company-name { text-align: left; }
+.tt-footer .tt-footer-info p { text-align: left; }
+.tt-footer .tt-footer-copyright p,
+.tt-footer .tt-footer-copyright a { text-align: left; }
+@media (max-width: 768px) {
+    .tt-footer .tt-footer-col-left,
+    .tt-footer .tt-footer-col-left *,
+    .tt-footer .tt-footer-company-name,
+    .tt-footer .tt-footer-info p,
+    .tt-footer .tt-footer-copyright p,
+    .tt-footer .tt-footer-copyright a {
+        text-align: center;
+    }
+}
+
+/* --- Adjust: center FOLLOW US, hide wave on mobile --- */
+.tt-footer .tt-footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;  /* 銝?蝑祝嚗葉甈?券??Ｖ葉憭?*/
+}
+.tt-footer .tt-footer-col-left {
+    /* 蝬剜??椰 */
+}
+.tt-footer .tt-footer-col-middle {
+    align-items: center;  /* 瘞游像蝵桐葉甈?批捆 */
+}
+.tt-footer .tt-footer-col-right {
+    justify-content: flex-end;  /* Logo 蝬剜?? */
+}
+@media (max-width: 768px) {
+    .tt-footer .tt-footer-wave { display: none !important; }
+    .tt-footer .tt-footer-grid { grid-template-columns: 1fr; }
+}
+/* --- /Adjust --- */
+/* ===== /TT Footer Module ===== */
+
+    
+/* ===== TT Mobile Nav (sync with menu.html) ===== */
+/* 獢??雁???祆見撘?隞乩?閬??芸蔣??<=768px ????*/
+@media (max-width: 768px) {
+    /* ?嗅??嚗?撌血皛?撅??渡蔭銝?*/
+    nav .nav-links,
+    nav.navbar .nav-links {
+        position: fixed !important;
+        top: 80px !important;
+        left: -100% !important;
+        right: auto !important;
+        width: 100% !important;
+        height: calc(100vh - 80px) !important;
+        background: rgba(250, 248, 245, 0.98) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 2rem !important;
+        transition: left 0.3s ease !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+        z-index: 999 !important;
+    }
+    nav .nav-links.active,
+    nav.navbar .nav-links.active,
+    nav .nav-links.mobile-active,
+    nav.navbar .nav-links.mobile-active {
+        left: 0 !important;
+    }
+    nav .nav-links a {
+        font-family: "Noto Sans TC", sans-serif !important;
+        font-size: 1.1rem !important;
+        font-weight: 700 !important;
+        letter-spacing: 2px !important;
+        color: #223843 !important;
+        text-decoration: none !important;
+    }
+
+    /* 瞍Ｗ??嚗??.hamburger ??.mobile-menu ?拍車?賢?嚗?*/
+    .hamburger, .mobile-menu {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+        background: none !important;
+        border: none !important;
+        padding: 0 !important;
+        cursor: pointer !important;
+        width: 28px !important;
+        height: auto !important;
+    }
+    .hamburger span, .mobile-menu span {
+        display: block !important;
+        width: 25px !important;
+        height: 2px !important;
+        background: #223843 !important;
+        transition: all 0.3s ease !important;
+    }
+    .hamburger.active span:nth-child(1),
+    .mobile-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px) !important;
+    }
+    .hamburger.active span:nth-child(2),
+    .mobile-menu.active span:nth-child(2) {
+        opacity: 0 !important;
+    }
+    .hamburger.active span:nth-child(3),
+    .mobile-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px) !important;
+    }
+}
+/* 獢???慰?⊥???*/
+@media (min-width: 769px) {
+    .hamburger, .mobile-menu { display: none !important; }
+}
+/* ===== /TT Mobile Nav ===== */
+
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}</style><style id="kgp-selected-style">
+  [data-kgp-selected]::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 4px;
+    outline: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 10px rgba(255, 107, 53, 0.4) !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+  [data-kgp-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-kgp-selected],
+  img[data-kgp-hover-selected],
+  [data-kgp-hover-selected],
+  [item-kgp-click-selected],
+  [item-kgp-selected] {
+    border: 3px solid #FF6B35 !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3), 0 0 15px rgba(255, 107, 53, 0.5) !important;
+    border-radius: 4px;
+  }
+
+  [data-kgp-hover-selected]::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 2px;
+    border-radius: 4px;
+    outline: 2px solid #FFA366 !important;
+    box-shadow: 0 0 0 1px rgba(255, 163, 102, 0.3), 0 0 8px rgba(255, 163, 102, 0.4) !important;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  [data-kgp-hover-selected] {
+    position: relative;
+    outline: none;
+  }
+</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}</style></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1743521259972892");fbq("set","agent","tmgoogletagmanager","1743521259972892");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1743521259972892&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJTCF662"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="custom-cursor"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo"><img src="./logo.png" alt="???"></a>
+            <button class="hamburger" id="hamburger" data-tt-bound="1">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="/menu">?</a>
+                <a href="/coffee-beans" class="active">?芰??鞊?/a>
+                <a href="/franchise">??閮</a>
+                <a href="/space-rental">蝛粹?蝘?</a>
+                <a href="/location">摨雿蔭</a>
+                <a href="/story">????</a>
+                <a href="/gallery">?寡擗?</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">?芰??鞊?/h1>
+            <p class="hero-subtitle">?湧銝???芾釭??,?芸振??,??蝝硃???⊿◢??/p>
+        </div>
+    </section>
+
+    <section class="section" style="">
+        <div class="content-section active" id="coffee-beans">
+            <section class="bean-story" aria-labelledby="bean-story-title">
+                <div class="story-copy">
+                    <div>
+                        <span class="story-eyebrow">TTCR IN-HOUSE ROASTING</span>
+                        <h2 class="bean-story-title" id="bean-story-title">霈?銝?航?摮?<br>??摰?憟賢??見摮?/h2>
+                    </div>
+                    <p class="bean-story-lead">敺?啗???瘜????改??箸??航?摮矽?渡??蝺??望?擐???撠暸皜???嚗葬?剔???亙???Ｕ?/p>
+                </div>
+                <div class="story-benefits story-benefits-three" aria-label="???芰??鞊?憭批暺?>
+                    <div class="story-benefit"><svg class="story-benefit-icon gold-crown-badge" viewBox="0 0 160 70" aria-hidden="true"><g class="gold-crown"><path d="M51 42L45 15L68 30L80 7L92 30L115 15L109 42Z"></path><path d="M53 47H107L103 58H57Z"></path><circle cx="45" cy="13" r="3"></circle><circle cx="80" cy="5" r="3"></circle><circle cx="115" cy="13" r="3"></circle></g></svg><strong>?湧?Ｗ?</strong><span>?憟質?嚗◢?單摰?</span></div>
+                    <div class="story-benefit"><svg class="story-benefit-icon gold-crown-badge" viewBox="0 0 160 70" aria-hidden="true"><g class="gold-crown"><path d="M51 42L45 15L68 30L80 7L92 30L115 15L109 42Z"></path><path d="M53 47H107L103 58H57Z"></path><circle cx="45" cy="13" r="3"></circle><circle cx="80" cy="5" r="3"></circle><circle cx="115" cy="13" r="3"></circle></g></svg><strong>?芸振??</strong><span>靽???雿喲?瘞?/span></div>
+                    <div class="story-benefit"><svg class="story-benefit-icon gold-crown-badge" viewBox="0 0 160 70" aria-hidden="true"><g class="gold-crown"><path d="M51 42L45 15L68 30L80 7L92 30L115 15L109 42Z"></path><path d="M53 47H107L103 58H57Z"></path><circle cx="45" cy="13" r="3"></circle><circle cx="80" cy="5" r="3"></circle><circle cx="115" cy="13" r="3"></circle></g></svg><strong>20撟游蝣?撽?鞊?/strong><span>撠平??瘥??◢??/span></div>
+                </div>
+            </section>
+
+            <section class="product-showcase" aria-labelledby="product-showcase-title">
+                <div class="product-showcase-head">
+                    <div>
+                        <span class="product-showcase-kicker">TTCR COFFEE COLLECTION</span>
+                        <h2 class="product-showcase-title" id="product-showcase-title">??甇∠??漲<br>撣嗅??亙虜</h2>
+                    </div>
+                    <p class="product-showcase-copy">敺?鈭株???唳??蝟偏?鳴???拙??芸楛??蝤??∟?嚗敹恍?銝?荔?銋??嫣噶?葆?蕪???～?/p>
+                </div>
+                <div class="product-showcase-grid">
+                    <article class="product-tile">
+                        <div class="product-tile-image">
+                            <img src="preview-assets/products/light-roast-half-pound.png" alt="???瘛箇????鞊?鋆?>
+                        </div>
+                        <div class="product-tile-content">
+                            <span class="product-tile-tag">LIGHT ROAST</span>
+                            <h3 class="product-tile-title">瘛箇???</h3>
+                            <p class="product-tile-note">皜?漁?餉??瘞?/p>
+                        </div>
+                    </article>
+                    <article class="product-tile">
+                        <div class="product-tile-image">
+                            <img src="preview-assets/products/medium-roast-half-pound.png" alt="???銝剔????鞊?鋆?>
+                        </div>
+                        <div class="product-tile-content">
+                            <span class="product-tile-tag">MEDIUM ROAST</span>
+                            <h3 class="product-tile-title">銝剔???</h3>
+                            <p class="product-tile-note">??撟唾﹛?餃?瞏日???/p>
+                        </div>
+                    </article>
+                    <article class="product-tile">
+                        <div class="product-tile-image">
+                            <img src="preview-assets/products/medium-dark-roast-half-pound.png" alt="???銝剜楛??蝤??∟???">
+                        </div>
+                        <div class="product-tile-content">
+                            <span class="product-tile-tag">MEDIUM DARK</span>
+                            <h3 class="product-tile-title">銝剜楛??蝤?/h3>
+                            <p class="product-tile-note">雿?祕?餌蝟偏??/p>
+                        </div>
+                    </article>
+                    <article class="product-tile product-tile--drip">
+                        <div class="product-tile-image">
+                            <img src="preview-assets/products/drip-coffee.png" alt="???瞈暹????">
+                        </div>
+                        <div class="product-tile-content">
+                            <span class="product-tile-tag">DRIP COFFEE</span>
+                            <h3 class="product-tile-title">瞈暹??</h3>
+                            <p class="product-tile-note">???單??駁?澈??/p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="roast-process-guide" aria-labelledby="roast-process-guide-title">
+                <div class="guide-intro">
+                    <div>
+                        <span class="guide-kicker">TTCR ROAST GUIDE</span>
+                        <h2 class="guide-title" id="roast-process-guide-title">霈???臬???/h2>
+                    </div>
+                    <p class="guide-description">敺??楛瘛箏?????孵?嚗?銝???霈?瘞???????誑銝?蝷箏???朣??瘝??∟??◢?喳?憿?/p>
+                </div>
+                <div class="guide-content">
+                    <section class="guide-panel" aria-labelledby="roast-level-title">
+                        <h3 class="guide-panel-title" id="roast-level-title">?漲霅</h3>
+                        <ul class="roast-scale">
+                            <li class="roast-scale-item"><span class="roast-dot" style="--roast-color:#a9c8d5"></span><span class="roast-label"><strong>瘛箇?</strong><small>LIGHT嚚? 甈?/small></span></li>
+                            <li class="roast-scale-item"><span class="roast-dot" style="--roast-color:#5f8fa4"></span><span class="roast-label"><strong>銝剔?</strong><small>MEDIUM嚚? 甈?/small></span></li>
+                            <li class="roast-scale-item"><span class="roast-dot" style="--roast-color:#294b5b"></span><span class="roast-label"><strong>銝剜楛??/strong><small>MEDIUM DARK嚚? 甈?/small></span></li>
+                        </ul>
+                    </section>
+                    <section class="guide-panel" aria-labelledby="process-method-title">
+                        <h3 class="guide-panel-title" id="process-method-title">??鞊??瘜?/h3>
+                        <div class="process-grid">
+                            <div class="process-card" style="--process-bg:#e5f0f5;--process-color:#315c6a"><span class="process-icon">瘞?/span><span class="process-name"><strong>瘞湔?</strong><small>?文??抵撌氬?梁?</small></span></div>
+                            <div class="process-card" style="--process-bg:#edf4f7;--process-color:#456f82"><span class="process-icon">??/span><span class="process-name"><strong>?交</strong><small>隡?瘝擐?</small></span></div>
+                            <div class="process-card" style="--process-bg:#dce9ef;--process-color:#294b5b"><span class="process-icon">瘞?/span><span class="process-name"><strong>?勗??剜飢瘞湔?</strong><small>???芣?菜?</small></span></div>
+                            <div class="process-card" style="--process-bg:#e7f0f3;--process-color:#52798b"><span class="process-icon">??/span><span class="process-name"><strong>瞈瘜?/strong><small>??蝑??潛撖?/small></span></div>
+                        </div>
+                    </section>
+                </div>
+            </aside>
+
+            <div class="roast-section">
+                <h2 class="roast-title">瘛箇?蝟餃?</h2><p class="roast-story-note">?漁?擐?璈???隤踵改?靽??游??Ｗ????撣嗡??敦蝺餃惜甈∴??拙??迭皜?貊???瘞???曄?雿?/p>
+                <div class="coffee-grid" style="">
+                    <div class="coffee-card">
+                        <div class="coffee-card-header">
+                            <h3 class="coffee-name">銵?揣瘥?繚?文??抵撌氬偌瘣1蝝姣獢???/h3>
+                            <p class="coffee-name-en">Ethiopia Guji Sasaba Washing Station Washed G1 OCR</p>
+                            <div class="coffee-meta"><span class="roast-badge">瘛箇?</span><span class="process-badge">瘞湔?</span></div>
+                        </div>
+                        <div class="coffee-card-body" style="">
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11.5" cy="12.5" r="7.5"></circle><circle cx="11.5" cy="12.5" r="5.3"></circle><path d="M11.5 7.2v10.6M6.2 12.5h10.6M7.8 8.8l7.5 7.5M15.2 8.8l-7.5 7.5M16.5 5.5c1.2-2 3.1-2.3 4.5-1.8-.4 1.9-1.9 3.1-4.5 1.8z"></path><path d="M16.2 6.1c-1.2.2-2.1.1-3-.2"></path></svg><span>??</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.1"></circle><path d="M12 9.9C9.2 7.5 9.8 4 12 4s2.8 3.5 0 5.9zM14.1 12c2.4-2.8 5.9-2.2 5.9 0s-3.5 2.8-5.9 0zM12 14.1c2.8 2.4 2.2 5.9 0 5.9s-2.8-3.5 0-5.9zM9.9 12C7.5 14.8 4 14.2 4 12s3.5-2.8 5.9 0z"></path><path d="M10.5 10.5C7.2 10.2 6 7 7.8 5.8s4.3 1.4 2.7 4.7zM13.5 10.5c.3-3.3 3.5-4.5 4.7-2.7s-1.4 4.3-4.7 2.7zM13.5 13.5c3.3.3 4.5 3.5 2.7 4.7s-4.3-1.4-2.7-4.7zM10.5 13.5c-.3 3.3-3.5 4.5-4.7 2.7s1.4-4.3 4.7-2.7z"></path></svg><span>?梢?</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"></path><path d="M17 11h1.8a2.7 2.7 0 1 1 0 5.4H17M7 20h12"></path><path d="M8 7c-2-1.7 1.8-2.6-.2-4.5M12 7c-2-1.7 1.8-2.6-.2-4.5M5.5 12.5c3.2 1 6.4 1 9.5 0"></path></svg><span>????/span></div></div><p class="flavor-one-line"><span>瑼豢狀??/span><span>璈?</span><span>擐?</span><span>擐?</span><span>??</span></p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="?剛?敶ａ◢?喳?撣?"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"></polygon><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"></polygon><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"></path><polygon class="radar-shape" points="80.0,20.0 132.0,50.0 121.6,104.0 80.0,104.0 38.4,104.0 38.4,56.0"></polygon><circle class="radar-dot" cx="80.0" cy="20.0" r="2"></circle><circle class="radar-dot" cx="132.0" cy="50.0" r="2"></circle><circle class="radar-dot" cx="121.6" cy="104.0" r="2"></circle><circle class="radar-dot" cx="80.0" cy="104.0" r="2"></circle><circle class="radar-dot" cx="38.4" cy="104.0" r="2"></circle><circle class="radar-dot" cx="38.4" cy="56.0" r="2"></circle><text class="radar-label" x="80" y="12">擐除</text><text class="radar-label" x="145" y="48">?貉釭</text><text class="radar-label" x="145" y="116">??</text><text class="radar-label" x="80" y="155">??</text><text class="radar-label" x="15" y="116">擗</text><text class="radar-label" x="15" y="48">撟唾﹛</text></svg></div></div>
+                            
+                            <div class="price-section" style="">
+                                <div class="price-item">
+                                    <div class="price-label" style="">?? / ??/div>
+                                    <div class="price-value" style="">$170</div>
+                                </div>
+                                <div class="price-item">
+                                    <div class="price-label">??</div>
+                                    <div class="price-value">$540</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coffee-card">
+                        <div class="coffee-card-header">
+                            <h3 class="coffee-name">銵?揣瘥?繚?嗅??芾??研??脤? G1</h3>
+                            <p class="coffee-name-en">Ethiopia Gedeo Yirgacheffe Worka Efeya Natural G1</p>
+                            <div class="coffee-meta"><span class="roast-badge">瘛箇?</span><span class="process-badge">?交</span></div>
+                        </div>
+                        <div class="coffee-card-body" style="">
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8.5" cy="10" r="2.7"></circle><circle cx="14.8" cy="9.6" r="2.8"></circle><circle cx="11.8" cy="15" r="3"></circle><circle cx="17" cy="14.5" r="2.2"></circle><circle cx="6.7" cy="15" r="2.1"></circle><path d="M11.7 7.2C11.2 4.5 13 2.9 16 3M11.7 7.2C10.3 5 8.2 4 5.8 4.8"></path><path d="M12.6 5.2c2 .2 3.4-.4 4.4-1.7M10.2 5.8C8.6 5.5 7.6 5 6.8 4.2"></path></svg><span>??</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11.5" cy="12.5" r="7.5"></circle><circle cx="11.5" cy="12.5" r="5.3"></circle><path d="M11.5 7.2v10.6M6.2 12.5h10.6M7.8 8.8l7.5 7.5M15.2 8.8l-7.5 7.5M16.5 5.5c1.2-2 3.1-2.3 4.5-1.8-.4 1.9-1.9 3.1-4.5 1.8z"></path><path d="M16.2 6.1c-1.2.2-2.1.1-3-.2"></path></svg><span>??</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.2c-4.8-2.1-8.1 1.7-7.1 6.7 1 5.1 5 7.2 7.1 5 2.1 2.2 6.1.1 7.1-5 1-5-2.3-8.8-7.1-6.7z"></path><path d="M12 7.2c.1-3.1 2.2-5.3 5.5-5.5M12 6.5C10.2 4.1 7.7 3.8 5.3 5"></path><path d="M16.2 3.4c.8 1.5 2 2.2 3.7 2.2-1.1-2-2.2-2.7-3.7-2.2zM8 11c1.8-1.2 5.6-1.2 7.7.2"></path></svg><span>?勗葆??/span></div></div><p class="flavor-one-line"><span>?貊?撟唾﹛</span><span>Body 憌賣遛皛?</span></p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="?剛?敶ａ◢?喳?撣?"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"></polygon><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"></polygon><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"></path><polygon class="radar-shape" points="80.0,20.0 121.6,56.0 121.6,104.0 80.0,128.0 38.4,104.0 38.4,56.0"></polygon><circle class="radar-dot" cx="80.0" cy="20.0" r="2"></circle><circle class="radar-dot" cx="121.6" cy="56.0" r="2"></circle><circle class="radar-dot" cx="121.6" cy="104.0" r="2"></circle><circle class="radar-dot" cx="80.0" cy="128.0" r="2"></circle><circle class="radar-dot" cx="38.4" cy="104.0" r="2"></circle><circle class="radar-dot" cx="38.4" cy="56.0" r="2"></circle><text class="radar-label" x="80" y="12">擐除</text><text class="radar-label" x="145" y="48">?貉釭</text><text class="radar-label" x="145" y="116">??</text><text class="radar-label" x="80" y="155">??</text><text class="radar-label" x="15" y="116">擗</text><text class="radar-label" x="15" y="48">撟唾﹛</text></svg></div></div>
+                            
+                            <div class="price-section" style="">
+                                <div class="price-item">
+                                    <div class="price-label">?? / ??/div>
+                                    <div class="price-value" style="">$170</div>
+                                </div>
+                                <div class="price-item">
+                                    <div class="price-label" style="">??</div>
+                                    <div class="price-value">$540</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coffee-card">
+                        <div class="coffee-card-header">
+                            <h3 class="coffee-name">銵?揣瘥?繚?嗅??芾??研??⊿?憒?G1</h3>
+                            <p class="coffee-name-en">Ethiopia Coffee Lamp Series Worka Natural G1</p>
+                            <div class="coffee-meta"><span class="roast-badge">瘛箇?</span><span class="process-badge">?交</span></div>
+                        </div>
+                        <div class="coffee-card-body" style="">
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.2c-4.8-2.1-8.1 1.7-7.1 6.7 1 5.1 5 7.2 7.1 5 2.1 2.2 6.1.1 7.1-5 1-5-2.3-8.8-7.1-6.7z"></path><path d="M12 7.2c.1-3.1 2.2-5.3 5.5-5.5M12 6.5C10.2 4.1 7.7 3.8 5.3 5"></path><path d="M16.2 3.4c.8 1.5 2 2.2 3.7 2.2-1.1-2-2.2-2.7-3.7-2.2zM8 11c1.8-1.2 5.6-1.2 7.7.2"></path></svg><span>?暸???/span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8.5" cy="10" r="2.7"></circle><circle cx="14.8" cy="9.6" r="2.8"></circle><circle cx="11.8" cy="15" r="3"></circle><circle cx="17" cy="14.5" r="2.2"></circle><circle cx="6.7" cy="15" r="2.1"></circle><path d="M11.7 7.2C11.2 4.5 13 2.9 16 3M11.7 7.2C10.3 5 8.2 4 5.8 4.8"></path><path d="M12.6 5.2c2 .2 3.4-.4 4.4-1.7M10.2 5.8C8.6 5.5 7.6 5 6.8 4.2"></path></svg><span>??</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5 18.5 4 20 18.2 6.5 20z"></path><path d="m11.7 4.8.5 14.4M5.6 10.3l13.5-1.5M6.1 15.2l13.5-1.5"></path><path d="M8.3 7.7c.8-.8 1.7-.9 2.6-.3M14.6 12c.8-.8 1.8-.9 2.6-.3M8.7 17.2c.8-.7 1.7-.8 2.5-.3"></path></svg><span>?臬</span></div></div><p class="flavor-one-line"><span>?勗葆瘞湔?</span><span>擐?</span><span>??</span></p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="?剛?敶ａ◢?喳?撣?"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"></polygon><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"></polygon><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"></path><polygon class="radar-shape" points="80.0,20.0 121.6,56.0 132.0,110.0 80.0,128.0 38.4,104.0 38.4,56.0"></polygon><circle class="radar-dot" cx="80.0" cy="20.0" r="2"></circle><circle class="radar-dot" cx="121.6" cy="56.0" r="2"></circle><circle class="radar-dot" cx="132.0" cy="110.0" r="2"></circle><circle class="radar-dot" cx="80.0" cy="128.0" r="2"></circle><circle class="radar-dot" cx="38.4" cy="104.0" r="2"></circle><circle class="radar-dot" cx="38.4" cy="56.0" r="2"></circle><text class="radar-label" x="80" y="12">擐除</text><text class="radar-label" x="145" y="48">?貉釭</text><text class="radar-label" x="145" y="116">??</text><text class="radar-label" x="80" y="155">??</text><text class="radar-label" x="15" y="116">擗</text><text class="radar-label" x="15" y="48">撟唾﹛</text></svg></div></div>
+                            
+                            <div class="price-section" style="">
+                                <div class="price-item">
+                                    <div class="price-label">?? / ??/div>
+                                    <div class="price-value">$170</div>
+                                </div>
+                                <div class="price-item">
+                                    <div class="price-label">??</div>
+                                    <div class="price-value">$540</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coffee-card">
+                        <div class="coffee-card-header">
+                            <h3 class="coffee-name">?亙急?鈭瑕?皞芾健?? ???芣?菜??勗??剜飢?偌瘣?/h3>
+                            <p class="coffee-name-en">Colombia Huila Quebraditas Strawberry Yogurt</p>
+                            <div class="coffee-meta"><span class="roast-badge">瘛箇?</span><span class="process-badge">?勗??剜飢瘞湔?</span></div>
+                        </div>
+                        <div class="coffee-card-body" style="">
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8.5" cy="10" r="2.7"></circle><circle cx="14.8" cy="9.6" r="2.8"></circle><circle cx="11.8" cy="15" r="3"></circle><circle cx="17" cy="14.5" r="2.2"></circle><circle cx="6.7" cy="15" r="2.1"></circle><path d="M11.7 7.2C11.2 4.5 13 2.9 16 3M11.7 7.2C10.3 5 8.2 4 5.8 4.8"></path><path d="M12.6 5.2c2 .2 3.4-.4 4.4-1.7M10.2 5.8C8.6 5.5 7.6 5 6.8 4.2"></path></svg><span>??</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8s6.2 7.1 6.2 12.1a6.2 6.2 0 1 1-12.4 0C5.8 9.9 12 2.8 12 2.8z"></path><path d="M8.5 14.8c.1 2.5 1.6 4 3.8 4.4M8.2 12.3c.4-1.1 1-2.2 1.7-3.2"></path><path d="M14.5 6.5c1.4-1.8 3.2-2.2 5-1.7-.5 2.1-2.1 3.1-4.6 2.3"></path></svg><span>?芣??/span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8s6.2 7.1 6.2 12.1a6.2 6.2 0 1 1-12.4 0C5.8 9.9 12 2.8 12 2.8z"></path><path d="M8.5 14.8c.1 2.5 1.6 4 3.8 4.4M8.2 12.3c.4-1.1 1-2.2 1.7-3.2"></path><path d="M14.5 6.5c1.4-1.8 3.2-2.2 5-1.7-.5 2.1-2.1 3.1-4.6 2.3"></path></svg><span>璆???/span></div></div><p class="flavor-one-line"><span>閬?摮?/span><span>?梢?瘞?</span><span>??</span></p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="?剛?敶ａ◢?喳?撣?"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"></polygon><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"></polygon><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"></path><polygon class="radar-shape" points="80.0,20.0 121.6,56.0 132.0,110.0 80.0,128.0 28.0,110.0 38.4,56.0"></polygon><circle class="radar-dot" cx="80.0" cy="20.0" r="2"></circle><circle class="radar-dot" cx="121.6" cy="56.0" r="2"></circle><circle class="radar-dot" cx="132.0" cy="110.0" r="2"></circle><circle class="radar-dot" cx="80.0" cy="128.0" r="2"></circle><circle class="radar-dot" cx="28.0" cy="110.0" r="2"></circle><circle class="radar-dot" cx="38.4" cy="56.0" r="2"></circle><text class="radar-label" x="80" y="12">擐除</text><text class="radar-label" x="145" y="48">?貉釭</text><text class="radar-label" x="145" y="116">??</text><text class="radar-label" x="80" y="155">??</text><text class="radar-label" x="15" y="116">擗</text><text class="radar-label" x="15" y="48">撟唾﹛</text></svg></div></div>
+                            
+                            <div class="price-section" style="">
+                                <div class="price-item">
+                                    <div class="price-label">?? / ??/div>
+                                    <div class="price-value">$250</div>
+                                </div>
+                                <div class="price-item">
+                                    <div class="price-label" style="">??</div>
+                                    <div class="price-value">$960</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roast-section">
+                <h2 class="roast-title">銝剔?蝟餃?</h2><p class="roast-story-note">?詨潸??箸??????概??撠暸?游像銵∴?銋暹楊??瞏歹??舀?憭拚?????◢?喲??/p>
+                <div class="coffee-grid">
+                    <div class="coffee-card">
+                        <div class="coffee-card-header">
+                            <h3 class="coffee-name">?擐祆?繚?掖憒桀??梁?瘞湔?</h3>
+                            <p class="coffee-name-en">Guatemala La Minita Antiqua La Flor</p>
+                            <div class="coffee-meta"><span class="roast-badge">銝剔?</span><span class="process-badge">瘞湔?</span></div>
+                        </div>
+                        <div class="coffee-card-body" style="">
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.1"></circle><path d="M12 9.9C9.2 7.5 9.8 4 12 4s2.8 3.5 0 5.9zM14.1 12c2.4-2.8 5.9-2.2 5.9 0s-3.5 2.8-5.9 0zM12 14.1c2.8 2.4 2.2 5.9 0 5.9s-2.8-3.5 0-5.9zM9.9 12C7.5 14.8 4 14.2 4 12s3.5-2.8 5.9 0z"></path><path d="M10.5 10.5C7.2 10.2 6 7 7.8 5.8s4.3 1.4 2.7 4.7zM13.5 10.5c.3-3.3 3.5-4.5 4.7-2.7s-1.4 4.3-4.7 2.7zM13.5 13.5c3.3.3 4.5 3.5 2.7 4.7s-4.3-1.4-2.7-4.7zM10.5 13.5c-.3 3.3-3.5 4.5-4.7 2.7s1.4-4.3 4.7-2.7z"></path></svg><span>?梢?</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11.5" cy="12.5" r="7.5"></circle><circle cx="11.5" cy="12.5" r="5.3"></circle><path d="M11.5 7.2v10.6M6.2 12.5h10.6M7.8 8.8l7.5 7.5M15.2 8.8l-7.5 7.5M16.5 5.5c1.2-2 3.1-2.3 4.5-1.8-.4 1.9-1.9 3.1-4.5 1.8z"></path><path d="M16.2 6.1c-1.2.2-2.1.1-3-.2"></path></svg><span>????/span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5 18.5 4 20 18.2 6.5 20z"></path><path d="m11.7 4.8.5 14.4M5.6 10.3l13.5-1.5M6.1 15.2l13.5-1.5"></path><path d="M8.3 7.7c.8-.8 1.7-.9 2.6-.3M14.6 12c.8-.8 1.8-.9 2.6-.3M8.7 17.2c.8-.7 1.7-.8 2.5-.3"></path></svg><span>撌批???/span></div></div><p class="flavor-one-line"><span>???銋暹楊?漁</span></p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="?剛?敶ａ◢?喳?撣?"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"></polygon><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"></polygon><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"></path><polygon class="radar-shape" points="80.0,32.0 111.2,62.0 121.6,104.0 80.0,116.0 38.4,104.0 28.0,50.0"></polygon><circle class="radar-dot" cx="80.0" cy="32.0" r="2"></circle><circle class="radar-dot" cx="111.2" cy="62.0" r="2"></circle><circle class="radar-dot" cx="121.6" cy="104.0" r="2"></circle><circle class="radar-dot" cx="80.0" cy="116.0" r="2"></circle><circle class="radar-dot" cx="38.4" cy="104.0" r="2"></circle><circle class="radar-dot" cx="28.0" cy="50.0" r="2"></circle><text class="radar-label" x="80" y="12">擐除</text><text class="radar-label" x="145" y="48">?貉釭</text><text class="radar-label" x="145" y="116">??</text><text class="radar-label" x="80" y="155">??</text><text class="radar-label" x="15" y="116">擗</text><text class="radar-label" x="15" y="48">撟唾﹛</text></svg></div></div>
+                            
+                            <div class="price-section" style="">
+                                <div class="price-item">
+                                    <div class="price-label">?? / ??/div>
+                                    <div class="price-value">$140</div>
+                                </div>
+                                <div class="price-item">
+                                    <div class="price-label">??</div>
+                                    <div class="price-value">$420</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roast-section">
+                <h2 class="roast-title">銝剜楛?頂??/h2><p class="roast-story-note">隞亦蝟概????曇??隤踵抒銝餉遘嚗??撖艾偏?餅?蝛抬??拙??末雿????????/p>
+                <div class="coffee-grid" style="">
+                    <div class="coffee-card">
+                        <div class="coffee-card-header">
+                            <h3 class="coffee-name">?啣側繚??蝑??潛撖扳??禁OP G1</h3>
+                            <p class="coffee-name-en">Indonesia Sumatra Mandheling Hands Picked TOP G1</p>
+                            <div class="coffee-meta"><span class="roast-badge">銝剜楛??/span><span class="process-badge">瞈瘜?/span></div>
+                        </div>
+                        <div class="coffee-card-body" style="">
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5 18.5 4 20 18.2 6.5 20z"></path><path d="m11.7 4.8.5 14.4M5.6 10.3l13.5-1.5M6.1 15.2l13.5-1.5"></path><path d="M8.3 7.7c.8-.8 1.7-.9 2.6-.3M14.6 12c.8-.8 1.8-.9 2.6-.3M8.7 17.2c.8-.7 1.7-.8 2.5-.3"></path></svg><span>撌批???/span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21c4.5-6.2 7.5-11.6 12-18"></path><path d="M10.1 14.2C6.3 14.8 4 12.9 3.8 9.7c3.8-.5 6.1 1.3 6.3 4.5zM13.3 10.1c-.1-3.8 2.1-6.1 5.5-6.2.1 3.8-2.1 6-5.5 6.2zM7.7 17.8c-3.1.7-5.2-.7-5.7-3.4 3.1-.7 5.1.7 5.7 3.4zM11.3 13.5c2.9-.1 4.7 1.5 4.9 4.1-2.9.1-4.7-1.5-4.9-4.1z"></path><path d="M5.2 11.2c1.7.7 3 1.6 4.4 2.8M17.5 5.5c-1.4 1.2-2.6 2.5-3.8 4.2"></path></svg><span>?</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8s6.2 7.1 6.2 12.1a6.2 6.2 0 1 1-12.4 0C5.8 9.9 12 2.8 12 2.8z"></path><path d="M8.5 14.8c.1 2.5 1.6 4 3.8 4.4M8.2 12.3c.4-1.1 1-2.2 1.7-3.2"></path><path d="M14.5 6.5c1.4-1.8 3.2-2.2 5-1.7-.5 2.1-2.1 3.1-4.6 2.3"></path></svg><span>?衣?</span></div></div><p class="flavor-one-line"><span>?芣</span></p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="?剛?敶ａ◢?喳?撣?"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"></polygon><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"></polygon><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"></path><polygon class="radar-shape" points="80.0,44.0 90.4,74.0 121.6,104.0 80.0,140.0 28.0,110.0 38.4,56.0"></polygon><circle class="radar-dot" cx="80.0" cy="44.0" r="2"></circle><circle class="radar-dot" cx="90.4" cy="74.0" r="2"></circle><circle class="radar-dot" cx="121.6" cy="104.0" r="2"></circle><circle class="radar-dot" cx="80.0" cy="140.0" r="2"></circle><circle class="radar-dot" cx="28.0" cy="110.0" r="2"></circle><circle class="radar-dot" cx="38.4" cy="56.0" r="2"></circle><text class="radar-label" x="80" y="12">擐除</text><text class="radar-label" x="145" y="48">?貉釭</text><text class="radar-label" x="145" y="116">??</text><text class="radar-label" x="80" y="155">??</text><text class="radar-label" x="15" y="116">擗</text><text class="radar-label" x="15" y="48">撟唾﹛</text></svg></div></div>
+                            
+                            <div class="price-section" style="outline: none;">
+                                <div class="price-item">
+                                    <div class="price-label">?? / ??/div>
+                                    <div class="price-value">$140</div>
+                                </div>
+                                <div class="price-item">
+                                    <div class="price-label">??</div>
+                                    <div class="price-value">$420</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="shop-column gift-column" id="gift-box">
+            <div class="shop-column-head">
+                <div><span class="shop-column-number">COLUMN 02 繚 GIFT COLLECTION</span><h2 class="shop-column-title">蝳桃?蝟餃?</h2></div>
+                <p class="shop-column-intro">敺??園旨??璆剛?蝳桀?亙虜?澈嚗????遢?貉?????摨西?望???????末???∪???/p>
+            </div>
+            <div class="gift-service">
+                <div>
+                    <span class="gift-service-kicker">CUSTOM GIFT SERVICE</span>
+                    <h3>摰Ｚˊ?旨????/h3>
+                    <p>?臭??旨????蝞?閮頃隞賣??剝??批捆??璆剛?蝳柴??嗥旨??瘣餃?隡湔?蝳桃??舀??晾閰ｇ?霈?銝隞賢?????????/p>
+                </div>
+                <div class="gift-service-badge">撠惇<br>?剝?</div>
+            </div>
+
+            <div class="gift-category-label">GIFT BOX CATEGORY 繚 蝳桃???</div>
+            <div class="gift-category-grid">
+                <article class="gift-category-card" data-index="01">
+                    <div class="gift-category-image"><img src="/images/gift-mid-autumn.png" alt="???銝剔?蝳桃??批捆"></div>
+                    <div class="gift-category-top">
+                        <div><span class="gift-category-type">SEASONAL GIFT</span><h3>銝剔?蝳桃?</h3></div>
+                        <div class="gift-category-price"><small>?</small>$549</div>
+                    </div>
+                    <div class="gift-category-body">
+                        <p>?拇狡?批捆?舫嚗?/p>
+                        <div class="gift-option"><b>A</b><span>?瞈暹? 10 ??/span></div>
+                        <div class="gift-option"><b>B</b><span>瞈暹? 6 ?伐??? 1 ?伐?3 甈暸?銋?/span></div>
+                    </div>
+                </article>
+
+                <article class="gift-category-card" data-index="02">
+                    <div class="gift-category-image"><img src="/images/gift-premium.png" alt="???憭抒旨?摰?></div>
+                    <div class="gift-category-top">
+                        <div><span class="gift-category-type">PREMIUM GIFT</span><h3>憭抒旨??/h3></div>
+                        <div class="gift-category-price">$899</div>
+                    </div>
+                    <div class="gift-category-body">
+                        <p>?拙?蝭?嗚?閬?蝳株?憭犖?澈?摰孵靘?????旨?瘙晾閰Ｘ??/p>
+                    </div>
+                </article>
+
+                <article class="gift-category-card" data-index="03">
+                    <div class="gift-category-image"><img src="/images/gift-drip-15.png" alt="??????交蕪?旨??></div>
+                    <div class="gift-category-top">
+                        <div><span class="gift-category-type">DRIP BAG GIFT</span><h3>瞈暹?蝳桃? 15 ??/h3></div>
+                        <div class="gift-category-price"><small>銝剜楛??</small>$450</div>
+                    </div>
+                    <div class="gift-category-body">
+                        <p>瞈暹????航?望??撖阡????航銝閰衣???/p>
+                        <a class="gift-calculator-link" href="#drip-coffee">???寞閰衣?</a>
+                    </div>
+                </article>
+
+                <article class="gift-category-card" data-index="04">
+                    <div class="gift-category-image"><img src="/images/gift-drip-10.png" alt="????瞈暹?蝳桃?"></div>
+                    <div class="gift-category-top">
+                        <div><span class="gift-category-type">DRIP BAG GIFT</span><h3>瞈暹?蝳桃? 10 ??/h3></div>
                         <div class="gift-category-price"><small>銝剜楛??</small>$299</div>
                     </div>
                     <div class="gift-category-body">
@@ -791,4 +2939,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1743521259972892");fbq("set","agent","tmgoogletagmanager","1743521259972892");fbq("track","PageView");</script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1743521259972892&amp;ev=PageView&amp;noscript=1"></noscript>
 </body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>
-
