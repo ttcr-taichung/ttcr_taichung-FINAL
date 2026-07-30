@@ -381,7 +381,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
         .flavor-doodle:nth-child(2) svg { transform: rotate(3deg); background:radial-gradient(circle at 32% 28%,#fff 0 8%,#f8f1df 72%); color:#a87831; }
         .flavor-doodle:nth-child(3) svg { transform: rotate(-4deg); background:radial-gradient(circle at 32% 28%,#fff 0 8%,#f3edf5 72%); color:#7e657f; }
-        .flavor-doodle span { display:block; font-size:0.68rem; font-weight:700; line-height:1.25; }
+        .flavor-doodle span { display:none; }
+        .flavor-one-line { display:none; }
+        .flavor-doodles { margin-bottom:0; }
+        .flavor-visual > div:first-child::after {
+            content: "AROMA SKETCH";
+            display:block;
+            margin-top:0.55rem;
+            font-size:0.58rem;
+            font-weight:800;
+            letter-spacing:0.14em;
+            color:#9aadb5;
+        }
         .flavor-one-line { margin:0; font-size:0.83rem; line-height:1.55; color:#596a72; font-weight:500; }
         .flavor-radar { width:168px; }
         .flavor-radar svg { display:block; width:100%; height:auto; overflow:visible; }
