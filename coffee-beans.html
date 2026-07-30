@@ -313,7 +313,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
 
         /* Visual flavor cards */
-        .coffee-card-body .flavor-section { display: none; }
+        .coffee-card-body .flavor-section {
+            display: block;
+            margin: 0 0 1.15rem;
+            padding: 0.95rem 1rem;
+            border: 1px solid #e4ecef;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #fbfdfd 0%, #f4f8f9 100%);
+        }
+        .coffee-card-body .flavor-section .flavor-label {
+            margin-bottom: 0.65rem;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.13em;
+            color: #537f92;
+        }
+        .coffee-card-body .flavor-section .flavor-label::after {
+            content: "  ·  ALL NOTES";
+            font-size: 0.62rem;
+            color: #91a8b1;
+        }
+        .coffee-card-body .flavor-tags { gap: 0.42rem; }
+        .coffee-card-body .flavor-tag {
+            padding: 0.32rem 0.68rem;
+            border: 1px solid rgba(49,92,106,.12);
+            background: #fff;
+            color: #405c68;
+            font-size: 0.76rem;
+            font-weight: 600;
+            box-shadow: 0 2px 6px rgba(34,56,67,.04);
+        }
         .flavor-visual {
             display: grid;
             grid-template-columns: minmax(0,1fr) 168px;
