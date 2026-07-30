@@ -312,6 +312,140 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .story-benefit-icon { width:64px; height:64px; }
         }
 
+        /* Coffee metadata and flavor visual system */
+        .coffee-meta {
+            display:flex;
+            flex-wrap:wrap;
+            gap:.5rem;
+            margin-top:.9rem;
+        }
+        .coffee-meta .roast-badge { margin-top:0; }
+        .process-badge {
+            display:inline-block;
+            padding:.3rem .8rem;
+            border:1px solid rgba(255,255,255,.2);
+            border-radius:20px;
+            background:rgba(255,255,255,.1);
+            color:#fff;
+            font-size:.78rem;
+            font-weight:600;
+        }
+        .flavor-visual {
+            display:grid;
+            grid-template-columns:minmax(0,1fr) 168px;
+            gap:1rem;
+            align-items:center;
+            margin-bottom:1.15rem;
+            padding-bottom:0;
+            border-bottom:0;
+        }
+        .flavor-kicker {
+            display:block;
+            margin-bottom:.65rem;
+            color:#537f92;
+            font-size:.68rem;
+            font-weight:800;
+            letter-spacing:.15em;
+        }
+        .flavor-doodles {
+            display:flex;
+            gap:.55rem;
+            margin-bottom:.7rem;
+        }
+        .flavor-doodle {
+            width:54px;
+            text-align:center;
+            color:#315c6a;
+        }
+        .flavor-doodle svg {
+            display:block;
+            width:48px;
+            height:48px;
+            margin:0 auto .3rem;
+            padding:8px;
+            border:1px solid rgba(49,92,106,.13);
+            border-radius:54% 46% 51% 49% / 48% 53% 47% 52%;
+            background:radial-gradient(circle at 32% 28%,#fff 0 8%,#edf6f8 72%);
+            box-shadow:0 5px 14px rgba(34,56,67,.08),inset 0 0 0 3px rgba(255,255,255,.45);
+            stroke:currentColor;
+            fill:none;
+            stroke-width:1.25;
+            stroke-linecap:round;
+            stroke-linejoin:round;
+            transform:rotate(-2deg);
+        }
+        .flavor-doodle:nth-child(2) svg {
+            transform:rotate(3deg);
+            background:radial-gradient(circle at 32% 28%,#fff 0 8%,#f8f1df 72%);
+            color:#a87831;
+        }
+        .flavor-doodle:nth-child(3) svg {
+            transform:rotate(-4deg);
+            background:radial-gradient(circle at 32% 28%,#fff 0 8%,#f3edf5 72%);
+            color:#7e657f;
+        }
+        .flavor-doodle span {
+            display:block;
+            font-size:.68rem;
+            font-weight:700;
+            line-height:1.25;
+        }
+        .flavor-one-line {
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            gap:.28rem 0;
+            margin:0;
+            color:#536770;
+            font-size:.78rem;
+            line-height:1.55;
+            font-weight:600;
+        }
+        .flavor-one-line span { white-space:nowrap; }
+        .flavor-one-line span:not(:last-child)::after {
+            content:"・";
+            margin:0 .25rem;
+            color:#9aadb5;
+        }
+        .flavor-radar { width:168px; }
+        .flavor-radar svg {
+            display:block;
+            width:100%;
+            height:auto;
+            overflow:visible;
+        }
+        .radar-grid {
+            fill:none;
+            stroke:#cbd8dd;
+            stroke-width:1;
+        }
+        .radar-axis {
+            fill:none;
+            stroke:#dbe4e8;
+            stroke-width:1;
+        }
+        .radar-shape {
+            fill:rgba(74,130,153,.22);
+            stroke:#315c6a;
+            stroke-width:2;
+            stroke-linejoin:round;
+        }
+        .radar-dot { fill:#315c6a; stroke:none; }
+        .radar-label {
+            fill:#71838b;
+            stroke:none;
+            font-family:var(--font-sans);
+            font-size:8px;
+            font-weight:700;
+            text-anchor:middle;
+        }
+        @media (max-width:460px) {
+            .flavor-visual { grid-template-columns:minmax(0,1fr) 132px; gap:.6rem; }
+            .flavor-radar { width:132px; }
+            .flavor-doodle { width:48px; }
+            .flavor-doodle svg { width:36px; height:36px; padding:6px; }
+        }
+
         .roast-story-note {
             max-width: 720px;
             margin: -1rem 0 2rem;
