@@ -268,6 +268,53 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             line-height: 1.65;
             color: rgba(255,255,255,0.7);
         }
+        .story-benefits-three { grid-template-columns: repeat(3,minmax(0,1fr)); }
+        .benefit-index {
+            display: block;
+            margin-bottom: 1rem;
+            font-size: 0.68rem !important;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            color: #b9d6e2 !important;
+        }
+        .coffee-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.9rem;
+        }
+        .coffee-meta .roast-badge { margin-top: 0; }
+        .process-badge {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            font-family: var(--font-sans);
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: white;
+        }
+        .coffee-flavor-copy {
+            margin: 0 0 1.25rem;
+            padding: 0 0 1.25rem;
+            border-bottom: 1px solid #edf0f1;
+            font-family: var(--font-sans);
+            font-size: 0.92rem;
+            line-height: 1.8;
+            color: #596a72;
+        }
+        .coffee-flavor-copy strong {
+            display: block;
+            margin-bottom: 0.35rem;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            color: #315c6a;
+        }
+        @media (max-width: 760px) {
+            .story-benefits-three { grid-template-columns: 1fr; }
+        }
+
         .roast-story-note {
             max-width: 720px;
             margin: -1rem 0 2rem;
@@ -1230,11 +1277,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <span class="story-eyebrow">TTCR IN-HOUSE ROASTING</span>
                 <h2 class="bean-story-title" id="bean-story-title">讓每一支豆子，烘成它最好喝的樣子</h2>
                 <p class="bean-story-lead">自家烘焙的價值，不只是「自己烘」。我們能從產地、品種與處理法出發，替每支豆子安排合適的烘焙曲線，把花果香、酸甜平衡或醇厚尾韻清楚留在杯中；也讓咖啡從烘焙到飲用的距離更短，喝得到更完整的香氣。</p>
-                <div class="story-benefits" aria-label="同齊自烘咖啡豆四大優點">
-                    <div class="story-benefit"><strong>依豆性烘焙</strong><span>不以同一套曲線套用所有豆子，讓產地個性被喝見。</span></div>
-                    <div class="story-benefit"><strong>香氣更靠近</strong><span>自家掌握烘焙節奏，縮短咖啡從烘豆到杯中的距離。</span></div>
-                    <div class="story-benefit"><strong>三種焙度好選</strong><span>從明亮花果香、平衡甜感到厚實尾韻，依喜好直覺挑選。</span></div>
-                    <div class="story-benefit"><strong>門市驗證風味</strong><span>先在店裡喝一杯，再把喜歡的豆子、禮盒或濾掛帶回家。</span></div>
+                <div class="story-benefits story-benefits-three" aria-label="同齊自烘咖啡豆三大優點">
+                    <div class="story-benefit"><span class="benefit-index">01</span><strong>嚴選產區</strong><span>從產地、品種到處理法逐一挑選，讓每款豆子都有清楚可辨的風味個性。</span></div>
+                    <div class="story-benefit"><span class="benefit-index">02</span><strong>自家烘焙</strong><span>依豆性調整烘焙曲線，把花果香、甜感與醇厚尾韻留在最合適的位置。</span></div>
+                    <div class="story-benefit"><span class="benefit-index">03</span><strong>門市實喝</strong><span>每支豆都能在門市化成一杯手沖，先喝懂風味，再把喜歡的選擇帶回家。</span></div>
                 </div>
             </section>
 
@@ -1274,9 +1320,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="coffee-card-header">
                             <h3 class="coffee-name">衣索比亞·古吉薩薩巴【水洗】G1紅櫻桃計畫</h3>
                             <p class="coffee-name-en">Ethiopia Guji Sasaba Washing Station Washed G1 OCR</p>
-                            <span class="roast-badge">淺焙</span>
+                            <div class="coffee-meta"><span class="roast-badge">淺焙</span><span class="process-badge">水洗</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
+                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>檸檬皮與橙子的明亮酸甜先入口，接著浮現花香、烏龍茶與香草氣息，尾段以蜂蜜般的柔和甜感收束，乾淨又有層次。</p>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags">
@@ -1306,9 +1353,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="coffee-card-header">
                             <h3 class="coffee-name">衣索比亞·耶加雪菲【日曬】伊菲雅 G1</h3>
                             <p class="coffee-name-en">Ethiopia Gedeo Yirgacheffe Worka Efeya Natural G1</p>
-                            <span class="roast-badge">淺焙</span>
+                            <div class="coffee-meta"><span class="roast-badge">淺焙</span><span class="process-badge">日曬</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
+                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>甜莓、柑橘與熱帶水果香氣飽滿展開，酸甜平衡而不尖銳；滑順的口感讓果香停留更久，是明亮卻討喜的一杯。</p>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags">
@@ -1336,9 +1384,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="coffee-card-header">
                             <h3 class="coffee-name">衣索比亞·耶加雪菲【日曬】沃卡香妃 G1</h3>
                             <p class="coffee-name-en">Ethiopia Coffee Lamp Series Worka Natural G1</p>
-                            <span class="roast-badge">淺焙</span>
+                            <div class="coffee-meta"><span class="roast-badge">淺焙</span><span class="process-badge">日曬</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
+                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>從百香果、莓果到香瓜的多汁香氣層層展開，伴隨可可般的甜潤底韻；像一杯成熟熱帶水果調性的咖啡。</p>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags" style="">
@@ -1367,9 +1416,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="coffee-card-header">
                             <h3 class="coffee-name">哥倫比亞·小溪谷莊園 草莓優格酵母共同厭氧【水洗】</h3>
                             <p class="coffee-name-en">Colombia Huila Quebraditas Strawberry Yogurt</p>
-                            <span class="roast-badge">淺焙</span>
+                            <div class="coffee-meta"><span class="roast-badge">淺焙</span><span class="process-badge">共同厭氧水洗</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
+                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>草莓與覆盆子的紅色果香十分鮮明，優格般的柔滑酸甜貫穿口感，尾段帶出楓糖蜜與蜂蜜甜香，個性濃郁卻依然乾淨。</p>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags">
@@ -1403,9 +1453,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="coffee-card-header">
                             <h3 class="coffee-name">瓜地馬拉·拉米妮塔花神水洗</h3>
                             <p class="coffee-name-en">Guatemala La Minita Antiqua La Flor</p>
-                            <span class="roast-badge">中焙</span>
+                            <div class="coffee-meta"><span class="roast-badge">中焙</span><span class="process-badge">水洗</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
+                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>柔和花香與明亮酸值取得平衡，入口乾淨、甜感圓潤，最後留下細緻的巧克力尾韻，是耐喝而優雅的日常選擇。</p>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags">
@@ -1437,9 +1488,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="coffee-card-header">
                             <h3 class="coffee-name">印尼·蘇門答臘曼特寧手選TOP G1</h3>
                             <p class="coffee-name-en">Indonesia Sumatra Mandheling Hands Picked TOP G1</p>
-                            <span class="roast-badge">中深焙</span>
+                            <div class="coffee-meta"><span class="roast-badge">中深焙</span><span class="process-badge">濕刨法</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
+                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>厚實巧克力與焦糖甜感構成主體，雪松與草本氣息增加深度；酸感低、口感沉穩，尾韻飽滿而悠長。</p>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags">
