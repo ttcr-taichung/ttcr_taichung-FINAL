@@ -311,6 +311,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             letter-spacing: 0.12em;
             color: #315c6a;
         }
+
+        /* Visual flavor cards */
+        .coffee-card-body .flavor-section { display: none; }
+        .flavor-visual {
+            display: grid;
+            grid-template-columns: minmax(0,1fr) 168px;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1.15rem;
+            padding-bottom: 1.15rem;
+            border-bottom: 1px solid #e7eef1;
+        }
+        .flavor-kicker {
+            display: block;
+            margin-bottom: 0.65rem;
+            font-size: 0.68rem;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            color: #537f92;
+        }
+        .flavor-doodles { display: flex; gap: 0.55rem; margin-bottom: 0.7rem; }
+        .flavor-doodle { width: 58px; text-align: center; color: #315c6a; }
+        .flavor-doodle svg {
+            display: block;
+            width: 42px;
+            height: 42px;
+            margin: 0 auto 0.25rem;
+            padding: 7px;
+            border-radius: 50% 46% 52% 44%;
+            background: #eef6f8;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 1.7;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transform: rotate(-2deg);
+        }
+        .flavor-doodle:nth-child(2) svg { transform: rotate(3deg); background:#f7f3e9; color:#a87831; }
+        .flavor-doodle:nth-child(3) svg { transform: rotate(-4deg); background:#f2eef4; color:#7e657f; }
+        .flavor-doodle span { display:block; font-size:0.68rem; font-weight:700; line-height:1.25; }
+        .flavor-one-line { margin:0; font-size:0.83rem; line-height:1.55; color:#596a72; font-weight:500; }
+        .flavor-radar { width:168px; }
+        .flavor-radar svg { display:block; width:100%; height:auto; overflow:visible; }
+        .radar-grid { fill:none; stroke:#cbd8dd; stroke-width:1; }
+        .radar-axis { stroke:#dbe4e8; stroke-width:1; }
+        .radar-shape { fill:rgba(74,130,153,.22); stroke:#315c6a; stroke-width:2; stroke-linejoin:round; }
+        .radar-dot { fill:#315c6a; }
+        .radar-label { fill:#71838b; font-family:var(--font-sans); font-size:8px; font-weight:700; text-anchor:middle; }
+        @media (max-width: 460px) {
+            .flavor-visual { grid-template-columns: 1fr 132px; gap:0.6rem; }
+            .flavor-radar { width:132px; }
+            .flavor-doodle { width:48px; }
+            .flavor-doodle svg { width:36px; height:36px; padding:6px; }
+        }
+
         @media (max-width: 760px) {
             .story-benefits-three { grid-template-columns: 1fr; }
         }
@@ -1323,7 +1378,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="coffee-meta"><span class="roast-badge">淺焙</span><span class="process-badge">水洗</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
-                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>檸檬皮與橙子的明亮酸甜先入口，接著浮現花香、烏龍茶與香草氣息，尾段以蜂蜜般的柔和甜感收束，乾淨又有層次。</p>
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16M6.3 6.3l11.4 11.4M17.7 6.3L6.3 17.7"/></svg><span>柑橘</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9c-3-5-7-1-4 3-5-1-6 5-1 5-1 5 5 6 5 1 2 6 7 3 3 4 7 0 4-3 5-8 1-9z"/><circle cx="12" cy="13" r="2.2"/></svg><span>花香</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h13v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z"/><path d="M17 10h2a3 3 0 0 1 0 6h-2M8 4c-2 2 2 2 0 4M12 3c-2 2 2 2 0 4"/></svg><span>烏龍茶</span></div></div><p class="flavor-one-line">明亮柑橘・清雅花香・蜂蜜甜韻</p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="六角形風味分布圖"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"/><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"/><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"/><polygon class="radar-shape" points="80.0,20.0 132.0,50.0 121.6,104.0 80.0,104.0 38.4,104.0 38.4,56.0"/><circle class="radar-dot" cx="80.0" cy="20.0" r="2"/><circle class="radar-dot" cx="132.0" cy="50.0" r="2"/><circle class="radar-dot" cx="121.6" cy="104.0" r="2"/><circle class="radar-dot" cx="80.0" cy="104.0" r="2"/><circle class="radar-dot" cx="38.4" cy="104.0" r="2"/><circle class="radar-dot" cx="38.4" cy="56.0" r="2"/><text class="radar-label" x="80" y="12">香氣</text><text class="radar-label" x="145" y="48">酸質</text><text class="radar-label" x="145" y="116">甜感</text><text class="radar-label" x="80" y="155">醇厚</text><text class="radar-label" x="15" y="116">餘韻</text><text class="radar-label" x="15" y="48">平衡</text></svg></div></div>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags">
@@ -1356,7 +1411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="coffee-meta"><span class="roast-badge">淺焙</span><span class="process-badge">日曬</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
-                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>甜莓、柑橘與熱帶水果香氣飽滿展開，酸甜平衡而不尖銳；滑順的口感讓果香停留更久，是明亮卻討喜的一杯。</p>
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="10" r="3"/><circle cx="15" cy="10" r="3"/><circle cx="12" cy="15" r="3"/><path d="M12 7c0-3 3-4 5-4M12 7c-1-2-3-3-5-2"/></svg><span>甜莓</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16M6.3 6.3l11.4 11.4M17.7 6.3L6.3 17.7"/></svg><span>柑橘</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-5-2-8 2-7 7 1 5 5 7 7 5 2 2 6 0 7-5 1-5-2-9-7-7z"/><path d="M12 7c0-3 2-5 5-5M12 6c-2-2-4-2-6-1"/></svg><span>熱帶果</span></div></div><p class="flavor-one-line">多汁莓果・熱帶果香・滑順酸甜</p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="六角形風味分布圖"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"/><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"/><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"/><polygon class="radar-shape" points="80.0,20.0 121.6,56.0 121.6,104.0 80.0,128.0 38.4,104.0 38.4,56.0"/><circle class="radar-dot" cx="80.0" cy="20.0" r="2"/><circle class="radar-dot" cx="121.6" cy="56.0" r="2"/><circle class="radar-dot" cx="121.6" cy="104.0" r="2"/><circle class="radar-dot" cx="80.0" cy="128.0" r="2"/><circle class="radar-dot" cx="38.4" cy="104.0" r="2"/><circle class="radar-dot" cx="38.4" cy="56.0" r="2"/><text class="radar-label" x="80" y="12">香氣</text><text class="radar-label" x="145" y="48">酸質</text><text class="radar-label" x="145" y="116">甜感</text><text class="radar-label" x="80" y="155">醇厚</text><text class="radar-label" x="15" y="116">餘韻</text><text class="radar-label" x="15" y="48">平衡</text></svg></div></div>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags">
@@ -1387,7 +1442,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="coffee-meta"><span class="roast-badge">淺焙</span><span class="process-badge">日曬</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
-                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>從百香果、莓果到香瓜的多汁香氣層層展開，伴隨可可般的甜潤底韻；像一杯成熟熱帶水果調性的咖啡。</p>
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-5-2-8 2-7 7 1 5 5 7 7 5 2 2 6 0 7-5 1-5-2-9-7-7z"/><path d="M12 7c0-3 2-5 5-5M12 6c-2-2-4-2-6-1"/></svg><span>百香果</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="10" r="3"/><circle cx="15" cy="10" r="3"/><circle cx="12" cy="15" r="3"/><path d="M12 7c0-3 3-4 5-4M12 7c-1-2-3-3-5-2"/></svg><span>莓果</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M12 4v16M5 10h14M5 15h14"/></svg><span>可可</span></div></div><p class="flavor-one-line">成熟果香・可可甜韻・飽滿多汁</p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="六角形風味分布圖"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"/><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"/><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"/><polygon class="radar-shape" points="80.0,20.0 121.6,56.0 132.0,110.0 80.0,128.0 38.4,104.0 38.4,56.0"/><circle class="radar-dot" cx="80.0" cy="20.0" r="2"/><circle class="radar-dot" cx="121.6" cy="56.0" r="2"/><circle class="radar-dot" cx="132.0" cy="110.0" r="2"/><circle class="radar-dot" cx="80.0" cy="128.0" r="2"/><circle class="radar-dot" cx="38.4" cy="104.0" r="2"/><circle class="radar-dot" cx="38.4" cy="56.0" r="2"/><text class="radar-label" x="80" y="12">香氣</text><text class="radar-label" x="145" y="48">酸質</text><text class="radar-label" x="145" y="116">甜感</text><text class="radar-label" x="80" y="155">醇厚</text><text class="radar-label" x="15" y="116">餘韻</text><text class="radar-label" x="15" y="48">平衡</text></svg></div></div>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags" style="">
@@ -1419,7 +1474,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="coffee-meta"><span class="roast-badge">淺焙</span><span class="process-badge">共同厭氧水洗</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
-                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>草莓與覆盆子的紅色果香十分鮮明，優格般的柔滑酸甜貫穿口感，尾段帶出楓糖蜜與蜂蜜甜香，個性濃郁卻依然乾淨。</p>
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="10" r="3"/><circle cx="15" cy="10" r="3"/><circle cx="12" cy="15" r="3"/><path d="M12 7c0-3 3-4 5-4M12 7c-1-2-3-3-5-2"/></svg><span>草莓</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 7 6 12a6 6 0 1 1-12 0c0-5 6-12 6-12z"/><path d="M9 16c1 2 3 3 5 2"/></svg><span>優格甜</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 7 6 12a6 6 0 1 1-12 0c0-5 6-12 6-12z"/><path d="M9 16c1 2 3 3 5 2"/></svg><span>楓糖蜜</span></div></div><p class="flavor-one-line">草莓優格・楓糖蜜・濃郁乾淨</p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="六角形風味分布圖"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"/><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"/><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"/><polygon class="radar-shape" points="80.0,20.0 121.6,56.0 132.0,110.0 80.0,128.0 28.0,110.0 38.4,56.0"/><circle class="radar-dot" cx="80.0" cy="20.0" r="2"/><circle class="radar-dot" cx="121.6" cy="56.0" r="2"/><circle class="radar-dot" cx="132.0" cy="110.0" r="2"/><circle class="radar-dot" cx="80.0" cy="128.0" r="2"/><circle class="radar-dot" cx="28.0" cy="110.0" r="2"/><circle class="radar-dot" cx="38.4" cy="56.0" r="2"/><text class="radar-label" x="80" y="12">香氣</text><text class="radar-label" x="145" y="48">酸質</text><text class="radar-label" x="145" y="116">甜感</text><text class="radar-label" x="80" y="155">醇厚</text><text class="radar-label" x="15" y="116">餘韻</text><text class="radar-label" x="15" y="48">平衡</text></svg></div></div>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags">
@@ -1456,7 +1511,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="coffee-meta"><span class="roast-badge">中焙</span><span class="process-badge">水洗</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
-                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>柔和花香與明亮酸值取得平衡，入口乾淨、甜感圓潤，最後留下細緻的巧克力尾韻，是耐喝而優雅的日常選擇。</p>
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9c-3-5-7-1-4 3-5-1-6 5-1 5-1 5 5 6 5 1 2 6 7 3 3 4 7 0 4-3 5-8 1-9z"/><circle cx="12" cy="13" r="2.2"/></svg><span>花香</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16M6.3 6.3l11.4 11.4M17.7 6.3L6.3 17.7"/></svg><span>柔和酸</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M12 4v16M5 10h14M5 15h14"/></svg><span>巧克力</span></div></div><p class="flavor-one-line">柔和花香・圓潤甜感・細緻尾韻</p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="六角形風味分布圖"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"/><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"/><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"/><polygon class="radar-shape" points="80.0,32.0 111.2,62.0 121.6,104.0 80.0,116.0 38.4,104.0 28.0,50.0"/><circle class="radar-dot" cx="80.0" cy="32.0" r="2"/><circle class="radar-dot" cx="111.2" cy="62.0" r="2"/><circle class="radar-dot" cx="121.6" cy="104.0" r="2"/><circle class="radar-dot" cx="80.0" cy="116.0" r="2"/><circle class="radar-dot" cx="38.4" cy="104.0" r="2"/><circle class="radar-dot" cx="28.0" cy="50.0" r="2"/><text class="radar-label" x="80" y="12">香氣</text><text class="radar-label" x="145" y="48">酸質</text><text class="radar-label" x="145" y="116">甜感</text><text class="radar-label" x="80" y="155">醇厚</text><text class="radar-label" x="15" y="116">餘韻</text><text class="radar-label" x="15" y="48">平衡</text></svg></div></div>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags">
@@ -1491,7 +1546,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="coffee-meta"><span class="roast-badge">中深焙</span><span class="process-badge">濕刨法</span></div>
                         </div>
                         <div class="coffee-card-body" style="">
-                            <p class="coffee-flavor-copy"><strong>FLAVOR STORY</strong>厚實巧克力與焦糖甜感構成主體，雪松與草本氣息增加深度；酸感低、口感沉穩，尾韻飽滿而悠長。</p>
+                            <div class="flavor-visual"><div><span class="flavor-kicker">FLAVOR NOTES</span><div class="flavor-doodles"><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M12 4v16M5 10h14M5 15h14"/></svg><span>巧克力</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20c4-6 5-10 10-16"/><path d="M10 14c-4 0-6-2-6-5 4 0 6 2 6 5zM13 10c0-4 2-6 6-6 0 4-2 6-6 6zM8 17c-3 0-5-1-5-4 3 0 5 1 5 4z"/></svg><span>草本</span></div><div class="flavor-doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 7 6 12a6 6 0 1 1-12 0c0-5 6-12 6-12z"/><path d="M9 16c1 2 3 3 5 2"/></svg><span>焦糖</span></div></div><p class="flavor-one-line">低酸厚實・焦糖甜感・雪松草本</p></div><div class="flavor-radar"><svg viewBox="0 0 160 160" role="img" aria-label="六角形風味分布圖"><polygon class="radar-grid" points="80,20 132,50 132,110 80,140 28,110 28,50"/><polygon class="radar-grid" points="80,40 115,60 115,100 80,120 45,100 45,60"/><path class="radar-axis" d="M80 80V20M80 80l52-30M80 80l52 30M80 80v60M80 80l-52 30M80 80L28 50"/><polygon class="radar-shape" points="80.0,44.0 90.4,74.0 121.6,104.0 80.0,140.0 28.0,110.0 38.4,56.0"/><circle class="radar-dot" cx="80.0" cy="44.0" r="2"/><circle class="radar-dot" cx="90.4" cy="74.0" r="2"/><circle class="radar-dot" cx="121.6" cy="104.0" r="2"/><circle class="radar-dot" cx="80.0" cy="140.0" r="2"/><circle class="radar-dot" cx="28.0" cy="110.0" r="2"/><circle class="radar-dot" cx="38.4" cy="56.0" r="2"/><text class="radar-label" x="80" y="12">香氣</text><text class="radar-label" x="145" y="48">酸質</text><text class="radar-label" x="145" y="116">甜感</text><text class="radar-label" x="80" y="155">醇厚</text><text class="radar-label" x="15" y="116">餘韻</text><text class="radar-label" x="15" y="48">平衡</text></svg></div></div>
                             <div class="flavor-section">
                                 <div class="flavor-label">風味特色</div>
                                 <div class="flavor-tags">
