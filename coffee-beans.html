@@ -194,222 +194,122 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
         .bean-story {
-            margin: -1rem 0 3rem;
-            padding: 3.5rem;
-            border-radius: 30px;
-            background: linear-gradient(135deg, #223843 0%, #315c6a 100%);
-            color: white;
-            position: relative;
-            overflow: hidden;
+            margin:-1rem 0 3.5rem;
+            padding:0;
+            border:1px solid rgba(34,56,67,.12);
+            border-radius:30px;
+            background:#fff;
+            box-shadow:0 18px 45px rgba(34,56,67,.10);
+            overflow:hidden;
         }
-        .bean-story::after {
-            content: "ROASTED IN HOUSE";
-            position: absolute;
-            right: -1rem;
-            bottom: -1.3rem;
-            font-family: var(--font-sans);
-            font-size: clamp(2.8rem, 7vw, 6.5rem);
-            font-weight: 800;
-            letter-spacing: 0.04em;
-            color: rgba(255,255,255,0.045);
-            white-space: nowrap;
-            pointer-events: none;
+        .story-copy {
+            display:grid;
+            grid-template-columns:minmax(320px,.9fr) minmax(0,1.1fr);
+            gap:3.5rem;
+            align-items:end;
+            padding:3.6rem 4rem;
+            background:
+              radial-gradient(circle at 86% 12%,rgba(212,174,96,.16),transparent 30%),
+              linear-gradient(135deg,#223843 0%,#315c6a 100%);
+            color:#fff;
+            position:relative;
+        }
+        .story-copy::after {
+            content:"ROASTED IN HOUSE";
+            position:absolute;
+            right:-.3rem;
+            bottom:-1rem;
+            font-size:clamp(2.5rem,6vw,5.5rem);
+            font-weight:800;
+            letter-spacing:.04em;
+            color:rgba(255,255,255,.045);
+            white-space:nowrap;
+            pointer-events:none;
         }
         .story-eyebrow {
-            display: block;
-            margin-bottom: 0.75rem;
-            font-family: var(--font-sans);
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.2em;
-            color: #b9d6e2;
+            display:block;
+            margin-bottom:.9rem;
+            font-size:.72rem;
+            font-weight:800;
+            letter-spacing:.22em;
+            color:#c6dce5;
         }
         .bean-story-title {
-            max-width: 760px;
-            margin: 0 0 1.2rem;
-            font-family: var(--font-serif);
-            font-size: clamp(1.75rem, 3vw, 2.75rem);
-            font-weight: 700;
-            line-height: 1.35;
-            color: white;
+            margin:0;
+            font-family:var(--font-serif);
+            font-size:clamp(1.9rem,3.2vw,3rem);
+            font-weight:700;
+            line-height:1.38;
+            color:#fff;
         }
         .bean-story-lead {
-            max-width: 760px;
-            margin: 0;
-            font-family: var(--font-sans);
-            font-size: 1.02rem;
-            line-height: 1.9;
-            color: rgba(255,255,255,0.82);
+            max-width:610px;
+            margin:0;
+            padding-left:2rem;
+            border-left:1px solid rgba(212,174,96,.48);
+            font-size:.96rem;
+            font-weight:500;
+            line-height:1.95;
+            color:rgba(255,255,255,.82);
+            position:relative;
+            z-index:1;
         }
         .story-benefits {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0,1fr));
-            gap: 1rem;
-            margin-top: 2.25rem;
-            position: relative;
-            z-index: 1;
+            display:grid;
+            grid-template-columns:repeat(3,minmax(0,1fr));
+            margin:0;
+            padding:2.5rem 2.75rem 2.7rem;
+            background:#fffdf9;
         }
         .story-benefit {
-            padding: 1.15rem;
-            border: 1px solid rgba(255,255,255,0.14);
-            border-radius: 16px;
-            background: rgba(255,255,255,0.08);
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            min-height:165px;
+            padding:0 2rem;
+            text-align:center;
+            background:transparent;
+            border:0;
+            border-radius:0;
+            color:var(--brand-blue);
+        }
+        .story-benefit + .story-benefit { border-left:1px solid #e7ded0; }
+        .story-benefit-icon {
+            width:76px;
+            height:76px;
+            margin-bottom:.75rem;
+            fill:none;
+            stroke:#c69b50;
+            stroke-width:1.15;
+            stroke-linecap:round;
+            stroke-linejoin:round;
         }
         .story-benefit strong {
-            display: block;
-            margin-bottom: 0.45rem;
-            font-family: var(--font-serif);
-            font-size: 1rem;
-            color: white;
+            display:block;
+            margin:0 0 .35rem;
+            font-family:var(--font-serif);
+            font-size:1.05rem;
+            font-weight:700;
+            color:var(--brand-blue);
         }
         .story-benefit span {
-            font-family: var(--font-sans);
-            font-size: 0.78rem;
-            line-height: 1.65;
-            color: rgba(255,255,255,0.7);
-        }
-        .story-benefits-three { grid-template-columns: repeat(3,minmax(0,1fr)); }
-        .benefit-index {
-            display: block;
-            margin-bottom: 1rem;
-            font-size: 0.68rem !important;
-            font-weight: 700;
-            letter-spacing: 0.16em;
-            color: #b9d6e2 !important;
-        }
-        .coffee-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 0.9rem;
-        }
-        .coffee-meta .roast-badge { margin-top: 0; }
-        .process-badge {
-            display: inline-block;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            font-family: var(--font-sans);
-            font-size: 0.78rem;
-            font-weight: 600;
-            color: white;
-        }
-        .coffee-flavor-copy {
-            margin: 0 0 1.25rem;
-            padding: 0 0 1.25rem;
-            border-bottom: 1px solid #edf0f1;
-            font-family: var(--font-sans);
-            font-size: 0.92rem;
-            line-height: 1.8;
-            color: #596a72;
-        }
-        .coffee-flavor-copy strong {
-            display: block;
-            margin-bottom: 0.35rem;
-            font-size: 0.72rem;
-            letter-spacing: 0.12em;
-            color: #315c6a;
-        }
-
-        /* Visual flavor cards */
-        .coffee-card-body .flavor-section {
-            display: block;
-            margin: 0 0 1.15rem;
-            padding: 0.75rem 0 0;
-            border: 0;
-            border-top: 1px dashed #d9e3e7;
-            border-radius: 0;
-            background: transparent;
-        }
-        .coffee-card-body .flavor-section .flavor-label {
-            margin:0 0 0.28rem;
-            font-size:0.68rem;
-            font-weight:800;
-            letter-spacing:0.12em;
-            color:#7d929b;
-        }
-        .other-flavor-text {
-            margin:0;
-            color:#536770;
-            font-size:0.78rem;
-            line-height:1.65;
-            font-weight:500;
-        }
-        .flavor-visual {
-            display: grid;
-            grid-template-columns: minmax(0,1fr) 168px;
-            gap: 1rem;
-            align-items: center;
-            margin-bottom: 1.15rem;
-            padding-bottom: 0;
-            border-bottom: 0;
-        }
-        .flavor-kicker {
-            display: block;
-            margin-bottom: 0.65rem;
-            font-size: 0.68rem;
-            font-weight: 800;
-            letter-spacing: 0.15em;
-            color: #537f92;
-        }
-        .flavor-doodles { display: flex; gap: 0.7rem; margin-bottom: 0.75rem; }
-        .flavor-doodle { width: 62px; text-align: center; color: #315c6a; }
-        .flavor-doodle svg {
-            display: block;
-            width: 48px;
-            height: 48px;
-            margin: 0 auto 0.3rem;
-            padding: 8px;
-            border: 1px solid rgba(49,92,106,.13);
-            border-radius: 54% 46% 51% 49% / 48% 53% 47% 52%;
-            background: radial-gradient(circle at 32% 28%, #fff 0 8%, #edf6f8 72%);
-            box-shadow: 0 5px 14px rgba(34,56,67,.08), inset 0 0 0 3px rgba(255,255,255,.45);
-            stroke: currentColor;
-            fill: none;
-            stroke-width: 1.25;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            transform: rotate(-2deg);
-        }
-        .flavor-doodle:nth-child(2) svg { transform: rotate(3deg); background:radial-gradient(circle at 32% 28%,#fff 0 8%,#f8f1df 72%); color:#a87831; }
-        .flavor-doodle:nth-child(3) svg { transform: rotate(-4deg); background:radial-gradient(circle at 32% 28%,#fff 0 8%,#f3edf5 72%); color:#7e657f; }
-        .flavor-doodle span { display:block; font-size:0.68rem; font-weight:700; line-height:1.25; }
-        .flavor-one-line { display:block; }
-        .flavor-doodles { margin-bottom:0.7rem; }
-        .flavor-one-line {
-            display:flex;
-            flex-wrap:wrap;
-            align-items:center;
-            gap:0.28rem 0;
-            margin:0;
-            color:#536770;
-            font-size:0.78rem;
+            font-size:.76rem;
             line-height:1.55;
-            font-weight:600;
+            color:#647780;
         }
-        .flavor-one-line span { white-space:nowrap; }
-        .flavor-one-line span:not(:last-child)::after {
-            content:"・";
-            margin:0 0.25rem;
-            color:#9aadb5;
+        .benefit-index { display:none; }
+        @media (max-width:900px) {
+            .story-copy { grid-template-columns:1fr; gap:1.5rem; padding:3rem; }
+            .bean-story-lead { padding-left:0; border-left:0; max-width:680px; }
         }
-        .flavor-radar { width:168px; }
-        .flavor-radar svg { display:block; width:100%; height:auto; overflow:visible; }
-        .radar-grid { fill:none; stroke:#cbd8dd; stroke-width:1; }
-        .radar-axis { stroke:#dbe4e8; stroke-width:1; }
-        .radar-shape { fill:rgba(74,130,153,.22); stroke:#315c6a; stroke-width:2; stroke-linejoin:round; }
-        .radar-dot { fill:#315c6a; }
-        .radar-label { fill:#71838b; font-family:var(--font-sans); font-size:8px; font-weight:700; text-anchor:middle; }
-        @media (max-width: 460px) {
-            .flavor-visual { grid-template-columns: 1fr 132px; gap:0.6rem; }
-            .flavor-radar { width:132px; }
-            .flavor-doodle { width:48px; }
-            .flavor-doodle svg { width:36px; height:36px; padding:6px; }
-        }
-
-        @media (max-width: 760px) {
-            .story-benefits-three { grid-template-columns: 1fr; }
+        @media (max-width:650px) {
+            .bean-story { border-radius:22px; }
+            .story-copy { padding:2.3rem 1.5rem; }
+            .story-benefits { grid-template-columns:1fr; padding:1rem 1.5rem; }
+            .story-benefit { min-height:135px; padding:1.5rem 0; }
+            .story-benefit + .story-benefit { border-left:0; border-top:1px solid #e7ded0; }
+            .story-benefit-icon { width:64px; height:64px; }
         }
 
         .roast-story-note {
@@ -1371,13 +1271,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="section" style="">
         <div class="content-section active" id="coffee-beans">
             <section class="bean-story" aria-labelledby="bean-story-title">
-                <span class="story-eyebrow">TTCR IN-HOUSE ROASTING</span>
-                <h2 class="bean-story-title" id="bean-story-title">讓每一支豆子，烘成它最好喝的樣子</h2>
-                <p class="bean-story-lead">自家烘焙的價值，不只是「自己烘」。我們能從產地、品種與處理法出發，替每支豆子安排合適的烘焙曲線，把花果香、酸甜平衡或醇厚尾韻清楚留在杯中；也讓咖啡從烘焙到飲用的距離更短，喝得到更完整的香氣。</p>
+                <div class="story-copy">
+                    <div>
+                        <span class="story-eyebrow">TTCR IN-HOUSE ROASTING</span>
+                        <h2 class="bean-story-title" id="bean-story-title">讓每一支豆子，<br>烘成它最好喝的樣子</h2>
+                    </div>
+                    <p class="bean-story-lead">從產地與處理法讀懂豆性，為每支豆子調整烘焙曲線。讓花果香、甜感與尾韻清楚留下，縮短烘焙到入口的距離。</p>
+                </div>
                 <div class="story-benefits story-benefits-three" aria-label="同齊自烘咖啡豆三大優點">
-                    <div class="story-benefit"><span class="benefit-index">01</span><strong>嚴選產區</strong><span>從產地、品種到處理法逐一挑選，讓每款豆子都有清楚可辨的風味個性。</span></div>
-                    <div class="story-benefit"><span class="benefit-index">02</span><strong>自家烘焙</strong><span>依豆性調整烘焙曲線，把花果香、甜感與醇厚尾韻留在最合適的位置。</span></div>
-                    <div class="story-benefit"><span class="benefit-index">03</span><strong>門市實喝</strong><span>每支豆都能在門市化成一杯手沖，先喝懂風味，再把喜歡的選擇帶回家。</span></div>
+                    <div class="story-benefit"><svg class="story-benefit-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 21C2 17 1 10 5 5M17 21c5-4 6-11 2-16M5 17c-2-1-3-3-3-5 2 0 4 1 5 3M4 12c-1-2 0-4 1-5 2 1 3 3 3 5M19 17c2-1 3-3 3-5-2 0-4 1-5 3M20 12c1-2 0-4-1-5-2 1-3 3-3 5"/><path d="M9 15c-2-3-1-7 2-9 3 2 4 6 2 9-1 2-3 2-4 0zM10 16c2-2 3-5 2-8"/></svg><strong>嚴選產區</strong><span>挑選好豆，風味更安心</span></div>
+                    <div class="story-benefit"><svg class="story-benefit-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 21C2 17 1 10 5 5M17 21c5-4 6-11 2-16M5 17c-2-1-3-3-3-5 2 0 4 1 5 3M4 12c-1-2 0-4 1-5 2 1 3 3 3 5M19 17c2-1 3-3 3-5-2 0-4 1-5 3M20 12c1-2 0-4-1-5-2 1-3 3-3 5"/><path d="M8 16h8M9 16v3h6v-3M8 8h8l-1 8H9L8 8zM10 8V5h4v3M11 11c1-1 2-1 3 0-1 2-2 3-3 4"/></svg><strong>自家烘焙</strong><span>保留咖啡最佳香氣</span></div>
+                    <div class="story-benefit"><svg class="story-benefit-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 21C2 17 1 10 5 5M17 21c5-4 6-11 2-16M5 17c-2-1-3-3-3-5 2 0 4 1 5 3M4 12c-1-2 0-4 1-5 2 1 3 3 3 5M19 17c2-1 3-3 3-5-2 0-4 1-5 3M20 12c1-2 0-4-1-5-2 1-3 3-3 5"/><path d="M7 15c3-2 7-2 10 0M8 10c1-2 2-3 4-4 2 1 3 2 4 4M8 10h8v6H8zM10 12h4"/></svg><strong>門市實喝</strong><span>先喝懂，再選喜歡的豆</span></div>
                 </div>
             </section>
 
