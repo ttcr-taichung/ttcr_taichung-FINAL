@@ -1116,11 +1116,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             margin: 0 0 1.1rem;
             overflow: hidden;
             border: 0;
-            aspect-ratio: 1 / 1;
-            background: #f3f1ed;
+            aspect-ratio: auto;
+            background: #fff;
         }
         .gift-category-image img {
-            object-fit: cover;
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
             transform: none;
         }
         .gift-category-card:hover .gift-category-image img {
@@ -1692,7 +1695,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .gift-category-image {
                 width: 100%;
                 min-height: 0;
-                aspect-ratio: 4 / 3;
+                aspect-ratio: auto;
                 margin: 0 0 1rem;
                 border: 0;
             }
