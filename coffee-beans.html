@@ -1310,6 +1310,51 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             font-size: .84rem;
             line-height: 1.7;
         }
+        /* Final gift catalog overrides — placed after the legacy gift rules
+           so the catalog layout and uncropped images win the cascade. */
+        .gift-category-grid {
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            column-gap: 2rem;
+            row-gap: 3.5rem;
+        }
+        .gift-category-card {
+            display: block;
+            overflow: visible;
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+        }
+        .gift-category-card::after { display: none; }
+        .gift-category-image {
+            width: 100%;
+            height: auto;
+            min-height: 0;
+            margin: 0 0 1.1rem;
+            overflow: hidden;
+            border: 0;
+            aspect-ratio: auto;
+            background: #fff;
+        }
+        .gift-category-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
+        }
+        .gift-category-top {
+            display: block;
+            padding: 0;
+            border: 0;
+        }
+        .gift-category-body {
+            margin-top: 1rem;
+            padding: 1rem 0 0;
+            border-top: 1px solid rgba(34,56,67,.13);
+        }
+
         .drip-column {
             padding: 3.3rem;
             border-radius: 30px;
