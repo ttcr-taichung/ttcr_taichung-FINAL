@@ -1455,6 +1455,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
         }
 
+        .gift-catalog-panel {
+            width: 100vw;
+            margin-top: 4rem;
+            margin-left: calc(50% - 50vw);
+            background:
+                radial-gradient(circle at 12% 8%,rgba(240,198,95,.1),transparent 27%),
+                #263f4b;
+            color: #fff;
+        }
+        .gift-catalog-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 5rem 2rem 5.5rem;
+        }
+        .gift-catalog-panel .gift-category-label {
+            margin: 0 0 2.2rem;
+            color: #f0c65f;
+        }
+        .gift-catalog-panel .gift-category-label::after {
+            background: rgba(255,255,255,.22);
+        }
+        .gift-catalog-panel .gift-category-card h3 {
+            color: #f0c65f;
+            font-family: var(--font-sans);
+            font-weight: 800;
+            letter-spacing: .01em;
+        }
+        .gift-catalog-panel .gift-category-type {
+            color: rgba(240,198,95,.76);
+        }
+        .gift-catalog-panel .gift-category-price {
+            color: #fff;
+        }
+        .gift-catalog-panel .gift-category-price small {
+            color: rgba(255,255,255,.56);
+        }
+        .gift-catalog-panel .gift-category-body {
+            border-top-color: rgba(255,255,255,.2);
+            color: rgba(255,255,255,.78);
+        }
+        .gift-catalog-panel .gift-option b {
+            color: #fff;
+        }
+        .gift-catalog-panel .gift-calculator-link {
+            color: #f0c65f;
+        }
+        .gift-catalog-panel .gift-note {
+            border-left-color: #f0c65f;
+            background: rgba(255,255,255,.08);
+            color: rgba(255,255,255,.72);
+        }
+        @media (max-width: 680px) {
+            .gift-catalog-panel { margin-top: 3rem; }
+            .gift-catalog-inner { padding: 3.5rem 1.5rem 4rem; }
+        }
+
         .drip-column {
             padding: 3.3rem;
             border-radius: 30px;
@@ -2889,7 +2945,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
 
-            <div class="gift-category-label" id="gift-categories">GIFT BOX CATEGORY · 禮盒分類</div>
+            <section class="gift-catalog-panel">
+                <div class="gift-catalog-inner">
+                    <div class="gift-category-label" id="gift-categories">GIFT BOX CATEGORY · 禮盒分類</div>
             <div class="gift-category-grid">
                 <article class="gift-category-card" data-index="01">
                     <div class="gift-category-image"><img src="/images/gift-mid-autumn.png" alt="同齊咖吡中秋限定禮盒"></div>
@@ -2963,7 +3021,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </article>
             </div>
-            <p class="gift-note">一般禮盒皆可選擇淺焙、中焙與中深焙；實際品項、供應狀況與大量訂購優惠，歡迎洽詢門市。</p>
+                    <p class="gift-note">一般禮盒皆可選擇淺焙、中焙與中深焙；實際品項、供應狀況與大量訂購優惠，歡迎洽詢門市。</p>
+                </div>
+            </section>
         </section>
 
         <section class="drip-mix-column" id="drip-coffee">
