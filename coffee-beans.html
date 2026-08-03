@@ -1095,40 +1095,77 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             font-size: .98rem;
             line-height: 1.9;
         }
-        .gift-category-card {
-            display: grid;
-            grid-template-columns: minmax(190px,.78fr) minmax(0,1.22fr);
-            grid-template-rows: auto 1fr;
-            padding: 0;
+        .gift-category-grid {
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            column-gap: 2rem;
+            row-gap: 3.5rem;
         }
+        .gift-category-card {
+            display: block;
+            overflow: visible;
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+        }
+        .gift-category-card::after { display: none; }
         .gift-category-image {
-            grid-row: 1 / 3;
             width: 100%;
-            height: 100%;
-            min-height: 300px;
-            margin: 0;
-            border-right: 1px solid rgba(34,56,67,.12);
-            border-bottom: 0;
-            aspect-ratio: auto;
+            min-height: 0;
+            margin: 0 0 1.1rem;
+            overflow: hidden;
+            border: 0;
+            aspect-ratio: 1 / 1;
+            background: #f3f1ed;
+        }
+        .gift-category-image img {
+            object-fit: cover;
+            transform: none;
+        }
+        .gift-category-card:hover .gift-category-image img {
+            transform: scale(1.018);
         }
         .gift-category-top {
-            padding: 1.45rem 1.45rem 1rem;
+            display: block;
+            padding: 0;
+            border: 0;
         }
-        .gift-category-body {
-            padding: 1rem 1.45rem 1.45rem;
-            font-size: .88rem;
-            line-height: 1.8;
+        .gift-category-type {
+            margin-bottom: .45rem;
+            font-size: .64rem;
+            letter-spacing: .16em;
         }
         .gift-category-card h3 {
             font-size: 1.3rem;
             line-height: 1.45;
         }
         .gift-category-price {
-            font-size: 1.35rem;
+            margin-top: .55rem;
+            font-size: 1.42rem;
+            line-height: 1.2;
         }
+        .gift-category-price small {
+            display: inline-block;
+            margin-right: .35rem;
+        }
+        .gift-category-body {
+            margin-top: 1rem;
+            padding: 1rem 0 0;
+            border-top: 1px solid rgba(34,56,67,.13);
+            color: #6d7a80;
+            font-size: .8rem;
+            line-height: 1.75;
+        }
+        .gift-category-body .gift-option + p { margin-top: 1rem; }
         .gift-option {
-            grid-template-columns: 2.8rem minmax(0,1fr);
-            gap: .7rem;
+            grid-template-columns: 2.7rem minmax(0,1fr);
+            gap: .55rem;
+            margin-top: .42rem;
+        }
+        .gift-calculator-link {
+            margin-top: .8rem;
+            font-size: .8rem;
         }
 
         .gift-category-label {
@@ -1647,7 +1684,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 border-radius: 999px;
                 font-size: .88rem;
             }
-            .gift-category-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+            .gift-category-grid { grid-template-columns: 1fr; gap: 3rem; }
             .gift-category-card {
                 display: block;
                 padding: 0;
@@ -1655,10 +1692,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .gift-category-image {
                 width: 100%;
                 min-height: 0;
-                aspect-ratio: 16 / 10;
-                margin: 0;
-                border-right: 0;
-                border-bottom: 1px solid rgba(34,56,67,.12);
+                aspect-ratio: 4 / 3;
+                margin: 0 0 1rem;
+                border: 0;
             }
             .gift-category-card h3 { font-size: 1.28rem; }
             .gift-category-price { font-size: 1.3rem; }
