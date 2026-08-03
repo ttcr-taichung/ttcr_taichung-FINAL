@@ -282,6 +282,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             display: block;
         }
 
+        .case-image-placeholder {
+            height: 240px;
+            display: flex;
+            align-items: flex-end;
+            padding: 1.75rem 2rem;
+            color: rgba(255, 255, 255, 0.92);
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            background:
+                radial-gradient(circle at 72% 36%, rgba(250, 248, 245, 0.48) 0 8%, transparent 9%),
+                radial-gradient(ellipse at 30% 65%, rgba(34, 56, 67, 0.5) 0 14%, transparent 15%),
+                linear-gradient(135deg, #d7c4ad 0%, #9b8774 45%, #3d4a49 100%);
+        }
+
         .case-content {
             padding: 2rem;
         }
@@ -441,6 +457,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             color: rgba(255,255,255,0.75);
             line-height: 1.9;
             letter-spacing: 0.02em;
+        }
+
+        .footer-info .venue-booking-note {
+            white-space: normal;
+        }
+
+        .footer-info .venue-booking-link {
+            color: #f0c65f;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-info .venue-booking-link:hover {
+            color: #fff;
         }
 
         .footer-copyright {
@@ -811,6 +842,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <p class="case-description">與在地藝術職人合作，於牆面揮灑獨特的視覺筆觸，將藝術靈魂融入建築肌理，打造咖啡與空間美學的深度對話。</p>
                 </div>
             </div>
+            <div class="case-card">
+                <div class="case-image-placeholder" role="img" aria-label="東方水墨與空間光影意象">INK · LIGHT · SPACE</div>
+                <div class="case-content">
+                    <span class="case-highlight">藝術 × 空間</span>
+                    <h3 class="case-partner">國畫藝術家廖涵茵－藝術跨界空間合作</h3>
+                    <p class="case-description">攜手藝術家廖涵茵，將東方水墨與光影美學融入空間，透過藝術與設計的交會，創造富有文化底蘊與情感溫度的空間體驗。</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -849,7 +888,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <h3 class="footer-company-name">禾松餐飲有限公司</h3>
                     <div class="footer-info">
                         <p>服務時間 : 週一至週五 09:00-18:00</p>
-                        <p>聯絡電話 : 04-22479068</p>
+                        <p>總部電話 : 04-22479068 <span class="venue-booking-note">（場地預約請加 <a class="venue-booking-link" href="https://line.me/R/ti/p/@828kffwi" target="_blank" rel="noopener">官方 LINE 預約 ↗</a>）</span></p>
                         <p>總部地址 : 406台中市北屯區瀋陽北路73號</p>
                     </div>
                     <div class="footer-copyright">
