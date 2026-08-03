@@ -1365,13 +1365,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
 
         @media (min-width: 981px) {
-            .gift-column .shop-column-head,
-            .gift-column .gift-feature {
+            .gift-column .shop-column-head {
                 width: calc(100vw - 4rem);
                 max-width: none;
                 margin-left: calc(50% - 50vw + 2rem);
             }
             .gift-column .gift-feature {
+                width: 100vw;
+                max-width: none;
+                margin-left: calc(50% - 50vw);
                 display: grid;
                 grid-template-columns: minmax(0,1.15fr) minmax(430px,.85fr);
                 min-height: 620px;
