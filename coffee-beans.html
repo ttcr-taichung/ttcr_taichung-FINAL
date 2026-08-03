@@ -1365,10 +1365,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
 
         @media (min-width: 981px) {
-            .gift-column .shop-column-head {
+            .gift-column .shop-column-head,
+            .gift-column .gift-feature {
                 width: calc(100vw - 4rem);
                 max-width: none;
                 margin-left: calc(50% - 50vw + 2rem);
+            }
+            .gift-column .gift-feature {
+                min-height: 600px;
+                border-radius: 34px;
+            }
+            .gift-column .gift-feature .gift-hero::after {
+                background: linear-gradient(90deg,rgba(15,31,38,.06) 0%,rgba(15,31,38,.18) 40%,rgba(15,31,38,.9) 74%,rgba(15,31,38,.96) 100%);
+            }
+            .gift-column .gift-feature .gift-service {
+                grid-template-columns: minmax(0,1.08fr) minmax(420px,.92fr);
+                grid-template-rows: 1fr auto;
+                align-items: end;
+                min-height: 600px;
+                padding: clamp(3rem,5vw,6rem);
+            }
+            .gift-column .gift-service > div:first-child {
+                grid-column: 2;
+                align-self: end;
+                max-width: 620px;
+            }
+            .gift-column .gift-service h3 {
+                font-size: clamp(2.8rem,4.5vw,4.8rem);
+                line-height: 1.16;
+            }
+            .gift-column .gift-service p {
+                max-width: 560px;
+                font-size: 1.05rem;
+            }
+            .gift-column .gift-service-badge {
+                grid-column: 2;
+                width: auto;
+                aspect-ratio: auto;
+                justify-self: start;
+                margin-top: 1.5rem;
+                padding: .85rem 1.35rem;
+                border-radius: 999px;
+                background: #fff;
+                color: var(--brand-blue);
+                font-family: var(--font-sans);
+                font-size: .9rem;
+                text-decoration: none;
+                box-shadow: 0 10px 28px rgba(0,0,0,.18);
+            }
+            .gift-column .gift-service-badge span {
+                margin-left: .3rem;
+                font-size: 1.25rem;
+                line-height: 1;
             }
         }
 
@@ -2802,11 +2850,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <h3>客製化禮盒服務</h3>
                         <p>可依送禮情境、預算與訂購份數協助搭配內容。企業贈禮、節慶禮盒或活動伴手禮皆可提前洽詢，讓每一份心意都有適合的包裝。</p>
                     </div>
-                    <div class="gift-service-badge">專屬<br>搭配</div>
+                    <a class="gift-service-badge" href="#gift-categories">探索禮盒 <span aria-hidden="true">›</span></a>
                 </div>
             </div>
 
-            <div class="gift-category-label">GIFT BOX CATEGORY · 禮盒分類</div>
+            <div class="gift-category-label" id="gift-categories">GIFT BOX CATEGORY · 禮盒分類</div>
             <div class="gift-category-grid">
                 <article class="gift-category-card" data-index="01">
                     <div class="gift-category-image"><img src="/images/gift-mid-autumn.png" alt="同齊咖吡中秋限定禮盒"></div>
