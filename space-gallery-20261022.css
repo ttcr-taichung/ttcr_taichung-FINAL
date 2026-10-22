@@ -18,3 +18,7 @@ body:has(.pg-dialog[open]) .custom-cursor{visibility:hidden!important}
 .pg-stage .pg-next{grid-column:3}
 .pg-close{display:grid;place-items:center;padding:0;line-height:1}
 @media(max-width:600px){.pg-stage{grid-template-columns:36px minmax(0,1fr) 36px;gap:6px}.pg-stage .pg-arrow{width:36px;height:36px}}
+.pg-arrow::before{position:absolute;top:50%;left:50%}
+.pg-prev::before{transform:translate(-35%,-50%) rotate(135deg)}
+.pg-next::before{transform:translate(-65%,-50%) rotate(-45deg)}
+.pg-stage .pg-arrow{position:relative;top:auto;left:auto;right:auto}
