@@ -932,17 +932,22 @@ body { padding-top: 112px; }
     outline: none;
   }
 </style><style id="original-timeline-slider">
-.timeline-controls{max-width:900px;margin:24px auto 0;display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--brand-blue);font-size:.8rem}
-.timeline-controls>div{display:flex;gap:8px}.timeline-controls button{width:38px;height:38px;border:1px solid var(--brand-blue-light);border-radius:50%;color:var(--brand-blue);background:transparent;cursor:pointer!important}.timeline-controls button:hover{background:var(--brand-blue);color:#fff}
-.timeline{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:32px 4px 28px;scrollbar-width:thin;scrollbar-color:#223843 #eae6dc}
+.timeline-controls{max-width:900px;margin:28px auto 16px;display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--brand-blue);font-size:.8rem}
+.timeline-controls>div{display:flex;gap:8px}
+.timeline-controls button{width:38px;height:38px;border:1px solid var(--brand-blue-light);border-radius:50%;color:var(--brand-blue);background:transparent;cursor:pointer!important}
+.timeline-controls button:hover{background:var(--brand-blue);color:#fff}
+.timeline{display:block;height:480px;max-height:65svh;min-height:320px;overflow-y:auto;overflow-x:hidden;scroll-snap-type:y proximity;scroll-behavior:smooth;padding:0 20px 0 0;scrollbar-width:thin;scrollbar-color:#223843 #eae6dc}
 .timeline::before{display:none}
-.timeline .timeline-item:nth-child(n){flex:0 0 300px;min-height:210px;margin:0;padding:28px 24px 24px;text-align:left;scroll-snap-align:start;opacity:1;transform:none;border-top:2px solid var(--brand-blue-light)}
-.timeline .timeline-dot{left:24px;top:-9px;transform:none;width:14px;height:14px}
-.timeline .timeline-year{font-size:1.5rem;padding:0;margin:0 0 18px}
-.timeline .timeline-content{padding:0;font-size:1rem;line-height:1.9}
+.timeline .timeline-item:nth-child(n){display:grid;grid-template-columns:130px minmax(0,1fr);gap:46px;min-height:230px;margin:0;padding:32px 18px 38px 0;text-align:left;scroll-snap-align:start;opacity:1;transform:none;border:0}
+.timeline .timeline-item::before{content:"";position:absolute;left:152px;top:0;bottom:0;width:1px;background:#22384330}
+.timeline .timeline-dot{left:146px;top:42px;transform:none;width:13px;height:13px;background:#223843;border:3px solid #faf8f5;box-shadow:0 0 0 3px #22384315}
+.timeline .timeline-year{font-family:var(--font-serif);font-size:1.65rem;font-weight:700;line-height:1.5;letter-spacing:.03em;padding:0;margin:0;background:transparent;text-align:right}
+.timeline .timeline-content{padding:0;font-size:.98rem;line-height:1.95;color:#555}
+.timeline .timeline-content strong{color:var(--brand-blue);font-size:1rem}
+.timeline .timeline-content .mb-4{margin-bottom:12px}
 .timeline:focus-visible,.timeline-controls button:focus-visible{outline:2px solid var(--brand-blue);outline-offset:4px}
-@media(max-width:640px){.timeline{gap:18px}.timeline .timeline-item:nth-child(n){flex-basis:82%;min-height:220px;padding:26px 16px}.timeline-controls{font-size:.72rem}.timeline-controls button{width:34px;height:34px}}
-@media(prefers-reduced-motion:reduce){.timeline{scroll-behavior:auto}}
+@media(max-width:640px){.timeline{height:460px;padding-right:10px}.timeline .timeline-item:nth-child(n){grid-template-columns:65px minmax(0,1fr);gap:34px;min-height:260px;padding:26px 0 30px}.timeline .timeline-item::before{left:81px}.timeline .timeline-dot{left:75px;top:35px}.timeline .timeline-year{font-size:1.15rem}.timeline .timeline-content{font-size:.9rem}.timeline .timeline-content strong{font-size:.93rem}.timeline-controls{font-size:.72rem}.timeline-controls button{width:34px;height:34px}}
+@media(prefers-reduced-motion:reduce){.timeline{scroll-behavior:auto;scroll-snap-type:none}}
 </style></head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -1032,7 +1037,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="chapter-number">CHAPTER 03 - 一路同齊的足跡與故事</div>
                 <h2 class="chapter-title serif">Our Journey</h2><p class="story-content">每一間店的誕生，都是一段串連人與人之間關係的延伸。從花蓮出發，我們將這份溫度帶進台中，在城市裡點亮每一盞深夜的燈：</p>
                 
-                <div class="timeline-controls"><span>左右滑動，瀏覽同齊的成長歷程</span><div><button type="button" data-timeline-step="-1" aria-label="上一個年份">←</button><button type="button" data-timeline-step="1" aria-label="下一個年份">→</button></div></div><div class="timeline" tabindex="0" role="region" aria-label="左右滑動年份時間線"><div class="timeline-item visible"><div class="timeline-dot"></div><div class="timeline-year">2022</div><div class="timeline-content"><p class="mb-4"><strong>12月4日（花蓮創始店）</strong></p><p>一切的起點。在這裡播下「同齊」的種子，讓熱愛咖啡與空間的人們有了第一個溫馨的聚落。</p></div></div>
+                <div class="timeline-controls"><span>上下滾動，沿著年份走進同齊的故事</span><div><button type="button" data-timeline-step="-1" aria-label="上一個年份">↑</button><button type="button" data-timeline-step="1" aria-label="下一個年份">↓</button></div></div><div class="timeline" tabindex="0" role="region" aria-label="上下滾動年份時間線"><div class="timeline-item visible"><div class="timeline-dot"></div><div class="timeline-year">2022</div><div class="timeline-content"><p class="mb-4"><strong>12月4日（花蓮創始店）</strong></p><p>一切的起點。在這裡播下「同齊」的種子，讓熱愛咖啡與空間的人們有了第一個溫馨的聚落。</p></div></div>
 <div class="timeline-item visible"><div class="timeline-dot"></div><div class="timeline-year">2022</div><div class="timeline-content"><p class="mb-4"><strong>11月26日（北屯旗艦店）</strong></p><p>帶著花蓮的初衷來到台中，打造層層遞進的大型第三空間，讓連結擴大、讓更多靈魂在這裡相遇。</p></div></div>
 <div class="timeline-item visible"><div class="timeline-dot"></div><div class="timeline-year">2025</div><div class="timeline-content"><p class="mb-4"><strong>5月1日（西區精忠店）</strong></p><p>為了讓質感美學更貼近日常巷弄，我們在西區落腳，成為在地居民與過路客的心靈避難所。</p></div></div>
 <div class="timeline-item visible"><div class="timeline-dot"></div><div class="timeline-year">2026</div><div class="timeline-content"><p class="mb-4"><strong>2月4日（南區忠明店）</strong></p><p>為了將這份「鬥陣」的陪伴帶給更多人，南區據點正式加入，持續擴大在地社群。</p></div></div>
@@ -1200,5 +1205,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 /* === /TT Mobile Nav JS === */
 </script>
 <script>
-(function(){const track=document.querySelector('.timeline');if(!track)return;document.querySelectorAll('[data-timeline-step]').forEach(button=>button.addEventListener('click',()=>{const item=track.querySelector('.timeline-item');const gap=parseFloat(getComputedStyle(track).gap)||0;track.scrollBy({left:Number(button.dataset.timelineStep)*(item.getBoundingClientRect().width+gap),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}));})();
+(function(){const track=document.querySelector('.timeline');if(!track)return;const items=Array.from(track.querySelectorAll('.timeline-item'));document.querySelectorAll('[data-timeline-step]').forEach(button=>button.addEventListener('click',()=>{let nearest=0,distance=Infinity;items.forEach((item,i)=>{const d=Math.abs(item.offsetTop-track.scrollTop);if(d<distance){distance=d;nearest=i;}});const next=Math.max(0,Math.min(items.length-1,nearest+Number(button.dataset.timelineStep)));track.scrollTo({top:items[next].offsetTop,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}));})();
 </script></body></html>
