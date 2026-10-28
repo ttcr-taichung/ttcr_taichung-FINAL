@@ -1183,7 +1183,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     position: relative;
     outline: none;
   }
-</style></head>
+</style><style>
+/* A quiet kitchen easter egg, kept out of the main navigation. */
+.kitchen-secret { text-align: center; padding: 4px 24px 48px; }
+.kitchen-secret a { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 8px 18px; border: 1px solid #cbd3d6; border-radius: 999px; color: #52636b; background: transparent; font-size: 13px; letter-spacing: .12em; text-decoration: none; transition: background .2s, color .2s, border-color .2s; }
+.kitchen-secret a:hover { color: #223843; background: #fcd717; border-color: #fcd717; }
+.kitchen-secret a:focus-visible { outline: 2px solid #223843; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { .kitchen-secret a { transition: none; } }
+</style>
+</head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJTCF662"
@@ -1311,6 +1319,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
     
+
+    <div class="kitchen-secret">
+        <a href="/kitchen-game.html" aria-label="偷偷進廚房：玩照單出餐小遊戲"><span aria-hidden="true">☕</span> 偷偷進廚房 <span aria-hidden="true">↗</span></a>
+    </div>
 
     <script>
         const cursor = document.getElementById(`custom-cursor`);
